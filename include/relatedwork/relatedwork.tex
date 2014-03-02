@@ -1,0 +1,221 @@
+\chapter{Related Work}\label{ch:related_work}
+
+\section{Introduction}
+Various tools have been developed in the last decade in order to measure the agility in software development teams. Below is a short description of some of the ones that have been used as references in many papers of this field.
+
+\section{Balancing Discipline and Agility}
+
+\citet{1231450} did not come up with a tool to measure agility but rather to balance between agility and discipline. Accoring to them \cite{1317503} discipline is the foundation for any successful endeavor and creates experience, history and well-organized memories. On the other hand agility is described as a counterpart of descipline. Agility uses the memory and history in order to adjust in the context which is applied and takes advantage of the unexpected opportunities that might come up. The combination of the two can bring success to an organisation. 
+%%% maybe add more.
+\citet{1231450} in their research found that there are five ``critical decision factors`` which can determine if an agile or plan-driven method is suitable for a software development project.
+
+Figure~\ref{fig:boehm_turner_5axes} depicts these factors which are the:
+
+\begin{itemize}
+\item size of a team working in a project
+\item criticallity of damage of unexpected defects %search more about this
+\item culture on how to balance between chaos an order %maybe rephrase
+\item dynamism %search more
+\item personnel which refers to the extended \citet{cockburn2002agile} skill rating %search more
+\end{itemize}
+
+
+\begin{figure}
+\begin{floatrow} 
+\ffigbox[\FBwidth] {
+\includegraphics[scale=0.9]{include/relatedwork/fig/boehm_turner_5axes.pdf}}
+{\caption{Dimensions affecting method selection} 
+\label{fig:boehm_turner_5axes}}
+
+\capbtabbox{
+ \resizebox{5cm}{!}{ \begin{tabular}{ | c | p{7cm} |}
+	\hline
+	\textbf{Level} & \textbf{Characteristics} \\ \hline
+ 3  & Able to revise a method (break its rules) to fit an unprecedented newsituation \\ \hline
+ 2  & Able to tailor a method to fit a precedented new situation \\ \hline
+ 1A  & With training, able to perform discretionary method steps (e.g., sizing stories to fit increments, composing patterns, compound refactoring, complex COTS integration). With experience can become Level 2. \\ \hline
+ 1B  & With training, able to perform procedural method steps (e.g. coding a simple method, simple refactoring, following coding standards and CM procedures, running tests). With experience can master some Level 1A skills. \\ \hline
+ -1 & May have technical skills, but unable or unwilling to collaborate or follow shared methods. \\ \hline
+\end{tabular}}}
+{\caption{Levels of software method understanding and use (after Cockburn)}}
+\end{floatrow}
+\end{figure}
+
+
+%\begin{table}
+%\label{fig:boehm_turner_levels}
+%\includegraphics[scale=1]{include/relatedwork/fig/boehm_turner_levels.pdf}
+%\end{table}
+
+
+If the ratings of the five factors are close to the center, then the team is to an agile terittory and the team  is considered agile, otherwise it follows a discipline approach.
+
+
+
+
+%\begin{figure}
+%\centerline{\includegraphics[scale=0.9]{include/relatedwork/fig/boehm_turner_5axes.pdf}}
+%\caption{Dimensions affecting method selection} 
+%\label{fig:boehm_turner_5axes}
+%\end{figure}
+
+\section{4-Dimensional Analytical Tool}
+%Maybe mention the super tool as well
+\citet{qumer2006measuring} created the 4-Dimensional Analytical Tool (4-DAT) for analysing and comparing agile methods. The objective of the tool is to provide a mechanism to assess the degree of agility and adoptability of any agile methodology. The measurements are taken at a specific level in a process and using specific practices.
+
+\subsection{Dimension 1 - Method Scope Characterization}
+The first dimension describes the key scope items which have been derived from their literature review based on \citet{Beck:2004:EPE:1076267}, \citet{koch2005agile}, \citet{Palmer:2001:PGF:600044}, \citet{Highsmith:2000:ASD:323922} and provides a method comparison at a high level. 
+
+These items are:
+\begin{inparaenum} [a\upshape)]
+\item Project Size
+\item Team Size
+\item Development Style
+\item Code Style
+\item Technology Environment
+\item Physical Environment
+\item Business Culture
+\item Abstraction Mechanism
+\end{inparaenum}
+
+The aforementioned elements are considered essential for supporting the method used by a team or organisation. Table~\ref{fig:dimension1} provides a description for the items.
+
+\begin{table}[H]
+\caption{4-DAT Dimension 1}
+\label{fig:dimension1}
+\centerline{\includegraphics[scale=0.8]{include/relatedwork/fig/qumer_dimension1.pdf}}
+\end{table}
+
+\subsection{Dimension 2 - Agility Characterization}
+The second dimesion is the only quantitavie dimension of the four. It evaluates the agile methods in process level and in a method practices level in order to check the existence of agility.
+
+The measurement of the degree of agility in this level is done based on the following five variables. Table~\ref{fig:dimension2} provides a description for them.
+\begin{inparaenum} [a\upshape)]
+\item Flexibility
+\item Speed
+\item Leanness
+\item Learning
+\item Responsiveness
+\end{inparaenum}
+
+These variables are used to check the existence of a method's objective at a specific level or phase. If the variable exists for a phase then the value 1 is assigned to it, otherwise 0. \citet{qumer2006measuring} define the degree of agility (DA) as ``the fraction of the five agility variables that are encompassed and supported".\\ %maybe provide an example as the authors do
+
+The function for calculating the DA is the following\\
+\textit{DA (Object) = (1/m) $\sum$m DA(Object, Phase or Practices) }
+
+\begin{table}[H]
+\caption{4-DAT Dimension 2}
+\label{fig:dimension2}
+\centerline{\includegraphics[scale=0.8]{include/relatedwork/fig/qumer_dimension2.pdf}}
+\end{table}
+
+\subsection{Dimension 3 - Agile Values Characterization}
+The third dimension consists of six agile values. Four of them are derived directly from the Agile Manifesto \cite{beck2001agile}, while the fifth comes from \cite{koch2005agile}. The last value is suggested by \citet{qumer2006measuring} after having studied several agile methods. Table~\ref{fig:dimension4} shows the agile values.
+
+\begin{table}[H]
+\caption{4-DAT Dimension 3}
+\label{fig:dimension3}
+\centerline{\includegraphics[scale=0.8]{include/relatedwork/fig/qumer_dimension3.pdf}}
+\end{table}
+
+\subsection{Dimension 4 - Software Process Characterization}
+The fourth dimension examines the practices that support four processes as these are presented by \citet{qumer2006measuring}. Table~\ref{fig:dimension4} lists these processess.
+
+\begin{table}[H]
+\caption{4-DAT Dimension 4}
+\label{fig:dimension4}
+\centerline{\includegraphics[scale=0.8]{include/relatedwork/fig/qumer_dimension4.pdf}}
+\end{table}
+
+
+%\section{Leffingwell}
+
+\section{Escobar}
+
+\citet{6427226} created their own agility assessment model which consists of four stages. For the first three they use the models and tools proposed by other researchers they found in literature, except from the last one.
+\begin{itemize}
+\item Agile Project Management Assessment - proposed by \citet{qumer2006measuring}
+\item Project Agility Assessment - proposed by \citet{taylor}
+\item Workteam Agility Assessment - proposed by \citet{Leffingwell:2007:SSA:1201958}
+\item Agile Workspace Coverage
+\end{itemize}
+
+For collecting the data for the measurements they used surveys based on the tools of each stage while in the last one they use their custom survey. The data are then depicted in a four axis radar chart in order to provide a view of the company's agility.
+
+\begin{figure}
+\centerline{\includegraphics[scale=0.9]{include/relatedwork/fig/escobar_radar.pdf}}
+\caption{??????????} 
+\label{??????}
+\end{figure}
+
+\begin{figure}
+\centerline{\includegraphics[scale=0.9]{include/relatedwork/fig/escobar_model.pdf}}
+\caption{??????????} 
+\label{??????}
+\end{figure}
+
+\section{Sidky}
+
+\section{OPS Framework} %it is evolved from Arthur's work
+\citet{sventha_dissertation} created the Objectives, Principles and Stategies (OPS) Framework in order to assess the ``goodness" of an agile methodology. The focus of this tool is mainly on eXtreme Programming \cite{Beck:2004:EPE:1076267}, Feature Driven Development (FDD) \cite{Palmer:2001:PGF:600044}, Lean \cite{Poppendieck:2003:LSD:829556}, Crystal \cite{Cockburn:2004:CCH:1406822} and any tailored instances of them.
+
+In order to achieve this the framework examines the methodology based on 3 aspects:
+\begin{itemize}
+\item Adequacy - Sufficiency of the method with respect to meeting its stated objectives.
+\item Capability - Ability of an organization to provide an environment supporting the implementation of its adopted method. Such ability is reflected in the characteristics of an organization's people, process
+and project.
+\item Effectiveness - Producing the intended or expected results. The existence of necessary process artifacts and product characteristics indicate levels of effectiveness.
+\end{itemize}
+
+add figure 3.9
+
+The framework identifies 
+\begin{inparaenum} [a\upshape)]
+\item objectives of the agile philosophy
+\item principles that support the objectives
+\item strategies that implement the principles
+\item linkages that relate objectives to
+principles, and principles to strategies
+\item indicators for assessing the extent to which an organization supports the implementation and effectiveness of those strategies
+\end{inparaenum}
+
+add image of the above (figure 3.2)
+
+describe how it works
+
+The OPS Framework identifies 
+\begin{itemize}
+\item Objectives of the agile philosophy - ``something aimed at or striven for" as defined by \cite{2604}
+\item Principles - what rules a process in order to achieve an objective according to \cite{2604}
+\item Strategies - the implementations of the principles (i.e. they are the means for achieving the principles)
+\item Linkages - the connectors between 
+\begin{inparaenum} [a\upshape)]
+\item the objectives and principles, 
+\item the principles and the strategies. 
+\end{inparaenum} 
+The linkages show the path in order to asses the adequacy, capability and effectiveness of the method used.
+\item Indicators for assessing the extent to which an organization supports the implementation and effectiveness of those strategies - In order to measure the capability and the effectiveness the strategies use properties which contain a number of questions. These properties differ for the capability and the effectiveness. Indicator is named the combination of a strategy with a property. They are directly measurable and are tailored to assess the strategies
+\end{itemize}
+
+The OPS Framework identifies in total 5 objectives, 9 principles, 17 strategies 54 linkages and 80 indicators.
+
+\section{Thoughtworks}
+Thoughtworks \cite{thoughtworks} is a worldwide consulting company. They have developed an online survey for assessing agility. People can answer to the survey and they will get a report evaluating at which level their team or company is.
+
+\section{Other}
+\citet{taylor} modified the tool created by \citet{1231450} by adding a sixths axis for the \textit{Client Involvement} which has the following categories:
+
+\begin{itemize}
+\item On AB - Client is on-site and an agile believer. This is the ideal when a client is fully persuaded of the agile approach and makes themselves available onsite to work with the team.
+\item Off AB - Client is off-site but an agile believer. Although off-site, the client fully understands the nature of agile development and is open to frequent communication.
+\item On AS - Client is on-site but is an agile skeptic. They may be on-site but they are not convinced about the agile development approach.
+\item Off AS - Same as On AS except the problem is compounded by the client being off-site.
+\item Off Uninvolved - Not only is the client off-site but they want no involvement between providing the initial requirements and getting the right product delivered.
+\end{itemize}
+
+\begin{figure}
+\centerline{\includegraphics[scale=0.9]{include/relatedwork/fig/taylor_6axes.pdf}}
+\caption{??????????} 
+\label{??????}
+\end{figure}
+
