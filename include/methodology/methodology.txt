@@ -1,1 +1,106 @@
-\chapter{Methodology}\label{ch:methodology}
+\chapter{Case Study}\label{ch:case study}
+
+
+\section{Problem}
+
+\section{Company F}
+For the validation of the OPS Framework company F was willing to participate in order to measure how agile are its teams. Company F \footnote{F is the first letter of the company's name} is a United States company which acts in the POS \footnote{Point Of Sales} area. With the development of some new products the company had a 300\% increase in the size of the development and QA departments resulting in the need for organizing better the development and release processes.
+
+\subsection{Methodology F}
+In general, company F does not follow a specific agile methodology, but rather a tailored mix of others which suit the needs of its team. 
+
+Methodology F, as we can name it, embraces the following practices from the various agile methodologies \cite{koch2005agile}, some of the them in bigger and some of them in a smaller extent. \\
+
+\begin{tabular}{| p{2cm} | p{13cm}|}
+    \hline
+     \textbf{Method} & \textbf{Practice} \\ \hline
+     \textbf{XP}  & \begin{inparaenum} [a\upshape)]
+     				\item Small Releases \item Simple design \item Refactoring \item Collective ownership \item Continuous integration \item 40-hour week \item Coding standards
+					\end{inparaenum}      \\ \hline
+     \textbf{FDD}  & \begin{inparaenum} [a\upshape)]  \item Developing by feature \item Feature teams \item Regular build schedule \item Inspections \item Configuration management
+     				  \end{inparaenum}\\ \hline
+     \textbf{Lean} & \begin{inparaenum} [a\upshape)] \item Empower the team \item Build Integrity In \item Amplify learning \item Eliminate waste
+     				 \end{inparaenum} \\ \hline
+\end{tabular}
+\captionof{table}{Practices embraced in method F}
+
+
+\subsection{Teams}
+There are four development teams, each for a product of the company. Some of the teams have mixed members of developers and testers. In the Tables~\ref{table:teamA}, \ref{table:teamB}, \ref{table:teamC}, \ref{table:teamD}, one can see the structure of the teams. \\
+
+\begin{minipage}[b]{0.45\textwidth}
+  \centering
+  \begin{tabular}{| p{3cm} | p{3cm}|}
+    \hline
+     \textbf{Team Size} & 7 \\ \hline
+     \textbf{Roles}  & \begin{tabular}{@{}l@{}}Team Leader (1) \\ Developers (4) \\ Testers (3) \end{tabular} \\ \hline
+     \textbf{Development Process}  & Method A \\ \hline
+     \textbf{Area} & Mobile \\ \hline
+     \textbf{Tools used}  & \begin{tabular}{@{}l@{}}Perforce \\ Titanium \end{tabular}  \\ \hline
+     \textbf{Iteration length}  & 2-3 weeks \\ \hline
+  \end{tabular}
+  \captionof{table}{Team A - Profile} %Mobile
+  \label{table:teamA}
+\end{minipage}\qquad
+\begin{minipage}[b]{.45\textwidth}
+  \centering
+  \begin{tabular}{| p{3cm} | p{3cm}|}
+    \hline
+     \textbf{Team Size} & 8 \\ \hline
+     \textbf{Roles}  & \begin{tabular}{@{}l@{}}Team Leader (1) \\ Developers (5) \\ Testers (2) \end{tabular} \\ \hline
+     \textbf{Development Process}  & Method B \\ \hline
+     \textbf{Area} & Java \\ \hline
+     \textbf{Tools used}  & \begin{tabular}{@{}l@{}}Perforce \\ Eclipse IDE \end{tabular} \\ \hline
+     \textbf{Iteration length}  & 2-3 weeks \\ \hline
+  \end{tabular}
+  \captionof{table}{Team B - Profile} %Marketing
+  \label{table:teamB}
+\end{minipage}
+
+
+
+\begin{minipage}[b]{0.45\textwidth}
+  \centering
+  \begin{tabular}{| p{3cm} | p{3cm}|}
+    \hline
+     \textbf{Team Size} & 4 \\ \hline
+     \textbf{Roles}  & \begin{tabular}{@{}l@{}}Team Leader (1) \\ Developers (1) \\ Testers (2) \end{tabular} \\ \hline
+     \textbf{Development Process}  & Method C \\ \hline
+     \textbf{Area} & Java \\ \hline
+     \textbf{Tools used}  & \begin{tabular}{@{}l@{}}Perforce \\ Eclipse IDE \end{tabular}  \\ \hline
+     \textbf{Iteration length}  & 2-3 weeks \\ \hline
+  \end{tabular}
+  \captionof{table}{Team C - Profile} %Info
+  \label{table:teamC}
+\end{minipage}\qquad
+\begin{minipage}[b]{.45\textwidth}
+  \centering
+  \begin{tabular}{| p{3cm} | p{3cm}|}
+    \hline
+     \textbf{Team Size} & 17 \\ \hline
+     \textbf{Roles}  & \begin{tabular}{@{}l@{}}Team Leader (1) \\ Developers (9) \\ Testers (7) \end{tabular} \\ \hline
+     \textbf{Development Process}  & Method D \\ \hline
+     \textbf{Area} & Java \\ \hline
+     \textbf{Tools used}  & \begin{tabular}{@{}l@{}}Perforce \\ Eclipse IDE \end{tabular} \\ \hline
+     \textbf{Iteration length}  & 2-4 weeks \\ \hline
+  \end{tabular}
+  \captionof{table}{Team D - Profile} %POS
+  \label{table:teamD}
+\end{minipage}
+
+%analyze more what each team does
+
+
+\section{Method}
+
+In order to measure the adequacy, the capability and the effectiveness of methodology F, the described method by \citet{sventha_dissertation} was followed.
+
+Initially the objectives fullfilled by methodology F were identified. 
+
+As it can be seen by 
+
+
+
+\section{Results}
+
+\section{Discussion}
