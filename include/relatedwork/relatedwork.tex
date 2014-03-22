@@ -128,30 +128,36 @@ The fourth dimension examines the practices that support four processes as these
 \end{table}
 
 
-%\section{Leffingwell}
+\section{Leffingwell} %write more
+\citet{Leffingwell} created a model for assessing the team's agility by taking into account six aspects: 
+\begin{inparaenum} [a\upshape)]
+\item Product Ownership
+\item Release Planning and Tracking
+\item Iteration Planning and Tracking
+\item Team
+\item Testing Practices
+\item Development Practices/Infrastructure
+\end{inparaenum}
+
+Each of these aspects is followed by a number of questions rated in a Likert scale 0-5. The results are representd in a radar chart.
+
 
 \section{Escobar}
 
-\citet{6427226} created their own agility assessment model which consists of four stages. For the first three they use the models and tools proposed by other researchers they found in literature, except from the last one.
+\citet{6427226} created their own agility assessment model which consists of four stages. For the first three they use the models and tools proposed by other researchers they found in literature.
 \begin{itemize}
 \item Agile Project Management Assessment - proposed by \citet{qumer2006measuring}
 \item Project Agility Assessment - proposed by \citet{taylor}
-\item Workteam Agility Assessment - proposed by \citet{Leffingwell:2007:SSA:1201958}
+\item Workteam Agility Assessment - proposed by \citet{Leffingwell}
 \item Agile Workspace Coverage
 \end{itemize}
 
-For collecting the data for the measurements they used surveys based on the tools of each stage while in the last one they use their custom survey. The data are then depicted in a four axis radar chart in order to provide a view of the company's agility.
+For collecting the data for the measurements they used surveys based on the tools of each stage while in the last one they use their custom survey. The data are then depicted in a four axis radar chart in order to provide a view of the company's agility. In Figure~\ref{escobar_model} one can see the model with a short description about which tool should be used at each level for each stage.
 
-\begin{figure}
-\centerline{\includegraphics[scale=0.9]{include/relatedwork/fig/escobar_radar.pdf}}
-\caption{??????????} 
-\label{??????}
-\end{figure}
-
-\begin{figure}
-\centerline{\includegraphics[scale=0.9]{include/relatedwork/fig/escobar_model.pdf}}
-\caption{??????????} 
-\label{??????}
+\begin{figure} [H]
+\centerline{\includegraphics[scale=0.75]{include/relatedwork/fig/escobar_model.pdf}}
+\caption{Escobar - Vasquez model for assessing agility} 
+\label{escobar_model}
 \end{figure}
 
 \section{Sidky}
@@ -202,8 +208,31 @@ The OPS Framework identifies in total 5 objectives, 9 principles, 17 strategies 
 \section{Thoughtworks}
 Thoughtworks \cite{thoughtworks} is a worldwide consulting company. They have developed an online survey for assessing agility. People can answer to the survey and they will get a report evaluating at which level their team or company is.
 
+\section{AHP - ANFIS Framework}
+\citet{poonacha} created tool for measuring agility they identified 17 parameters grouped in four parameter groups as it can be seen in table (reference to table). While the last group is an indicator of performance, the first three groups migitate the risks of supply, operation and demand uncertainties respectively. Each parameter is given as a question and the answers were fed in the Adaptive Network based Fuzzy Inference Systems (ANFIS). Due to the complexity of the ANFIS model an Analytical Hierarchical Process (AHP) is mandatory to minize it.
+
+\begin{tabular}{| p{3cm} | p{12cm}|}
+    \hline
+     \textbf{Group} & \textbf{Parameters} \\ \hline
+     People  &  \begin{inparaenum} [a\upshape)] \item Attrition \item Functional Flexibility \item Training and Knowlegde \item Decentralized Decision Making \item Bench Strength \end{inparaenum} \\ \hline
+     Processes  & \begin{inparaenum} [a\upshape)] \item Pair Programming and Parallel Testing \item Iterative Development \item Degree of modularity \item Requirement Capture Process \item Reusability \item Continuous Improvement
+     \end{inparaenum} \\ \hline
+    Customer Involvment & \begin{inparaenum} [a\upshape)] \item Customer Involvement in Design \item Team Across Company Borders \item Customer Training Period \end{inparaenum} \\ \hline
+     Cost and Quality  & \begin{inparaenum} [a\upshape)] \item Cost of Requirement change \item Projects dropped due to incapacity \item Software Quality \end{inparaenum} \\ \hline
+  \end{tabular}
+\captionof{table}{AHP - ANFIS Framework parameters}
+
+\section{CEFAM}
+
+\section{Williams - XP-EF}
+%Lappo --- Williams et al [5] proposed an
+%interesting set of agile metrics, but the metrics defined where not formalised.
+
+\section{Validation Model to Measure the Agility}
+
+
 \section{Other}
-\citet{taylor} modified the tool created by \citet{1231450} by adding a sixths axis for the \textit{Client Involvement} which has the following categories:
+\citet{taylor} modified the tool created by \citet{1231450} by adding a sixth axis named  \textit{Client Involvement} which has the following categories:
 
 \begin{itemize}
 \item On AB - Client is on-site and an agile believer. This is the ideal when a client is fully persuaded of the agile approach and makes themselves available onsite to work with the team.
