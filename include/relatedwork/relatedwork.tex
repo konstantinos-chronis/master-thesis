@@ -59,7 +59,7 @@ If the ratings of the five factors are close to the center, then the team is to 
 %\label{fig:boehm_turner_5axes}
 %\end{figure}
 
-\section{4-Dimensional Analytical Tool}
+\section{4-Dimensional Analytical Tool} %Does not measure current level of agility
 %Maybe mention the super tool as well
 \citet{qumer2006measuring} created the 4-Dimensional Analytical Tool (4-DAT) for analysing and comparing agile methods. The objective of the tool is to provide a mechanism to assess the degree of agility and adoptability of any agile methodology. The measurements are taken at a specific level in a process and using specific practices.
 
@@ -101,7 +101,7 @@ The measurement of the degree of agility in this level is done based on the foll
 These variables are used to check the existence of a method's objective at a specific level or phase. If the variable exists for a phase then the value 1 is assigned to it, otherwise 0. \citet{qumer2006measuring} define the degree of agility (DA) as ``the fraction of the five agility variables that are encompassed and supported".\\ %maybe provide an example as the authors do
 
 The function for calculating the DA is the following\\
-\textit{DA (Object) = (1/m) $\sum$m DA(Object, Phase or Practices) }
+\begin{equation} DA (Object) = (1/m) \sum m DA(Object, Phase Or Practices) \end{equation}
 
 \begin{table}[H]
 \caption{4-DAT Dimension 2}
@@ -128,7 +128,7 @@ The fourth dimension examines the practices that support four processes as these
 \end{table}
 
 
-\section{Leffingwell} %write more
+\section{Dean Leffingwell - Team Agility Assessment} %write more
 \citet{Leffingwell} created a model for assessing the team's agility by taking into account six aspects: 
 \begin{inparaenum} [a\upshape)]
 \item Product Ownership
@@ -139,10 +139,10 @@ The fourth dimension examines the practices that support four processes as these
 \item Development Practices/Infrastructure
 \end{inparaenum}
 
-Each of these aspects is followed by a number of questions rated in a Likert scale 0-5. The results are representd in a radar chart.
+Each of these aspects is followed by a number of questions rated in a Likert scale 0-5 and the results are representd in a radar chart.
 
 
-\section{Escobar}
+\section{Escobar - Vasquez model for assessing agility}
 
 \citet{6427226} created their own agility assessment model which consists of four stages. For the first three they use the models and tools proposed by other researchers they found in literature.
 \begin{itemize}
@@ -211,6 +211,7 @@ Thoughtworks \cite{thoughtworks} is a worldwide consulting company. They have de
 \section{AHP - ANFIS Framework}
 \citet{poonacha} created tool for measuring agility they identified 17 parameters grouped in four parameter groups as it can be seen in table (reference to table). While the last group is an indicator of performance, the first three groups migitate the risks of supply, operation and demand uncertainties respectively. Each parameter is given as a question and the answers were fed in the Adaptive Network based Fuzzy Inference Systems (ANFIS). Due to the complexity of the ANFIS model an Analytical Hierarchical Process (AHP) is mandatory to minize it.
 
+\resizebox{0.95 \textwidth}{!}{%
 \begin{tabular}{| p{3cm} | p{12cm}|}
     \hline
      \textbf{Group} & \textbf{Parameters} \\ \hline
@@ -219,19 +220,65 @@ Thoughtworks \cite{thoughtworks} is a worldwide consulting company. They have de
      \end{inparaenum} \\ \hline
     Customer Involvment & \begin{inparaenum} [a\upshape)] \item Customer Involvement in Design \item Team Across Company Borders \item Customer Training Period \end{inparaenum} \\ \hline
      Cost and Quality  & \begin{inparaenum} [a\upshape)] \item Cost of Requirement change \item Projects dropped due to incapacity \item Software Quality \end{inparaenum} \\ \hline
-  \end{tabular}
+  \end{tabular}}
 \captionof{table}{AHP - ANFIS Framework parameters}
 
-\section{CEFAM}
+\section{Comprehensive Evaluation Framework for Agile Methodologies}
+\citet{cefam} created the ``Comprehensive Evaluation Framework for Agile Methodologies" (CEFAM) in order to provide coverage to the important aspects of agile methodology. The tool consists of a hierarchy of evaluation criteria which are divided into five groups (see Figure~\ref{ch:cefam})
+\begin{inparaenum} [a\upshape)]
+\item Process
+\item Modeling Language
+\item Agility
+\item Usage
+\item Cross-Context.
+\end{inparaenum}
+Each of these groups has a number of questions which are either answered with a numeric value, with Yes/No or any value from a proposed set. At the end the answers are evaluated based on the following scale: Unacceptable $\leq$ 0.25; 0.25 < Low $\leq$ 0.5; 0.5 < Medium $\leq$ 0.75; 0.75 < High $\leq$ 1.0.
 
-\section{Williams - XP-EF}
+\begin{figure} [H]
+\centerline{\includegraphics[scale=0.75]{include/relatedwork/fig/cefam.pdf}}
+\caption{Evaluation criteria hierarchy for CEFAM} 
+\label{cefam}
+\end{figure}
+
+\section{XP-EF}
 %Lappo --- Williams et al [5] proposed an
 %interesting set of agile metrics, but the metrics defined where not formalised.
 
-\section{Validation Model to Measure the Agility}
+\citet{williams2004toward} proposed a framework named the ``XP Evaluation Framework" (XP-EF) for assessing the XP practices which have been adopted by an organization. The framework consists of three parts
+\begin{itemize}
+\item XP Context Factors (XP-CF) - Record a important contextual information. The factors can be team size, project size, staff experience
+\item XP Adherence Metrics (XP-AM) - Epxress in a precise way the practices utilized by a team
+\item XP Outcome Measures (XP-OM) - A Means to assess the outcomes of a project using full or partial XP practices
+\end{itemize}
 
+\section{Validation Model to Measure the Agility}
+\citet{validation_model} measure agility by creating a validation model since according to them only validation can confirm the quality of a product. In this model any candidate for validation item enter an ``identified planning state" at planning time. Afterwards these items change to the ``unvalidated inventory state" when the items start to be generated. Finally, validation of the deliverable items changes the state to the ``validated product state" (see Figure~\ref{validation_model}). Then based on the following equation once can get the result. \textit{A} is the agility of a project/organization, \textit{V'} is the number of software items in the ``validated product state" and \textit{U'} is the average number of software items in which intermediate deliverables are in the ``unvalidated inventory state".
+
+\begin{equation} A = V'/U' \end{equation}
+
+\begin{figure} [H]
+\centerline{\includegraphics[scale=0.6]{include/relatedwork/fig/validation_model.pdf}}
+\caption{Validation Model to Measure the Agility} 
+\label{validation_model}
+\end{figure}
+
+
+\section{PAM}
+\citet{pam} from a social-psychological perspective created a survey for measuring agility covering eight agile practices 
+\begin{inparaenum} [a\upshape)]
+\item Iteration Planning
+\item Iterative Development
+\item Continuous Integration and Testing
+\item Co-Location
+\item Stand-up Meetings
+\item Customer Access
+\item Customer Acceptance Tests
+\item Retrospectives.
+\end{inparaenum}
 
 \section{Other}
+
+\subsection{Philip Taylor - assessing tool} 
 \citet{taylor} modified the tool created by \citet{1231450} by adding a sixth axis named  \textit{Client Involvement} which has the following categories:
 
 \begin{itemize}
@@ -242,9 +289,22 @@ Thoughtworks \cite{thoughtworks} is a worldwide consulting company. They have de
 \item Off Uninvolved - Not only is the client off-site but they want no involvement between providing the initial requirements and getting the right product delivered.
 \end{itemize}
 
-\begin{figure}
-\centerline{\includegraphics[scale=0.9]{include/relatedwork/fig/taylor_6axes.pdf}}
-\caption{??????????} 
-\label{??????}
-\end{figure}
+\subsection{Datta - Agility Measurement Index}
+\cite{datta_dissertation} presented a metric to help in deciding which agile methodology best suits a project. The metric identifes five dimensions: 
+\begin{inparaenum} [a\upshape)]
+\item Duration
+\item Risk
+\item Novelty
+\item Effort
+\item Interaction.
+\end{inparaenum}
+For each one of these dimensions the user assigns a value, then by the use of a formula the user can identify whether Waterfall, Unified Process or eXtreme Programming is more appropriate.
+
+\subsection{Shawky and Ali - Entropy Analysis}
+\citet{entropy} measure the agility based on the rate of entropy change over the time of a system's development. If the rate is high then the process is of high agility as well. Each feature is considered to be an entity and the change logs of the entities are analyzed. They define as $P_i(t)$  the probablity of an entity \textit{i} to be associasted with the change logs at a time \textit{t}. Then by using the following formula they make the calculation for the agility measure \textit{AM(t)} for that specific time.
+
+\begin{equation} AM(t) = - \sum_{i=1}^{n} P_i'(t) (log_2 P_i(t) + 1.44) \end{equation} 
+
+
+
 
