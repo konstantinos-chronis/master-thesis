@@ -2,9 +2,9 @@
 
 \lettrine[lines=4, loversize=-0.1, lraise=0.1]{A}{gile} and plan-driven methodologies are the two dominant approaches in the software development. The eternal battle between them seems will go on for a long time before  one of them prevails. Organizations and companies have the tendency to leave the cumbersome area of Waterfall process and to embrace the Agile methodologies. Although it has been almost 20 years since the latter were introduced, companies are quite reluctanct in following them. Once they do, they start enjoying the agile benefits, but are these the only benefits they could enjoy? 
 
-In order to answer to the previous question one should first understand what does ``agile" mean? According to a dictionary, it means to be able to move quickly and easily, something which is almost impossible with a plan-driven approach. The term agility was first introduced as agile manufacturing in an industry book \cite{agile_manufacturing}.
+In order to answer to the previous question one should first understand what does ``agile" mean? According to a dictionary, it means ``to be able to move quickly and easily", something which is almost impossible with a plan-driven approach. The term agility was first introduced as agile manufacturing in an industry book \cite{agile_manufacturing}.
 
-In 2001, 17 developers were gathered to create the agile manifesto \cite{beck2001agile} defining what is considered to be agile in order to avoid confusion:  
+In 2001, 17 developers formed the Agile Alliance and created the agile manifesto \cite{beck2001agile} defining what is considered to be agile in order to avoid confusion:  
 \begin{itemize}
 	\item {\large \textbf{Individuals and interactions}} over processes and tools
 	\item {\large \textbf{Working software}} over comprehensive documentation
@@ -12,8 +12,7 @@ In 2001, 17 developers were gathered to create the agile manifesto \cite{beck200
 	\item {\large \textbf{Responding to change}} over following a plan
 \end{itemize}
 
-%add references to the methodologies
-Software development teams started to adopt the most known agile methodologies, such as Extreme Programming, Feature Driven Development, Crystal, Scrum and others. Most companies use a tailored methodology by following some processes and practices of the aforementioned ones in order to better suit their needs. \citet{williams2004toward} reports that rarely all XP practices are exercised in their pure form. \citet{sidky} mention four issues organisations face when transitioning to agile.
+Software development teams started to adopt the most known agile methodologies, such as eXtreme Programming \cite{Beck:2004:EPE:1076267}, Feature Driven Development (FDD) \cite{Palmer:2001:PGF:600044}, Crystal \cite{Cockburn:2004:CCH:1406822}, Scrum \cite{scrum} and others. Most companies use a tailored methodology by following some processes and practices of the aforementioned ones in order to better suit their needs. \citet{williams2004toward} reports that rarely all XP practices are exercised in their pure form something to which \citet{Reifer} and \cite{aveling} also agree based on the results of their surveys showing that it is common for organizations to partially adopt XP. \citet{sidky} mention four issues organisations face when transitioning to agile.
 \begin{inparaenum} [a\upshape)]
 \item the organization's readiness for agility
 \item the practices it should adopt
@@ -22,13 +21,11 @@ Software development teams started to adopt the most known agile methodologies, 
 \end{inparaenum}
 The most important issue though that tends to be neglected, is how well are these methodologies adopted? 
 
-According to \citet{6427226} the agile methodologies are easier to misunderstand. Such a case could lead to problems later on in the software development process. The aforementioned statement is also supported by \citet{cefam} as well who argue that the agile software development methdologies are often applied to the wrong context. \citet{sahota} states that doing agile and being agile are two different things. For the first one a company should follow practices while for the other one a company should think in an agile way. \citet{lappoA04} state that organizations following the practices of a methodology does not mean they gain much in terms of agility, while on the other hand \citet{sidky_dissertation} defines the agility of a company as the amount of agile practices used. Considering the aforementioned statement, a group that uses pair programming and collective code ownership at a very low level is more agile than a group which uses only pair programming but in a more efficient manner.
+According to \citet{6427226} the agile methodologies are easier to misunderstand. Such a case could lead to problems later on in the software development process. The aforementioned statement is also supported by \citet{cefam} as well who argue that the agile software development methdologies are often applied to the wrong context. \citet{hossain} argues that improper use of agile practices creates problems. \citet{sahota} states that doing agile and being agile are two different things. For the first one a company should follow practices while for the other one a company should think in an agile way. \citet{lappoA04} state that organizations following the practices of a methodology does not mean they gain much in terms of agility, while on the other hand \citet{sidky_dissertation} defines the level of agility of a company as the amount of agile practices used. Considering the aforementioned statement, a group that uses pair programming and collective code ownership at a very low level is more agile than a group which uses only pair programming but in a more efficient manner.
 
 Practictioners think that declaring being agile is equally good as being agile. According to a suvrvey from \citet{ambysoft} only 65\% of the agile companies that answered met the five agile criteria posed in the survey. In addition, 9\% of agile projects failed due to lack of cultural transition while 13\% of copanies are at odds with core agile values based on the most recent survey by \citet{versionOne}. \citet{poonacha} mentioned that the different perception of agile practices when they are adopted is very worrying, since even people in the same team understand them differently according to the result of a survey \cite{ambler}. It is evident not only from literature but also from its application that agile is a way of thinking and working, it is a culture \cite{poonacha}. If we had to use one word we could state it is a way of \textit{being}. \citet{Nietzsche} said ``better know nothing than half-know many things". In the same context maybe it is better not to transition to agile instead of thinking being agile. 
 
-Since agile methodologies become more and more popular there is a great need for development of a tool that can measure the level of agility in the organizations that have adopted them. Reasearchers for more than a decade have been constantly coming up with models and frameworks in an effort to provide a solution. Unfortunately the multiple tools have created a saturation in the field since none of them
-% change this sentence.
- has been validated \cite{samireh_jalali_dissertation}. As a result, the vicious circle of creating tools with no actual use does not stop, holding back not only the software development companies, but the research community as well.
+Since agile methodologies become more and more popular there is a great need for development of a tool that can measure the level of agility in the organizations that have adopted them. Reasearchers for more than a decade have been constantly coming up with models and frameworks in an effort to provide a solution. Unfortunately the multiple tools have created a saturation in the field resulting in being used only from the organizations that participated in the empiricla studies for their creation \cite{samireh_jalali_dissertation}. As a result, the vicious circle of creating tools with no actual use does not stop, holding back not only the software development companies, but the research community as well.
 
 
 \section{Thesis Structure}
@@ -40,12 +37,14 @@ Since agile methodologies become more and more popular there is a great need for
 
 %problems of the tools
 
-%CEFAM paper
-%However, in reality, agile
-%software development methodologies are not used as
-%commonly as expected, and are often applied to the
-%wrong context [2, 3]
 
 %Datta
 %a successful software process is its ability to coordinate
 %and control the effects of such changes
+
+%Lucas
+%Sidky et al. [94] point out that there are many success stories about companies that
+%have adopted agile methods, but no good measurement tool that can tell if you really
+%are working agile
+
+
