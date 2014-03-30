@@ -6,21 +6,18 @@
 \section{Balancing Discipline and Agility}
 
 \citet{1231450} did not come up with a tool to measure agility but rather to balance between agility and discipline. Accoring to them \cite{1317503} discipline is the foundation for any successful endeavor and creates experience, history and well-organized memories. On the other hand agility is described as a counterpart of descipline. Agility uses the memory and history in order to adjust in the context which is applied and takes advantage of the unexpected opportunities that might come up. The combination of the two can bring success to an organisation. 
-%%% maybe add more.
-\citet{1231450} in their research found that there are five ``critical decision factors`` which can determine if an agile or plan-driven method is suitable for a software development project.
+\citet{1231450} in their research found that there are five ``critical decision factors" which can determine if an agile or plan-driven method is suitable for a software development project.
 
-Figure~\ref{fig:boehm_turner_5axes} depicts these factors which are the:
-
-\begin{itemize}
+Figure~\ref{fig:boehm_turner_5axes} depicts these factors:
+\begin{inparaenum} [a\upshape)]
 \item size of a team working in a project
-\item criticallity of damage of unexpected defects %search more about this
-\item culture on how to balance between chaos an order %maybe rephrase
-\item dynamism %search more
+\item criticallity of damage of unexpected defects
+\item culture needed to balance between chaos and order
+\item dynamism of the team working in chaos or in a planned way
 \item personnel which refers to the extended \citet{cockburn2002agile} skill rating %search more
-\end{itemize}
+\end{inparaenum}
 
-
-\begin{figure}
+\begin{figure}[H]
 \begin{floatrow} 
 \ffigbox[\FBwidth] {
 \includegraphics[scale=0.9]{include/relatedwork/fig/boehm_turner_5axes.pdf}}
@@ -128,7 +125,7 @@ The fourth dimension examines the practices that support four processes as these
 \end{table}
 
 
-\section{Dean Leffingwell - Team Agility Assessment} %write more
+\section{Team Agility Assessment} %write more
 \citet{Leffingwell} created a model for assessing the team's agility by taking into account six aspects: 
 \begin{inparaenum} [a\upshape)]
 \item Product Ownership
@@ -142,7 +139,7 @@ The fourth dimension examines the practices that support four processes as these
 Each of these aspects is followed by a number of questions rated in a Likert scale 0-5 and the results are representd in a radar chart.
 
 
-\section{Escobar - Vasquez model for assessing agility}
+\section{Escobar - Vasquez Model for Assessing Agility}
 
 \citet{6427226} created their own agility assessment model which consists of four stages. For the first three they use the models and tools proposed by other researchers they found in literature.
 \begin{itemize}
@@ -160,10 +157,34 @@ For collecting the data for the measurements they used surveys based on the tool
 \label{escobar_model}
 \end{figure}
 
-\section{Sidky}
 
-\section{OPS Framework} %it is evolved from Arthur's work
-\citet{sventha_dissertation} created the Objectives, Principles and Stategies (OPS) Framework in order to assess the ``goodness" of an agile methodology. The focus of this tool is mainly on eXtreme Programming \cite{Beck:2004:EPE:1076267}, Feature Driven Development (FDD) \cite{Palmer:2001:PGF:600044}, Lean \cite{Poppendieck:2003:LSD:829556}, Crystal \cite{Cockburn:2004:CCH:1406822} and any tailored instances of them.
+\section{Sidky Agile Measurement Index} %maybe add the actual matrix from the SAMI paper
+\citet{sidky_dissertation} created the Sidky Agile Measurement Index (SAMI) in order to measure agility as part of the ``Agile Adoption Framework". SAMI is a scale used by an agile coach to identify the potential of a project or organization \cite{sidky}, which consists of five agile levels and five agile principles, deriving from the agile manifesto \cite{beck2001agile}, forming a 5x5 matrix. In most of the cells of this matrix there have been assigned agile practices. The assessement of agility takes place at each level by measuring the practices adopted by a team. Before moving to the next level the team needs to fulfill all the practices of the current one.
+
+\begin{minipage}[t]{0.35\linewidth}
+    \textbf{Agile Levels}
+    \begin{itemize}
+    \item{Level 1 - Collaborative}
+    \item{Level 2 - Evolutionary}
+    \item{Level 3 - Effective}
+    \item{Level 4 - Adaptive}
+    \item{Level 5 - Ambient}
+    \end{itemize}
+    \end{minipage}
+    \begin{minipage}[t]{0.6\linewidth}
+    \textbf{Agile Principles}
+    \begin{itemize}
+    \item{Embrace Change to Deliver Customer Value}
+    \item{Plan and Deliver Software Frequently}
+    \item{Human Centric}
+    \item{Technical Excellence}
+    \item{Customer Collaboration}
+    \end{itemize}
+\end{minipage}
+
+
+\section{OPS Framework} %it is evolved from Arthur's and Sidky's work
+\citet{sventha_dissertation} created the Objectives, Principles and Stategies (OPS) Framework in order to assess the ``goodness" of an agile methodology. The focus of this tool is mainly on eXtreme Programming, Feature Driven Development, Lean, Crystal and any tailored instances of them.
 
 In order to achieve this the framework examines the methodology based on 3 aspects:
 \begin{itemize}
@@ -205,8 +226,10 @@ The linkages show the path in order to asses the adequacy, capability and effect
 
 The OPS Framework identifies in total 5 objectives, 9 principles, 17 strategies 54 linkages and 80 indicators.
 
+
 \section{Thoughtworks}
 Thoughtworks \cite{thoughtworks} is a worldwide consulting company. They have developed an online survey for assessing agility. People can answer to the survey and they will get a report evaluating at which level their team or company is.
+
 
 \section{AHP - ANFIS Framework}
 \citet{poonacha} created tool for measuring agility they identified 17 parameters grouped in four parameter groups as it can be seen in table (reference to table). While the last group is an indicator of performance, the first three groups migitate the risks of supply, operation and demand uncertainties respectively. Each parameter is given as a question and the answers were fed in the Adaptive Network based Fuzzy Inference Systems (ANFIS). Due to the complexity of the ANFIS model an Analytical Hierarchical Process (AHP) is mandatory to minize it.
@@ -222,6 +245,7 @@ Thoughtworks \cite{thoughtworks} is a worldwide consulting company. They have de
      Cost and Quality  & \begin{inparaenum} [a\upshape)] \item Cost of Requirement change \item Projects dropped due to incapacity \item Software Quality \end{inparaenum} \\ \hline
   \end{tabular}}
 \captionof{table}{AHP - ANFIS Framework parameters}
+
 
 \section{Comprehensive Evaluation Framework for Agile Methodologies}
 \citet{cefam} created the ``Comprehensive Evaluation Framework for Agile Methodologies" (CEFAM) in order to provide coverage to the important aspects of agile methodology. The tool consists of a hierarchy of evaluation criteria which are divided into five groups (see Figure~\ref{ch:cefam})
@@ -240,6 +264,7 @@ Each of these groups has a number of questions which are either answered with a 
 \label{cefam}
 \end{figure}
 
+
 \section{XP-EF}
 %Lappo --- Williams et al [5] proposed an
 %interesting set of agile metrics, but the metrics defined where not formalised.
@@ -250,6 +275,7 @@ Each of these groups has a number of questions which are either answered with a 
 \item XP Adherence Metrics (XP-AM) - Epxress in a precise way the practices utilized by a team
 \item XP Outcome Measures (XP-OM) - A Means to assess the outcomes of a project using full or partial XP practices
 \end{itemize}
+
 
 \section{Validation Model to Measure the Agility}
 \citet{validation_model} measure agility by creating a validation model since according to them only validation can confirm the quality of a product. In this model any candidate for validation item enter an ``identified planning state" at planning time. Afterwards these items change to the ``unvalidated inventory state" when the items start to be generated. Finally, validation of the deliverable items changes the state to the ``validated product state" (see Figure~\ref{validation_model}). Then based on the following equation once can get the result. \textit{A} is the agility of a project/organization, \textit{V'} is the number of software items in the ``validated product state" and \textit{U'} is the average number of software items in which intermediate deliverables are in the ``unvalidated inventory state".
@@ -276,9 +302,10 @@ Each of these groups has a number of questions which are either answered with a 
 \item Retrospectives.
 \end{inparaenum}
 
+
 \section{Other}
 
-\subsection{Philip Taylor - assessing tool} 
+\subsection{Philip Taylor - Assessing Tool} 
 \citet{taylor} modified the tool created by \citet{1231450} by adding a sixth axis named  \textit{Client Involvement} which has the following categories:
 
 \begin{itemize}
@@ -290,7 +317,7 @@ Each of these groups has a number of questions which are either answered with a 
 \end{itemize}
 
 \subsection{Datta - Agility Measurement Index}
-\cite{datta_dissertation} presented a metric to help in deciding which agile methodology best suits a project. The metric identifes five dimensions: 
+\citet{datta_dissertation} presented a metric to help in deciding which agile methodology best suits a project. The metric identifes five dimensions: 
 \begin{inparaenum} [a\upshape)]
 \item Duration
 \item Risk
