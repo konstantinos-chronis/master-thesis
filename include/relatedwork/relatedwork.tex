@@ -48,14 +48,6 @@ Figure~\ref{fig:boehm_turner_5axes} depicts these factors:
 If the ratings of the five factors are close to the center, then the team is to an agile terittory and the team  is considered agile, otherwise it follows a discipline approach.
 
 
-
-
-%\begin{figure}
-%\centerline{\includegraphics[scale=0.9]{include/relatedwork/fig/boehm_turner_5axes.pdf}}
-%\caption{Dimensions affecting method selection} 
-%\label{fig:boehm_turner_5axes}
-%\end{figure}
-
 \section{4-Dimensional Analytical Tool} %Does not measure current level of agility
 %Maybe mention the super tool as well
 \citet{qumer2006measuring} created the 4-Dimensional Analytical Tool (4-DAT) for analysing and comparing agile methods. The objective of the tool is to provide a mechanism to assess the degree of agility and adoptability of any agile methodology. The measurements are taken at a specific level in a process and using specific practices.
@@ -183,8 +175,9 @@ For collecting the data for the measurements they used surveys based on the tool
 \end{minipage}
 
 
-\section{OPS Framework} %it is evolved from Arthur's and Sidky's work
-\citet{sventha_dissertation} created the Objectives, Principles and Stategies (OPS) Framework in order to assess the ``goodness" of an agile methodology. The focus of this tool is mainly on eXtreme Programming, Feature Driven Development, Lean, Crystal and any tailored instances of them.
+\section{OPS Framework}
+\label{sec:ops}
+\citet{sventha_dissertation} created the Objectives, Principles and Stategies (OPS) Framework in order to assess the ``goodness" of an agile methodology. It is an evolution of the work done by \citet{2604} and \citet{sidky_dissertation}. The focus of this tool is mainly on eXtreme Programming, Feature Driven Development, Lean, Crystal and any tailored instances of them.
 
 In order to achieve this the framework examines the methodology based on 3 aspects:
 \begin{itemize}
@@ -206,14 +199,12 @@ principles, and principles to strategies
 \item indicators for assessing the extent to which an organization supports the implementation and effectiveness of those strategies
 \end{inparaenum}
 
-%add image of the above (figure 3.2)
-
 %describe how it works
 
 The OPS Framework identifies 
 \begin{itemize}
-\item Objectives of the agile philosophy - ``something aimed at or striven for" as defined by \cite{2604}
-\item Principles - what rules a process in order to achieve an objective according to \cite{2604}
+\item Objectives of the agile philosophy - ``something aimed at or striven for" as defined by \citet{2604}
+\item Principles - what rules a process in order to achieve an objective according to \citet{2604}
 \item Strategies - the implementations of the principles (i.e. they are the means for achieving the principles)
 \item Linkages - the connectors between 
 \begin{inparaenum} [a\upshape)]
@@ -224,8 +215,21 @@ The linkages show the path in order to asses the adequacy, capability and effect
 \item Indicators for assessing the extent to which an organization supports the implementation and effectiveness of those strategies - In order to measure the capability and the effectiveness the strategies use properties which contain a number of questions. These properties differ for the capability and the effectiveness. Indicator is named the combination of a strategy with a property. They are directly measurable and are tailored to assess the strategies
 \end{itemize}
 
-The OPS Framework identifies in total 5 objectives, 9 principles, 17 strategies 54 linkages and 80 indicators.
+In total 5 objectives, 9 principles, 17 strategies 54 linkages and 80 indicators are identified. Also check Figure~\ref{objectives_principles_strategies}.
 
+\begin{figure} [H]
+\centerline{\includegraphics[scale=0.75]{include/relatedwork/fig/ops.pdf}}
+\caption{Objectives, Principles, and Strategies identified by the OPS Framework} 
+\label{objectives_principles_strategies}
+\end{figure} 
+
+The OPS Framework works on a top down traversal for assessing the adequacy. One should identify the objectives followed by the method and based on the linkages move to the principles and then to strategies. On the other hand for assessing the capability and effectiveness the tool works on a bottom up traversal. Based on the strategies identified during the adequacy analysis one should answer the a set of questions for the capability and to another set of questions for the effectiveness. Then the measurements are propagated to the upper levels through the linkages. For a better understanding one can see Figure~\ref{ops_core}.
+
+\begin{figure} [H]
+\centerline{\includegraphics[scale=0.75]{include/relatedwork/fig/ops_core.pdf}}
+\caption{OPS Framework} 
+\label{ops_core}
+\end{figure} 
 
 \section{Thoughtworks}
 Thoughtworks \cite{thoughtworks} is a worldwide consulting company. They have developed an online survey for assessing agility. People can answer to the survey and they will get a report evaluating at which level their team or company is.
@@ -248,7 +252,7 @@ Thoughtworks \cite{thoughtworks} is a worldwide consulting company. They have de
 
 
 \section{Comprehensive Evaluation Framework for Agile Methodologies}
-\citet{cefam} created the ``Comprehensive Evaluation Framework for Agile Methodologies" (CEFAM) in order to provide coverage to the important aspects of agile methodology. The tool consists of a hierarchy of evaluation criteria which are divided into five groups (see Figure~\ref{ch:cefam})
+\citet{cefam} created the ``Comprehensive Evaluation Framework for Agile Methodologies" (CEFAM) in order to provide coverage to the important aspects of agile methodology. The tool consists of a hierarchy of evaluation criteria which are divided into five groups (see Figure~\ref{cefam})
 \begin{inparaenum} [a\upshape)]
 \item Process
 \item Modeling Language
@@ -265,7 +269,7 @@ Each of these groups has a number of questions which are either answered with a 
 \end{figure}
 
 
-\section{XP-EF}
+\section{XP Evaluation Framework}
 %Lappo --- Williams et al [5] proposed an
 %interesting set of agile metrics, but the metrics defined where not formalised.
 
@@ -289,7 +293,7 @@ Each of these groups has a number of questions which are either answered with a 
 \end{figure}
 
 
-\section{PAM}
+\section{Perceptive Agile Measurement}
 \citet{pam} from a social-psychological perspective created a survey for measuring agility covering eight agile practices 
 \begin{inparaenum} [a\upshape)]
 \item Iteration Planning
