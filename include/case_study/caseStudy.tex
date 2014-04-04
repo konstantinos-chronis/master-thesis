@@ -1,5 +1,6 @@
 \chapter{Case Study}\label{ch:case study}
 
+\newcommand{\mysubparagraph}[1]{\subparagraph{#1}\mbox{}\\}
 
 \section{Problem}
 
@@ -79,12 +80,12 @@ There are four development teams, each for a product of the company. Some of the
   \centering
   \begin{tabular}{| p{3cm} | p{3cm}|}
     \hline
-     \textbf{Team Size} & 4 \\ \hline
-     \textbf{Roles}  & \begin{tabular}{@{}l@{}}Team Leader (1) \\ Developers (1) \\ Testers (2) \end{tabular} \\ \hline
+     \textbf{Team Size} & 3 \\ \hline
+     \textbf{Roles}  & \begin{tabular}{@{}l@{}}Team Leader (1) \\ Developers (1) \\ Testers (1) \end{tabular} \\ \hline
      \textbf{Development Process}  & Method C \\ \hline
      \textbf{Area} & Java \\ \hline
      \textbf{Tools used}  & \begin{tabular}{@{}l@{}}Perforce \\ Eclipse IDE \end{tabular}  \\ \hline
-     \textbf{Iteration length}  & 2-3 weeks \\ \hline
+     \textbf{Iteration length}  & 4-5 weeks \\ \hline
   \end{tabular}
   \captionof{table}{Team C - Profile} %Info
   \label{table:teamC}
@@ -106,7 +107,24 @@ There are four development teams, each for a product of the company. Some of the
 
 %analyze more what each team does
 
-%\section{Method}
+\section{Products}
+Company F has developed a few products which belong in the following four areas 
+\begin{inparaenum} [a\upshape)]
+\item desktop
+\item mobile
+\item cloud
+\item platforms.
+\end{inparaenum}
+The names given are respectives to the name of the teams that develop them.
+
+\begin{itemize}
+\item Product A - A series of three mobile applications which offer services to stores or customers of stores.
+\item Product B - It is a cloud application which offers services to product A and product D. The web functionality of product C is limited.
+\item Product C - It is a platform used only by the company's employees. It supports services though which are necessary for product D.
+\item Product D - It is the main product of the company which is mostly used. The rest of the products were developed in order to support it and expand its functionalities.
+
+\end{itemize}
+
 \section{OPS}
 
 \subsection{Introduction}
@@ -198,38 +216,169 @@ As an observer of the teams I filled in the questions from the capability and ef
 \label{table:scale_for_final_scores}
 \end{minipage}
 
-
-\begin{figure}[H]
-\centerline{\includegraphics[scale=0.5]{include/case_study/fig/team_capability_strategies.jpg}}
-\caption{Capability - Strategies level} 
-\label{fig:team_capability_strategies}
-\end{figure}
+\subsubsection{General remarks about the teams}
 
 \subsubsection{Team A Assessement}
 \begin{tabular}{| p{6cm} | p{6cm}|}
 \hline
-\textbf{Capability:} 3.452 & \textbf{Effectiveness:} value \\ \hline
+\textbf{Capability:} 2.3 - Somewhat & \textbf{Effectiveness:} 2.3 - Somewhat \\ \hline
 \end{tabular}
+
+\\ Team A is a team with seven members. One team leader, four developers and three testers. The product is a series of mobile applications either for the stores, or the customers of the stores.
+
+\paragraph{Capability Analysis}
+
+\mysubparagraph{Strategies} 
+The team differs from the rest in the \textit{adherence to standards} strategy. This is because there are no specified techniques yet to identify the features for the applications. Since they are fairly new the team members are still in the process of working it out. In addition some of the team members do not follow the coding standards of the company resulting in badly written code which has been refactored already twice because of this. As far as the \textit{evolutionary requirements} strategy is concerned, as it was mentioned above, the applications are failry new and the team is still working on improving the process of identifying and modifying the requirements.
+
+\mysubparagraph{Principles}
+The team is in accordance with the rest.
+
+\mysubparagraph{Objectives} 
+The team is in accordance with the rest.
+
+\paragraph{Effectiveness Analysis}
+
+\mysubparagraph{Strategies} 
+The \textit{high bandwidth communcation} has the lowest value, mostly because the developers work on different applications and rarely have to communicate with each other, unless they need some help.
+
+\mysubparagraph{Principles}
+The team is in accordance with the rest.
+
+\mysubparagraph{Objectives} 
+The team is in accordance with the rest.
+
 
 \subsubsection{Team B Assessement}
 \begin{tabular}{| p{6cm} | p{6cm}|}
 \hline
-\textbf{Capability:} value & \textbf{Effectiveness:} value \\ \hline
+\textbf{Capability:} 2.6 - Moderate & \textbf{Effectiveness:} 2.4 - Somewhat \\ \hline
 \end{tabular}
 
+\\ Team B is a team with an average size. It consists of eight members. One team  leader, five developers and two testers. The product provides services which are used by product A and product C. The application itself is in Amazon Web Services (AWS).
+
+\paragraph{Capability Analysis}
+
+\mysubparagraph{Strategies} 
+The team differs from the rest in the \textit{self managing teams} strategy since this team always consisted of the most motivated but also valualble technically developers. Since the decisions for the new features are taken 85\% from the team itself, the client driven iterations and incremental development are high.
+
+\mysubparagraph{Principles}
+The team has the highest value for the empowering teams of motivated individuals principle for the reason that was mentioned right above. In addition since the customer are the members themselves the striving for customer satisfaction principle has the highest value.
+
+\mysubparagraph{Objectives} 
+The team has the highest values in all the objectives. This is because......
+
+\paragraph{Effectiveness Analysis}
+
+\mysubparagraph{Strategies} 
+The team differs in the client driven iterations strategy for the reasons mentioned above.
+
+\mysubparagraph{Principles}
+The team differs in theempowering teams of motivated individuals principle for the reasons mentioned above.
+
+\mysubparagraph{Objectives} 
+The team is in accordance with the rest.
 
 \subsubsection{Team C Assessement}
 \begin{tabular}{| p{6cm} | p{6cm}|}
 \hline
-\textbf{Capability:} value & \textbf{Effectiveness:} value \\ \hline
-\end{tabular}
+\textbf{Capability:} 2.3 - Somewhat & \textbf{Effectiveness:} 2.5 - Moderate \\ \hline
+\end{tabular} \\
+
+\\ Team C is the smallest team of the company, with only three team members. One team leader, one developer and one tester. The product developed is only internally used by the company iteself, nevertheless, it is of great importance since without it the non developer and tester employees would not be able to work. In addition, it is needed by the rest products to properly work.
+
+\paragraph{Capability Analysis}
+
+\mysubparagraph{Strategies} 
+The team differs from the rest in the \textit{client driven iterations}, the \textit{short delivery cycles} and the \textit{minimal documentation} strategies. This is the only team with such a high score for the client driven iteration. Since the product is only used by the employees of the company then the identification and priortization of the features is done constantly and immediately. As far as the short delivery cycles, since there are no ``external" customers waiting for it, the releases cycle depends only on the features being worked. If nothing important is under development, there is no rush to release it. Finally this is the product with the least documentation maintained, for the same reasons that the other two aformentioned strategies differ.
+
+\mysubparagraph{Principles}
+The team is in accordance with the rest.
+
+\mysubparagraph{Objectives} 
+The team is in accordance with the rest.
+
+\paragraph{Effectiveness Analysis}
+
+\mysubparagraph{Strategies}
+The team differs follows the same trend with team D for the continuous integration. This is because there are unit test suites and no automated build environment. As far as the high-bandwidth communication is concerned, the team has the highest score, due to the fact the the size of the team is minimal and all the communication is fast and easy. The customer satisfaction is high as well, since ``the product is built right", reinforcing not only this strategy, but also the client-driven iteration one.
+
+\mysubparagraph{Principles}
+As it was mentioned before, due to the team size the individuals are extremely motivated and feel responsible for the product.
+
+\mysubparagraph{Objectives}
+The team is in accordance with the rest.
 
 
 \subsubsection{Team D Assessement}
 \begin{tabular}{| p{6cm} | p{6cm}|}
 \hline
-\textbf{Capability:} value & \textbf{Effectiveness:} value \\ \hline
+\textbf{Capability:} 2.4 - Somewhat & \textbf{Effectiveness:} 2.2 - Somewhat \\ \hline
 \end{tabular}
+
+\\ Team D is the biggest team of the company. It consists of 17 members. One team leader, nine developers and seven testers. The product created is the main product of the company and thus it has many needs for people working on it. 
+
+\paragraph{Capability Analysis}
+
+\mysubparagraph{Strategies} 
+The team is in accordance with the rest.
+
+\mysubparagraph{Principles}
+The team is in accordance with the rest.
+
+\mysubparagraph{Objectives} 
+The team is in accordance with the rest.
+
+\paragraph{Effectiveness Analysis}
+
+\mysubparagraph{Strategies} 
+This differs from the rest in the \textit{distribution of expertise}, since it is the biggest team the average of the team member's capabilities is low and as result the score for this strategy is the lowest as well.
+
+\mysubparagraph{Principles}
+The team is in accordance with the rest.
+
+\mysubparagraph{Objectives} 
+The team is in accordance with the rest.
+
+
+\begin{figure}[H]
+\centerline{\includegraphics[scale=0.55]{include/case_study/fig/team_capability_strategies.png}}
+\caption{Capability - Strategies level} 
+\label{fig:team_capability_strategies}
+\end{figure}
+
+\begin{figure}[H]
+\centerline{\includegraphics[scale=0.55]{include/case_study/fig/team_capability_principles.png}}
+\caption{Capability - Principles level} 
+\label{fig:team_capability_principles}
+\end{figure}
+
+\begin{figure}[H]
+\centerline{\includegraphics[scale=0.55]{include/case_study/fig/team_capability_objectives.png}}
+\caption{Capability - Objectives level} 
+\label{fig:team_capability_objectives}
+\end{figure}
+
+\begin{figure}[H]
+\centerline{\includegraphics[scale=0.55]{include/case_study/fig/team_effectiveness_strategies.png}}
+\caption{Effectiveness - Strategies level} 
+\label{fig:team_effectiveness_strategies}
+\end{figure}
+
+\begin{figure}[H]
+\centerline{\includegraphics[scale=0.55]{include/case_study/fig/team_effectiveness_principles.png}}
+\caption{Effectiveness - Principles level} 
+\label{fig:team_effectiveness_principles}
+\end{figure}
+
+\begin{figure}[H]
+\centerline{\includegraphics[scale=0.55]{include/case_study/fig/team_effectiveness_objectives.png}}
+\caption{Effectiveness - Objectives level} 
+\label{fig:team_effectiveness_objectives}
+\end{figure}
+
+
+\subsection{Results Verification}
 
 \section{Perceptive Agile Measurement}
 
