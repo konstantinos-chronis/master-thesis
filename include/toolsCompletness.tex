@@ -2,10 +2,10 @@
 
 \textbf{RQ \#2 - How much complete are the tools in measuring agility?}
 
-\section{OPP Practices}
+\section{OPP Practices} %change numbers
 OPS Framework is the successor of the Objectives, Principles, Practices (OPP) Framework \cite{opp}. OPP identified 27 practices as implementations of the principles which later on were transformed into 17 strategies. In Table~\ref{table:opp_practices} one can see OPP's practices.
 
-\begin{tabular}{| p{7.5cm}  p{7cm} |}
+\begin{tabular}{| p{7.5cm}  p{7.5cm} |}
 	\hline
 	\multicolumn{2}{|c|}{\textbf{OPP Practices}}  \\ \hline
      	\begin{itemize}
@@ -16,17 +16,17 @@ OPS Framework is the successor of the Objectives, Principles, Practices (OPP) Fr
      		\item Customer/User Acceptance Testing 
      		\item Frequent Face-to-Face Communication 
      		\item Refactoring 
-     		\item Automated Test Builds 
+			\item Continuous Integration
      		\item Software Configuration Management 
      		\item Test First Development 
      		\item Iteration Progress Tracking and Reporting 
      		\item Code Ownership 
      		\item Retrospectives Meetings 
      		\item Just-in-Time Refinement of Features /Stories/Tasks 
-     		\end{itemize} 
+     	\end{itemize} 
      	& \begin{itemize}
-     		\item Appropriate Distribution of Expertise 
-     		\item Self-Managing Teams 
+     	 	\item Appropriate Distribution of Expertise
+  			\item Self-Managing Teams 
      		\item Client-Driven Iterations 
      		\item Product Backlog 
      		\item Agile Project Estimation 
@@ -82,29 +82,32 @@ As it was clearly seen between Tables~\ref{table:opp_practices}, \ref{table:pam_
 
 In the next pages follows a mapping between OPP and PAM (see Table~\ref{table:opp_pam_practices}) and OPP and Leffingwell (see Table~\ref{table:opp_leffingwell_practices}). The connection between the practices is done based on the questions of each tool. The aforementioned connections are depicted with colours. When a practice has more than one colour, it is because it covers more practices from the other tool {\footnotesize (The colours among  Tables~\ref{table:opp_pam_practices}, ~\ref{table:opp_leffingwell_practices} are randomly selected and do not imply any connetion between the practices)}.
 
+
+%Analyze each the practices between them
+
 \begin{tabular}{| p{7.5cm} | p{7cm} |}
 	\hline
 	\textbf{OPS} & \textbf{PAM}  \\ \hline
      	\begin{itemize}
+     		\item {\color{RoyalBlue1}Iteration Progress Tracking and Reporting}
      		\item {\color{RoyalBlue1}Iterative} {\color{DarkMagenta}and Incremental Development} 
-     		\item {\color{DarkBlue}Continuous Feedback} 
-     		\item {\color{red2}Customer/User Acceptance Testing} 
-     		\item {\color{DarkBlue}Frequent Face-to-Face} {\color{MediumAquamarine}Communication} 
-     		\item {\color{DarkOrange1}Automated Test Builds} 
+     		\item {\color{DarkOrange1}Continuous Integration} 
      		\item {\color{DarkOrange1}Software Configuration Management} 
      		\item {\color{DarkOrange1}Test First Development} 
-     		\item {\color{RoyalBlue1}Iteration Progress Tracking and Reporting}
-     		\item {\color{DarkRed}Retrospectives Meetings} 
-     		\item {\color{DarkBlue}Client-Driven} {\color{RoyalBlue1}Iterations}
-     		\item {\color{MediumAquamarine}Physical Setup Reflecting Agile Philosophy} 
+     		\item {\color{DeepPink1}Physical Setup Reflecting Agile Philosophy} 
+     		\item {\color{DarkBlue}Collocated} {\color{DeepPink1}Customers}
+     		\item {\color{DarkBlue}Frequent Face-to-Face} {\color{DeepPink1}Communication} 
      		\item {\color{green4}Daily Progress Tracking Meetings} 
-     		\item {\color{DarkBlue}Collocated} {\color{MediumAquamarine}Customers}
+     		\item {\color{DarkBlue}Client-Driven} {\color{RoyalBlue1}Iterations}
+     		\item {\color{DarkBlue}Continuous Feedback} 
+     		\item {\color{red2}Customer/User Acceptance Testing}
+     		\item {\color{DarkRed}Retrospectives Meetings}
  		\end{itemize} 
  		& \begin{itemize}
  			\item {\color{RoyalBlue1}Iteration Planning} 
  			\item {\color{DarkMagenta}Iterative Development} 
  			\item {\color{DarkOrange1}Continuous Integration and Testing} 
- 			\item {\color{MediumAquamarine}Co-Location} 
+ 			\item {\color{DeepPink1}Co-Location} 
  			\item {\color{green4}Stand-up Meetings} 
  			\item {\color{DarkBlue}Customer Access} 
  			\item {\color{red2}Customer Acceptance Tests} 
@@ -115,31 +118,33 @@ In the next pages follows a mapping between OPP and PAM (see Table~\ref{table:op
 \captionof{table}{Relation of OPP and PAM practices}
 \label{table:opp_pam_practices}
 
+%Maybe separate to capability and effectiveness?
 
 \begin{tabular}{| p{7.5cm} | p{7cm} |}
 	\hline
 	\textbf{OPS} & \textbf{Leffingwell}  \\ \hline
      	\begin{itemize}
+     		\item {\color{DeepPink1} Iterative and Incremental Development}
+     	    \item {\color{DeepPink1}Product Backlog}
      		\item {\color{green4}Smaller and Frequent Product Releases} 
-     		\item {\color{RoyalBlue1}Customer/User Acceptance Testing}
-     		\item {\color{DarkRed}Frequent Face-to-Face Communication} 
-     		\item {\color{DarkMagenta}Refactoring}
-     		\item {\color{DarkOrange1}Automated Test Builds} 
-     		\item {\color{DarkMagenta}Software Configuration Management} 
-     		\item {\color{DarkOrange1}Test First Development}
-     		\item {\color{RoyalBlue1}Iteration Progress Tracking and Reporting} 
+     		\item {\color{RoyalBlue1}Customer/User {\color{green4}Acceptance Testing}}  
+     		\item {\color{RoyalBlue1}Constant Velocity}		
+     		\item {\color{RoyalBlue1}Iteration Progress Tracking and Reporting}
+     		\item {\color{DarkRed}Self-} {\color{green4}Mana}{\color{RoyalBlue1}ging} {\color{DarkMagenta}Teams} 
      		\item {\color{DarkRed}Appropriate Distribution of Expertise}
-     		\item {\color{DarkRed}Self-Managing} {\color{RoyalBlue1}Teams}
-     		\item Product Backlog ????
-     		\item {\color{RoyalBlue1}Agile Project Estimation}
-     		\item {\color{DarkMagenta}Adherence to Coding Standards} 
+     		\item {\color{DarkRed}Frequent Face-to-Face Communication} 
      		\item {\color{DarkRed}Physical Setup Reflecting Agile Philosophy}
      		\item {\color{DarkRed}Daily Progress Tracking Meetings}
-     		\item {\color{RoyalBlue1}Constant Velocity}
+     		\item {\color{DarkRed}Retro}{\color{RoyalBlue1}spectives} {\color{green4}Meetings} 
+     		\item {\color{DarkOrange1}Test First Development}
+     		\item {\color{DarkMagenta}Refactoring}
+     		\item {\color{DarkMagenta}Software Configuration Management} 
+     		\item {\color{DarkMagenta}Adherence to Coding Standards} 
      		\item {\color{DarkMagenta}Pair Programming}
+     		\item {\color{DarkMagenta}Continuous} {\color{DarkOrange1}Integration}
      	\end{itemize} 
      	& \begin{itemize} 
-     		\item Product Ownership 
+     		\item {\color{DeepPink1}Product Ownership}
      		\item {\color{green4}Release Planning and Tracking}
      		\item {\color{RoyalBlue1}Iteration Planning and Tracking} 
      		\item {\color{DarkRed}Team}
@@ -150,6 +155,126 @@ In the next pages follows a mapping between OPP and PAM (see Table~\ref{table:op
 \end{tabular}
 \captionof{table}{Relation of OPP and Leffingwell practices}
 \label{table:opp_leffingwell_practices}
+
+
+\textbf{Iterative and Incremental Development}
+\begin{itemize}
+	\item Stories sufficiently elaborated prior to planning meetings
+\end{itemize}
+
+\textbf{Product Backlog}
+\begin{itemize}
+	\item Backlog prioritized and ranked by business value
+	\item Backlog estimated at gross level
+\end{itemize}
+
+\textbf{Smaller and Frequent Product Releases}
+\begin{itemize}
+	\item The team has small and frequent releases
+\end{itemize}
+
+\textbf{Customer/User Acceptance Testing}
+\begin{itemize}
+	\item Team discusses acceptance criteria during iteration planning
+	\item Release progress tracked by feature acceptance
+\end{itemize}
+
+\textbf{Constant Velocity}
+\begin{itemize}
+	\item Team velocity measured and used for planning
+	\item Iteration progress tracked by task to do (burn-down chart) and card acceptance (velocity)
+\end{itemize}
+
+\textbf{Iteration Progress Tracking and Reporting}
+\begin{itemize}
+	\item Iteration backlog defined
+	\item Iteration backlog ranked by priority
+	\item Team develops and manages iteration backlog
+	\item Iteration planning meeting attended and effective
+	\item Iterations are no more than four weeks in length
+	\item Iterations are of a consistent fixed length
+	\item Iteration theme established and communicated 
+\end{itemize}
+
+\textbf{Self-Managing Teams}
+\begin{itemize}
+	\item Team self-polices and reinforces use of agile practices and rules
+	\item Team leads communication; communication not managed
+	\item Team defines, estimates, and selects their own work (stories and tasks)
+	\item Team develops and manages iteration backlog
+	\item Team manages interdependencies and constraints
+	\item Team has administrative access to their own workstations 
+	\item Team has administrative control over their development environment
+\end{itemize}
+
+\textbf{Appropriate Distribution of Expertise}
+\begin{itemize}
+	\item Team is cross-functional with integrated product owner, development, documentation and QA
+	\item Team manages interdependencies and constraints
+	\item Team Coach/Scrum Master exists, is full-time, and is effective
+\end{itemize}
+
+\textbf{Frequent Face-to-Face Communication}
+\begin{itemize}
+	\item Team is collocated
+	\item Team works in a physical environment that fosters collaboration
+\end{itemize}
+
+\textbf{Physical Setup Reflecting Agile Philosophy}
+\begin{itemize}
+	\item Team is co-located
+	\item Team works in a physical environment that fosters collaboration
+\end{itemize}
+
+\textbf{Daily Progress Tracking Meetings}
+\begin{itemize}
+	\item Daily standup on time, fully attended and effectively communicates
+\end{itemize}
+
+\textbf{Retrospective Meetings}
+\begin{itemize}
+	\item Team inspects and adapts (continuous improvement) the overall process
+	\item Team inspects and adapts (continuous improvement) the Iteration Plan 
+	\item Team inspects and adapts (continuous improvement) the release plan
+	\item Iteration review meeting attended and effective
+	\item Release review meeting attended and effective
+\end{itemize}
+
+\textbf{Test First Development}
+\begin{itemize}
+	\item Unit tests written before development
+	\item Acceptance tests written before development
+\end{itemize}
+
+\textbf{Refactoring}
+\begin{itemize}
+	\item Refactoring is continuous
+	\item Team is permitted to refactor anywhere in the code base
+\end{itemize}
+
+\textbf{Software Configuration Management}
+\begin{itemize}
+	\item Source control system exists
+\end{itemize}
+
+\textbf{Adherence to Coding Standards}
+\begin{itemize}
+	\item Coding standards exist and applied
+\end{itemize}
+
+\textbf{Pair Programming}
+\begin{itemize}
+	\item Pair programming is practiced
+\end{itemize}
+
+\textbf{Continuous Integration}
+\begin{itemize}
+	\item Developers integrate code multiple times per day
+	\item Stories accepted and demonstrated on integrated build
+	\item Continuous build with 100\% successful builds
+	\item Automated acceptance tests
+	\item 100\% automated unit test coverage
+\end{itemize}
 
 \section{Result}
 By viewing tables Tables~\ref{table:opp_pam_practices}, ~\ref{table:opp_leffingwell_practices} one can clearly see that OPS is more complete than the others in measuring agility.
