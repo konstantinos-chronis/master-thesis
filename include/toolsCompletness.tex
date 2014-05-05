@@ -1,4 +1,4 @@
-\chapter{Tools Completness}
+\chapter{Tools Completeness}
 
 \textbf{RQ \#2 - How much complete are the tools in measuring agility?}
 
@@ -93,7 +93,7 @@ In the next pages follows a mapping between OPP and PAM (see Table~\ref{table:op
      		\item {\color{RoyalBlue1}Iterative} {\color{DarkMagenta}and Incremental Development} 
      		\item {\color{DarkOrange1}Continuous Integration} 
      		\item {\color{DarkOrange1}Software Configuration Management} 
-     		\item {\color{DarkOrange1}Test First Development} 
+     		\item {\color{DarkOrange1}Test First} {\color{red2}Development} 
      		\item {\color{DeepPink1}Physical Setup Reflecting Agile Philosophy} 
      		\item {\color{DarkBlue}Collocated} {\color{DeepPink1}Customers}
      		\item {\color{DarkBlue}Frequent Face-to-Face} {\color{DeepPink1}Communication} 
@@ -102,6 +102,8 @@ In the next pages follows a mapping between OPP and PAM (see Table~\ref{table:op
      		\item {\color{DarkBlue}Continuous Feedback} 
      		\item {\color{red2}Customer/User Acceptance Testing}
      		\item {\color{DarkRed}Retrospectives Meetings}
+     		\item {\color{RoyalBlue1}Self-Managing Teams}
+     		\item Refactoring
  		\end{itemize} 
  		& \begin{itemize}
  			\item {\color{RoyalBlue1}Iteration Planning} 
@@ -117,8 +119,6 @@ In the next pages follows a mapping between OPP and PAM (see Table~\ref{table:op
 \end{tabular}
 \captionof{table}{Relation of OPP and PAM practices}
 \label{table:opp_pam_practices}
-
-%Maybe separate to capability and effectiveness?
 
 \begin{tabular}{| p{7.5cm} | p{7cm} |}
 	\hline
@@ -157,124 +157,224 @@ In the next pages follows a mapping between OPP and PAM (see Table~\ref{table:op
 \label{table:opp_leffingwell_practices}
 
 
+\section{Mapping of questions from the PAM and Leffingwell tools}
+\label{mapping}
+
+PAM has divided its questions based on agile practices, while on the other hand Leffingwell has divided them based on areas considered important. In the next pages there is a mapping of the questions used from the PAM and Leffingwell tools, with the practices from OPP and strategies from OPS. As one can see from the tables above, while all practices/areas from PAM and Leffingwell are mapped to OPP and OPS, not all of their questions are under OPP practices or OPS strategies. This can be explained due to the different perception/angle, of the creators of the tools, of what is important for an organization to be agile.
+
+\subsection{PAM Angle}
+The Perceptive Agile Measurement tool focuses on the iterations during software development but also on the stand-up meetings among the team members, their collocation and the retrospectives they have. The customers access and their acceptance criteria have a high significance as well. Finally the continuous integration and the automated unit testing are considered crucial in order to be agile.
+
+\subsection{Team Agility Assessment Angle}
+Team Agility Assessment does not state covering specific agile practices, but rather areas important for a team. It focuses on product ownership for Scrum teams but also on the release and iteration planning and tracking. The team factor plays a great role but also the development practices and the working environment. Automated testing is important here as well. Finally it is worth mentioning that it is the only tool focusing so much on the release planning.
+
+%Discuss that although the questions may not fit with OPS, they still match the specific category.
+
+%Fill in the missing questions for the 3rd RQ
+
+%write about comparative agility
+
+\subsection{Questions to Practices/Strategies}
+
+\newcommand*\taa{\item[\DiamondSolid]}
+\newcommand*\pam{\item[\OrnamentDiamondSolid]}
+
+In order to distinguish the questions among the tools the following annotation has been used. 
+\begin{itemize}
+  \taa Team Agility Assessment 
+  \pam Perceptive Agile Management
+\end{itemize}
+
+\vspace{0.5cm}
+
 \textbf{Iterative and Incremental Development}
 \begin{itemize}
-	\item Stories sufficiently elaborated prior to planning meetings
+	\taa Stories sufficiently elaborated prior to planning meetings
+	\pam The software delivered at iteration end always met quality requirements of production code 
+	\pam We implemented our code in short iterations
 \end{itemize}
 
 \textbf{Product Backlog}
 \begin{itemize}
-	\item Backlog prioritized and ranked by business value
-	\item Backlog estimated at gross level
+	\taa Backlog prioritized and ranked by business value
+	\taa Backlog estimated at gross level
 \end{itemize}
 
 \textbf{Smaller and Frequent Product Releases}
 \begin{itemize}
-	\item The team has small and frequent releases
+	\taa The team has small and frequent releases
 \end{itemize}
 
 \textbf{Customer/User Acceptance Testing}
 \begin{itemize}
-	\item Team discusses acceptance criteria during iteration planning
-	\item Release progress tracked by feature acceptance
+	\taa Team discusses acceptance criteria during iteration planning
+	\taa Release progress tracked by feature acceptance
+	\pam How often did you apply customer acceptance tests?
+	\pam A requirement was not regarded as finished until its acceptance tests (with the customer) had passed 
 \end{itemize}
 
 \textbf{Constant Velocity}
 \begin{itemize}
-	\item Team velocity measured and used for planning
-	\item Iteration progress tracked by task to do (burn-down chart) and card acceptance (velocity)
+	\taa Team velocity measured and used for planning
+	\taa Iteration progress tracked by task to do (burn-down chart) and card acceptance (velocity)
 \end{itemize}
 
 \textbf{Iteration Progress Tracking and Reporting}
 \begin{itemize}
-	\item Iteration backlog defined
-	\item Iteration backlog ranked by priority
-	\item Team develops and manages iteration backlog
-	\item Iteration planning meeting attended and effective
-	\item Iterations are no more than four weeks in length
-	\item Iterations are of a consistent fixed length
-	\item Iteration theme established and communicated 
+	\taa Iteration backlog defined
+	\taa Iteration backlog ranked by priority
+	\taa Team develops and manages iteration backlog
+	\taa Iteration planning meeting attended and effective
+	\taa Iterations are no more than four weeks in length
+	\taa Iterations are of a consistent fixed length
+	\taa Iteration theme established and communicated 
+	\pam All members of the technical team actively participated during iteration planning meetings
+	\pam All technical team members took part in defining the effort estimates for 
+requirements of the current iteration
 \end{itemize}
 
 \textbf{Self-Managing Teams}
 \begin{itemize}
-	\item Team self-polices and reinforces use of agile practices and rules
-	\item Team leads communication; communication not managed
-	\item Team defines, estimates, and selects their own work (stories and tasks)
-	\item Team develops and manages iteration backlog
-	\item Team manages interdependencies and constraints
-	\item Team has administrative access to their own workstations 
-	\item Team has administrative control over their development environment
+	\taa Team self-polices and reinforces use of agile practices and rules
+	\taa Team leads communication; communication not managed
+	\taa Team defines, estimates, and selects their own work (stories and tasks)
+	\taa Team develops and manages iteration backlog
+	\taa Team manages interdependencies and constraints
+	\taa Team has administrative access to their own workstations 
+	\taa Team has administrative control over their development environment
+	\pam Each developer signed up for tasks on a completely voluntary basis
 \end{itemize}
 
 \textbf{Appropriate Distribution of Expertise}
 \begin{itemize}
-	\item Team is cross-functional with integrated product owner, development, documentation and QA
-	\item Team manages interdependencies and constraints
-	\item Team Coach/Scrum Master exists, is full-time, and is effective
+	\taa Team is cross-functional with integrated product owner, development, documentation and QA
+	\taa Team manages interdependencies and constraints
+	\taa Team Coach/Scrum Master exists, is full-time, and is effective
 \end{itemize}
 
 \textbf{Frequent Face-to-Face Communication}
 \begin{itemize}
-	\item Team is collocated
-	\item Team works in a physical environment that fosters collaboration
+	\taa Team is collocated
+	\taa Team works in a physical environment that fosters collaboration
+	\pam The customer was reachable
+	\pam The developers could contact the customer directly or through a customer contact person without any bureaucratical hurdles 
+	\pam The developers had responses from the customer in a timely manner 
 \end{itemize}
 
 \textbf{Physical Setup Reflecting Agile Philosophy}
 \begin{itemize}
-	\item Team is co-located
-	\item Team works in a physical environment that fosters collaboration
+	\taa Team is co-located
+	\taa Team works in a physical environment that fosters collaboration
+	\pam Developers were located majorly in \ldots
+	\pam All members of the technical team (including QA engineers, db admins) were located in \ldots
+	\pam Requirements engineers were located with developers in \ldots
+	\pam The project/release manager worked with the developers in \ldots
+	\pam The customer was located with the developers in \ldots
 \end{itemize}
 
 \textbf{Daily Progress Tracking Meetings}
 \begin{itemize}
-	\item Daily standup on time, fully attended and effectively communicates
+	\taa Daily standup on time, fully attended and effectively communicates
+	\pam Stand up meetings were extremely short (max. 15 minutes) 
+	\pam Stand up meetings were to the point, focusing only on what had been done and needed to be done on that day 
 \end{itemize}
 
 \textbf{Retrospective Meetings}
 \begin{itemize}
-	\item Team inspects and adapts (continuous improvement) the overall process
-	\item Team inspects and adapts (continuous improvement) the Iteration Plan 
-	\item Team inspects and adapts (continuous improvement) the release plan
-	\item Iteration review meeting attended and effective
-	\item Release review meeting attended and effective
+	\taa Team inspects and adapts (continuous improvement) the overall process
+	\taa Team inspects and adapts (continuous improvement) the Iteration Plan 
+	\taa Team inspects and adapts (continuous improvement) the release plan
+	\taa Iteration review meeting attended and effective
+	\taa Release review meeting attended and effective
+	\pam How often did you apply retrospectives?
+	\pam The retrospectives helped us become aware of what we did well in the past iteration(s)
+	\pam The retrospectives helped us become aware of what we should improve in the upcoming iteration(s) 
+	\pam All team members actively participated in gathering lessons learned in the retrospectives
+
 \end{itemize}
 
 \textbf{Test First Development}
 \begin{itemize}
-	\item Unit tests written before development
-	\item Acceptance tests written before development
+	\taa Unit tests written before development
+	\taa Acceptance tests written before development
+	\taa 100\% automated unit test coverage
+	\pam New code was written with unit tests covering its main functionality
+	\pam Automated unit tests sufficiently covered all critical parts of the production code
+	\pam The customer provided a comprehensive set of test criteria for customer acceptance
+	\pam The implemented code was written to pass the test case
 \end{itemize}
 
 \textbf{Refactoring}
 \begin{itemize}
-	\item Refactoring is continuous
-	\item Team is permitted to refactor anywhere in the code base
+	\taa Refactoring is continuous
+	\taa Team is permitted to refactor anywhere in the code base
 \end{itemize}
 
 \textbf{Software Configuration Management}
 \begin{itemize}
-	\item Source control system exists
+	\taa Source control system exists
 \end{itemize}
 
 \textbf{Adherence to Coding Standards}
 \begin{itemize}
-	\item Coding standards exist and applied
+	\taa Coding standards exist and applied
 \end{itemize}
 
 \textbf{Pair Programming}
 \begin{itemize}
-	\item Pair programming is practiced
+	\taa Pair programming is practised
 \end{itemize}
 
 \textbf{Continuous Integration}
 \begin{itemize}
-	\item Developers integrate code multiple times per day
-	\item Stories accepted and demonstrated on integrated build
-	\item Continuous build with 100\% successful builds
-	\item Automated acceptance tests
-	\item 100\% automated unit test coverage
+	\taa Developers integrate code multiple times per day
+	\taa Stories accepted and demonstrated on integrated build
+	\taa Continuous build with 100\% successful builds
+	\taa Automated acceptance tests
+	\taa Identical builds for developers' workstations
+	\pam The team integrated continuously
+	\pam Developers had the most recent version of code available
+	\pam Code was checked in quickly to avoid code synchronization/integration hassles
+	\pam All unit tests were run and passed when a task was finished and before checking in and integrating 
 \end{itemize}
 
+\textbf{Continuous Feedback}
+\begin{itemize}
+	\pam The feedback from the customer was clear and clarified his requirements or open issues to the developers
+\end{itemize}
+
+\textbf{Client-driven Iterations}
+\begin{itemize}
+	\pam The customer picked the priority of the requirements in the iteration plan
+	\pam When the scope could not be implemented due to constraints, the team held  active discussions on re-prioritization with the customer on what to finish within the iteration 
+\end{itemize}
+
+\subsection{Remaining Questions}
+
+\subsubsection{PAM Remaining Questions}
+
+\textbf{Iteration Planning}
+
+\textbf{Iterative Development}
+
+\textbf{Continuous Integration And Testing}
+
+\textbf{Stand-Up Meetings}
+
+\textbf{Customer Acceptance Tests}
+
+\textbf{Retrospectives}
+
+\subsubsection{TAA Remaining Questions}
+
 \section{Result}
-By viewing tables Tables~\ref{table:opp_pam_practices}, ~\ref{table:opp_leffingwell_practices} one can clearly see that OPS is more complete than the others in measuring agility.
+By viewing Tables~\ref{table:opp_pam_practices}, ~\ref{table:opp_leffingwell_practices} and Section~\ref{mapping} one can clearly see that OPP and consequently OPS is more complete than the others in measuring agility, covering all the areas of the Perceptive Agile Measurement and Team Agility Assessment tools.
+
+In total, OPS covers 32/48 or 66\% of PAM's questions directly, while most of the rest are relevant to the OPP practices but not explicitly the same. As far as the Team Agility Assessment tool is concerned, it
+
+
+
+%Team size
+%http://www.jamesshore.com/Agile-Book/the_xp_team.html
+%http://ieeexplore.ieee.org/xpl/articleDetails.jsp?tp=&arnumber=6681108&matchBoolean%3Dtrue%26searchField%3DSearch_All%26queryText%3D%28%28Agile%29+AND+team+size%29
+%http://www.academia.edu/4893042/Team_size_in_agile_development_-_A_limiting_factor
