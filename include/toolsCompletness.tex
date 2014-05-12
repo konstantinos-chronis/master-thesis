@@ -2,9 +2,36 @@
 
 \textbf{RQ \#2 - How much complete are the tools in measuring agility?}
 
-\section{OPP Practices} %change numbers
-OPS Framework is the successor of the Objectives, Principles, Practices (OPP) Framework \cite{opp}. OPP identified 27 practices as implementations of the principles which later on were transformed into 17 strategies. In Table~\ref{table:opp_practices} one can see OPP's practices.
+\section{Team Agility Assessment Areas}
+Team Agility Assessment (TAA) does not state covering specific agile practices, but rather areas important for a team. It focuses on product ownership for Scrum teams but also on the release and iteration planning and tracking. The team factor plays a great role but also the development practices and the working environment. Automated testing is important here as well. Finally it is worth mentioning that it is the only tool focusing so much on the release planning. In Table~\ref{table:taa_practices} one can see TAA's areas.
 
+\begin{table} [H]
+  \begin{tabular}{| p{6.8cm} |}
+    \hline
+     \textbf{TAA Areas}\\ \hline
+     \begin{itemize} \item Product Ownership \item Release Planning and Tracking \item Iteration Planning and Tracking \item Team \item Testing Practices \item Development Practices / Infrastructure \end{itemize}  \\ \hline
+  \end{tabular}
+  \captionof{table}{Areas covered by TAA}
+  \label{table:taa_practices}
+\end{table}
+
+\section{Perceptive Agile Measurement Practices}
+The Perceptive Agile Measurement (PAM) tool focuses on the iterations during software development but also on the stand-up meetings among the team members, their collocation and the retrospectives they have. The customers access and their acceptance criteria have a high significance as well. Finally the continuous integration and the automated unit testing are considered crucial in order to be agile. In Table~\ref{table:pam_practices} one can see PAM's practices.
+
+\begin{table} [H]
+  \begin{tabular}{| p{6.8cm} |}
+    \hline
+     \textbf{PAM Practices}\\ \hline
+     \begin{itemize} \item Iteration Planning \item Iterative Development \item Continuous Integration and Testing \item Co-Location \item Stand-up Meetings \item Customer Access \item Customer Acceptance Tests \item Retrospectives \end{itemize}  \\ \hline
+  \end{tabular}
+  \captionof{table}{Agile practices covered by PAM}
+  \label{table:pam_practices}
+\end{table}
+
+\section{Objectives, Principles, Strategies Practices}
+Objectives, Principles, Strategies (OPS) Framework is the successor of the Objectives, Principles, Practices (OPP) Framework \cite{opp}. OPP identified 27 practices as implementations of the principles which later on were transformed into 17 strategies. In Table~\ref{table:opp_practices} one can see OPP's practices. 
+
+\begin{table} [H]
 \begin{tabular}{| p{7.5cm}  p{7.5cm} |}
 	\hline
 	\multicolumn{2}{|c|}{\textbf{OPP Practices}}  \\ \hline
@@ -14,11 +41,11 @@ OPS Framework is the successor of the Objectives, Principles, Practices (OPP) Fr
      		\item Evolutionary Requirements 
      		\item Smaller and Frequent Product Releases 
      		\item Customer/User Acceptance Testing 
-     		\item Frequent Face-to-Face Communication 
+     		\item Frequent Face-to-Face Communication
      		\item Refactoring 
-			\item Continuous Integration
+     		\item Automated Test Builds
      		\item Software Configuration Management 
-     		\item Test First Development 
+     		\item Test Driven Development
      		\item Iteration Progress Tracking and Reporting 
      		\item Code Ownership 
      		\item Retrospectives Meetings 
@@ -26,16 +53,16 @@ OPS Framework is the successor of the Objectives, Principles, Practices (OPP) Fr
      	\end{itemize} 
      	& \begin{itemize}
      	 	\item Appropriate Distribution of Expertise
-  			\item Self-Managing Teams 
+  			\item Self-Organizing Teams
      		\item Client-Driven Iterations 
      		\item Product Backlog 
      		\item Agile Project Estimation 
      		\item Adherence to Coding Standards 
-     		\item Physical Setup Reflecting Agile Philosophy 
+     		\item Physical Setup Reflecting Agile Philosophy
      		\item Daily Progress Tracking Meetings 
      		\item Minimal or Just Enough Documentation 
      		\item Minimal Big Requirements Up Front and Big Design Up Front 
-     		\item Collocated Customers 
+     		\item Collocated Customers
      		\item Constant Velocity 
      		\item Pair Programming  
  		\end{itemize} 
@@ -43,130 +70,96 @@ OPS Framework is the successor of the Objectives, Principles, Practices (OPP) Fr
 \end{tabular}
 \captionof{table}{Agile practices covered by OPP}
 \label{table:opp_practices}
-
-\section{PAM Practices}
-\section{Leffingwell Practices}
-
-%\newenvironment{multi_enumerate}{%
-%	\begin{enumerate} 
-%	\begin{multicols}{2}
-%}{%
-%	\end{multicols}
-%	\end{enumerate}
-%}
-
-\begin{minipage}[b]{0.45\textwidth}
-  \centering
-  \begin{tabular}{| p{7cm} |}
-    \hline
-     \textbf{PAM Practices}\\ \hline
-     \begin{itemize} \item Iteration Planning \item Iterative Development \item Continuous Integration and Testing \item Co-Location \item Stand-up Meetings \item Customer Access \item Customer Acceptance Tests \item Retrospectives \end{itemize}  \\ \hline
-  \end{tabular}
-  \captionof{table}{Agile practices coverd by PAM}
-  \label{table:pam_practices}
-\end{minipage}\qquad
-\begin{minipage}[b]{0.5\textwidth}
-  \centering
-  \begin{tabular}{| p{7cm} |}
-    \hline
-     \textbf{Leffingwell Areas}\\ \hline
-     \begin{itemize} \item Product Ownership \item Release Planning and Tracking \item Iteration Planning and Tracking \item Team \item Testing Practices \item Development Practices / Infrastructure \end{itemize}  \\ \hline
-  \end{tabular}
-  \captionof{table}{Agile practices coverd by Leffingwell}
-  \label{table:leffingwell_practices}
-\end{minipage}
+\end{table}
 
 \section{Practices Covered Between The Tools}
 
-As it was clearly seen between Tables~\ref{table:opp_practices}, \ref{table:pam_practices} \ref{table:leffingwell_practices} OPP and as a consequence OPS covers more agile practices than the other tools. \\
+As it can be clearly seen between Tables~\ref{table:opp_practices}, \ref{table:pam_practices} \ref{table:taa_practices} OPP and as a consequence OPS covers more agile practices than the other tools. \\
 
-In the next pages follows a mapping between OPP and PAM (see Table~\ref{table:opp_pam_practices}) and OPP and Leffingwell (see Table~\ref{table:opp_leffingwell_practices}). The connection between the practices is done based on the questions of each tool. The aforementioned connections are depicted with colours. When a practice has more than one colour, it is because it covers more practices from the other tool {\footnotesize (The colours among  Tables~\ref{table:opp_pam_practices}, ~\ref{table:opp_leffingwell_practices} are randomly selected and do not imply any connetion between the practices)}.
+In the next pages follows a mapping between OPP and PAM (see Table~\ref{table:opp_pam_practices}) and OPP and TAA (see Table~\ref{table:opp_taa_practices}). \\
 
+Some of the OPP practices though have abstracted to OPS strategies in order to avoid repetition of the questions' mapping and in order to better reflect the OPS Framework. The OPP practices \begin{inparaenum} [a\upshape)]
+	\item \textit{Frequent Face-to-Face Communication}
+	\item \textit{Physical Setup Reflecting Agile Philosophy}
+	\item \textit{Collocated Customers}
+\end{inparaenum} have been abstracted to the OPS strategy \textit{High-Bandwidth Communication}  \cite[p. 57]{sventha_dissertation}. In the same way the OPP \textit{Automated test builds} practice has been abstracted to the OPS strategy \textit{Continuous Integration} \cite[p. 57]{sventha_dissertation}. \\
+
+The connection between the practices and strategies is done based on the questions of each tool. The aforementioned connections are depicted with colours. When a practice has more than one colour, it is because it covers more practices from the other tool {\footnotesize (The colours and symbols among Tables~\ref{table:opp_pam_practices}, ~\ref{table:opp_taa_practices} are randomly selected and do not imply any connection between the two tables)}. \\
 
 %Analyze each the practices between them
 
-\begin{tabular}{| p{7.5cm} | p{7cm} |}
+\begin{tabular}{| p{8.0cm} | p{6.8cm} |}
 	\hline
-	\textbf{OPS} & \textbf{PAM}  \\ \hline
-     	\begin{itemize}
-     		\item {\color{RoyalBlue1}Iteration Progress Tracking and Reporting}
-     		\item {\color{RoyalBlue1}Iterative} {\color{DarkMagenta}and Incremental Development} 
-     		\item {\color{DarkOrange1}Continuous Integration} 
-     		\item {\color{DarkOrange1}Software Configuration Management} 
-     		\item {\color{DarkOrange1}Test First} {\color{red2}Development} 
-     		\item {\color{DeepPink1}Physical Setup Reflecting Agile Philosophy} 
-     		\item {\color{DarkBlue}Collocated} {\color{DeepPink1}Customers}
-     		\item {\color{DarkBlue}Frequent Face-to-Face} {\color{DeepPink1}Communication} 
-     		\item {\color{green4}Daily Progress Tracking Meetings} 
-     		\item {\color{DarkBlue}Client-Driven} {\color{RoyalBlue1}Iterations}
-     		\item {\color{DarkBlue}Continuous Feedback} 
-     		\item {\color{red2}Customer/User Acceptance Testing}
-     		\item {\color{DarkRed}Retrospectives Meetings}
-     		\item {\color{RoyalBlue1}Self-Managing Teams}
-     		\item Refactoring
+	\textbf{OPP/OPS} & \textbf{PAM}  \\ \hline
+     	\begin{itemize}[leftmargin=*, label=]
+     		\item {\color{RoyalBlue1}Iteration Progress Tracking and Reporting} \FourStar
+     		\item {\color{RoyalBlue1}Iterative} {\color{DarkMagenta}and Incremental  Development} \JackStarBold ~\FourStar
+     		\item {\color{DarkOrange1}Continuous Integration} \AsteriskRoundedEnds
+     		\item {\color{DarkOrange1}Software Configuration Management} \AsteriskRoundedEnds
+     		\item {\color{DarkOrange1}Test Driven} {\color{red2}Development} \AsteriskThin ~\AsteriskRoundedEnds
+     		\item {\color{DarkBlue}High-Bandwidth} {\color{DeepPink1}Communication} \Asterisk \JackStar
+     		\item {\color{green4}Daily Progress Tracking Meetings} \EightStar
+     		\item {\color{DarkBlue}Client-Driven} {\color{RoyalBlue1}Iterations} \JackStar ~\FourStar
+     		\item {\color{DarkBlue}Continuous Feedback} \JackStar
+     		\item {\color{red2}Customer/User Acceptance Testing} \AsteriskThin
+     		\item {\color{DarkRed}Retrospectives Meetings} \CrossMaltese
+     		\item {\color{RoyalBlue1}Self-Organizing Teams} \FourStar
  		\end{itemize} 
- 		& \begin{itemize}
- 			\item {\color{RoyalBlue1}Iteration Planning} 
- 			\item {\color{DarkMagenta}Iterative Development} 
- 			\item {\color{DarkOrange1}Continuous Integration and Testing} 
- 			\item {\color{DeepPink1}Co-Location} 
- 			\item {\color{green4}Stand-up Meetings} 
- 			\item {\color{DarkBlue}Customer Access} 
- 			\item {\color{red2}Customer Acceptance Tests} 
- 			\item {\color{DarkRed}Retrospectives} 
+ 		& \begin{itemize}[leftmargin=*, label=]
+ 			\item {\color{RoyalBlue1}Iteration Planning} \FourStar
+ 			\item {\color{DarkMagenta}Iterative Development} \JackStarBold
+ 			\item {\color{DarkOrange1}Continuous Integration and Testing} \AsteriskRoundedEnds 
+ 			\item {\color{DeepPink1}Co-Location} \Asterisk 
+ 			\item {\color{green4}Stand-up Meetings} \EightStar
+ 			\item {\color{DarkBlue}Customer Access} \JackStar
+ 			\item {\color{red2}Customer Acceptance Tests} \AsteriskThin
+ 			\item {\color{DarkRed}Retrospectives} \CrossMaltese
  		\end{itemize}
      \\ \hline
 \end{tabular}
-\captionof{table}{Relation of OPP and PAM practices}
+\captionof{table}{Relation of OPP/OPS and PAM practices}
 \label{table:opp_pam_practices}
 
-\begin{tabular}{| p{7.5cm} | p{7cm} |}
+\begin{tabular}{| p{7.8cm} | p{7.0cm} |}
 	\hline
-	\textbf{OPS} & \textbf{Leffingwell}  \\ \hline
-     	\begin{itemize}
-     		\item {\color{DeepPink1} Iterative and Incremental Development}
-     	    \item {\color{DeepPink1}Product Backlog}
-     		\item {\color{green4}Smaller and Frequent Product Releases} 
-     		\item {\color{RoyalBlue1}Customer/User {\color{green4}Acceptance Testing}}  
-     		\item {\color{RoyalBlue1}Constant Velocity}		
-     		\item {\color{RoyalBlue1}Iteration Progress Tracking and Reporting}
-     		\item {\color{DarkRed}Self-} {\color{green4}Mana}{\color{RoyalBlue1}ging} {\color{DarkMagenta}Teams} 
-     		\item {\color{DarkRed}Appropriate Distribution of Expertise}
-     		\item {\color{DarkRed}Frequent Face-to-Face Communication} 
-     		\item {\color{DarkRed}Physical Setup Reflecting Agile Philosophy}
-     		\item {\color{DarkRed}Daily Progress Tracking Meetings}
-     		\item {\color{DarkRed}Retro}{\color{RoyalBlue1}spectives} {\color{green4}Meetings} 
-     		\item {\color{DarkOrange1}Test First Development}
-     		\item {\color{DarkMagenta}Refactoring}
-     		\item {\color{DarkMagenta}Software Configuration Management} 
-     		\item {\color{DarkMagenta}Adherence to Coding Standards} 
-     		\item {\color{DarkMagenta}Pair Programming}
-     		\item {\color{DarkMagenta}Continuous} {\color{DarkOrange1}Integration}
+	\textbf{OPP/OPS} & \textbf{TAA}  \\ \hline
+     	\begin{itemize}[leftmargin=*, label=]
+     		\item {\color{DeepPink1} Iterative and Incremental Development} \Asterisk 
+     	    \item {\color{DeepPink1}Product Backlog} \Asterisk 
+     		\item {\color{green4}Smaller and Frequent Product Releases} \EightStar
+     		\item {\color{RoyalBlue1}Customer/User {\color{green4}Acceptance Testing}} \FourStar ~\EightStar
+     		\item {\color{RoyalBlue1}Constant Velocity} \FourStar	
+     		\item {\color{RoyalBlue1}Iteration Progress Tracking and Reporting} \FourStar
+     		\item {\color{DarkRed}Self-} {\color{green4}Orga}{\color{RoyalBlue1}nizing} {\color{DarkMagenta}Teams} \CrossMaltese ~\FourStar ~\JackStar ~\EightStar
+     		\item {\color{DarkRed}Appropriate Distribution of Expertise} \CrossMaltese
+     		\item {\color{DarkRed}High-Bandwidth Communication} \CrossMaltese 
+     		\item {\color{DarkRed}Daily Progress Tracking Meetings} \CrossMaltese
+     		\item {\color{DarkRed}Retro}{\color{RoyalBlue1}spectives} {\color{green4}Meetings}  \CrossMaltese ~\EightStar ~\FourStar
+     		\item {\color{DarkOrange1}Test Driven Development} \AsteriskRoundedEnds
+     		\item {\color{DarkMagenta}Refactoring} \JackStar
+     		\item {\color{DarkMagenta}Software Configuration Management} \JackStar
+     		\item {\color{DarkMagenta}Adherence to Coding Standards} \JackStar
+     		\item {\color{DarkMagenta}Pair Programming} \JackStar
+     		\item {\color{DarkMagenta}Continuous} {\color{DarkOrange1}Integration} \AsteriskRoundedEnds ~\JackStar
      	\end{itemize} 
-     	& \begin{itemize} 
-     		\item {\color{DeepPink1}Product Ownership}
-     		\item {\color{green4}Release Planning and Tracking}
-     		\item {\color{RoyalBlue1}Iteration Planning and Tracking} 
-     		\item {\color{DarkRed}Team}
-     		\item {\color{DarkOrange1}Testing Practices}
-     		\item {\color{DarkMagenta}Development Practices / Infrastructure}  	
+     	& \begin{itemize}[leftmargin=*, label=] 
+     		\item {\color{DeepPink1}Product Ownership} \Asterisk 
+     		\item {\color{green4}Release Planning and Tracking} \EightStar
+     		\item {\color{RoyalBlue1}Iteration Planning and Tracking} \FourStar
+     		\item {\color{DarkRed}Team} \CrossMaltese
+     		\item {\color{DarkOrange1}Testing Practices} \AsteriskRoundedEnds
+     		\item {\color{DarkMagenta}Development Practices/Infrastructure} \JackStar	
  		\end{itemize} 
      \\ \hline
 \end{tabular}
-\captionof{table}{Relation of OPP and Leffingwell practices}
-\label{table:opp_leffingwell_practices}
+\captionof{table}{Relation of OPP/OPS and TAA practices/areas}
+\label{table:opp_taa_practices}
 
 
-\section{Mapping of questions from the PAM and Leffingwell tools}
+\section{Mapping of questions from the PAM and TAA tools}
 \label{mapping}
 
-PAM has divided its questions based on agile practices, while on the other hand Leffingwell has divided them based on areas considered important. In the next pages there is a mapping of the questions used from the PAM and Leffingwell tools, with the practices from OPP and strategies from OPS. As one can see from the tables above, while all practices/areas from PAM and Leffingwell are mapped to OPP and OPS, not all of their questions are under OPP practices or OPS strategies. This can be explained due to the different perception/angle, of the creators of the tools, of what is important for an organization to be agile.
-
-\subsection{PAM Angle}
-The Perceptive Agile Measurement tool focuses on the iterations during software development but also on the stand-up meetings among the team members, their collocation and the retrospectives they have. The customers access and their acceptance criteria have a high significance as well. Finally the continuous integration and the automated unit testing are considered crucial in order to be agile.
-
-\subsection{Team Agility Assessment Angle}
-Team Agility Assessment does not state covering specific agile practices, but rather areas important for a team. It focuses on product ownership for Scrum teams but also on the release and iteration planning and tracking. The team factor plays a great role but also the development practices and the working environment. Automated testing is important here as well. Finally it is worth mentioning that it is the only tool focusing so much on the release planning.
+PAM has divided its questions based on agile practices, while on the other hand TAA has divided them based on areas considered important. In the next pages there is a mapping of the questions used from the PAM and TAA tools, with the practices from OPP and strategies from OPS. As one can see from the tables above, while all practices/areas from PAM and TAA are mapped to OPP and OPS, not all of their questions are under OPP practices or OPS strategies. This can be explained due to the different perception/angle, of the creators of the tools, of what is important for an organization to be agile.
 
 %Discuss that although the questions may not fit with OPS, they still match the specific category.
 
@@ -174,15 +167,20 @@ Team Agility Assessment does not state covering specific agile practices, but ra
 
 %write about comparative agility
 
+%Explain direct and relevant mapping 
+
 \subsection{Questions to Practices/Strategies}
+
+\subsubsection{Introduction}
+The questions among the tools will be match based on whether they are covered directly, relevantly, or not at all. Direct match will be considered the one where a question from a tool is almost similar with one from OPS. Relevant match will be considered the one where a question of a tool does not exist in OPS, but its practice does exist in OPS. Non relevant match will be considered the one where a question cannot be matched at all in OPS. 
 
 \newcommand*\taa{\item[\DiamondSolid]}
 \newcommand*\pam{\item[\OrnamentDiamondSolid]}
 
 In order to distinguish the questions among the tools the following annotation has been used. 
 \begin{itemize}
-  \taa Team Agility Assessment 
-  \pam Perceptive Agile Management
+  \taa Team Agility Assessment - Direct match
+  \pam Perceptive Agile Management - Direct match
 \end{itemize}
 
 \vspace{0.5cm}
@@ -208,7 +206,6 @@ In order to distinguish the questions among the tools the following annotation h
 \textbf{Customer/User Acceptance Testing}
 \begin{itemize}
 	\taa Team discusses acceptance criteria during iteration planning
-	\taa Release progress tracked by feature acceptance
 	\pam How often did you apply customer acceptance tests?
 	\pam A requirement was not regarded as finished until its acceptance tests (with the customer) had passed 
 \end{itemize}
@@ -217,6 +214,7 @@ In order to distinguish the questions among the tools the following annotation h
 \begin{itemize}
 	\taa Team velocity measured and used for planning
 	\taa Iteration progress tracked by task to do (burn-down chart) and card acceptance (velocity)
+	\taa Team works at a sustainable pace 
 \end{itemize}
 
 \textbf{Iteration Progress Tracking and Reporting}
@@ -233,7 +231,7 @@ In order to distinguish the questions among the tools the following annotation h
 requirements of the current iteration
 \end{itemize}
 
-\textbf{Self-Managing Teams}
+\textbf{Self-Organizing Teams}
 \begin{itemize}
 	\taa Team self-polices and reinforces use of agile practices and rules
 	\taa Team leads communication; communication not managed
@@ -249,22 +247,15 @@ requirements of the current iteration
 \begin{itemize}
 	\taa Team is cross-functional with integrated product owner, development, documentation and QA
 	\taa Team manages interdependencies and constraints
-	\taa Team Coach/Scrum Master exists, is full-time, and is effective
 \end{itemize}
 
-\textbf{Frequent Face-to-Face Communication}
+\textbf{High-Bandwidth Communication}
 \begin{itemize}
 	\taa Team is collocated
 	\taa Team works in a physical environment that fosters collaboration
 	\pam The customer was reachable
 	\pam The developers could contact the customer directly or through a customer contact person without any bureaucratical hurdles 
 	\pam The developers had responses from the customer in a timely manner 
-\end{itemize}
-
-\textbf{Physical Setup Reflecting Agile Philosophy}
-\begin{itemize}
-	\taa Team is co-located
-	\taa Team works in a physical environment that fosters collaboration
 	\pam Developers were located majorly in \ldots
 	\pam All members of the technical team (including QA engineers, db admins) were located in \ldots
 	\pam Requirements engineers were located with developers in \ldots
@@ -293,7 +284,7 @@ requirements of the current iteration
 
 \end{itemize}
 
-\textbf{Test First Development}
+\textbf{Test Driven Development}
 \begin{itemize}
 	\taa Unit tests written before development
 	\taa Acceptance tests written before development
@@ -349,7 +340,9 @@ requirements of the current iteration
 	\pam When the scope could not be implemented due to constraints, the team held  active discussions on re-prioritization with the customer on what to finish within the iteration 
 \end{itemize}
 
-\subsection{Remaining Questions}
+\subsection{Relevant Questions}
+
+\subsection{Non Relevant Questions}
 
 \subsubsection{PAM Remaining Questions}
 
@@ -367,10 +360,21 @@ requirements of the current iteration
 
 \subsubsection{TAA Remaining Questions}
 
-\section{Result}
-By viewing Tables~\ref{table:opp_pam_practices}, ~\ref{table:opp_leffingwell_practices} and Section~\ref{mapping} one can clearly see that OPP and consequently OPS is more complete than the others in measuring agility, covering all the areas of the Perceptive Agile Measurement and Team Agility Assessment tools.
+\section{Results}
+By viewing Tables~\ref{table:opp_pam_practices}, ~\ref{table:opp_taa_practices} and Section~\ref{mapping} one can clearly see that OPP and consequently OPS is more complete than the others in measuring agility, covering all the areas of the Perceptive Agile Measurement and Team Agility Assessment tools.
 
-In total, OPS covers 32/48 or 66\% of PAM's questions directly, while most of the rest are relevant to the OPP practices but not explicitly the same. As far as the Team Agility Assessment tool is concerned, it
+\begin{table} [H]
+	\begin{tabular}{{| p{5cm} | p{5cm} |}}
+		\hline
+		\multicolumn{2}{|c|}{\textbf{Questions Coverage}}  \\ \hline
+		\textbf{PAM} & \textbf{TAA}  \\ \hline		
+		32/48 (66\%) & 43/57 (75\%) \\ \hline
+	\end{tabular}
+\captionof{table}{Questions Coverage from OPS}
+\label{table:questions_coverage}
+\end{table}
+
+As it can be seen in Table~\ref{table:questions_coverage} OPS covers a high percent of questions from both tools directly, while most of the rest are relevant to the OPP practices but not explicitly the same.
 
 
 
