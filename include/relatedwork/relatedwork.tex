@@ -10,13 +10,13 @@
 \section{Agility of Methodologies}
 
 \subsection{Balancing Discipline and Agility}
-\citet{1231450} did not come up with a tool to measure agility but rather to balance between agility and discipline. Accoring to them \cite{1317503} discipline is the foundation for any successful endeavor and creates experience, history and well-organized memories. On the other hand agility is described as a counterpart of descipline. Agility uses the memory and history in order to adjust in the context which is applied and takes advantage of the unexpected opportunities that might come up. The combination of the two can bring success to an organisation. 
+\citet{1231450} did not come up with a tool to measure agility but rather to balance between agility and discipline. According to them \cite{1317503} discipline is the foundation for any successful endeavour and creates experience, history and well-organized memories. On the other hand agility is described as a counterpart of discipline. Agility uses the memory and history in order to adjust in the context which is applied and takes advantage of the unexpected opportunities that might come up. The combination of the two can bring success to an organisation. 
 \citet{1231450} in their research found that there are five ``critical decision factors" which can determine if an agile or plan-driven method is suitable for a software development project.
 
 Figure~\ref{fig:boehm_turner_5axes} depicts these factors:
 \begin{inparaenum} [a\upshape)]
 \item size of a team working in a project
-\item criticallity of damage of unexpected defects
+\item criticality of damage of unexpected defects
 \item culture needed to balance between chaos and order
 \item dynamism of the team working in chaos or in a planned way
 \item personnel which refers to the extended \citet{cockburn2002agile} skill rating %search more
@@ -30,16 +30,18 @@ Figure~\ref{fig:boehm_turner_5axes} depicts these factors:
 \label{fig:boehm_turner_5axes}}
 
 \capbtabbox{
- \resizebox{5cm}{!}{ \begin{tabular}{ | c | p{7cm} |}
+ \resizebox{5cm}{!}{ 
+ \begin{tabular}{ | c | p{7cm} |}
 	\hline
 	\textbf{Level} & \textbf{Characteristics} \\ \hline
- 3  & Able to revise a method (break its rules) to fit an unprecedented newsituation \\ \hline
+ 3  & Able to revise a method (break its rules) to fit an unprecedented new situation \\ \hline
  2  & Able to tailor a method to fit a precedented new situation \\ \hline
  1A  & With training, able to perform discretionary method steps (e.g., sizing stories to fit increments, composing patterns, compound refactoring, complex COTS integration). With experience can become Level 2. \\ \hline
  1B  & With training, able to perform procedural method steps (e.g. coding a simple method, simple refactoring, following coding standards and CM procedures, running tests). With experience can master some Level 1A skills. \\ \hline
  -1 & May have technical skills, but unable or unwilling to collaborate or follow shared methods. \\ \hline
-\end{tabular}}}
-{\caption{Levels of software method understanding and use (after Cockburn)}}
+  {\caption{Levels of software method understanding and use (after Cockburn)}}
+\end{tabular}}} 
+
 \end{floatrow}
 \end{figure}
 
@@ -50,7 +52,7 @@ Figure~\ref{fig:boehm_turner_5axes} depicts these factors:
 %\end{table}
 
 
-If the ratings of the five factors are close to the center, then the team is to an agile terittory and the team  is considered agile, otherwise it follows a discipline approach.
+If the ratings of the five factors are close to the center, then the team is to an agile territory and the team  is considered agile, otherwise it follows a discipline approach.
 
 \subsection{Philip Taylor - Assessing Tool} 
 \citet{taylor} modified the tool created by \citet{1231450} by adding a sixth axis named  \textit{Client Involvement} which has the following categories:
@@ -169,6 +171,7 @@ The fourth dimension examines the practices that support four processes as these
 \section{Agility of Organisations}
 
 \subsection{Team Agility Assessment} %write more %Measures current level of agility
+%Mention it is Scrum oriented
 \citet{Leffingwell} created a model for assessing the team's agility by taking into account six aspects: 
 \begin{inparaenum} [a\upshape)]
 \item Product Ownership
@@ -248,7 +251,7 @@ For collecting the data for the measurements they used surveys based on the tool
 \subsection{AHP - ANFIS Framework} %Framework
 \citet{poonacha} created tool for measuring agility by identifing 17 parameters grouped in four parameter groups as it can be seen in Table~\ref{anfis_framework}. While the last group is an indicator of performance, the first three groups migitate the risks of supply, operation and demand uncertainties respectively. Each parameter is given as a question and the answers were fed in the Adaptive Network based Fuzzy Inference Systems (ANFIS). Due to the complexity of the ANFIS model an Analytical Hierarchical Process (AHP) is mandatory to minize it.
 
-\resizebox{0.95 \textwidth}{!}{%
+\begin{table}
 \begin{tabular}{| p{3cm} | p{12cm}|}
     \hline
      \textbf{Group} & \textbf{Parameters} \\ \hline
@@ -257,9 +260,10 @@ For collecting the data for the measurements they used surveys based on the tool
      \end{inparaenum} \\ \hline
     Customer Involvment & \begin{inparaenum} [a\upshape)] \item Customer Involvement in Design \item Team Across Company Borders \item Customer Training Period \end{inparaenum} \\ \hline
      Cost and Quality  & \begin{inparaenum} [a\upshape)] \item Cost of Requirement change \item Projects dropped due to incapacity \item Software Quality \end{inparaenum} \\ \hline
-  \end{tabular}}
-\captionof{table}{AHP - ANFIS Framework parameters}
+  \end{tabular}
+\caption{AHP - ANFIS Framework parameters}
 \label{anfis_framework}
+\end{table}
 
 \subsection{42-Point Test}
 \citet{42points} developed createad a simple 42-question survey based on a similar one from Nokia \cite{nokia}, in order to allow to Scrum/XP teams to easily see to what extent they follow various agile practices.
