@@ -27,6 +27,8 @@ Company F is a United States company which acts in the POS \footnote{Point Of Sa
 \subsection{Methodology F}
 In general, company F does not follow a specific agile methodology, but rather a tailored mix of the most famous one which suits the needs of each team. Methodology F, as we can name it, embraces the practices displayed in Table~\ref{table:methodologyF_practices} from the various agile methodologies, some of the them in bigger and some of them in a smaller extent. For identifying these methodologies the analysis made by \cite{koch2005agile} was used. The results were verified by the agile coach.
 
+\begin{table}
+\caption{Practices embraced in methodology F}
 \begin{tabular}{| p{2cm} | p{13cm}|}
     \hline
      \textbf{Method} & \textbf{Practice} \\ \hline
@@ -38,15 +40,18 @@ In general, company F does not follow a specific agile methodology, but rather a
      \textbf{Lean} & \begin{inparaenum} [a\upshape)] \item Empower the team \item Build Integrity In \item Amplify learning \item Eliminate waste
      				 \end{inparaenum} \\ \hline
 \end{tabular}
-\captionof{table}{Practices embraced in methodology F}
 \label{table:methodologyF_practices}
+\end{table}
 
 
 \subsection{Teams}
 There are four development teams, each for a product of the company. Some of the teams have mixed members of developers and testers. In the Tables~\ref{table:teamA}, \ref{table:teamB}, \ref{table:teamC}, \ref{table:teamD}, one can see the structure of the teams. \\
 
-\begin{minipage}[b]{0.45\textwidth}
+\begin{table}
+  \RawFloats
+ \begin{minipage}[b]{0.5\textwidth}
   \centering
+    \caption{Team A - Profile} %Mobile
   \begin{tabular}{| p{3cm} | p{3cm}|}
     \hline
      \textbf{Team Size} & 7 \\ \hline
@@ -56,11 +61,12 @@ There are four development teams, each for a product of the company. Some of the
      \textbf{Tools used}  & \begin{tabular}{@{}l@{}}Perforce \\ Titanium \end{tabular}  \\ \hline
      \textbf{Iteration length}  & 2-3 weeks \\ \hline
   \end{tabular}
-  \captionof{table}{Team A - Profile} %Mobile
   \label{table:teamA}
-\end{minipage}\qquad
-\begin{minipage}[b]{.45\textwidth}
+ \end{minipage} %
+%
+ \begin{minipage}[b]{.5\textwidth}
   \centering
+    \caption{Team B - Profile} %Marketing
   \begin{tabular}{| p{3cm} | p{3cm}|}
     \hline
      \textbf{Team Size} & 8 \\ \hline
@@ -70,14 +76,14 @@ There are four development teams, each for a product of the company. Some of the
      \textbf{Tools used}  & \begin{tabular}{@{}l@{}}Perforce \\ Eclipse IDE \end{tabular} \\ \hline
      \textbf{Iteration length}  & 2-3 weeks \\ \hline
   \end{tabular}
-  \captionof{table}{Team B - Profile} %Marketing
   \label{table:teamB}
-\end{minipage}
-
-
-
-\begin{minipage}[b]{0.45\textwidth}
+  \end{minipage} %
+  
+  \vspace{10 mm}
+%
+ \begin{minipage}[b]{.5\textwidth}
   \centering
+    \caption{Team C - Profile} %Info
   \begin{tabular}{| p{3cm} | p{3cm}|}
     \hline
      \textbf{Team Size} & 3 \\ \hline
@@ -87,11 +93,12 @@ There are four development teams, each for a product of the company. Some of the
      \textbf{Tools used}  & \begin{tabular}{@{}l@{}}Perforce \\ Eclipse IDE \end{tabular}  \\ \hline
      \textbf{Iteration length}  & 4-5 weeks \\ \hline
   \end{tabular}
-  \captionof{table}{Team C - Profile} %Info
   \label{table:teamC}
-\end{minipage}\qquad
-\begin{minipage}[b]{.45\textwidth}
+\end{minipage}%
+%
+ \begin{minipage}[b]{.5\textwidth}
   \centering
+    \caption{Team D - Profile} %POS
   \begin{tabular}{| p{3cm} | p{3cm}|}
     \hline
      \textbf{Team Size} & 17 \\ \hline
@@ -101,9 +108,10 @@ There are four development teams, each for a product of the company. Some of the
      \textbf{Tools used}  & \begin{tabular}{@{}l@{}}Perforce \\ Eclipse IDE \end{tabular} \\ \hline
      \textbf{Iteration length}  & 2-4 weeks \\ \hline
   \end{tabular}
-  \captionof{table}{Team D - Profile} %POS
   \label{table:teamD}
-\end{minipage}
+  \end{minipage}
+\end{table}
+
 
 %analyze more what each team does
 
@@ -175,20 +183,24 @@ In order to assess the capability and effectiveness of methodology F a bottom-up
 
 As an observer of the teams I filled in the questions from the capability and effectiveness hierarchy. The scales used were the ones proposed by \citet{sventha_dissertation}. A ternary scale for the capability and a scale between 1-5 for the effectiveness (see Table~\ref{table:capability_scale} and  Table~\ref{table:effectiveness_scale} respectively). For the interpration of the scores for both the capability and effectiveness the scale in Table~\ref{table:scale_for_final_scores} was used. All the questions answered can be seen in~\nameref{sec:capability_hierarchy} and~\nameref{sec:effectiveness_hierarchy} Appendices. \\
 
-\begin{minipage}[b]{0.25\textwidth}
-  \centering
+\begin{table}
+\RawFloats %allows to have captions in all of the tables
+ \begin{minipage}{.3\textwidth}
+  \caption{Scale for Capability}
+  \label{table:capability_scale}
   \begin{tabular}{| c | c |}
  \hline
  \textbf{Answer} & \textbf{Score} \\ \hline
  Yes/Fully & 5 \\ \hline
- Partiallty & 3 \\ \hline
+ Partially & 3 \\ \hline
  No/Marginally & 1 \\ \hline 
-\end{tabular}
-\captionof{table}{Scale for Capability}
-\label{table:capability_scale}
-\end{minipage}\qquad
-\begin{minipage}[b]{.3\textwidth}
+ \end{tabular}
+ \end{minipage}%
+%
+ \begin{minipage}{.35\textwidth}
   \centering
+ \caption{Scale for Effectiveness}
+ \label{table:effectiveness_scale}
   \begin{tabular}{| c | c |}
  \hline
  \textbf{Answer} & \textbf{Score} \\ \hline
@@ -197,13 +209,14 @@ As an observer of the teams I filled in the questions from the capability and ef
  Moderately & 3 \\ \hline
  Somewhat & 2 \\ \hline
  Marginally & 1 \\ \hline 
-\end{tabular}
-\captionof{table}{Scale for Effectiveness}
-\label{table:effectiveness_scale}
-\end{minipage}
-\begin{minipage}[b]{.35\textwidth}
+ \end{tabular}
+ \end{minipage}%
+ %
+ \begin{minipage}{.35\textwidth}
+  \caption{Scale for interpreting final scores}
+  \label{table:scale_for_final_scores}
   \centering
-\begin{tabular}{| c | c |}
+ \begin{tabular}{| c | c |}
  \hline
  \textbf{Score Range} & \textbf{Interpretation} \\ \hline
  4.5 - 5.0 & Maximal \\ \hline
@@ -211,10 +224,11 @@ As an observer of the teams I filled in the questions from the capability and ef
  2.5 - 3.4 & Moderate \\ \hline
  1.5 - 2.4 & Somewhat \\ \hline
  1 - 1.4 & Marginal \\ \hline 
-\end{tabular}
-\captionof{table}{Scale for intrepreting final scores}
-\label{table:scale_for_final_scores}
-\end{minipage}
+ \end{tabular}
+ \end{minipage}%
+\end{table}
+
+
 
 \subsubsection{General remarks about the teams}
 
