@@ -189,7 +189,7 @@
 				\end{itemize}
 			\item Estimation Authority
 				\begin{itemize}
-					\item Are the developers expected to estimate the time required to complete each bug/enhancement?
+					\item Are the developers expected to estimate the time required to complete each story?
 				\end{itemize}
 			\item Estimation
 				\begin{itemize}
@@ -201,7 +201,7 @@
 		\begin{itemize}
 			\item Estimation Authority
 				\begin{itemize}
-					\item Are the developers expected to estimate the time required to complete each bug/enhancement?
+					\item Are the developers expected to estimate the time required to complete each story?
 				\end{itemize}
 			\item Requirements Management
 				\begin{itemize}
@@ -218,7 +218,7 @@
 		\begin{itemize}
 			\addition Progress Estimation
 				\begin{itemize}
-					\addition Is it expected that the progress is track by a burn down chart and by measuring velocity?
+					\addition Is it expected that the progress is tracked by a burn down chart and by measuring velocity?
 				\end{itemize}
 		\end{itemize}
 %----------------------------------------------------------------------------
@@ -288,6 +288,7 @@
 					\item To what extent does the team effectively complete the work that they have committed to? 
 					\item To what extent do the teams have members in leadership positions that can guide the others? 
 					\item To what extent do the teams not rely on knowledge external to their teams? 
+					\addition To what extent is the team cross-functional?
 				\end{itemize}
 		\end{itemize}
 %---------------------------------------------------------------------------
@@ -319,15 +320,15 @@
 					\item To what extent are automated test suites developed?
 					\item To what extent are the code bases not shared?
 				\end{itemize}
-			\item Bug/Enhancement Completeness
+			\item story Completeness
 				\begin{itemize}
-					\item To what extent has each bug/enhancement been coded? 
-					\item To what extent has each bug/enhancement been unit tested? 
-					\item To what extent has each bug/enhancement been refactored? 
-					\item To what extent has each bug/enhancement been checked into the code base? 
-					\item To what extent has each bug/enhancement been integrated with the existing code base? 
-					\item To what extent has each bug/enhancement been reviewed? 
-					\item To what extent has each bug/enhancement been accepted by the customer? 
+					\item To what extent has each story been coded? 
+					\item To what extent has each story been unit tested? 
+					\item To what extent has each story been refactored? 
+					\item To what extent has each story been checked into the code base? 
+					\item To what extent has each story been integrated with the existing code base? 
+					\item To what extent has each story been reviewed? 
+					\item To what extent has each story been accepted by the customer? 
 				\end{itemize}
 			\item Daily/Frequent builds
 				\begin{itemize}
@@ -387,7 +388,7 @@
 		\begin{itemize}
 			\item Requirements Prioritization
 				\begin{itemize}
-					\item To what extent do the customers establish the priorities of the bug/enhancement?
+					\item To what extent do the customers establish the priorities of the story?
 				\end{itemize}
 			\item Customer Satisfaction
 				\begin{itemize}
@@ -431,7 +432,7 @@
 				\begin{itemize}
 					\item To what extent is an iteration list maintained?
 					\item To what extent are the bugs/enhancements fully estimated when added to the list?
-					\item To what extent are the bug/enhancement prioritized when added to the list?
+					\item To what extent are the story prioritized when added to the list?
 				\end{itemize}
 		\end{itemize}
 %---------------------------------------------------------------------------		
@@ -681,83 +682,100 @@
 
 
 \chapter{Mapping}
+\label{sec:mapping}
 
 %elaborate why some belong to different practices than strategies
 
-\subsection{Questions to Practices/Strategies}
+\section{Questions to Practices/Strategies}
+
+\newcommand*\taa{\item[\FiveStar]}
+\newcommand*\taar{\item[\FiveStarShadow]}
+\newcommand*\taanr{\item[\SnowflakeChevron]}
+\newcommand*\pam{\item[\AsteriskBold]}
+\newcommand*\pamr{\item[\AsteriskThinCenterOpen]}
+
+In order to distinguish the questions among the tools the following annotation has been used. 
+\begin{itemize}
+  \taa Team Agility Assessment - Direct match
+  \taar Team Agility Assessment - Relevant match
+  \taanr Team Agility Assessment - Non Relevant
+  \pam Perceptive Agile Management - Direct match
+  \pamr Perceptive Agile Management - Relevant match
+\end{itemize}
+
+\vspace{0.5cm}
 
 \textbf{Iterative and Incremental Development}
 \begin{itemize}
-	\taa Stories sufficiently elaborated prior to planning meetings - matched
-	\item Team discusses acceptance criteria during iteration planning - relative
-	\item The software delivered at iteration end always met quality requirements of production code - relative
-	\item The team rather reduced the scope than delayed the deadline - relative 
-	\pam We kept the iteration deadlines - matched
-	\item At the end of an iteration, we delivered a potentially shippable product - relative
-	\item Working software was the primary measure for project progress - relative
-	\item Team velocity measured and used for planning - relative
+	\taa Stories sufficiently elaborated prior to planning meetings
+	\taar Team discusses acceptance criteria during iteration planning
+	\taar Team velocity measured and used for planning
+	\pam We kept the iteration deadlines
+	\pamr The software delivered at iteration end always met quality requirements of production code
+	\pamr The team rather reduced the scope than delayed the deadline
+	\pamr At the end of an iteration, we delivered a potentially shippable product
+	\pamr Working software was the primary measure for project progress
 \end{itemize}
 
 \textbf{Product Backlog}
 \begin{itemize}
-	\taa Backlog prioritized and ranked by business value - matched
-	\item Backlog estimated at gross level ---- Removed
+	\taa Backlog prioritized and ranked by business value
+	\taar Backlog estimated at gross level %removed
 \end{itemize}
 
 \textbf{Smaller and Frequent Product Releases}
 \begin{itemize}
-	\taa The team has small and frequent releases - matched
-	\pam We implemented our code in short iterations - matched
+	\taa The team has small and frequent releases
+	\pam We implemented our code in short iterations
 \end{itemize}
 
 \textbf{Customer/User Acceptance Testing}
 \begin{itemize}
-	\item How often did you apply customer acceptance tests? - relative
-	\item The customer focused primarily on customer acceptance tests to determine what had been accomplished at the end of an iteration - relative
-	\item Customer acceptance tests were used as the ultimate way to verify system functionality and customer requirements - relative
+	\pamr How often did you apply customer acceptance tests?
+	\pamr The customer focused primarily on customer acceptance tests to determine what had been accomplished at the end of an iteration
+	\pamr Customer acceptance tests were used as the ultimate way to verify system functionality and customer requirements
 \end{itemize}
 
-\textbf{Evolutionary Requirements} --- add it in the table
+\textbf{Evolutionary Requirements}
 \begin{itemize}
-	\item A requirement was not regarded as finished until its acceptance tests (with the customer) had passed - relative
+	\pamr A requirement was not regarded as finished until its acceptance tests (with the customer) had passed
 \end{itemize}
-	
 
 \textbf{Constant Velocity}
 \begin{itemize}
-	\item Team works at a sustainable pace - relative
+	\taar Team works at a sustainable pace
 \end{itemize}
 
 \textbf{Iteration Progress Tracking and Reporting}
 \begin{itemize}
 	\taar Iteration progress tracked by task to do (burn-down chart) and card acceptance (velocity) - relative
-	\taa Iteration backlog defined - matched
-	\taa Iteration backlog ranked by priority - matched
-	\item Team develops and manages iteration backlog - relative
+	\taa Iteration backlog defined
+	\taa Iteration backlog ranked by priority
 	\taa Iteration planning meeting attended and effective - matched
 	\taa Iterations are no more than four weeks in length - matched
 	\taa Iterations are of a consistent fixed length - matched
-	\item Iteration theme established and communicated - removed
-	\item All members of the technical team actively participated during iteration planning meetings - relative
-	\item All technical team members took part in defining the effort estimates for 
+	\taar Team develops and manages iteration backlog
+	\taar Iteration theme established and communicated %removed
+	\pamr All members of the technical team actively participated during iteration planning meetings
+	\pamr All technical team members took part in defining the effort estimates for 
 requirements of the current iteration - relative
-	\item All concerns from team members about reaching the iteration goals were considered - relative
-	\item The effort estimates for the iteration scope items were modified only by the  technical team members - removed
+	\pamr All concerns from team members about reaching the iteration goals were considered
+	\pamr The effort estimates for the iteration scope items were modified only by the  technical team members %removed
 \end{itemize}
 
 \textbf{Self-Organizing Teams}
 \begin{itemize}
-	\item Team self-polices and reinforces use of agile practices and rules - added
-	\taa Team leads communication; communication not managed - matched
-	\taa Team defines, estimates, and selects their own work (stories and tasks) - matched
-	\taa Team develops and manages iteration backlog - relative
-	\taa Team manages interdependencies and constraints - removed
-	\taa Team has administrative access to their own workstations - relative
-	\taa Team has administrative control over their development environment - relative
-	\taar Team is 100\% dedicated to the release (no time-slicing) - relative
-	\taa Team members complete commitments - matched
-	\taar The team has a common language and metaphor to describe the release - relative 
-	\pam Each developer signed up for tasks on a completely voluntary basis - matched
+	\taa Team leads communication; communication not managed
+	\taa Team members complete commitments
+	\taa Team defines, estimates, and selects their own work (stories and tasks)
+	\taar Team develops and manages iteration backlog
+	\taar Team manages interdependencies and constraints %removed
+	\taar Team has administrative access to their own workstations
+	\taar Team has administrative control over their development environment
+	\taar Team is 100\% dedicated to the release (no time-slicing)
+	\taar The team has a common language and metaphor to describe the release
+	\taar Team self-polices and reinforces use of agile practices and rules
+	\pam Each developer signed up for tasks on a completely voluntary basis
 \end{itemize}
 
 \textbf{Appropriate Distribution of Expertise}
@@ -767,108 +785,129 @@ requirements of the current iteration - relative
 
 \textbf{High-Bandwidth Communication}
 \begin{itemize}
-	\taa Team is collocated - matched
-	\taa Team works in a physical environment that fosters collaboration - matched
-	\taa Team Coach/Scrum Master exists, is full-time, and is effective - removed
-	\taa Release planning meeting attended and effective - matched
-	\taar The team has an effective channel for obstacle escalation - relative
-	\pam The feedback from the customer was clear and clarified his requirements or open issues to the developers - relative
-	\pam The customer was reachable - matched
-	\pam The developers could contact the customer directly or through a customer contact person without any bureaucratical hurdles - matched
-	\pam The developers had responses from the customer in a timely manner - relative
-	\pam Developers were located majorly in \ldots - matched
-	\pam All members of the technical team (including QA engineers, db admins) were located in \ldots - matched
-	\pam Requirements engineers were located with developers in \ldots - matched
-	\pam The project/release manager worked with the developers in \ldots - matched
-	\pam The customer was located with the developers in \ldots - matched
+	\taa Team is collocated
+	\taa Team works in a physical environment that fosters collaboration
+	\taa Release planning meeting attended and effective
+	\taar The team has an effective channel for obstacle escalation
+	\pam The customer was reachable
+	\pam The developers could contact the customer directly or through a customer contact person without any bureaucratical hurdles
+
+	\pam Developers were located majorly in \ldots
+	\pam All members of the technical team (including QA engineers, db admins) were located in \ldots
+	\pam Requirements engineers were located with developers in \ldots
+	\pam The project/release manager worked with the developers in \ldots
+	\pam The customer was located with the developers in \ldots
+	\pamr The developers had responses from the customer in a timely manner
+	\pamr The feedback from the customer was clear and clarified his requirements or open issues to the developers
 \end{itemize}
 
 \textbf{Daily Progress Tracking Meetings}
 \begin{itemize}
-	\taa Daily stand up on time, fully attended and effectively communicates - relative
-	\pam Stand up meetings were extremely short (max. 15 minutes) - relative
-	\pam Stand up meetings were to the point, focusing only on what had been done and needed to be done on that day - matched
-	\pamr All relevant technical issues or organizational impediments came up in the stand up meetings - relative
-	\pamr Stand up meetings provided the quickest way to notify other team members about problems - relative
-	\pamr When people reported problems in the stand up meetings, team members offered to help instantly - relative
+	\taar Daily stand up on time, fully attended and effectively communicates
+	\pam Stand up meetings were to the point, focusing only on what had been done and needed to be done on that day
+	\pamr Stand up meetings were extremely short (max. 15 minutes)
+	\pamr All relevant technical issues or organizational impediments came up in the stand up meetings
+	\pamr Stand up meetings provided the quickest way to notify other team members about problems
+	\pamr When people reported problems in the stand up meetings, team members offered to help instantly
 \end{itemize}
 
 \textbf{Retrospective Meetings}
 \begin{itemize}
-	\taa Team inspects and adapts (continuous improvement) the overall process - relative
-	\item Team inspects and adapts (continuous improvement) the Iteration Plan - relative
-	\item Team inspects and adapts (continuous improvement) the release plan - relative
-	\taa Iteration review meeting attended and effective - matched
-	\taa Release review meeting attended and effective - matched
-	\pam How often did you apply retrospectives? - removed
-	\pam The retrospectives helped us become aware of what we did well in the past iteration(s) - relative
-	\pam The retrospectives helped us become aware of what we should improve in the upcoming iteration(s) - relative
-	\pam All team members actively participated in gathering lessons learned in the retrospectives - relative
-	\pamr In the retrospectives (or shortly afterwards), we systematically assigned all important points for improvement to responsible individuals - relative
-	\pamr Our team followed up intensively on the progress of each improvement point elaborated in a retrospective - relative
+	\taa Iteration review meeting attended and effective
+	\taa Release review meeting attended and effective
+	\taar Team inspects and adapts (continuous improvement) the overall process
+	\taar Team inspects and adapts (continuous improvement) the Iteration Plan
+	\taar Team inspects and adapts (continuous improvement) the release plan
+	\pamr How often did you apply retrospectives? %removed
+	\pamr The retrospectives helped us become aware of what we did well in the past iteration(s)
+	\pamr The retrospectives helped us become aware of what we should improve in the upcoming iteration(s)
+	\pamr All team members actively participated in gathering lessons learned in the retrospectives
+	\pamr In the retrospectives (or shortly afterwards), we systematically assigned all important points for improvement to responsible individuals
+	\pamr Our team followed up intensively on the progress of each improvement point elaborated in a retrospective
 \end{itemize}
 
 \textbf{Test Driven Development}
 \begin{itemize}
-	\taa Unit tests written before development - matched
-	\item Acceptance tests written before development - not sure yet!!
-	\taa 100\% automated unit test coverage - matched
-	\pam New code was written with unit tests covering its main functionality - matched
-	\item Automated unit tests sufficiently covered all critical parts of the production code - relative
-	\pam The customer provided a comprehensive set of test criteria for customer acceptance - matched
+	\taa Unit tests written before development
+	\taar Acceptance tests written before development
+	\taa 100\% automated unit test coverage
+	\pam New code was written with unit tests covering its main functionality
+	\pam The customer provided a comprehensive set of test criteria for customer acceptance
 	\pam The implemented code was written to pass the test case - relative - removed
+	\pamr Automated unit tests sufficiently covered all critical parts of the production code
 \end{itemize}
 
 \textbf{Refactoring}
 \begin{itemize}
-	\taa Refactoring is continuous - matched
-	\item Team is permitted to refactor anywhere in the code base - relative
-	\item There were enough unit tests and automated system tests to allow developers to safely change any code - relative
+	\taa Refactoring is continuous
+	\pamr Team is permitted to refactor anywhere in the code base
+	\pamr There were enough unit tests and automated system tests to allow developers to safely change any code
 \end{itemize}
 
 \textbf{Software Configuration Management}
 \begin{itemize}
-	\taa Source control system exists - matched
+	\taa Source control system exists
 \end{itemize}
 
 \textbf{Adherence to Coding Standards}
 \begin{itemize}
-	\taa Coding standards exist and applied - matched
-	\taa Adequate and effective code review practices - matched
+	\taa Coding standards exist and applied
+	\taa Adequate and effective code review practices
 \end{itemize}
 
 \textbf{Pair Programming}
 \begin{itemize}
-	\taa Pair programming is practised - matched
+	\taa Pair programming is practised
 \end{itemize}
 
 \textbf{Continuous Integration}
 \begin{itemize}
-	\item Developers integrate code multiple times per day - relative
-	\item Stories accepted and demonstrated on integrated build - relative
-	\item Continuous build with 100\% successful builds - relative
-	\taa Automated acceptance tests - matched
-	\item Identical builds for developers' workstations - removed
-	\item The team integrated continuously - relative
-	\pam Developers had the most recent version of code available - matched
-	\pam Code was checked in quickly to avoid code synchronization/integration hassles - matched
-	\pam All unit tests were run and passed when a task was finished and before checking in and integrating - relative
-	\item For detecting bugs, test reports from automated unit tests were systematically used to capture the bugs - relative
+	\taa Automated acceptance tests
+	\taar Developers integrate code multiple times per day
+	\taar Stories accepted and demonstrated on integrated build
+	\taar Continuous build with 100\% successful builds
+	\taar Identical builds for developers' workstations %removed
+	\pam Developers had the most recent version of code available
+	\pam Code was checked in quickly to avoid code synchronization/integration hassles
+	\pamr The team integrated continuously
+	\pamr All unit tests were run and passed when a task was finished and before checking in and integrating
+	\pamr For detecting bugs, test reports from automated unit tests were systematically used to capture the bugs
 \end{itemize}
-
-\textbf{Continuous Feedback}
-
 
 \textbf{Client-driven Iterations}
 \begin{itemize}
 	\pam The customer picked the priority of the requirements in the iteration plan
-	\item When the scope could not be implemented due to constraints, the team held  active discussions on re-prioritization with the customer on what to finish within the iteration 
+	\pamr When the scope could not be implemented due to constraints, the team held active discussions on re-prioritization with the customer on what to finish within the iteration 
+\end{itemize}
+
+\section{Non Relevant Questions}
+
+\begin{itemize}
+	\taanr Product owner defines acceptance criteria for stories 
+	\taanr Product owner and stakeholders participate at iteration and release planning 
+	\taanr Product owner and stakeholders participate at iteration and release review 
+	\taanr Product owner collaboration with team is continuous 
+	\taanr Release theme established and communicated 
+	\taanr Release planning meeting attended and effective 
+	\taanr Release backlog defined 
+	\taanr Release backlog ranked by priority 
+	\taanr Release backlog estimated at plan level 
+	\taanr Release progress tracked by feature acceptance 
+	\taanr Team completes and product owner accepts the release by the release date
+	\taanr Team meets its commitments to release 
+	\taanr Work is not added by the product owner during the iteration 
+	\taanr Team completes and product owner accepts the iteration 
+	\taanr The whole team is present at release planning meetings 
+	\taanr Team is smaller than 15 people 
+	\taanr All testing is done within the iteration and does not lag behind 
+	\taanr Iteration defects are fixed within that iteration 
+	\taanr Team Coach/Scrum Master exists, is full-time, and is effective
 \end{itemize}
 
 
+\chapter{OPS, PAM, TAA}
 
-
-\section{OPS, PAM, TAA - Capability}
+\section{Capability}
 
 \begin{itemize}
 	\item Refactoring
@@ -1099,7 +1138,7 @@ requirements of the current iteration - relative
 				\end{itemize}
 			\item Estimation Authority
 				\begin{itemize}
-					\item Are the developers expected to estimate the time required to complete each bug/enhancement?
+					\item Are the developers expected to estimate the time required to complete each story?
 				\end{itemize}
 			\item Estimation
 				\begin{itemize}
@@ -1111,7 +1150,7 @@ requirements of the current iteration - relative
 		\begin{itemize}
 			\item Estimation Authority
 				\begin{itemize}
-					\item Are the developers expected to estimate the time required to complete each bug/enhancement?
+					\item Are the developers expected to estimate the time required to complete each story?
 				\end{itemize}
 			\item Requirements Management
 				\begin{itemize}
@@ -1170,7 +1209,7 @@ requirements of the current iteration - relative
 
 
 
-\section{OPS, PAM, TAA - Effectiveness}
+\section{Effectiveness}
 
 \begin{itemize}
 	\item Refactoring 
@@ -1209,7 +1248,6 @@ requirements of the current iteration - relative
 					\item To what extent do developers write tests first before writing code?
 					\item To what extent are the test plans created before the developers start coding?
 					\addition To what extent did the unit tests cover all critical parts of the production code?
-					\addition To what extend test reports for automated unit tests were systematically used to capture the bugs?
 				\end{itemize}
 		\end{itemize}
 %---------------------------------------------------------------------------
@@ -1292,21 +1330,23 @@ requirements of the current iteration - relative
 							\addition To what extent do the team members integrate their code per day?
 						\end{itemize}
 				\end{itemize}
-			\item Bug/Enhancement Completeness
+			\item Story Completeness
 				\begin{itemize}
-					\item To what extent has each bug/enhancement been coded? 
-					\item To what extent has each bug/enhancement been unit tested? 
+					\item To what extent has each story been coded? 
+					\item To what extent has each story been unit tested? 
 					\addition To what extent has each story been unit tested successfully?
-					\item To what extent has each bug/enhancement been refactored? 
-					\item To what extent has each bug/enhancement been checked into the code base? 
-					\item To what extent has each bug/enhancement been integrated with the existing code base? 
-					\item To what extent has each bug/enhancement been reviewed? 
-					\item To what extent has each bug/enhancement been accepted by the customer? 
+					\item To what extent has each story been refactored? 
+					\item To what extent has each story been checked into the code base? 
+					\item To what extent has each story been integrated with the existing code base? 
+					\item To what extent has each story been reviewed? 
+					\item To what extent has each story been accepted by the customer? 
+					\addition To what extent were the stories accepted and demonstrated on integrated build?
 				\end{itemize}
 			\item Daily/Frequent builds
 				\begin{itemize}
 					\item To what extent do automated builds run one or more times everyday?
 					\addition To what extend are the automated builds successful?
+					\addition To what extend test reports for automated unit tests were systematically used to capture the bugs?
 				\end{itemize}
 		\end{itemize}
 
@@ -1353,7 +1393,6 @@ requirements of the current iteration - relative
 		\begin{itemize}
 			\addition Customer Acceptance
 				\begin{itemize}
-					\addition To what extent were the stories accepted and demonstrated on integrated build?
 					\addition To what extent were customer acceptance tests applied?
 					\addition To what extent did the customer focus on acceptance tests to determine what had been accomplished?
 					\addition To what extent were the acceptance tests the ultimate way to verify system functionality and customer requirements?
@@ -1407,7 +1446,8 @@ requirements of the current iteration - relative
 		\begin{itemize}
 			\item Requirements Prioritization
 				\begin{itemize}
-					\item To what extent do the customers establish the priorities of the bug/enhancement?
+					\item To what extent do the customers establish the priorities of the story?
+					\addition To what extent are the features reprioritized when the scope could not be implemented due to constraints?
 				\end{itemize}
 			\item Customer Satisfaction
 				\begin{itemize}
@@ -1454,7 +1494,7 @@ requirements of the current iteration - relative
 					\item To what extent is an iteration list maintained?
 					\addition To what extent do the team members develop and manage an iteration backlog?
 					\item To what extent are the bugs/enhancements fully estimated when added to the list?
-					\item To what extent are the bug/enhancement prioritized when added to the list?
+					\item To what extent are the story prioritized when added to the list?
 				\end{itemize}
 			\addition Planning
 				\begin{itemize}
@@ -1499,7 +1539,6 @@ requirements of the current iteration - relative
 			\item Requirements Reprioritization 
 				\begin{itemize}
 					\item To what extent are the features reprioritized as and when new features are identified?
-					\addition To what extent are the features reprioritized when the scope could not be implemented due to constraints?
 				\end{itemize}
 			\item Customer Requests
 				\begin{itemize}

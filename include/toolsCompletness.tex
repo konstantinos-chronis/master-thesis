@@ -101,7 +101,7 @@ The connection between the practices and strategies is done based on the questio
      		\item {\color{DarkBlue}High-Bandwidth} {\color{DeepPink1}Communication} \JackStar ~\Asterisk 
      		\item {\color{green4}Daily Progress Tracking Meetings} \EightStar
      		\item {\color{DarkBlue}Client-Driven} {\color{RoyalBlue1}Iterations} \JackStar ~\FourStar
-     		\item {\color{DarkBlue}Continuous Feedback} \JackStar
+     		\item {\color{red2}Evolutionary Requirements} \AsteriskThin
      		\item {\color{red2}Customer/User Acceptance Testing} \AsteriskThin
      		\item {\color{DarkRed}Retrospectives Meetings} \CrossMaltese
      		\item {\color{RoyalBlue1}Self-Organizing Teams} \FourStar
@@ -175,223 +175,6 @@ PAM has divided its questions based on agile practices, while on the other hand 
 
 The questions among the tools will be match based on whether they are covered directly, relevantly, or not at all. Direct match will be considered the one where a question from a tool is almost similar with one from OPS. Relevant match will be considered the one where a question of a tool does not exist in OPS, but its practice does exist in OPS. Non relevant match will be considered the one where a question cannot be matched at all in OPS. 
 
-\newcommand*\taa{\item[\FiveStar]}
-\newcommand*\taar{\item[\FiveStarShadow]}
-\newcommand*\taanr{\item[\SnowflakeChevron]}
-\newcommand*\pam{\item[\AsteriskBold]}
-\newcommand*\pamr{\item[\AsteriskThinCenterOpen]}
-
-In order to distinguish the questions among the tools the following annotation has been used. 
-\begin{itemize}
-  \taa Team Agility Assessment - Direct match
-  \taar Team Agility Assessment - Relevant match
-  \taanr Team Agility Assessment - Non Relevant
-  \pam Perceptive Agile Management - Direct match
-  \pamr Perceptive Agile Management - Relevant match
-\end{itemize}
-
-\vspace{0.5cm}
-
-\subsection{Questions to Practices/Strategies}
-
-\textbf{Iterative and Incremental Development}
-\begin{itemize}
-	\taa Stories sufficiently elaborated prior to planning meetings
-	\pam The software delivered at iteration end always met quality requirements of production code 
-	\pam We implemented our code in short iterations
-	\pamr The team rather reduced the scope than delayed the deadline 
-	\pamr We kept the iteration deadlines
-	\pamr At the end of an iteration, we delivered a potentially shippable product
-	\pamr Working software was the primary measure for project progress
-\end{itemize}
-
-\textbf{Product Backlog}
-\begin{itemize}
-	\taa Backlog prioritized and ranked by business value
-	\taa Backlog estimated at gross level
-\end{itemize}
-
-\textbf{Smaller and Frequent Product Releases}
-\begin{itemize}
-	\taa The team has small and frequent releases
-\end{itemize}
-
-\textbf{Customer/User Acceptance Testing}
-\begin{itemize}
-	\taa Team discusses acceptance criteria during iteration planning
-	\pam How often did you apply customer acceptance tests?
-	\pam A requirement was not regarded as finished until its acceptance tests (with the customer) had passed 
-	\pamr The customer focused primarily on customer acceptance tests to determine what had been accomplished at the end of an iteration
-	\pamr Customer acceptance tests were used as the ultimate way to verify system functionality and customer requirements 
-\end{itemize}
-
-\textbf{Constant Velocity}
-\begin{itemize}
-	\taa Team velocity measured and used for planning
-	\taa Iteration progress tracked by task to do (burn-down chart) and card acceptance (velocity)
-	\taa Team works at a sustainable pace 
-\end{itemize}
-
-\textbf{Iteration Progress Tracking and Reporting}
-\begin{itemize}
-	\taa Iteration backlog defined
-	\taa Iteration backlog ranked by priority
-	\taa Team develops and manages iteration backlog
-	\taa Iteration planning meeting attended and effective
-	\taa Iterations are no more than four weeks in length
-	\taa Iterations are of a consistent fixed length
-	\taa Iteration theme established and communicated 
-	\pam All members of the technical team actively participated during iteration planning meetings
-	\pam All technical team members took part in defining the effort estimates for 
-requirements of the current iteration
-	\pamr When effort estimates differed, the technical team members discussed their underlying assumption 
-	\pamr All concerns from team members about reaching the iteration goals were  considered 
-	\pamr The effort estimates for the iteration scope items were modified only by the  technical team members
-\end{itemize}
-
-\textbf{Self-Organizing Teams}
-\begin{itemize}
-	\taa Team self-polices and reinforces use of agile practices and rules
-	\taa Team leads communication; communication not managed
-	\taa Team defines, estimates, and selects their own work (stories and tasks)
-	\taa Team develops and manages iteration backlog
-	\taa Team manages interdependencies and constraints
-	\taa Team has administrative access to their own workstations 
-	\taa Team has administrative control over their development environment
-	\taar Team is 100\% dedicated to the release (no time-slicing) 
-	\taar Team members complete commitments 
-	\taar The team has an effective channel for obstacle escalation
-	\taar The team has a common language and metaphor to describe the release 
-	\pam Each developer signed up for tasks on a completely voluntary basis
-\end{itemize}
-
-\textbf{Appropriate Distribution of Expertise}
-\begin{itemize}
-	\taa Team is cross-functional with integrated product owner, development, documentation and QA
-	\taa Team manages interdependencies and constraints
-\end{itemize}
-
-\textbf{High-Bandwidth Communication}
-\begin{itemize}
-	\taa Team is collocated
-	\taa Team works in a physical environment that fosters collaboration
-	\taa Team Coach/Scrum Master exists, is full-time, and is effective 
-	\pam The customer was reachable
-	\pam The developers could contact the customer directly or through a customer contact person without any bureaucratical hurdles 
-	\pam The developers had responses from the customer in a timely manner 
-	\pam Developers were located majorly in \ldots
-	\pam All members of the technical team (including QA engineers, db admins) were located in \ldots
-	\pam Requirements engineers were located with developers in \ldots
-	\pam The project/release manager worked with the developers in \ldots
-	\pam The customer was located with the developers in \ldots
-\end{itemize}
-
-\textbf{Daily Progress Tracking Meetings}
-\begin{itemize}
-	\taa Daily standup on time, fully attended and effectively communicates
-	\pam Stand up meetings were extremely short (max. 15 minutes) 
-	\pam Stand up meetings were to the point, focusing only on what had been done and needed to be done on that day 
-	\pamr All relevant technical issues or organizational impediments came up in the stand up meetings 
-	\pamr Stand up meetings provided the quickest way to notify other team members about problems 
-	\pamr When people reported problems in the stand up meetings, team members offered to help instantly 
-\end{itemize}
-
-\textbf{Retrospective Meetings}
-\begin{itemize}
-	\taa Team inspects and adapts (continuous improvement) the overall process
-	\taa Team inspects and adapts (continuous improvement) the Iteration Plan 
-	\taa Team inspects and adapts (continuous improvement) the release plan
-	\taa Iteration review meeting attended and effective
-	\taa Release review meeting attended and effective
-	\pam How often did you apply retrospectives?
-	\pam The retrospectives helped us become aware of what we did well in the past iteration(s)
-	\pam The retrospectives helped us become aware of what we should improve in the upcoming iteration(s) 
-	\pam All team members actively participated in gathering lessons learned in the retrospectives
-	\pamr In the retrospectives (or shortly afterwards), we systematically assigned all important points for improvement to responsible individuals 
-	\pamr Our team followed up intensively on the progress of each improvement point elaborated in a retrospective
-\end{itemize}
-
-\textbf{Test Driven Development}
-\begin{itemize}
-	\taa Unit tests written before development
-	\taa Acceptance tests written before development
-	\taa 100\% automated unit test coverage
-	\pam New code was written with unit tests covering its main functionality
-	\pam Automated unit tests sufficiently covered all critical parts of the production code
-	\pam The customer provided a comprehensive set of test criteria for customer acceptance
-	\pam The implemented code was written to pass the test case
-	\pamr There were enough unit tests and automated system tests to allow developers to safely change any code
-\end{itemize}
-
-\textbf{Refactoring}
-\begin{itemize}
-	\taa Refactoring is continuous
-	\taa Team is permitted to refactor anywhere in the code base
-\end{itemize}
-
-\textbf{Software Configuration Management}
-\begin{itemize}
-	\taa Source control system exists
-\end{itemize}
-
-\textbf{Adherence to Coding Standards}
-\begin{itemize}
-	\taa Coding standards exist and applied
-	\taar Adequate and effective code review practices 
-\end{itemize}
-
-\textbf{Pair Programming}
-\begin{itemize}
-	\taa Pair programming is practised
-\end{itemize}
-
-\textbf{Continuous Integration}
-\begin{itemize}
-	\taa Developers integrate code multiple times per day
-	\taa Stories accepted and demonstrated on integrated build
-	\taa Continuous build with 100\% successful builds
-	\taa Automated acceptance tests
-	\taa Identical builds for developers' workstations
-	\pam The team integrated continuously
-	\pam Developers had the most recent version of code available
-	\pam Code was checked in quickly to avoid code synchronization/integration hassles
-	\pam All unit tests were run and passed when a task was finished and before checking in and integrating 
-	\pamr For detecting bugs, test reports from automated unit tests were systematically used to capture the bugs
-\end{itemize}
-
-\textbf{Continuous Feedback}
-\begin{itemize}
-	\pam The feedback from the customer was clear and clarified his requirements or open issues to the developers
-\end{itemize}
-
-\textbf{Client-driven Iterations}
-\begin{itemize}
-	\pam The customer picked the priority of the requirements in the iteration plan
-	\pam When the scope could not be implemented due to constraints, the team held  active discussions on re-prioritization with the customer on what to finish within the iteration 
-\end{itemize}
-
-\subsection{Non Relevant Questions}
-
-\begin{itemize}
-	\taanr Product owner defines acceptance criteria for stories 
-	\taanr Product owner and stakeholders participate at iteration and release planning 
-	\taanr Product owner and stakeholders participate at iteration and release review 
-	\taanr Product owner collaboration with team is continuous 
-	\taanr Release theme established and communicated 
-	\taanr Release planning meeting attended and effective 
-	\taanr Release backlog defined 
-	\taanr Release backlog ranked by priority 
-	\taanr Release backlog estimated at plan level 
-	\taanr Release progress tracked by feature acceptance 
-	\taanr Team completes and product owner accepts the release by the release date
-	\taanr Team meets its commitments to release 
-	\taanr Work is not added by the product owner during the iteration 
-	\taanr Team completes and product owner accepts the iteration 
-	\taanr The whole team is present at release planning meetings 
-	\taanr Team is smaller than 15 people 
-	\taanr All testing is done within the iteration and does not lag behind 
-	\taanr Iteration defects are fixed within that iteration 
-\end{itemize}
 
 \section{Analysis}
 By viewing Tables~\ref{table:opp_pam_practices}, ~\ref{table:opp_taa_practices} and Section~\ref{mapping} one can clearly distinguish that OPP and consequently OPS is more complete than the others in measuring agility, covering all the areas of the PAM and TAA tools. Furthermore as it can be seen in Table~\ref{table:questions_coverage} OPS covers a high percent of questions from both tools directly and relevantly. TAA has a high percent of non relevant matches mostly due to \textit{Product Ownership} and \textit{Release Planning and Tracking} perspectives which are not covered in such an extent from OPS. The first one can be explained by the fact that OPS covers basis methodologies for developing software such as XP, FDD, Crystal, Lean \cite[p. 44]{sventha_dissertation} whereas \textit{Product Ownership} refers explicitly to Scrum which is a method for managing product development \cite{koch2005agile}. On the other hand OPS considers the release cycle as smaller iteration cycles \cite[p. 13]{sventha_dissertation} which as a consequence makes the framework to set the focus on the iterations, rather than the releases. As a result the \textit{Release Planning and Tracking} is only covered to a small extent.
@@ -401,9 +184,9 @@ By viewing Tables~\ref{table:opp_pam_practices}, ~\ref{table:opp_taa_practices} 
 		\hline
 		\multicolumn{3}{|c|}{\textbf{Questions Coverage}}  \\ \hline
 		\textbf{Match}  & \textbf{PAM} & \textbf{TAA}  \\ \hline		
-		Direct Match & 33/48 (68.75\%) & 44/67 (65.6\%) \\ \hline
-		Relevant Match & 15/48 (31.25\%) & 5/67 (7.4\%) \\ \hline
-		Non Relevant & 0/48 (0\%) & 18/67 (27\%) \\ \hline
+		Direct Match & 17/48 (35.4\%) & 25/68 (36.7\%) \\ \hline
+		Relevant Match & 31/48 (64.5\%) & 24/68 (35.2\%) \\ \hline
+		Non Relevant & 0/48 (0\%) & 19/68 (27.9\%) \\ \hline
 	\end{tabular}
 \caption{Questions Coverage from OPS}
 \label{table:questions_coverage}
