@@ -440,11 +440,13 @@ For assessing the agility by using the Perceptive Agile Measurement (PAM) tool, 
 In order to see which of the OPS, PAM and TAA can better measure the agility of software development teams, the four teams in company F were used a sample.
 
 \subsection{Data Collection}
+
+\subsubsection{Surveys}
 Google Drive \texttrademark \cite{google_drive} was the means to collect the data. For both PAM and TAA, for each of the tools, four surveys were created for each team respectively. The collection lasted two weeks by sending PAM the first one, and TAA the second one.
 
 The links to the surveys were sent to the subjects early in the morning, but they were asked to answer to them after lunch. The reasoning for this, is that at the beginning of the day the employees need to perform tasks which are usually time consuming and require to have clear thoughts and be on meetings. On the contrary, after lunch most of the employees try to relax by enjoying their coffee and discussing with each other. That time of the day was considered to be the best in order to ask them to spend 15-20 minutes and reply to the survey. The employees that belonged to more than one team, were asked a couple of days later to take the other survey in order to be more detached in their answers.
 
-The employees that were asked to answer to the surveys were all the members of the software development teams which consisted of software and QA engineers. Although code review is practised, it was avoided to ask from the code reviewers to take the same survey for the same team from that perspective because it would not provide more value to the results and in addition it would tire them a lot.
+The employees that were asked to answer to the surveys where all the members of the software development teams which consisted of software and QA engineers. Although code review is practised, it was avoided to ask from the code reviewers to take the same survey for the same team from that perspective because it would not provide more value to the results and in addition it would tire them a lot.
 
 As it was mentioned in chapter 2 PAM focuses on the following agile practices:
 \begin{inparaenum} [a\upshape)]
@@ -470,10 +472,56 @@ On the contrary, TAA focuses on the following agile practices areas:
 \end{inparaenum}
 . From these methodology F does not support \textit{Product Ownership}, since it implies that company F should practice Scrum, which it does not. Moreover, Scrum oriented questions from the rest of the practices/areas were removed as well. 
 
+About the questions of the agile practices/areas which were not included, they were all given a value of 1, the least possible value. 
+
 For a more clear view on the questions contained in the surveys, one can take a look at Appendices~\ref{sec:pam} and~\ref{sec:team_agility_assessment}.
+
+\subsubsection{Likert Scales}
+The surveys for PAM and TAA were on a Likert scale 1-7 (never-always). From PAM,  only the \textit{Co-location} practice had its Likert scale 1-5 (different time zones-same room) since its creators preferred it in this way. For the transforamtion of the results for this practice the formula \cite{likert_transformation} \begin{equation} x_2 = (1.5 * x_1) - 0.5 \end{equation} was used. 
+%describe the Likert scales in OPS
+
 
 \subsection{Collected Data}
 
+In the Tables~\ref{table:pam_results} and~\ref{table:taa_results} one can see the average value of the team replies in every agile practice/area \footnote{The ones  marked with $^\ast$ are not included in the surveys}. All the answers were trimmed to two decimal points.
+
+\begin{table} [H]
+\caption{Perceptive Agile Measurement Results}
+\label{table:pam_results}
+\begin{tabular}{| c | c | c | c | c |}
+\hline
+  & \multicolumn{4}{c|}{\textbf{Team}} \\ \hline
+\textbf{Practice} & Mobile & Info & POS & Marketing \\ \hline
+Iteration Planning & 3.86 & 5 & 4.08 & 3.66 \\ \hline
+Iterative Development & 4.36 & 5.71 & 5.3 & 5.09 \\ \hline
+Continuous Integration And Testing & 4.28 & 3.7 & 4.29 & 4.2 \\ \hline
+Customer Access & 4.58 & 7 & 5.5 & 3.9 \\ \hline
+Customer Acceptance Tests & 3.4 & 3.4 & 3.83 & 1.64 \\ \hline
+Co-Location & 4.27 & 6.13 & 5.59 & 6.2 \\ \hline 
+Stand-Up Meetings$^\ast$ & 1 & 1 & 1 & 1 \\ \hline
+Retrospectives$^\ast$ & 1 & 1 & 1 & 1 \\ \hline
+\textbf{Total} & 3.47 & 4.12 & 3.82 & 3.53 \\ \hline
+\end{tabular}
+\end{table}
+
+\begin{table} [H]
+\caption{Team Agility Assessment Results}
+\label{table:taa_results}
+\begin{tabular}{| c | c | c | c | c |}
+\hline
+  & \multicolumn{4}{c|}{\textbf{Team}} \\ \hline
+\textbf{Agile Area} & Mobile & Info & POS & Marketing \\ \hline
+Release Planning and Tracking & 4.54 & 4.17 &  &  \\ \hline
+Iteration Planning and Tracking & 3.98 & 3.58 & &  \\ \hline
+Team & 4.95 & 4.93 &  &  \\ \hline
+Testing Practices & 3.86 & 2.56 &  &  \\ \hline
+Development Practices/Infrastructure & 5.92 & 5.94 &  &  \\ \hline
+Product Ownership$^\ast$ & 1 & 1 & 1 & 1 \\ \hline 
+\textbf{Total} & 4.04 & 3.7 & 1 & 1 \\ \hline
+\end{tabular}
+\end{table}
+
+\subsection{Data Analysis}
 
 
 \subsection{OPS}
