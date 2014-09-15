@@ -631,7 +631,7 @@ The items marked with \XSolidBrush  are the ones not included in the surveys to 
 			\item Team discusses acceptance criteria during iteration planning
 			\item Team manages interdependencies and constraints
 			\item Iteration progress tracked by task to do (burn-down chart) and card acceptance (velocity)
-			\item Work is not added by the product owner during the iteration
+			\removed Work is not added by the product owner during the iteration
 			\removed Team completes and product owner accepts the iteration 
 			\item Iterations are of a consistent fixed length
 			\item Iterations are no more than four weeks in length
@@ -713,7 +713,6 @@ In order to distinguish the questions among the tools the following annotation h
 \begin{itemize}
 	\taa Stories sufficiently elaborated prior to planning meetings
 	\taar Team discusses acceptance criteria during iteration planning
-	\taar Team velocity measured and used for planning
 	\pam We kept the iteration deadlines
 	\pamr The software delivered at iteration end always met quality requirements of production code
 	\pamr The team rather reduced the scope than delayed the deadline
@@ -735,13 +734,10 @@ In order to distinguish the questions among the tools the following annotation h
 
 \textbf{Customer/User Acceptance Testing}
 \begin{itemize}
+	\pam The customer provided a comprehensive set of test criteria for customer acceptance
 	\pamr How often did you apply customer acceptance tests?
 	\pamr The customer focused primarily on customer acceptance tests to determine what had been accomplished at the end of an iteration
 	\pamr Customer acceptance tests were used as the ultimate way to verify system functionality and customer requirements
-\end{itemize}
-
-\textbf{Evolutionary Requirements}
-\begin{itemize}
 	\pamr A requirement was not regarded as finished until its acceptance tests (with the customer) had passed
 \end{itemize}
 
@@ -760,6 +756,7 @@ In order to distinguish the questions among the tools the following annotation h
 	\taa Iterations are of a consistent fixed length - matched
 	\taar Team develops and manages iteration backlog
 	\taar Iteration theme established and communicated %removed
+	\taar Team velocity measured and used for planning
 	\taar Release theme established and communicated 
 	\taar Release planning meeting attended and effective 
 	\taar Release backlog defined 
@@ -845,8 +842,7 @@ requirements of the current iteration - relative
 	\taar Acceptance tests written before development
 	\taa 100\% automated unit test coverage
 	\pam New code was written with unit tests covering its main functionality
-	\pam The customer provided a comprehensive set of test criteria for customer acceptance
-	\pam The implemented code was written to pass the test case - relative - removed
+	\pam The implemented code was written to pass the test case
 	\pamr Automated unit tests sufficiently covered all critical parts of the production code
 \end{itemize}
 
