@@ -1,0 +1,661 @@
+\chapter{OPS, PAM, TAA}
+
+\section{Capability}
+
+\begin{itemize}
+	\item Refactoring
+		\begin{itemize}
+			\item Support for Refactoring 
+				\begin{itemize}
+					\item Is refactoring an expected activity?
+					\item Is it feasible to implement code refactoring?
+					\item Is it feasible to implement architecture refactoring?
+				\end{itemize}
+			\item Buy-in for Refactoring
+				\begin{itemize}
+					\item Are the teams receptive to implementing refactoring?
+					\addition Are the teams permitted to refactor anywhere in the code base?
+					\item Is the management receptive to supporting refactoring efforts?
+				\end{itemize}
+			\item Minimizing Technical Debt
+				\begin{itemize}
+					\item Is it expected that a well-defined process be adopted to minimize technical debt?
+					\item Is it expected that a well-defined process be adopted to manage technical debt?
+					\item Is minimizing technical debt a high priority activity?
+				\end{itemize}
+		\end{itemize}	
+%---------------------------------------------------------------------------	
+	\item Test First Development
+		\begin{itemize}
+			\item Process Support for Test-First Development
+				\begin{itemize}
+					\item Is test-first development an expected activity?
+					\item Are the customers expected to specify the acceptance criteria for the features and stories before the developers begin coding?
+					\addition Are the developers expected to write acceptance tests first for their code?
+				\end{itemize}
+		\end{itemize} 
+		\begin{itemize}
+			\item Tool Support for Test First Development
+				\begin{itemize}
+					\item Do appropriate testing tools exist?
+				\end{itemize}
+		\end{itemize}
+		\begin{itemize}
+			\item Unit Testing
+				\begin{itemize}
+					\item Are the developers expected to write unit tests first for their code?
+				\end{itemize}
+		\end{itemize}
+%---------------------------------------------------------------------------
+	\item Retrospection
+		\begin{itemize}
+			\item Support for Retrospection
+				\begin{itemize}
+					\item Is retrospection an expected activity?
+				\end{itemize}
+		\end{itemize}
+		\begin{itemize}
+			\item Tool Support for Retrospection
+				\begin{itemize}
+					\item Are tools available for recording the outcomes of the retrospective meetings?
+				\end{itemize}
+		\end{itemize}
+%---------------------------------------------------------------------------		
+	\item Distribution of expertise
+		\begin{itemize}
+			\item Appropriate team composition
+				\begin{itemize}
+					\item Is a scheme for appropriate team composition defined?
+					\item Are the requisite skillsets for particular projects identified upfront?
+					\item Is it expected that the right people be chosen to accomplish the tasks?
+				\end{itemize}
+		\end{itemize}
+%---------------------------------------------------------------------------		
+	\item Configuration Management
+		\begin{itemize}
+			\item Tool Support for Configuration Management
+				\begin{itemize}
+					\item Do tools for version control and management exist?
+				\end{itemize}
+			\item Support for Configuration Management
+				\begin{itemize}
+					\item Is it expected that the code be kept up to date?
+					\item Is it expected that the tests be kept up to date?
+					\item Is it expected that the builds be kept up to date?
+					\item Is it expected that the release infrastructure be kept up to date?
+					\item Is it expected that the documentation be kept up to date?
+				\end{itemize}
+		\end{itemize}
+%---------------------------------------------------------------------------
+	\item Adherence to standards
+		\begin{itemize}
+			\item Identifying features
+				\begin{itemize}
+					\item Is it expected that well-defined techniques be used to identify the features?
+					\end{itemize}
+			\item Estimation
+				\begin{itemize}
+					\item Is it expected that a well-defined approach to estimating the amount of work to be done during each release cycle and iteration be used?
+				\end{itemize}
+			\item Requirements Prioritization
+				\begin{itemize}
+					\item Is it expected that a well-defined approach to prioritizing bugs/enhancements, and tasks be used?
+				\end{itemize}	
+			\item Feature Decomposition
+				\begin{itemize}
+					\item Is it expected that a mechanism for decomposing the selected features to be developed during the current release cycle into bugs/enhancements be defined?
+				\end{itemize}
+			\item Coding standards
+				\begin{itemize}
+					\item Is it expected that each team creates and adopts a set of coding standards?
+					\item Is it expected that practices such as pair-programming, collective code ownership be adopted or automated tools be used to ensure adherence to the set standards?
+				\end{itemize}
+		\end{itemize}
+%---------------------------------------------------------------------------
+	\item Continuous Integration
+		\begin{itemize}
+			\item Tool Support for Continuous Integration
+				\begin{itemize}
+					\item Do automated test suites exist?
+					\item Does the requisite test environment exist?
+					\item Do appropriate configuration management systems exist?
+				\end{itemize}
+			\item Process Support for Continuous Integration
+				\begin{itemize}
+					\item Is continuous integration an expected activity?
+					\item Are the team members expected to integrate their code every few hours?
+					\item Is it expected that the builds, tests, and other release infrastructure be kept up to date?
+					\item Is it expected that automated test suites be developed?
+					\item Is it expected that the build process be automated?
+				\end{itemize}
+			\item Buy-in for Continuous Integration
+				\begin{itemize}
+					\item Are the teams receptive to implementing continuous integration?
+				\end{itemize}
+			\item Story Completeness
+				\begin{itemize}
+					\item Is it expected that the criteria for Done/Done be specified upfront?
+				\end{itemize}
+		\end{itemize}
+%---------------------------------------------------------------------------
+	\item Self-managing teams
+		\begin{itemize}
+			\item Team Empowerment
+				\begin{itemize}
+					\item Are the team members expected to be involved in determining, planning, and managing their day-to-day activities?
+				\end{itemize}
+			\item Ownership
+				\begin{itemize}
+					\item Are the team members expected to demonstrate individual or collective code ownership? 
+				\end{itemize}
+			\item Performance Expectations
+				\begin{itemize}
+					\item Is there a set of performance expectations that are agreed upon by the team and the management?
+				\end{itemize}
+			\addition Size
+				\begin{itemize}
+					\addition Is it expected the team be smaller than 15 people?
+				\end{itemize}
+			\addition Communication
+				\begin{itemize}
+					\addition Are the team members expected to have a common language?
+				\end{itemize}
+			\addition{System Administration}
+				\begin{itemize}
+					\addition Are the team members expected to have administrative access to their own workstations?
+					\addition Are the team members expected to have control over their development environment?	
+				\end{itemize}
+		\end{itemize}
+%---------------------------------------------------------------------------
+	\item Continuous Feedback
+		\begin{itemize}
+			\item Customer Feedback
+				\begin{itemize}
+					\item Does the process define a mechanism for the customers to provide feedback?
+				\end{itemize}			
+		\end{itemize}
+		\begin{itemize}
+			\item Customer Acceptance
+				\begin{itemize}
+					\item Is it expected that the acceptance testing occur before the end of a release cycle?
+				\end{itemize}
+		\end{itemize}
+%---------------------------------------------------------------------------
+	\item High-bandwidth communication
+		\begin{itemize}
+			\item On-site Customer
+				\begin{itemize}
+					\item Are the customers available onsite to answer questions and provide continuous feedback? 
+					\item In the absence of an onsite customer, do the customers provide feedback via other means? 
+				\end{itemize}	
+			\item Scheduling
+				\begin{itemize}
+					\item Is it expected that time be allocated for Release Planning?
+					\item Is it expected that time be allocated for Iteration Planning?
+					\item Is it expected that time be allocated for Retrospection? 
+					\item Is it expected that time be allocated for Daily Progress Tracking meetings?
+				\end{itemize}
+			\item Inter- and intra-team communication
+				\begin{itemize}
+					\item Is it expected that team members communicate and collaborate with their colleagues?
+					\item Do the teams have access to requisite tools to support inter- and intra-team communication?
+				\end{itemize}
+			\item Physical environment
+				\begin{itemize}
+					\item Is the physical environment conducive to supporting high bandwidth communication?
+				\end{itemize}
+		\end{itemize}
+%---------------------------------------------------------------------------
+	\item Client-driven Iterations
+		\begin{itemize}
+			\item Identifying and prioritizing features
+				\begin{itemize}
+					\item Are the customers expected to be involved in identifying the features?
+					\item Are the customers expected to establish the priorities of the features?
+				\end{itemize}
+		\end{itemize}
+%---------------------------------------------------------------------------
+	\item Short delivery cycles
+		\begin{itemize}
+			\item Development time-frames
+				\begin{itemize}
+					\item Is it expected that the product be developed over short delivery cycles? For example, a product increment should be released every 6 - 12 months and iterations last for four weeks or less.
+				\end{itemize}
+		\end{itemize}
+%---------------------------------------------------------------------------
+	\item Iterative Progression
+		\begin{itemize}
+			\item Planning
+				\begin{itemize}
+					\item Is the team expected to plan for each iteration?
+					\addition Is it expected that the team velocity is used for planning?
+				\end{itemize}
+			\item Estimation Authority
+				\begin{itemize}
+					\item Are the developers expected to estimate the time required to complete each story?
+				\end{itemize}
+			\item Estimation
+				\begin{itemize}
+					\item Is it expected that a well-defined approach to estimating the amount of work to be done during each release cycle and iteration be used?
+				\end{itemize}
+		\end{itemize}
+%---------------------------------------------------------------------------
+	\item Incremental Development
+		\begin{itemize}
+			\item Estimation Authority
+				\begin{itemize}
+					\item Are the developers expected to estimate the time required to complete each story?
+				\end{itemize}
+			\item Requirements Management
+				\begin{itemize}
+					\item Are tools available for managing the bugs/enhancements?
+				\end{itemize}
+			\item Identifying and prioritizing features
+				\begin{itemize}
+					\item Are the customers expected to be involved in identifying the features?
+					\item Are the customers expected to establish the priorities of the features?
+				\end{itemize}
+		\end{itemize}
+%---------------------------------------------------------------------------
+	\addition Velocity
+		\begin{itemize}
+			\addition Progress Estimation
+				\begin{itemize}
+					\addition Is it expected that the progress is track by a burn down chart and by measuring velocity?
+				\end{itemize}
+		\end{itemize}
+%----------------------------------------------------------------------------
+	\item Evolutionary Requirements
+		\begin{itemize}
+			\item Minimal Big Requirements Up Front and Big Design Up Front
+				\begin{itemize}
+					\item Is it expected that only high level features be identified upfront?
+					\item Is it expected that an evolutionary approach to architecting the system be followed as opposed to creating the architecture upfront?
+				\end{itemize}
+			\item Just-In-Time Refinement
+				\begin{itemize}
+					\item Is it expected that the requirements be determined and refined just-in-time?
+				\end{itemize}
+			\item Feature Decomposition
+				\begin{itemize}
+					\item Is it expected that a mechanism for decomposing the selected features to be developed during the current release cycle into stories be defined?
+				\end{itemize}
+		\end{itemize}
+%---------------------------------------------------------------------------
+	\item Minimal Documentation
+		\begin{itemize}
+			\item Tool Support for Minimal Documentation
+				\begin{itemize}
+					\item Do tools for maintaining documentation exist?
+				\end{itemize}
+			\item Process support for Minimal Documentation
+				\begin{itemize}
+					\item Is it expected that minimal documentation be maintained?
+				\end{itemize}
+			\item Buy-in for Minimal Documentation
+				\begin{itemize}
+					\item Are the teams receptive to maintaining minimal or just-enough documentation?
+				\end{itemize}
+		\end{itemize}
+\end{itemize}
+
+
+
+
+
+\section{Effectiveness}
+
+\begin{itemize}
+	\item Refactoring 
+		\begin{itemize}
+			\item Minimizing Technical Debt 
+				\begin{itemize}
+					\item To what extent do the teams manage technical debt? 
+					\item To what extent do the teams minimize technical debt when developing new systems? 
+					\item To what extent does the system and the development environment allow Technical Debt to be minimized? 
+				\end{itemize}
+			\item Buy-in for Refactoring 
+				\begin{itemize}
+					\item To what extent does the management support the implementation of refactoring? 
+					\item To what extent do the teams implement refactoring? 
+					\addition To what extent are the teams permitted to refactor anywhere in the code base?			
+					\addition To what extent were there enough unit tests and automaated system test to allow developers to safely refactor?					
+				\end{itemize}
+		\end{itemize}
+%---------------------------------------------------------------------------
+	\item Test First Development
+		\begin{itemize}
+			\item Code coverage
+				\begin{itemize}
+					\item To what extent did the developers provide adequate code coverage from the tests?
+				\end{itemize}
+		\end{itemize}
+		\begin{itemize}
+			\item Customer Satisfaction
+				\begin{itemize}
+					\item To what extent is the product developed so far in-sync with the customers' needs and expectations?
+				\end{itemize}
+		\end{itemize}
+		\begin{itemize}
+			\item Testing first
+				\begin{itemize}
+					\item To what extent do developers write tests first before writing code?
+					\item To what extent are the test plans created before the developers start coding?
+					\addition To what extent did the unit tests cover all critical parts of the production code?
+				\end{itemize}
+		\end{itemize}
+%---------------------------------------------------------------------------
+	\item Retrospection
+		\begin{itemize}
+			\item Process Outcomes for Retrospection
+				\begin{itemize}
+					\item To what extent were practices that worked well during the iteration or the release cycle and hence should be used in the future identified?
+					\item To what extent were practices that did not yield the expected results and hence should be discontinued identified?
+					\item To what extent were new practices that may better suit the team's needs identified?
+				\end{itemize}
+		\end{itemize}
+		\begin{itemize}
+			\item Retrospective goals
+				\begin{itemize}
+					\item To what extent were the retrospective goals set during the previous iteration met?
+				\end{itemize}
+		\end{itemize}
+		\begin{itemize}
+			\addition Team
+				\begin{itemize}
+					\addition To what extent did team members participate in the retrospective meetings?
+					\addition To what extent does the team inspect and adapt the overall process?
+					\addition To what extent does the team continuously improve the iteration plan?
+					\addition To what extent does the team continuously improve the release plan?
+				\end{itemize}
+		\end{itemize}
+		\begin{itemize}
+			\addition Outcomes
+				\begin{itemize}
+					\addition To what extent were the retrospectives helpful for seeing what worked well in the past iterations?
+					\addition To what extent were the retrospectives helpful for seeing what should be improved in the upcoming iterations?
+					\addition To what extent did the points improve from the previous retrospectives?
+				\addition To what extent were important points for improvement assigned to responsible individuals?
+				\end{itemize}	 
+		\end{itemize}
+%---------------------------------------------------------------------------
+	\item Distribution of expertise 
+		\begin{itemize}
+			\item Process Outcomes for Distribution of Expertise
+				\begin{itemize}
+					\item To what extent do the team members have the requisite expertise to complete the tasks assigned to them? 
+					\item To what extent is the work assigned to the team members commensurate with their expertise? 
+					\item To what extent does the team effectively complete the work that they have committed to? 
+					\item To what extent do the teams have members in leadership positions that can guide the others? 
+					\item To what extent do the teams not rely on knowledge external to their teams? 
+					\addition To what extent is the team cross-functional?
+				\end{itemize}
+		\end{itemize}
+%---------------------------------------------------------------------------
+	\item Configuration Management
+		\begin{itemize}
+			\item Project Environment for Configuration Management
+				\begin{itemize}
+					\item To what extent do teams use appropriate tools for version control and management?
+				\end{itemize}
+		\end{itemize}
+%---------------------------------------------------------------------------		
+	\item Adherence to standards
+		\begin{itemize}
+			\item Estimation
+				\begin{itemize}
+					\item To what extent are the estimates for the amount of work to be done during each iteration accurate?
+				\end{itemize}
+			\item Coding Standards
+				\begin{itemize}
+					\item To what extent do the team members agree with the set coding standards? 
+					\item To what extent do the team members adhere to the set coding standards?
+				\end{itemize}
+		\end{itemize}
+%---------------------------------------------------------------------------
+	\item Continuous Integration
+		\begin{itemize}
+			\item Project Environment for Continuous Integration 
+				\begin{itemize}
+					\item To what extent are automated test suites developed?
+					\item To what extent are the code bases not shared?
+				\end{itemize}
+				\begin{itemize}
+					\addition Process Support for Continuous Integration
+						\begin{itemize}
+							\addition To what extent do the team members integrate their code per day?
+						\end{itemize}
+				\end{itemize}
+			\item Story Completeness
+				\begin{itemize}
+					\item To what extent has each story been coded? 
+					\item To what extent has each story been unit tested? 
+					\addition To what extent has each story been unit tested successfully?
+					\item To what extent has each story been refactored? 
+					\item To what extent has each story been checked into the code base? 
+					\item To what extent has each story been integrated with the existing code base? 
+					\item To what extent has each story been reviewed? 
+					\item To what extent has each story been accepted by the customer? 
+					\addition To what extent were the stories accepted and demonstrated on integrated build?
+				\end{itemize}
+			\item Daily/Frequent builds
+				\begin{itemize}
+					\item To what extent do automated builds run one or more times everyday?
+					\addition To what extend are the automated builds successful?
+					\addition To what extend test reports for automated unit tests were systematically used to capture the bugs?
+				\end{itemize}
+		\end{itemize}
+
+%---------------------------------------------------------------------------		
+	\item Self-managing teams
+		\begin{itemize}
+			\item Team Empowerment
+				\begin{itemize}
+					\item To what extent do the team members determine the amount of work to be done? 
+					\item To what extent do the team members take ownership of work items? 
+					\item To what extent do the team members hold each other accountable for the work to be completed? 
+					\item To what extent do the team members ensure that they complete the work that they are accountable for?
+				\end{itemize}
+			\item Autonomy
+				\begin{itemize}
+					\item To what extent do the team members determine, plan, and manage their day-to-day activities under reduced or no supervision from the management? 
+					\item To what extent do the developers form ad-hoc groups to determine and refine requirements just-in-time?
+					\addition To what extend does the team self-police and reinforce the practices and rules?
+				\end{itemize}
+			\item Management support
+				\begin{itemize}
+					\item To what extent does the management support the self-managing nature of the teams?
+				\end{itemize}
+			\addition Commitment
+				\begin{itemize}
+					\addition To what extent is the team dedicated to the release?
+				\end{itemize}
+		\end{itemize}
+%---------------------------------------------------------------------------	
+	\item Continuous Feedback	
+		\begin{itemize}
+			\item Customer Feedback
+				\begin{itemize}
+					\item To what extent do the customers provide feedback to the business and the development team?
+				\end{itemize}
+		\end{itemize}
+		\begin{itemize}
+			\item Customer Satisfaction
+				\begin{itemize}
+					\item To what extent is the product developed so far in-sync with the customers' needs and expectations?
+				\end{itemize}
+		\end{itemize}
+		\begin{itemize}
+			\addition Customer Acceptance
+				\begin{itemize}
+					\addition To what extent were customer acceptance tests applied?
+					\addition To what extent did the customer focus on acceptance tests to determine what had been accomplished?
+					\addition To what extent were the acceptance tests the ultimate way to verify system functionality and customer requirements?
+				\end{itemize}
+		\end{itemize}
+%---------------------------------------------------------------------------		
+	\item High-bandwidth communication
+		\begin{itemize}
+			\addition On-site Customer
+				\begin{itemize}
+					\addition To what extent were the responses from the customer in a timely manner?
+					\addition To what extent was the feedback from the customer clear and clarified the requirements or open issues to the developers?
+				\end{itemize}
+		\end{itemize}
+		\begin{itemize}
+			\item Customer Satisfaction
+				\begin{itemize}
+					\item To what extent is the product developed so far in-sync with the customers' needs and expectations?
+				\end{itemize}
+			\item Scheduling
+				\begin{itemize}
+					\item To what extent is the time allocated for the release planning meetings utilized effectively? 
+					\item To what extent is the time allocated for the iteration planning meetings utilized effectively?
+					\item To what extent is the time allocated for the retrospective meetings utilized effectively? 
+					\item To what extent do the scheduled meetings (except the daily progress tracking meetings) begin and end on time? 
+					\item To what extent do the meetings (except the daily progress tracking meetings) take place as scheduled? 
+				\end{itemize}
+			\addition Daily progress tracking meetings
+				\begin{itemize}
+					\item To what extent is the time allocated for the daily progress tracking meetings utilized effectively? 
+					\addition To what extent were daily progress tracking meetings up to 15 minutes?
+					\addition To what extent did all relevant technical issues or organizational impediments came up in the daily progress tracking meetings?
+					\addition To what extent were the daily progress tracking meetings the quickest way to notify the other team members about problems?
+					\addition To what extent did team members offer to help when people reports problems in the daily progress tracking meetings?
+					\addition To what extent was the daily progress tracking meeting on time?
+				\end{itemize}
+			\item Inter- and intra-team communication
+				\begin{itemize}
+					\item To what extent does open communication prevail between the business and the development team? 
+					\item To what extent does open communication prevail between the manager and the developers and testers? 
+					\item To what extent does open communication prevail between the developers and the testers? 
+					\item To what extent does open communication prevail among the developers? 
+					\item To what extent does open communication prevail between the external customer/user and the business? 
+					\item To what extent does open communication prevail between the external customer/user and the development team? 
+					\item To what extent does open communication prevail between members of different teams?
+					\addition To what extent does the team have an effective channel for obstacle escalation?
+				\end{itemize}
+		\end{itemize}
+%---------------------------------------------------------------------------		
+	\item Client-driven Iterations
+		\begin{itemize}
+			\item Requirements Prioritization
+				\begin{itemize}
+					\item To what extent do the customers establish the priorities of the story?
+					\addition To what extent are the features reprioritized when the scope could not be implemented due to constraints?
+				\end{itemize}
+			\item Customer Satisfaction
+				\begin{itemize}
+					\item To what extent is the product developed so far in-sync with the customers' needs and expectations?
+				\end{itemize}
+			\item Customer Requests
+				\begin{itemize}
+					\item To what extent are the changes requested by the customers accommodated?
+				\end{itemize}			
+		\end{itemize}
+%---------------------------------------------------------------------------	
+	\item Short delivery cycles
+		\begin{itemize}
+			\item Development time-frames
+				\begin{itemize}
+					\item To what extent is software released frequently? (length of a release cycle is one year or less)
+					\item To what extent is software released frequently? (length of an iteration is four weeks or less)
+				\end{itemize}
+			\item Customer Satisfaction
+				\begin{itemize}
+					\item To what extent is the product developed so far in-sync with the customers' needs and expectations?
+				\end{itemize}
+			\item Roll-backs
+				\begin{itemize}
+					\item To what extent are the deployments not rolled back?
+				\end{itemize}
+		\end{itemize}
+%---------------------------------------------------------------------------		
+	\item Iterative Progression
+		\begin{itemize}
+			\item Estimation
+				\begin{itemize}
+					\item To what extent are the estimates for the amount of work to be done during each iteration accurate?
+					\addition To what extent did the team reduce the scope than delaying the deadline?
+					\addition To what extent did team members take part in defining the amount of work to be done?
+					\addition To what extent did the concerns of the team members about reaching the iteration goals were taken into consideration?
+				\end{itemize}
+			\item Iteration length
+				\begin{itemize}
+					\item To what extent are the iterations timeboxed?
+					\item To what extent is the length of an iteration 4 weeks or less?
+				\end{itemize}
+			\item Requirements Management for Iterations
+				\begin{itemize}
+					\item To what extent is an iteration list maintained?
+					\addition To what extent do the team members develop and manage an iteration backlog?
+					\item To what extent are the stories fully estimated when added to the list?
+					\item To what extent are the stories prioritized when added to the list?
+				\end{itemize}
+			\addition Planning
+				\begin{itemize}
+					\addition To what extent did the team discuss the acceptance criteria during the iteration planning?
+					\addition To what extent did the team members actively participate during iteration planning meetings?
+				\end{itemize}
+			\addition Product
+				\begin{itemize}
+					\addition To what extent was the product shippable at the end of the iteration?
+					\addition To what extent was the working software the primary measure for project progress?
+					\addition To what extent did the delivered software meet the quality requirements of production code at the end of the iteration?
+				\end{itemize}
+		\end{itemize}
+%---------------------------------------------------------------------------		
+	\item Incremental Development
+		\begin{itemize}
+			\item Requirements Management for Releases
+				\begin{itemize}
+					\item To what extent is a product backlog maintained?
+					\item To what extent are the features priorotized when they are added to the product backlog?
+					\item To what extent are the features fully estimated before they are added to the product backlog?
+					\addition To what extent is a release backlog maintained?
+					\addition To what extent are the features prioritized when they are added to the release backlog?
+				\end{itemize}
+			\item Timeboxing Releases
+				\begin{itemize}
+					\item To what extent are the release cycles timeboxed?
+					\item To what extent are only a subset of the identified features developed during a release cycle?
+				\end{itemize}
+		\end{itemize}
+%---------------------------------------------------------------------------
+	\addition Velocity
+		\begin{itemize}
+			\addition Pace
+				\begin{itemize}
+					\addition To what extent does the team work at a sustainable pace?
+				\end{itemize}
+		\end{itemize}
+%---------------------------------------------------------------------------
+	\item Evolutionary Requirements
+		\begin{itemize}
+			\item Requirements Reprioritization 
+				\begin{itemize}
+					\item To what extent are the features reprioritized as and when new features are identified?
+				\end{itemize}
+			\item Customer Requests
+				\begin{itemize}
+					\item To what extent are the changes requested by the customers accommodated?
+					\addition To what extent is a requirement regarded as finished until its acceptance tests (with the customer) has passed?
+				\end{itemize}
+			\item Minimal Big Requirements Up Front and Big Design Up Front
+				\begin{itemize}
+					\item To what extent are only the high level features identified upfront?
+					\item To what extent are the architecture requirements allowed to evolve over time?
+				\end{itemize}
+		\end{itemize}
+%---------------------------------------------------------------------------
+	\item Minimal Documentation
+		\begin{itemize}
+			\item Maintaining documentation 
+				\begin{itemize}
+					\item To what extent is minimal documentation supported by teams?
+					\item To what extent is minimal documentation created/developed?
+					\item To what extent is minimal documentation recorded/archived?
+					\item To what extent is minimal documentation maintained?
+				\end{itemize}
+		\end{itemize}
+\end{itemize}
