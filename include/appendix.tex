@@ -697,6 +697,8 @@ The items marked with \XSolidBrush  are the ones not included in the surveys to 
 \newcommand*\taanr{\item[\SnowflakeChevron]}
 \newcommand*\pam{\item[\AsteriskBold]}
 \newcommand*\pamr{\item[\AsteriskThinCenterOpen]}
+\newcommand*\ops{\item[\FiveStarOutlineHeavy]}
+
 
 In order to distinguish the questions among the tools the following annotation has been used. 
 \begin{itemize}
@@ -718,23 +720,33 @@ In order to distinguish the questions among the tools the following annotation h
 	\pamr The team rather reduced the scope than delayed the deadline
 	\pamr At the end of an iteration, we delivered a potentially shippable product
 	\pamr Working software was the primary measure for project progress
+	\ops To what extent are the estimates for the amount of work to be done during each iteration accurate?
+	\ops To what extent are the stories fully estimated when added to the iteration backlog?
+	\ops To what extent are the stories prioritized when added to the iteration backlog?	
 \end{itemize}
 
 \textbf{Product Backlog}
 \begin{itemize}
 	\taa Backlog prioritized and ranked by business value
 	\taar Backlog estimated at gross level %removed
+	\ops To what extent is a product backlog maintained?
+	\ops To what extent are the features prioritized when they are added to the product backlog?
+	\ops To what extent are the features fully estimated before they are added to the product backlog?
 \end{itemize}
 
 \textbf{Smaller and Frequent Product Releases}
 \begin{itemize}
 	\taa The team has small and frequent releases
 	\pam We implemented our code in short iterations
+	\ops To what extent is software released frequently? (length of a release cycle is one year or less)
+	\ops To what extent is software released frequently? (length of an iteration is four weeks or less)
+	\ops To what extent is the product developed so far in-sync with the customers' needs and expectations? 
+	\ops To what extent are the deployments not rolled back? 
 \end{itemize}
 
 \textbf{Customer/User Acceptance Testing}
 \begin{itemize}
-	\pam The customer provided a comprehensive set of test criteria for customer acceptance
+	\pam The customer provided a comprehensive set of test criteria for customer acceptance %(Test First Development)
 	\pamr How often did you apply customer acceptance tests?
 	\pamr The customer focused primarily on customer acceptance tests to determine what had been accomplished at the end of an iteration
 	\pamr Customer acceptance tests were used as the ultimate way to verify system functionality and customer requirements
@@ -769,12 +781,16 @@ In order to distinguish the questions among the tools the following annotation h
 requirements of the current iteration - relative
 	\pamr All concerns from team members about reaching the iteration goals were considered
 	\pamr The effort estimates for the iteration scope items were modified only by the  technical team members %removed
+	\ops To what extent is an iteration backlog maintained?
+	\ops To what extent is the length of an iteration 4 weeks or less?
+	\ops To what extent are the iterations timeboxed?
+	\ops To what extent are the release cycles timeboxed? 
+	\ops To what extent are only a subset of the identified features developed during a release cycle? 
 \end{itemize}
 
 \textbf{Self-Organizing Teams}
 \begin{itemize}
 	\taa Team leads communication; communication not managed
-	\taa Team members complete commitments
 	\taa Team defines, estimates, and selects their own work (stories and tasks)
 	\taar Team develops and manages iteration backlog
 	\taar Team manages interdependencies and constraints %removed
@@ -786,11 +802,24 @@ requirements of the current iteration - relative
 	\taar Team self-polices and reinforces use of agile practices and rules
 	\taar Team is smaller than 15 people
 	\pam Each developer signed up for tasks on a completely voluntary basis
+	\ops To what extent do the team members determine the amount of work to be done? 
+	\ops To what extent do the team members take ownership of work items?
+	\ops To what extent do the team members hold each other accountable for the work to be completed?
+	\ops To what extent do the team members ensure that they complete the work that they are accountable for?
+	\ops To what extent do the team members determine, plan, and manage their day-to-day activities under reduced or no supervision from the management?
+	\ops To what extent do the developers form ad-hoc groups to determine and refine requirements just-in-time?
+	\ops To what extent does the management support the self-managing nature of the teams?
 \end{itemize}
 
 \textbf{Appropriate Distribution of Expertise}
 \begin{itemize}
 	\taa Team is cross-functional with integrated product owner, development, documentation and QA
+	\taa Team members complete commitments
+	\ops To what extent do the team members have the requisite expertise to complete the tasks assigned to them?
+	\ops To what extent is the work assigned to the team members commensurate with their expertise?
+	\ops To what extent does the team effectively complete the work that they have committed to? 
+	\ops To what extent do the teams have members in leadership positions that can guide the others?
+	\ops To what extent do the teams not rely on knowledge external to their teams? 
 \end{itemize}
 
 \textbf{High-Bandwidth Communication}
@@ -808,7 +837,20 @@ requirements of the current iteration - relative
 	\pam The project/release manager worked with the developers in \ldots
 	\pam The customer was located with the developers in \ldots
 	\pamr The developers had responses from the customer in a timely manner
-	\pamr The feedback from the customer was clear and clarified his requirements or open issues to the developers
+	\ops To what extent is the product developed so far in-sync with the customers' needs and expectations?
+	\ops To what extent is the time allocated for the release planning meetings utilized effectively?
+	\ops To what extent is the time allocated for the iteration planning meetings utilized effectively?
+	\ops To what extent is the time allocated for the retrospective meetings utilized effectively?
+	\ops To what extent do the scheduled meetings (except the daily progress tracking meetings) begin and end on time?
+	\ops To what extent do the meetings (except the daily progress tracking meetings) take place as scheduled? 
+	\ops To what extent is the product developed so far in-sync with the customers' needs and expectations? 
+	\ops To what extent does open communication prevail between the business and the development team? 
+	\ops To what extent does open communication prevail between the manager and the developers and testers? 
+	\ops To what extent does open communication prevail between the developers and the testers? 
+	\ops To what extent does open communication prevail among the developers? 
+	\ops To what extent does open communication prevail between the external customer/user and the business? 
+	\ops To what extent does open communication prevail between the external customer/user and the development team?
+	\ops To what extent does open communication prevail between members of different teams? 
 \end{itemize}
 
 \textbf{Daily Progress Tracking Meetings}
@@ -819,6 +861,7 @@ requirements of the current iteration - relative
 	\pamr All relevant technical issues or organizational impediments came up in the stand up meetings
 	\pamr Stand up meetings provided the quickest way to notify other team members about problems
 	\pamr When people reported problems in the stand up meetings, team members offered to help instantly
+	\ops To what extent is the time allocated for the daily progress tracking meetings utilized effectively?
 \end{itemize}
 
 \textbf{Retrospective Meetings}
@@ -834,6 +877,10 @@ requirements of the current iteration - relative
 	\pamr All team members actively participated in gathering lessons learned in the retrospectives
 	\pamr In the retrospectives (or shortly afterwards), we systematically assigned all important points for improvement to responsible individuals
 	\pamr Our team followed up intensively on the progress of each improvement point elaborated in a retrospective
+	\ops To what extent were practices that worked well during the iteration or the release cycle and hence should be used in the future identified?
+	\ops To what extent were practices that did not yield the expected results and hence should be discontinued identified?
+	\ops To what extent were new practices that may better suit the team's needs identified?
+	\ops To what extent were the retrospective goals set during the previous iteration met? 
 \end{itemize}
 
 \textbf{Test Driven Development}
@@ -844,6 +891,10 @@ requirements of the current iteration - relative
 	\pam New code was written with unit tests covering its main functionality
 	\pam The implemented code was written to pass the test case
 	\pamr Automated unit tests sufficiently covered all critical parts of the production code
+	\ops To what extent did the developers provide adequate code coverage from the tests?
+	\ops To what extent is the product developed so far in-sync with the customers' needs and expectations? (this also exists elsewhere)
+	\ops To what extent do developers write tests first before writing code?
+	\ops To what extent are the test plans created before the developers start coding? 
 \end{itemize}
 
 \textbf{Refactoring}
@@ -851,22 +902,25 @@ requirements of the current iteration - relative
 	\taa Refactoring is continuous
 	\pamr Team is permitted to refactor anywhere in the code base
 	\pamr There were enough unit tests and automated system tests to allow developers to safely change any code
+	\ops To what extent do the teams manage technical debt? 
+	\ops To what extent do the teams minimize technical debt when developing new systems? 
+	\ops To what extent does the system and the development environment allow Technical Debt to be minimized? 
+	\ops To what extent does the management support the implementation of refactoring? 
 \end{itemize}
 
 \textbf{Software Configuration Management}
 \begin{itemize}
 	\taa Source control system exists
+	\ops To what extent do teams use appropriate tools for version control and management?
 \end{itemize}
 
-\textbf{Adherence to Coding Standards}
+\textbf{Adherence to Standards} %Change in tables and text
 \begin{itemize}
 	\taa Coding standards exist and applied
+	\taa Pair programming is practised %this was moved from Pair Programming
 	\taa Adequate and effective code review practices
-\end{itemize}
-
-\textbf{Pair Programming}
-\begin{itemize}
-	\taa Pair programming is practised
+	\ops To what extent do the team members agree with the set coding standards? 
+	\ops To what extent do the team members adhere to the set coding standards?
 \end{itemize}
 
 \textbf{Continuous Integration}
@@ -881,12 +935,49 @@ requirements of the current iteration - relative
 	\pamr The team integrated continuously
 	\pamr All unit tests were run and passed when a task was finished and before checking in and integrating
 	\pamr For detecting bugs, test reports from automated unit tests were systematically used to capture the bugs
+	\ops To what extent has each story been coded? 
+	\ops To what extent has each story been unit tested? 
+	\ops To what extent has each story been refactored? 
+	\ops To what extent has each story been checked into the code base? 
+	\ops To what extent has each story been integrated with the existing code base? 
+	\ops To what extent has each story been reviewed?
+	\ops To what extent are automated test suites developed? 
+	\ops To what extent are the code bases not shared? 
+	\ops To what extent do automated builds run one or more times everyday?
+	\ops To what extent has each story been accepted by the customer? %not sure
 \end{itemize}
 
-\textbf{Client-driven Iterations}
+\textbf{Client-Driven Iterations}
 \begin{itemize}
 	\pam The customer picked the priority of the requirements in the iteration plan
 	\pamr When the scope could not be implemented due to constraints, the team held active discussions on re-prioritization with the customer on what to finish within the iteration 
+	\ops To what extent do the customers establish the priorities of the story?
+	\ops To what extent is the product developed so far in-sync with the customers' needs and expectations?
+	\ops To what extent are the changes requested by the customers accommodated?
+\end{itemize}
+
+\textbf{Minimal or Just Enough Documentation}
+\begin{itemize}
+	\ops To what extent is minimal documentation supported by teams? 
+	\ops To what extent is minimal documentation created/developed? 
+	\ops To what extent is minimal documentation recorded/archived? 
+	\ops To what extent is minimal documentation maintained? 
+\end{itemize}
+
+\textbf{Continuous Feedback}
+\begin{itemize}
+	\pamr The feedback from the customer was clear and clarified his requirements or open issues to the developers % change it in more completed tool
+	\ops To what extent do the customers provide feedback to the business and the development team? 
+	\ops To what extent is the product developed so far in-sync with the customers' needs and expectations?
+\end{itemize}
+
+\textbf{Evolutionary Requirements}
+\begin{itemize}
+	\ops To what extent are the features reprioritized as and when new features are identified?
+	\ops To what extent are the changes requested by the customers accommodated? 
+	%taken from Minimal BRUF and BDUF
+	\ops To what extent are only the high level features identified upfront?
+	\ops To what extent are the architecture requirements allowed to evolve over time?
 \end{itemize}
 
 \section{Non Relevant Questions}
