@@ -2,6 +2,7 @@
 \label{sec:mapping}
 
 %elaborate why some belong to different practices than strategies
+%count again, there have been some changes
 
 \section{Questions to Practices/Strategies}
 
@@ -73,13 +74,12 @@ In order to distinguish the questions among the tools the following annotation h
 
 \textbf{Iteration Progress Tracking and Reporting}
 \begin{itemize}
-	\taar Iteration progress tracked by task to do (burn-down chart) and card acceptance (velocity) - relative
 	\taa Iteration backlog defined
 	\taa Iteration backlog ranked by priority
-	\taa Iteration planning meeting attended and effective - matched
-	\taa Iterations are no more than four weeks in length - matched
-	\taa Iterations are of a consistent fixed length - matched
-	\taar Team develops and manages iteration backlog
+	\taa Iteration planning meeting attended and effective
+	\taa Iterations are no more than four weeks in length
+	\taa Iterations are of a consistent fixed length
+	%\taar Team develops and manages iteration backlog
 	\taar Iteration theme established and communicated %removed
 	\taar Team velocity measured and used for planning
 	\taar Release theme established and communicated 
@@ -89,10 +89,12 @@ In order to distinguish the questions among the tools the following annotation h
 	\taar Release backlog estimated at plan level 
 	\taar Release progress tracked by feature acceptance
 	\taar The whole team is present at release planning meetings
+	\taar Iteration progress tracked by task to do (burn-down chart) and card acceptance (velocity)
 	\pamr All members of the technical team actively participated during iteration planning meetings
 	\pamr All technical team members took part in defining the effort estimates for 
-requirements of the current iteration - relative
+requirements of the current iteration
 	\pamr All concerns from team members about reaching the iteration goals were considered
+	\pamr When effort estimates differed, the technical team members discussed their underlying assumption %removed
 	\pamr The effort estimates for the iteration scope items were modified only by the  technical team members %removed
 	\ops To what extent is an iteration backlog maintained?
 	\ops To what extent is the length of an iteration 4 weeks or less?
@@ -156,7 +158,6 @@ requirements of the current iteration - relative
 	\ops To what extent is the time allocated for the retrospective meetings utilized effectively?
 	\ops To what extent do the scheduled meetings (except the daily progress tracking meetings) begin and end on time?
 	\ops To what extent do the meetings (except the daily progress tracking meetings) take place as scheduled? 
-	\ops To what extent is the product developed so far in-sync with the customers' needs and expectations? 
 	\ops To what extent does open communication prevail between the business and the development team? 
 	\ops To what extent does open communication prevail between the manager and the developers and testers? 
 	\ops To what extent does open communication prevail between the developers and the testers? 
@@ -199,8 +200,8 @@ requirements of the current iteration - relative
 \textbf{Test Driven Development}
 \begin{itemize}
 	\taa Unit tests written before development
-	\taar Acceptance tests written before development
 	\taa 100\% automated unit test coverage
+	\taar Acceptance tests written before development
 	\pam New code was written with unit tests covering its main functionality
 	\pam The implemented code was written to pass the test case
 	\pamr Automated unit tests sufficiently covered all critical parts of the production code
@@ -213,7 +214,7 @@ requirements of the current iteration - relative
 \textbf{Refactoring}
 \begin{itemize}
 	\taa Refactoring is continuous
-	\pamr Team is permitted to refactor anywhere in the code base
+	\taar Team is permitted to refactor anywhere in the code base
 	\pamr There were enough unit tests and automated system tests to allow developers to safely change any code
 	\ops To what extent do the teams manage technical debt? 
 	\ops To what extent do the teams minimize technical debt when developing new systems? 
