@@ -1,7 +1,7 @@
 \chapter{Related Work}\label{ch:related_work}
 
 \section{Introduction}
-\lettrine[lines=4, loversize=-0.1, lraise=0.1]{A}{ccording} to \citet{yauch} it is very difficult to measure agility, although it has been widely spread. \citet{tsourveloudis} agree on this mainly because of agility's concept vagueness. Nevertheless, various tools have been developed in the last decade in order to measure the agility in software development teams. Below is a short description of some of the ones that have been used as references in most papers of this field. The tools are separated in two categories, 
+\lettrine[lines=4, loversize=-0.1, lraise=0.1]{A}{ccording} to \citet{yauch} it is very difficult to measure agility, although it has been widely spread. \citet{tsourveloudis} agree on this mainly because of the vagueness of agility's concept. Nevertheless, various tools have been developed in the last decade in order to measure the agility in software development teams. Below is a short description of some of the ones that have been used as references in most papers of this field. The tools are separated in two categories, 
 \begin{inparaenum} [a\upshape)]
 \item those which measure the agility of the methodologies and
 \item those which measure the agility of organisations/teams.
@@ -218,7 +218,7 @@ The fourth dimension examines the practices that support four processes as these
 \item Development Practices/Infrastructure
 \end{inparaenum}
 
-Each of these aspects is followed by a number of questions rated in six-point Likert scale and the results are represented in a radar chart.
+Each of these aspects is followed by a number of questions rated on a six-point Likert scale and the results are represented in a radar chart.
 
 \subsection{Comparative Agility} %Current level of agility
 \citet{comparative_agility} created the Comparative Agility (CA) assessment tool which does not assess the agility of an organization by providing an absolute value, but it rather provides a value in comparison to other organizations/companies \cite{comparative_agility_web}. The idea behind CA is that organizations try to be more agile than their competitors because of believing to have more benefits. Until 2010 more than 1200 respondents supported that idea by answering the tool's online survey. The CA assessment tool consists of the following seven dimensions 
@@ -231,7 +231,7 @@ Each of these aspects is followed by a number of questions rated in six-point Li
 	\item Culture
 	\item Knowledge-Creating
 \end{inparaenum}
-which are made up of three to six characteristics each one of them. Each characteristic has four statements where each one of them represents an agile practice. The answers of every statement are on five-point Likert scale.
+which are made up of three to six characteristics each one of them. Each characteristic has four statements where each one of them represents an agile practice. The answers of every statement are on a five-point Likert scale.
 
 \subsection{Escobar - Vasquez Model for Assessing Agility} %Measures current level of agility
 
@@ -304,6 +304,60 @@ Thoughtworks \cite{thoughtworks} is a worldwide consulting company. They have de
 \subsection{42-Point Test}
 \citet{42points} createad a simple 42-question survey based on a similar one from Nokia \cite{nokia}, in order to allow to Scrum/XP teams to easily see to what extent they follow various agile practices.
 
+\subsection{OPS Framework}
+\label{sec:ops}
+\citet{sventha_dissertation} created the Objectives, Principles and Stategies (OPS) Framework in order to assess the ``goodness" of an agile methodology. It is an evolution of the work done by \citet{2604} and \citet{sidky_dissertation}. The focus of this tool is mainly on eXtreme Programming, Feature Driven Development, Lean, Crystal and any tailored instances of them.
+
+In order to achieve this the framework examines the methodology based on 3 aspects:
+\begin{itemize}
+\item Adequacy - Sufficiency of the method with respect to meeting its stated objectives.
+\item Capability - Ability of an organization to provide an environment supporting the implementation of its adopted method. Such ability is reflected in the characteristics of an organization's people, process
+and project.
+\item Effectiveness - Producing the intended or expected results. The existence of necessary process artifacts and product characteristics indicate levels of effectiveness.
+\end{itemize}
+
+%add figure 3.9
+
+The OPS framework identifies 
+\begin{inparaenum} [a\upshape)]
+\item objectives of the agile philosophy
+\item principles that support the objectives
+\item strategies that implement the principles
+\item linkages that relate objectives to
+principles, and principles to strategies
+\item indicators for assessing the extent to which an organization supports the implementation and effectiveness of those strategies
+\end{inparaenum}
+
+%The OPS Framework identifies 
+%\begin{itemize}
+%\item Objectives of the agile philosophy - ``something aimed at or striven for" as defined by \citet{2604}
+%\item Principles - what rules a process in order to achieve an objective according to \citet{2604}
+%\item Strategies - the implementations of the principles (i.e. they are the means for achieving the principles)
+%\item Linkages - the connectors between 
+%\begin{inparaenum} [a\upshape)]
+%\item the objectives and principles, 
+%\item the principles and the strategies. 
+%\end{inparaenum} 
+%The linkages show the path in order to asses the adequacy, capability and effectiveness of the method used.
+%\item Indicators for assessing the extent to which an organization supports the implementation and effectiveness of those strategies - In order to measure the capability and the effectiveness the strategies use properties which contain a number of questions. These properties differ for the capability and the effectiveness. Indicator is named the combination of a strategy with a property. They are directly measurable and are tailored to assess the strategies
+%\end{itemize}
+
+In total 5 objectives, 9 principles, 17 strategies 54 linkages and 80 indicators are identified. Also check Figure~\ref{objectives_principles_strategies}.
+
+\begin{figure} [H]
+\centerline{\includegraphics[scale=0.75]{include/relatedwork/fig/ops.pdf}}
+\caption{Objectives, Principles, and Strategies identified by the OPS Framework} 
+\label{objectives_principles_strategies}
+\end{figure} 
+
+%The OPS Framework works on a top down traversal for assessing the adequacy. One should identify the objectives followed by the method and based on the linkages move to the principles and then to strategies. On the other hand for assessing the capability and effectiveness the tool works on a bottom up traversal. Based on the strategies identified during the adequacy analysis one should answer the a set of questions for the capability and to another set of questions for the effectiveness. Then the measurements are propagated to the upper levels through the linkages. For a better understanding one can see Figure~\ref{ops_core}.
+%
+%\begin{figure} [H]
+%\centerline{\includegraphics[scale=0.75]{include/relatedwork/fig/ops_core.pdf}}
+%\caption{OPS Framework} 
+%\label{ops_core}
+%\end{figure} 
+
 \subsection{Sidky Agile Measurement Index} %maybe add the actual matrix from the SAMI paper
 \citet{sidky_dissertation} created the Sidky Agile Measurement Index (SAMI) in order to measure agility as part of the ``Agile Adoption Framework". SAMI is a scale used by an agile coach to identify the potential of a project or organization \cite{sidky}, which consists of five agile levels and five agile principles, deriving from the agile manifesto \cite{beck2001agile}, forming a 5x5 matrix. In most of the cells of this matrix there have been assigned agile practices. The assessement of agility takes place at each level by measuring the practices adopted by a team. Before moving to the next level the team needs to fulfill all the practices of the current one.
 
@@ -328,57 +382,3 @@ Thoughtworks \cite{thoughtworks} is a worldwide consulting company. They have de
     \end{itemize}
 \end{minipage}
 
-
-\subsection{OPS Framework}
-\label{sec:ops}
-\citet{sventha_dissertation} created the Objectives, Principles and Stategies (OPS) Framework in order to assess the ``goodness" of an agile methodology. It is an evolution of the work done by \citet{2604} and \citet{sidky_dissertation}. The focus of this tool is mainly on eXtreme Programming, Feature Driven Development, Lean, Crystal and any tailored instances of them.
-
-In order to achieve this the framework examines the methodology based on 3 aspects:
-\begin{itemize}
-\item Adequacy - Sufficiency of the method with respect to meeting its stated objectives.
-\item Capability - Ability of an organization to provide an environment supporting the implementation of its adopted method. Such ability is reflected in the characteristics of an organization's people, process
-and project.
-\item Effectiveness - Producing the intended or expected results. The existence of necessary process artifacts and product characteristics indicate levels of effectiveness.
-\end{itemize}
-
-%add figure 3.9
-
-The framework identifies 
-\begin{inparaenum} [a\upshape)]
-\item objectives of the agile philosophy
-\item principles that support the objectives
-\item strategies that implement the principles
-\item linkages that relate objectives to
-principles, and principles to strategies
-\item indicators for assessing the extent to which an organization supports the implementation and effectiveness of those strategies
-\end{inparaenum}
-
-The OPS Framework identifies 
-\begin{itemize}
-\item Objectives of the agile philosophy - ``something aimed at or striven for" as defined by \citet{2604}
-\item Principles - what rules a process in order to achieve an objective according to \citet{2604}
-\item Strategies - the implementations of the principles (i.e. they are the means for achieving the principles)
-\item Linkages - the connectors between 
-\begin{inparaenum} [a\upshape)]
-\item the objectives and principles, 
-\item the principles and the strategies. 
-\end{inparaenum} 
-The linkages show the path in order to asses the adequacy, capability and effectiveness of the method used.
-\item Indicators for assessing the extent to which an organization supports the implementation and effectiveness of those strategies - In order to measure the capability and the effectiveness the strategies use properties which contain a number of questions. These properties differ for the capability and the effectiveness. Indicator is named the combination of a strategy with a property. They are directly measurable and are tailored to assess the strategies
-\end{itemize}
-
-In total 5 objectives, 9 principles, 17 strategies 54 linkages and 80 indicators are identified. Also check Figure~\ref{objectives_principles_strategies}.
-
-\begin{figure} [H]
-\centerline{\includegraphics[scale=0.75]{include/relatedwork/fig/ops.pdf}}
-\caption{Objectives, Principles, and Strategies identified by the OPS Framework} 
-\label{objectives_principles_strategies}
-\end{figure} 
-
-The OPS Framework works on a top down traversal for assessing the adequacy. One should identify the objectives followed by the method and based on the linkages move to the principles and then to strategies. On the other hand for assessing the capability and effectiveness the tool works on a bottom up traversal. Based on the strategies identified during the adequacy analysis one should answer the a set of questions for the capability and to another set of questions for the effectiveness. Then the measurements are propagated to the upper levels through the linkages. For a better understanding one can see Figure~\ref{ops_core}.
-
-\begin{figure} [H]
-\centerline{\includegraphics[scale=0.75]{include/relatedwork/fig/ops_core.pdf}}
-\caption{OPS Framework} 
-\label{ops_core}
-\end{figure} 
