@@ -431,31 +431,28 @@ For assessing the agility by using the Perceptive Agile Measurement (PAM) tool, 
 \subsection{Results Verification}
 ~\nameref{sec:team_agility_assessment}
 
-%\section{Tools Correlation}
 
 
 
 \section{Methodology}
-In order to see which of the OPS, PAM and TAA can better measure the agility of software development teams, the four teams in company F were used a sample.
+%need to change the intro
+In order to see which of the OPS, PAM and TAA can better measure the agility of software development teams, the four teams in company F were used as a sample.
 
 \subsection{Data Collection}
 
 %explain that some employeed didn't take the survey
-%demographics about the experience of the employees and how much they work
-%explain that some employees were not asked to take the survey because they were new
+%maybe provide numbers for the demographics
 
 \subsubsection{Surveys}
 In order to collect the data an online survey was considered to be the best option since it could be easily answered by each subject and in addition this would assure no data loss. Google Drive \texttrademark \cite{google_drive} was selected to be the platform for collecting and preserving the data.
 
-For both PAM and TAA, for each of the tools, four surveys were created for each team respectively. The collection lasted two weeks by sending PAM the first one, and TAA the second one.
+For each of the tools, four surveys were created for each team respectively. The collection lasted about one month, the surveys for each tool every ten days. First PAM was sent, then TAA and at last it was OPS.
 
-For each survey two subjects were requested to answer them first in order to detect if there were any questions which could cause confusion, but also to see how much time is needed to fill the surveys in. Once the issues pointed out by the two subjects were fixed, the surveys were sent to the rest of the company's employees.
+For each survey two subjects were requested to answer them first, in order to detect if there were any questions which could cause confusion, but also to see how much time is needed to fill in the surveys. Once the issues pointed out by the two subjects were fixed, the surveys were sent to the rest of the company's employees.
 
 The links to the surveys were sent to the subjects early in the morning with an email, but they were asked to answer to them after lunch. The reasoning for this, is that at the beginning of the day the employees need to perform tasks which are usually important and time consuming and require to have clear thoughts and be on meetings. On the contrary, after lunch most of the employees try to relax by enjoying their coffee and discussing with each other. That time of the day was considered to be the best in order to ask them to spend 15-20 minutes and reply to the survey. The employees that belonged to more than one team, were asked a couple of days later to take the other survey in order to be more detached in their answers.
 
-The employees that were asked to answer to the surveys where all the members of the software development teams which consisted of software and QA engineers. All of the participating employees have more than a year in the company, while most of them have more than five years of work experience in an agile environment. Although code review is practised, it was avoided to ask from the code reviewers to take the same survey for the same team from that perspective because it would not provide more value to the results and in addition it would tire them a lot.
-
-As it was mentioned in chapter 2 PAM focuses on the following agile practices:
+As it was mentioned in chapter~\ref{ch:related_work}, PAM focuses on the following agile practices:
 \begin{inparaenum} [a\upshape)]
 	\item Iteration Planning
 	\item Iterative Development
@@ -464,29 +461,55 @@ As it was mentioned in chapter 2 PAM focuses on the following agile practices:
 	\item Customer Access
 	\item Customer Acceptance Tests
 	\item Retrospectives
-	\item Co-Location
+	\item Co-Location.
 \end{inparaenum}
-. From these methodology F does not support \textit{Stand-Up Meetings} and \textit{Retrospectives} (also check the analysis in section ~\ref{subsec:adequacy_analysis} and as a result they were totally excluded from the surveys.
+From these methodology F does not support \textit{Stand-Up Meetings} and \textit{Retrospectives} and as a result they were totally excluded from the surveys.
 
-On the contrary, TAA focuses on the following agile practices areas:
+On the contrary, TAA focuses on the following agile practices/areas:
 \begin{inparaenum} [a\upshape)]
 	\item Product Ownership
 	\item Release Planning and Tracking
 	\item Iteration Planning and Tracking
 	\item Team
 	\item Testing Practices
-	\item Development Practices/Infrastructure
+	\item Development Practices/Infrastructure.
 \end{inparaenum}
-. From these methodology F does not support \textit{Product Ownership}, since it implies that company F should practice Scrum, which it does not. Moreover, Scrum oriented questions from the rest of the practices/areas were removed as well. 
+From the above practices, methodology F does not support \textit{Product Ownership}, since it implies that company F should practice Scrum, which it does not. Moreover, Scrum oriented questions from the rest of the practices/areas were removed as well. 
 
-About the questions of the agile practices/areas which were not included, they were all given a value of 1, the least possible value. 
+Finally, OPS focuses on the following strategies:
+\begin{inparaenum} [a\upshape)]
+	\item Iterative progression
+	\item Incremental development
+	\item Short delivery cycles
+	\item Evolutionary requirements
+	\item Continuous feedback
+	\item Refactoring
+	\item Test-first development
+	\item Self-managing teams
+	\item Continuous integration
+	\item Constant velocity
+	\item Minimal documentation
+	\item High bandwidth communication
+	\item Retrospection
+	\item Client-driven iterations
+	\item Distribution of expertise
+	\item Configuration management
+	\item Adherence to standards
 
-For a more clear view on the questions contained in the surveys, one can take a look at Appendices~\ref{sec:pam} and~\ref{sec:team_agility_assessment}.
+\end{inparaenum}
+From the above practices, methodology F does not support \textit{Continuous feedback}, \textit{Constant velocity} and \textit{Retrospection}.%(also check the analysis in section ~\ref{subsec:adequacy_analysis}
+
+%About the questions of the agile practices/areas which were not included, they were all given a value of 1, the least possible value. 
+
+As it was stated earlier, in subsection~\ref{subsec:ops}, OPS measures agility based on three aspects. Adequacy, Capability and Effectiveness. Effectiveness measurement focuses on how well a team implements agile methodologies. Since the rest of the tools focus on the same thing, it was decided only to use the survey from Effectiveness and not take into account about Adequacy and Capability.
+
+For a more clear view on the questions contained in the surveys, one can take a look at Appendices~\ref{ch:effectiveness_hierarchy},~\ref{ch:pam} and~\ref{ch:team_agility_assessment}.
 
 \subsubsection{Likert Scales}
-The surveys for PAM and TAA were on a Likert scale 1-7 (never-always). From PAM,  only the \textit{Co-location} practice had its Likert scale 1-5 (different time zones-same room) since its creators preferred it in this way. For the transforamtion of the results for this practice, formula~\eqref{eq:likert_transformation} \cite{likert_transformation} was used.  \begin{equation} \label{eq:likert_transformation} x_2 = (1.5 * x_1) - 0.5 \end{equation} 
-%describe the Likert scales in OPS
+The surveys for PAM TAA and OPS were on a Likert scale 1-7 (never-always). From PAM,  only the \textit{Co-location} practice had its Likert scale 1-5 (different time zones-same room) since its creators preferred it in this way. For the transforamtion of the results for this practice, formula~\eqref{eq:likert_transformation} \cite{likert_transformation} was used.  \begin{equation} \label{eq:likert_transformation} x_2 = (1.5 * x_1) - 0.5 \end{equation} 
 
+\subsubsection{Demographics}
+The employees that were asked to answer to the surveys where all the members of the software development teams which consisted of software and quality assurance (QA) engineers. All of the participating employees have more than a year in the company, while most of them have more than five years of work experience in an agile environment. Employees which had been working for less than six months in the company were not asked since it was considered they were not fully aware of how the company's procedures or they were familiar enough with them. Although code review is practised, it was avoided to ask from the code reviewers to take the same survey for the same team from that perspective because it would not provide more value to the results and in addition it would tire them a lot.
 
 \subsection{Collected Data}
 
