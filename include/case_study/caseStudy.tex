@@ -1,4 +1,5 @@
-\chapter{Case Study}\label{ch:case study}
+\chapter{Case Study}
+\label{ch:case_study}
 
 \newcommand{\mysubparagraph}[1]{\subparagraph{#1}\mbox{}\\}
 
@@ -20,16 +21,15 @@
 
 \subsection{Observations}
 Company F \footnote{F is the first letter of the company's name} was willing to participate in this case study in order to measure how agile are its teams. With previous work experience in this company the author of this document had an insight of how the teams work and what each of them wants to achieve each one of them. 
-%Nevertheless I spent 3 months working closely with the teams almost daily for the needs of the master thesis.
 
 \subsection{Company F}
-Company F is a United States company which acts in the POS \footnote{Point Of Sales} area. With the development of some new products the company had a 300\% increase in the size of the development and QA departments resulting in the need for organizing better the development and release processes. In addition the increasing requests of new features in the company's systems requires a more efficient way in delivering them to the customers and also maintaining the quality of the products.
+Company F is a United States company which acts in the POS \footnote{Point Of Sales} area. With the development of some new products the company had a 400\% increase in the size of the development and QA departments resulting in the need for organizing better the development and release processes. In addition the increasing requests of new features in the company's systems requires a more efficient way in delivering them to the customers and also maintaining the quality of the products.
 
 \subsection{Methodology F}
 In general, company F does not follow a specific agile methodology, but rather a tailored mix of the most famous one which suits the needs of each team. Methodology F, as we can name it, embraces the practices displayed in Table~\ref{table:methodologyF_practices} from the various agile methodologies, some of the them in bigger and some of them in a smaller extent. For identifying these methodologies the analysis made by \citet{koch2005agile} was used. The results were verified by the agile coach.
 
 \begin{table} [H]
-\caption{Practices embraced in methodology F}
+\caption{Practices embraced by methodology F}
 \begin{tabular}{| p{2cm} | p{13cm}|}
     \hline
      \textbf{Method} & \textbf{Practice} \\ \hline
@@ -448,9 +448,9 @@ In order to collect the data an online survey was considered to be the best opti
 
 For each of the tools, four surveys were created for each team respectively. The collection lasted about one month, the surveys for each tool every ten days. First PAM was sent, then TAA and at last it was OPS.
 
-For each survey two subjects were requested to answer them first, in order to detect if there were any questions which could cause confusion, but also to see how much time is needed to fill in the surveys. Once the issues pointed out by the two subjects were fixed, the surveys were sent to the rest of the company's employees.
+Two subjects were requested to answer to the surveys first, in order to detect if there were any questions which could cause confusion, but also to see how much time is needed to fill in the surveys. Once the issues pointed out by the two subjects were fixed, the surveys were sent to the rest of the company's employees.
 
-The links to the surveys were sent to the subjects early in the morning with an email, but they were asked to answer to them after lunch. The reasoning for this, is that at the beginning of the day the employees need to perform tasks which are usually important and time consuming and require to have clear thoughts and be on meetings. On the contrary, after lunch most of the employees try to relax by enjoying their coffee and discussing with each other. That time of the day was considered to be the best in order to ask them to spend 15-20 minutes and reply to the survey. The employees that belonged to more than one team, were asked a couple of days later to take the other survey in order to be more detached in their answers.
+The links to the surveys were sent to the subjects early in the morning with an email, but they were asked to answer to them after lunch. The reasoning for this, is that at the beginning of the day the employees need to perform tasks which are usually important and time consuming and require to have clear thoughts and be on meetings. On the contrary, after lunch most of the employees try to relax by enjoying their coffee and discussing with each other. That time of the day was considered to be the best in order to ask them to spend 15-20 minutes and reply to the survey. The employees that belonged to more than one team, were asked a couple of days later to take the other survey in order to be more detached in their answers. Every question of the surveys was mandatory.
 
 As it was mentioned in chapter~\ref{ch:related_work}, PAM focuses on the following agile practices:
 \begin{inparaenum} [a\upshape)]
@@ -509,9 +509,12 @@ For a more clear view on the questions contained in the surveys, one can take a 
 The surveys for PAM TAA and OPS were on a Likert scale 1-7 (never-always). From PAM,  only the \textit{Co-location} practice had its Likert scale 1-5 (different time zones-same room) since its creators preferred it in this way. For the transforamtion of the results for this practice, formula~\eqref{eq:likert_transformation} \cite{likert_transformation} was used.  \begin{equation} \label{eq:likert_transformation} x_2 = (1.5 * x_1) - 0.5 \end{equation} 
 
 \subsubsection{Demographics}
-The employees that were asked to answer to the surveys where all the members of the software development teams which consisted of software and quality assurance (QA) engineers. All of the participating employees have more than a year in the company, while most of them have more than five years of work experience in an agile environment. Employees which had been working for less than six months in the company were not asked since it was considered they were not fully aware of how the company's procedures or they were familiar enough with them. Although code review is practised, it was avoided to ask from the code reviewers to take the same survey for the same team from that perspective because it would not provide more value to the results and in addition it would tire them a lot.
+The employees that were asked to answer to the surveys where all the members of the software development teams which consisted of software and quality assurance (QA) engineers. All of the participating employees have more than a year in the company, while most of them have more than five years of work experience in an agile environment. Employees which had been working for less than six months in the company were not asked since it was considered they were not fully aware of the company's procedures or they were not familiar enough with them. Although code review is practised, it was avoided to ask from the code reviewers to take the same survey for the same team from that perspective because it would not provide more value to the results and in addition it would tire them a lot.
 
 \subsection{Collected Data}
+Each respondent replied to 176 questions in total. Initially, 34 surveys were expected to be filled in, but at then 30 of them were.
+
+
 
 
 FIX VALUES FOR PAM
@@ -556,10 +559,7 @@ Product Ownership$^\ast$ & 1 & 1 & 1 & 1 \\ \hline
 \end{table}
 
 \subsection{Data Analysis}
+Based on the analysis performed at chapter~\ref{ch:tools_completness} it is clear that OPS covers more agile practices/areas. As a result it was decided to use these practices in order to see the correlation of the tools. In Appendix~\ref{ch:mapping} one can see how the questions are group based on the OPS practices.
 
 
-\subsection{OPS}
-Figure~\ref{objectives_principles_strategies}
-\subsection{PAM}
-\subsection{Leffingwell}
 \section{Discussion}
