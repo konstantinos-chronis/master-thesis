@@ -334,104 +334,6 @@ The team is in accordance with the rest.
 
 Team D is the biggest team of the company. It consists of 17 members. One team leader, nine developers and seven testers. The product created is the main product of the company and thus it has many needs for people working on it. 
 
-\paragraph{Capability Analysis}
-
-\mysubparagraph{Strategies} 
-The team is in accordance with the rest.
-
-\mysubparagraph{Principles}
-The team is in accordance with the rest.
-
-\mysubparagraph{Objectives} 
-The team is in accordance with the rest.
-
-\paragraph{Effectiveness Analysis}
-
-\mysubparagraph{Strategies} 
-This differs from the rest in the \textit{distribution of expertise}, since it is the biggest team the average of the team member's capabilities is low and as result the score for this strategy is the lowest as well.
-
-\mysubparagraph{Principles}
-The team is in accordance with the rest.
-
-\mysubparagraph{Objectives} 
-The team is in accordance with the rest.
-
-
-\begin{figure}[H]
-\centerline{\includegraphics[scale=0.55]{include/case_study/fig/team_capability_strategies.png}}
-\caption{Capability - Strategies level} 
-\label{fig:team_capability_strategies}
-\end{figure}
-
-\begin{figure}[H]
-\centerline{\includegraphics[scale=0.55]{include/case_study/fig/team_capability_principles.png}}
-\caption{Capability - Principles level} 
-\label{fig:team_capability_principles}
-\end{figure}
-
-\begin{figure}[H]
-\centerline{\includegraphics[scale=0.55]{include/case_study/fig/team_capability_objectives.png}}
-\caption{Capability - Objectives level} 
-\label{fig:team_capability_objectives}
-\end{figure}
-
-\begin{figure}[H]
-\centerline{\includegraphics[scale=0.55]{include/case_study/fig/team_effectiveness_strategies.png}}
-\caption{Effectiveness - Strategies level} 
-\label{fig:team_effectiveness_strategies}
-\end{figure}
-
-\begin{figure}[H]
-\centerline{\includegraphics[scale=0.55]{include/case_study/fig/team_effectiveness_principles.png}}
-\caption{Effectiveness - Principles level} 
-\label{fig:team_effectiveness_principles}
-\end{figure}
-
-\begin{figure}[H]
-\centerline{\includegraphics[scale=0.55]{include/case_study/fig/team_effectiveness_objectives.png}}
-\caption{Effectiveness - Objectives level} 
-\label{fig:team_effectiveness_objectives}
-\end{figure}
-
-
-\subsection{Results Verification}
-
-\section{Perceptive Agile Measurement}
-For assessing the agility by using the Perceptive Agile Measurement (PAM) tool, the teams were asked to answer on the survey seen in the~\nameref{sec:pam} Appendix. The answers were on a Likert scale 1-7.
-
-\subsubsection{Team A Assessement}
-\begin{tabular}{| p{3cm} | }
-\hline
-\textbf{Score:} value \\ \hline
-\end{tabular}
-
-\subsubsection{Team B Assessement}
-\begin{tabular}{| p{3cm} | }
-\hline
-\textbf{Score:} value \\ \hline
-\end{tabular}
-
-\subsubsection{Team C Assessement}
-\begin{tabular}{| p{3cm} | }
-\hline
-\textbf{Score:} value \\ \hline
-\end{tabular}
-
-\subsubsection{Team D Assessement}
-\begin{tabular}{| p{3cm} | }
-\hline
-\textbf{Score:} value \\ \hline
-\end{tabular}
-
-\subsection{Results Verification}
-
-
-
-\section{Team Agility Assessment}
-\subsection{Results Verification}
-~\nameref{sec:team_agility_assessment}
-
-
 
 
 \section{Methodology}
@@ -440,7 +342,6 @@ In order to see which of the OPS, PAM and TAA can better measure the agility of 
 
 \subsection{Data Collection}
 
-%explain that some employeed didn't take the survey
 %maybe provide numbers for the demographics
 
 \subsubsection{Surveys}
@@ -508,11 +409,65 @@ For a more clear view on the questions contained in the surveys, one can take a 
 \subsubsection{Likert Scales}
 The surveys for PAM TAA and OPS were on a Likert scale 1-7 (never-always). From PAM,  only the \textit{Co-location} practice had its Likert scale 1-5 (different time zones-same room) since its creators preferred it in this way. For the transforamtion of the results for this practice, formula~\eqref{eq:likert_transformation} \cite{likert_transformation} was used.  \begin{equation} \label{eq:likert_transformation} x_2 = (1.5 * x_1) - 0.5 \end{equation} 
 
-\subsubsection{Demographics}
+\subsubsection{Demographics} % Have to fix this. Better add a table
 The employees that were asked to answer to the surveys where all the members of the software development teams which consisted of software and quality assurance (QA) engineers. All of the participating employees have more than a year in the company, while most of them have more than five years of work experience in an agile environment. Employees which had been working for less than six months in the company were not asked since it was considered they were not fully aware of the company's procedures or they were not familiar enough with them. Although code review is practised, it was avoided to ask from the code reviewers to take the same survey for the same team from that perspective because it would not provide more value to the results and in addition it would tire them a lot.
 
 \subsection{Collected Data}
-Each respondent replied to 176 questions in total. Initially, 34 surveys were expected to be filled in, but at then 30 of them were.
+Each respondent replied to 176 questions in total. Initially, 34 surveys were expected to be filled in, but at end then 30 of them were since some employees preferred not to participate in the study.
+
+\subsection{Data Analysis}
+As it was mentioned earlier (if not, mention why and how) the data gathered from the survey were grouped by the practices covered by OPP and as a consequence OPS. From the 18 practices in total, four of them, \begin{inparaenum} [a\upshape)] \item Minimal or Just Enough Documentation \item Customer User Acceptance Testing \item Evolutionary Requirements \item Constant Velocity \end{inparaenum}, are covered only by one tool. The rest of the practices were covered by at least two of the tools.
+
+Initially there was the thought to analyse the data for each team separately but this would create an extensive overhead. In addition, teamA has so few members that the results would be inadequate. As a result it was preferred to form the data sets for each practice based on the answers from all the teams.
+
+Based on the analysis performed at chapter~\ref{ch:tools_completness} it is clear that OPS covers more agile practices/areas. As a result it was decided to use these practices in order to check the correlation of the tools. In Appendix~\ref{ch:mapping} one can see how the questions are group based on the OPS practices. The data sets consist of the answers which were sorted by team as stated above and have the same order in all practices (i.e. the nth answer in every practice is given by the same person).
+
+For the analysis of the data the correlation method was selected as it has been used in other cases of tools comparisons \cite{jalali_angelis} \cite{Delestras2013}. The initial thought was to use ``Pearson product-moment correlation" as it is the one mostly used in statistics. 
+
+The four practices mentioned above were discarded for using correlation, since there would not be any.
+
+In order to use Pearson’s correlation there must hold four prerequisites
+\begin{enumerate}
+\item The two variables should be measured at the interval or ratio level
+\item The variables should be approximately normally distributed
+\item There needs to be a linear relationship between the two variables
+\item There should be no significant outliers
+\end{enumerate}
+
+Since the data were collected by surveys using Likert scales, then prerequisite \#1 is satisfied, as the Likert scales can be considered both for interval or ratio level measurements, depending on the problem each time.
+
+As far as the normal distribution is concerned, the Shapiro-Wilk test was selected as it appears to be the most powerful normality test according to a recent paper published by \citet{Razali}. In order for a distribution to be considered normal, the p-value must be greater than the alpha level so as not to reject the null hypothesis and consider that the data are normally distributed. The chosen alpha level was 0.05 as it is the most common one.
+
+Out of the 42 normality checks (three for each of the 14 practices) only 17 concluded that the data are normally distributed. 
+
+The low level of normally distributed data gave a strong indication that the Pearson’s correlation would not be the appropriate way to measure the tools' correlation. As a result it was preferred not to continue checking the last two prerequisites for Pearson’s correlation, but rather use ``Spearman’s rank correlation coefficient" which is for non-parametric data.
+
+In order to use Spearman’s rank correlation coefficient two prerequisites must be satisfied
+\begin{enumerate}
+\item The two variables should be measured at the interval or ratio level
+\item There needs to be a monotonic relationship between the two variables
+\end{enumerate}
+
+The first prerequisite was already covered above. In order to check for the monotonicity, plots were drawn between the results of each tool for all 14 practices. The plots surprisingly showed that only 8 out of 42 were monotonic, which does not allow to use Spearman’s correlation for the rest. The table~\ref{table:practices_spearman} summarizes the practices and the relationships in which Spearman's correlation can be used.
+
+\begin{table} [H]
+\caption{Pairs of tools for which Spearman's correlation can be used}
+\label{table:practices_spearman}
+\begin{tabular}{| c | c |}
+\hline
+\textbf{Practice} & \textbf{Tools Correlation} \\ \hline
+Continuous Feedback & PAM - OPS \\ \hline
+High Bandwidth Communication & PAM - TAA, PAM - OPS, TAA - OPS \\ \hline
+Client Driven Iterations &  PAM - OPS \\ \hline
+Continuous Integration & PAM - TAA \\ \hline
+Iterative and Incremental Development & PAM - OPS \\ \hline
+Refactoring & PAM - TAA \\ \hline
+\end{tabular}
+\end{table}
+
+The analysis of the data is presented in the next section.
+
+
 
 
 
@@ -557,9 +512,5 @@ Product Ownership$^\ast$ & 1 & 1 & 1 & 1 \\ \hline
 \textbf{Total} & 4.04 & 3.7 & 3.83 & 3.8 \\ \hline
 \end{tabular}
 \end{table}
-
-\subsection{Data Analysis}
-Based on the analysis performed at chapter~\ref{ch:tools_completness} it is clear that OPS covers more agile practices/areas. As a result it was decided to use these practices in order to see the correlation of the tools. In Appendix~\ref{ch:mapping} one can see how the questions are group based on the OPS practices.
-
 
 \section{Discussion}
