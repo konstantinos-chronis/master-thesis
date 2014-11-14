@@ -457,7 +457,7 @@ The first prerequisite was already covered above. In order to check for the mono
 \hline
 \textbf{Practice} & \textbf{Tools Correlation} \\ \hline
 Continuous Feedback & PAM - OPS \\ \hline
-High Bandwidth Communication & PAM - TAA, PAM - OPS, TAA - OPS \\ \hline
+High Bandwidth Communication & \begin{tabular}{c} PAM - TAA \\ PAM - OPS \\ TAA - OPS \\ \end{tabular} \\ \hline
 Client Driven Iterations &  PAM - OPS \\ \hline
 Continuous Integration & PAM - TAA \\ \hline
 Iterative and Incremental Development & PAM - OPS \\ \hline
@@ -468,8 +468,93 @@ Refactoring & PAM - TAA \\ \hline
 The analysis of the data is presented in the next section.
 
 
+\begin{table} [H]
+ \RawFloats %allows to have captions in all of the tables
+ \begin{minipage}{.45\textwidth}
+  \caption{Continuous Feedback Correlations}
+  \label{table:cf_correlations}
+   \begin{tabular}{| c | c | c | c |} \hline
+   \multicolumn{4}{|c|}{\textbf{Continuous Feedback}}  \\ \hline
+   & PAM & TAA & OPS \\ \hline
+   PAM & 1.000 & NA & 0.459 \\ \hline
+   TAA & NA & 1.000 & NA \\ \hline
+   OPS & 0.459 & NA & 1.000 \\ \hline
+  \end{tabular}
+ \end{minipage}%
+%
+ \begin{minipage}{.45\textwidth}
+  \centering
+  \caption{Client Driven Iterations Correlations}
+  \label{table:cdi_correlations}
+  \begin{tabular}{| c | c | c | c |} \hline
+  \multicolumn{4}{|c|}{\textbf{Client Driven Iterations}}  \\ \hline
+   & PAM & TAA & OPS \\ \hline
+  PAM & 1.000 & NA & 0.161 \\ \hline
+  TAA & NA & 1.000 & NA \\ \hline
+  OPS & 0.161 & NA & 1.000 \\ \hline
+ \end{tabular}
+ \end{minipage}%
+ %
+\end{table}
 
 
+\begin{table} [H]
+ \RawFloats %allows to have captions in all of the tables
+ \begin{minipage}{.45\textwidth}
+  \caption{High Bandwidth Communication Correlations}
+  \label{table:hbc_correlations}
+  \begin{tabular}{| c | c | c | c |} \hline
+  \multicolumn{4}{|c|}{\textbf{High Bandwidth Communication}}  \\ \hline
+  & PAM & TAA & OPS \\ \hline
+  PAM & 1.000 & 0.322 & -0.023 \\ \hline
+  TAA & 0.322 & 1.000 & 0.237 \\ \hline
+  OPS & -0.023 & 0.237 & 1.000 \\ \hline
+ \end{tabular}
+ \end{minipage}%
+%
+ \begin{minipage}{.45\textwidth}
+  \centering
+  \caption{Refactoring Correlations}
+  \label{table:ref_correlations}
+  \begin{tabular}{| c | c | c | c |} \hline
+  \multicolumn{4}{|c|}{\textbf{Refactoring}}  \\ \hline
+   & PAM & TAA & OPS \\ \hline
+   PAM & 1.000 & 0.097 & -0.050 \\ \hline
+   TAA & 0.097 & 1.000 & 0.181 \\ \hline
+   OPS & -0.050 & 0.181 & 1.000 \\ \hline
+  \end{tabular}  
+ \end{minipage}%
+ %
+\end{table}
+
+\begin{table}
+ \RawFloats %allows to have captions in all of the tables
+ \begin{minipage}{.45\textwidth}
+  \caption{Continuous Integration Correlations}
+  \label{table:ci_correlations}
+  \begin{tabular}{| c | c | c | c | } \hline
+  \multicolumn{4}{|c|}{\textbf{Continuous Integration}}  \\ \hline
+   & PAM & TAA & OPS \\ \hline
+  PAM & 1.000 & 0.398 & 0.249 \\ \hline
+  TAA & 0.398 & 1.000 & 0.115 \\ \hline
+  OPS & 0.249 & 0.115 & 1.000 \\ \hline
+ \end{tabular}
+ \end{minipage}%
+%
+ \begin{minipage}{.45\textwidth}
+  \centering
+   \caption{Iterative and Incremental Development Correlations}
+  \label{table:iid_correlations}
+  \begin{tabular}{| c | c | c | c |} \hline
+  \multicolumn{4}{|c|}{\textbf{Iterative and Incremental Development}}  \\ \hline
+  & PAM & TAA & OPS \\ \hline
+  PAM & 1.000 & 0.204 & 0.396 \\ \hline
+  TAA & 0.204 & 1.000 & -0.228 \\ \hline
+  OPS & 0.396 & -0.228 & 1.000 \\ \hline
+ \end{tabular}
+ \end{minipage}%
+ %
+\end{table}
 
 
 FIX VALUES FOR PAM
@@ -514,3 +599,21 @@ Product Ownership$^\ast$ & 1 & 1 & 1 & 1 \\ \hline
 \end{table}
 
 \section{Discussion}
+
+\subsection{Introduction}
+As it was seen by the reader the correlation of only a few of the practices can be examined. In this section the reasons for this will be presented and discussed.
+
+\subsection{Reasons for results}
+
+
+\subsubsection{The tools measure a practice in the same way}
+Tools that claim to measure agility in the same way are expected to do so. Unfortunately this does not imply that theirs correlation can be calculated. The figure~\ref{fig:scm_plot} made it very clear why. All the answers from all the teams and for TAA and OPS were the same. Both tools had a unique question about using a version control management system, which stands true for company F for anything that has to do with code changes. The designed plots only had one spot which means the correlation among the tools is not possible to calculate due to lack of variation in the results. Such an occurrence shows that correlation techniques can be defective when checking tools which manage to measure the same thing to the same extent.
+
+\subsubsection{The tools have few or no questions for measuring a practice}
+Another reason for not being able to calculate the correlation of the tools is that they cover slightly or not even at all some of the practices. An example of this, is the \textit{Smaller and Frequent Product Releases} practice. OPS has four questions for it, while on the other hand PAM and TAA have a single one each. Furthermore, \textit{Appropriate Distribution of Expertise} is not covered at all by PAM while it is by the rest of the tools. In case the single question gets a low score this will affect the effectiveness of the tool. On the contrary, multiple questions can cover more completely the practice by examining more factors that affect it. Apart from measuring a practice more precisely this also has the benefit that even if a question gets a low score, the rest of them are candidates for getting a higher one. The issue is worse if a practice is not covered at all. Unfortunately this phenomenon does not allow to equally check all the tools giving a respected superiority to the ones that take the practice into consideration and even more to the ones that do that to an extended degree.
+
+\subsubsection{The tools measure the same practice differently}
+Something very interesting that came up during the data analysis was that the tools although they cover the same practices they do it in different ways, leading in different results. An example of this is the practice of \textit{Refactoring} ~\ref{fig:ref_plot}. PAM checks whether there are enough unit tests and automated system tests to allow the safe code refactoring. In case of course unit/system tests are not developed by a team, then the respondents will give low scores to the question, as the team members in company F did. Nevertheless, this does not mean that the team never refactors the software or it does it with bad results. All teams in company F choose to refactor when it adds value to the system, but the level of unit tests is very low and they exist only for specific teams. On the other hand, TAA and OPS check how often do the teams refactor among other factors which allows to better evaluate the practice of refactoring. Considering the above, PAM seems to fail to measure the \textit{Refactoring}.
+
+\subsubsection{Questions phrasing}
+Although the tools might cover the same areas for each practice, the results could differ because of how a question is structured. An example of this is the \textit{Test Driven Development} practice. Both TAA and PAM ask about automated code coverage, while OPS just asks about the existence of code coverage. Furthermore, TAA focuses on 100\% automation while PAM doesn’t. Thus, if a team has code coverage but it is not automated, then the score to the respective question should be low. In case of TAA if it is now fully automated it should be even lower. It is evident that the more specific a question is, the more its answer will differ resulting in possible low scores.
