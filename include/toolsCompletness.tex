@@ -13,10 +13,11 @@
 Team Agility Assessment (TAA) does not state covering specific agile practices, but rather areas important for a team. It focuses on product ownership for Scrum teams but also on the release and iteration planning and tracking. The team factor plays a great role but also the development practices and the working environment. Automated testing is important here as well. Finally it is worth mentioning that it is the only tool focusing so much on the release planning. In Table~\ref{table:taa_practices} one can see TAA's areas.
 
 \begin{table} [H]
-  \begin{tabular}{| p{6.8cm} |}
+  \begin{tabular}{| p{5cm} p{5cm} |}
     \hline
-     \textbf{TAA Areas}\\ \hline
-     \begin{itemize} \item Product Ownership \item Release Planning and Tracking \item Iteration Planning and Tracking \item Team \item Testing Practices \item Development Practices / Infrastructure \end{itemize}  \\ \hline
+    \multicolumn{2}{|c|}{\textbf{TAA Areas}}  \\ \hline
+     \begin{itemize} \item Product Ownership \item Release Planning and Tracking \item Iteration Planning and Tracking \end{itemize} &
+     \begin{itemize}  \item Team \item Testing Practices \item Development Practices / Infrastructure \end{itemize}  \\ \hline
   \end{tabular}
   \captionof{table}{Areas covered by TAA}
   \label{table:taa_practices}
@@ -26,10 +27,11 @@ Team Agility Assessment (TAA) does not state covering specific agile practices, 
 The Perceptive Agile Measurement (PAM) tool focuses on the iterations during software development but also on the stand-up meetings among the team members, their collocation and the retrospectives they have. The customers access and their acceptance criteria have a high significance as well. Finally the continuous integration and the automated unit testing are considered crucial in order to be agile. In Table~\ref{table:pam_practices} one can see PAM's practices.
 
 \begin{table} [H]
-  \begin{tabular}{| p{6.8cm} |}
+  \begin{tabular}{| p{6cm} p{6cm} |}
     \hline
-     \textbf{PAM Practices}\\ \hline
-     \begin{itemize} \item Iteration Planning \item Iterative Development \item Continuous Integration and Testing \item Co-Location \item Stand-up Meetings \item Customer Access \item Customer Acceptance Tests \item Retrospectives \end{itemize}  \\ \hline
+    \multicolumn{2}{|c|}{\textbf{PAM Practices}}  \\ \hline
+    	\begin{itemize} \item Iteration Planning \item Iterative Development \item Continuous Integration and Testing \item Co-Location \end{itemize} &
+     \begin{itemize} \item Stand-up Meetings \item Customer Access \item Customer Acceptance Tests \item Retrospectives \end{itemize}  \\ \hline
   \end{tabular}
   \captionof{table}{Agile practices covered by PAM}
   \label{table:pam_practices}
@@ -38,7 +40,7 @@ The Perceptive Agile Measurement (PAM) tool focuses on the iterations during sof
 \section{Objectives, Principles, Strategies Practices}
 Objectives, Principles, Strategies (OPS) Framework is the successor of the Objectives, Principles, Practices (OPP) Framework \cite{opp}. OPP identified 27 practices as implementations of the principles which later on were transformed into 17 strategies. In Table~\ref{table:opp_practices} one can see OPP's practices. 
 
-\begin{table} [H]
+\begin{table}
 \begin{tabular}{| p{7.5cm}  p{7.5cm} |}
 	\hline
 	\multicolumn{2}{|c|}{\textbf{OPP Practices}}  \\ \hline
@@ -96,9 +98,20 @@ The connection between the practices and strategies is done based on the questio
 %Analyze each the practices between them
 
 \begin{table}
-\begin{tabular}{| p{8.0cm} | p{6.8cm} |}
+\begin{tabular}{| p{6.8cm} | p{8cm} |}
 	\hline
-	\textbf{OPP/OPS} & \textbf{PAM}  \\ \hline
+	\textbf{PAM} & \textbf{OPP/OPS}  \\ \hline
+		 \begin{itemize}[leftmargin=*, label=]
+ 			\item {\color{RoyalBlue1}Iteration Planning} \FourStar
+ 			\item {\color{DarkMagenta}Iterative Development} \JackStarBold
+ 			\item {\color{DarkOrange1}Continuous Integration and Testing} \AsteriskRoundedEnds 
+ 			\item {\color{DeepPink1}Co-Location} \Asterisk 
+ 			\item {\color{green4}Stand-up Meetings} \EightStar
+ 			\item {\color{DarkBlue}Customer Access} \JackStar
+ 			\item {\color{red2}Customer Acceptance Tests} \AsteriskThin
+ 			\item {\color{DarkRed}Retrospectives} \CrossMaltese
+ 		\end{itemize}
+ 		&
      	\begin{itemize}[leftmargin=*, label=]
      		\item {\color{RoyalBlue1}Iteration Progress Tracking and Reporting} \FourStar
      		\item {\color{RoyalBlue1}Iterative} {\color{DarkMagenta}and Incremental  Development} \FourStar ~\JackStarBold
@@ -113,16 +126,6 @@ The connection between the practices and strategies is done based on the questio
      		\item {\color{DarkRed}Retrospectives Meetings} \CrossMaltese
      		\item {\color{RoyalBlue1}Self-Organizing Teams} \FourStar
  		\end{itemize} 
- 		& \begin{itemize}[leftmargin=*, label=]
- 			\item {\color{RoyalBlue1}Iteration Planning} \FourStar
- 			\item {\color{DarkMagenta}Iterative Development} \JackStarBold
- 			\item {\color{DarkOrange1}Continuous Integration and Testing} \AsteriskRoundedEnds 
- 			\item {\color{DeepPink1}Co-Location} \Asterisk 
- 			\item {\color{green4}Stand-up Meetings} \EightStar
- 			\item {\color{DarkBlue}Customer Access} \JackStar
- 			\item {\color{red2}Customer Acceptance Tests} \AsteriskThin
- 			\item {\color{DarkRed}Retrospectives} \CrossMaltese
- 		\end{itemize}
      \\ \hline
 \end{tabular}
 \caption{Relation of OPP/OPS and PAM practices}
@@ -130,9 +133,18 @@ The connection between the practices and strategies is done based on the questio
 \end{table}
 
 \begin{table}
-\begin{tabular}{| p{7.8cm} | p{7.0cm} |}
+\begin{tabular}{| p{7cm} | p{7.8cm} |}
 	\hline
-	\textbf{OPP/OPS} & \textbf{TAA}  \\ \hline
+	\textbf{TAA} & \textbf{OPP/OPS}  \\ \hline
+		\begin{itemize}[leftmargin=*, label=] 
+     		\item {\color{DeepPink1}Product Ownership} \Asterisk 
+     		\item {\color{green4}Release Planning and Tracking} \EightStar
+     		\item {\color{RoyalBlue1}Iteration Planning and Tracking} \FourStar
+     		\item {\color{DarkRed}Team} \CrossMaltese
+     		\item {\color{DarkOrange1}Testing Practices} \AsteriskRoundedEnds
+     		\item {\color{DarkMagenta}Development Practices/Infrastructure} \JackStar	
+ 		\end{itemize} 
+		&	
      	\begin{itemize}[leftmargin=*, label=]
      		\item {\color{DeepPink1} Iterative and Incremental Development} \Asterisk 
      	    \item {\color{DeepPink1}Product Backlog} \Asterisk 
@@ -152,14 +164,6 @@ The connection between the practices and strategies is done based on the questio
      		\item {\color{DarkMagenta}Pair Programming} \JackStar
      		\item {\color{DarkMagenta}Continuous} {\color{DarkOrange1}Integration} \JackStar ~\AsteriskRoundedEnds
      	\end{itemize} 
-     	& \begin{itemize}[leftmargin=*, label=] 
-     		\item {\color{DeepPink1}Product Ownership} \Asterisk 
-     		\item {\color{green4}Release Planning and Tracking} \EightStar
-     		\item {\color{RoyalBlue1}Iteration Planning and Tracking} \FourStar
-     		\item {\color{DarkRed}Team} \CrossMaltese
-     		\item {\color{DarkOrange1}Testing Practices} \AsteriskRoundedEnds
-     		\item {\color{DarkMagenta}Development Practices/Infrastructure} \JackStar	
- 		\end{itemize} 
      \\ \hline
 \end{tabular}
 \caption{Relation of OPP/OPS and TAA practices/areas}
@@ -208,6 +212,10 @@ By viewing Tables~\ref{table:opp_pam_practices} ~\ref{table:opp_taa_practices}, 
 \begin{itemize}
 	\item Can the tools be combined in a way so that they can produce a more complete approach on measuring agility?
 \end{itemize}
+
+\chapter{Discussion}
+
+\chapter{Future Work}
 
 %Team size
 %http://www.jamesshore.com/Agile-Book/the_xp_team.html
