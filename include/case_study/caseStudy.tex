@@ -257,9 +257,22 @@ Each respondent replied to 176 questions in total. Initially, 34 surveys were ex
 \subsection{Data Analysis}
 As it was mentioned earlier (if not, mention why and how) the data gathered from the survey were grouped by the practices covered by OPP and as a consequence OPS. From the 18 practices in total, four of them, \begin{inparaenum} [a\upshape)] \item Minimal or Just Enough Documentation \item Customer User Acceptance Testing \item Evolutionary Requirements \item Constant Velocity \end{inparaenum}, are covered only by one tool. The rest of the practices were covered by at least two of the tools.
 
-Initially there was the thought to analyse the data for each team separately but this would create an extensive overhead. In addition, teamA has so few members that the results would be inadequate. As a result it was preferred to form the data sets for each practice based on the answers from all the teams.
+Initially there was a thought to analyze the data for each team separately but this would create an extensive overhead. In addition, teamA has so few members that the results would be inadequate to work with. As a result, it was prefered to form the data sets for each practice based on the answers from all the teams. In Table~\ref{table:data_structure} one can see the structured of the collected data.
+
+\begin{table} [H]
+	\caption{Collected Data Structure}
+	\label{table:data_structure}
+	\begin{tabular}{| c | c | c | c | c |} \hline
+	\textbf{Practice} & \textbf{Participants} & \textbf{PAM} & \textbf{TAA} & \textbf{OPS} \\ \hline
+	\multirow{3}{*}{Practice1} & Participant1 & Score1 & Score1 & Score1 \\ \hhline{~----}
+	& \vdots & \vdots & \vdots  & \vdots \\ \hhline{~----}
+	& ParticipantN & ScoreN & ScoreN & ScoreN \\ \hline
+	\end{tabular}
+\end{table}
 
 Based on the analysis performed at chapter~\ref{ch:tools_completness} it is clear that OPS covers more agile practices/areas. As a result it was decided to use these practices in order to check the correlation of the tools. In Appendix~\ref{ch:mapping} one can see how the questions are group based on the OPS practices. The data sets consist of the answers which were sorted by team as stated above and have the same order in all practices (i.e. the nth answer in every practice is given by the same person).
+
+For the mathematical calculations the RStudio \texttrademark \cite{rstudio} was selected since it has a wide support from its community. 
 
 For the analysis of the data the correlation method was selected as it has been used in other cases of tools comparisons \cite{jalali_angelis} \cite{Delestras2013}. The initial thought was to use ``Pearson product-moment correlation" as it is the one mostly used in statistics. 
 
@@ -406,102 +419,7 @@ The cells for which a correlation exists are coloured in green in order to disti
 \end{table}
 
 
-The analysis of the data is presented in the next section.
-
-
-%FIX VALUES FOR PAM
-%
-%In the Tables~\ref{table:pam_results} and~\ref{table:taa_results} one can see the average value of the team replies in every agile practice/area \footnote{The ones  marked with $^\ast$ are not included in the surveys}. All the answers were trimmed to two decimal points.
-%
-%\begin{table} [H]
-%\caption{Perceptive Agile Measurement Results}
-%\label{table:pam_results}
-%\begin{tabular}{| c | c | c | c | c |}
-%\hline
-%  & \multicolumn{4}{c|}{\textbf{Team}} \\ \hline
-%\textbf{Practice} & Mobile & Info & POS & Marketing \\ \hline
-%Iteration Planning & 3.86 & 5 & 4.08 & 3.66 \\ \hline
-%Iterative Development & 4.36 & 5.71 & 5.3 & 5.09 \\ \hline
-%Continuous Integration And Testing & 4.28 & 3.7 & 4.29 & 4.2 \\ \hline
-%Customer Access & 4.58 & 7 & 5.5 & 3.9 \\ \hline
-%Customer Acceptance Tests & 3.4 & 3.4 & 3.83 & 1.64 \\ \hline
-%Co-Location & 4.27 & 6.13 & 5.59 & 6.2 \\ \hline 
-%Stand-Up Meetings$^\ast$ & 1 & 1 & 1 & 1 \\ \hline
-%Retrospectives$^\ast$ & 1 & 1 & 1 & 1 \\ \hline
-%\textbf{Total} & 3.47 & 4.12 & 3.82 & 3.53 \\ \hline
-%\end{tabular}
-%\end{table}
-%
-%\begin{table} [H]
-%\caption{Team Agility Assessment Results}
-%\label{table:taa_results}
-%\begin{tabular}{| c | c | c | c | c |}
-%\hline
-%  & \multicolumn{4}{c|}{\textbf{Team}} \\ \hline
-%\textbf{Agile Area} & Mobile & Info & POS & Marketing \\ \hline
-%Release Planning and Tracking & 4.54 & 4.17 & 4.43 & 4.38 \\ \hline
-%Iteration Planning and Tracking & 3.98 & 3.58 & 4.04 & 3.7 \\ \hline
-%Team & 4.95 & 4.93 & 4.73 & 4.44 \\ \hline
-%Testing Practices & 3.86 & 2.56 & 3.3 & 3.77 \\ \hline
-%Development Practices/Infrastructure & 5.92 & 5.94 & 5.49 & 5.5 \\ \hline
-%Product Ownership$^\ast$ & 1 & 1 & 1 & 1 \\ \hline 
-%\textbf{Total} & 4.04 & 3.7 & 3.83 & 3.8 \\ \hline
-%\end{tabular}
-%\end{table}
-
-
-\section{Correlations Analysis}
-
-In \textit{Continuous Feedback} PAM and OPS have a moderate positive correlation of 0.459. Both tools focus on getting feedback from the customer, while OPS also checks whether the product is developed according to the customer's needs and expectations.
-
-In \textit{Client-Driven Iterations} PAM and OPS have a low positive correlation of 0.161. Both tools check for  the possibility of the requirements having been prioritized by the customer. %Add more
-
-\section{Discussion}
-
-\subsection{Introduction}
-As it was seen by the reader the correlation of only a few of the practices can be examined. In this section the reasons for this will be presented and discussed.
-
-\subsection{Reasons for results}
-
-
-\subsubsection{The tools measure a practice in the same way}
-Tools that claim to measure agility in the same way are expected to do so. Unfortunately this does not imply that their correlation can be calculated. The figure~\ref{fig:scm_plot} made it very clear why. All the answers from all the teams and for TAA and OPS were the same. Both tools had a unique question about using a version control management system, which stands true for company F for anything that has to do with code changes. The designed plots only had one spot which means the correlation among the tools is not possible to calculate due to lack of variation in the results. Such an occurrence shows that correlation techniques can be defective when checking tools which manage to measure the same thing to the same extent.
-
-\subsubsection{The tools have few or no questions for measuring a practice}
-Another reason for not being able to calculate the correlation of the tools is that they cover slightly or not even at all some of the practices. An example of this, is the \textit{Smaller and Frequent Product Releases} practice. OPS has four questions for it, while on the other hand PAM and TAA have a single one each. Furthermore, \textit{Appropriate Distribution of Expertise} is not covered at all by PAM while it is by the rest of the tools. In case the single question gets a low score this will affect the effectiveness of the tool. On the contrary, multiple questions can cover more completely the practice by examining more factors that affect it. Apart from measuring a practice more precisely this also has the benefit that even if a question gets a low score, the rest of them are candidates for getting a higher one. The issue is worse if a practice is not covered at all. Unfortunately this phenomenon does not allow to equally check all the tools giving a respected superiority to the ones that take the practice into consideration and even more to the ones that do that to an extended degree.
-
-\subsubsection{The tools measure the same practice differently}
-Something very interesting that came up during the data analysis was that the tools although they cover the same practices they do it in different ways, leading in different results. An example of this is the practice of \textit{Refactoring} ~\ref{fig:ref_plot}. PAM checks whether there are enough unit tests and automated system tests to allow the safe code refactoring. In case of course unit/system tests are not developed by a team, then the respondents will give low scores to the question, as the team members in company F did. Nevertheless, this does not mean that the team never refactors the software or it does it with bad results. All teams in company F choose to refactor when it adds value to the system, but the level of unit tests is very low and they exist only for specific teams. On the other hand, TAA and OPS check how often do the teams refactor among other factors which allows to better evaluate the practice of refactoring. Considering the above, PAM seems to fail to measure the \textit{Refactoring}.
-
-\subsubsection{The tools measure the same practice in opposite questions}
-The \textit{Continuous Integration} practice has a unique paradox among TAA, PAM and OPS. The first two tools have a question about the members of the team having synced to the latest code, while OPS checks for the exact opposite. According to \citet{sventha_dissertation} it is preferable for the teams not to share the same code in order to measure the practice. It is quite doubtful though how correct can this question be, since the \textit{Continuous Integration} requires for frequent submits from the developers and thus the rest of the team will also have a local version of the code.
-
-\subsubsection{Questions phrasing}
-Although the tools might cover the same areas for each practice, the results could differ because of how a question is structured. An example of this is the \textit{Test Driven Development} practice. Both TAA and PAM ask about automated code coverage, while OPS just asks about the existence of code coverage. Furthermore, TAA focuses on 100\% automation while PAM doesn’t. Thus, if a team has code coverage but it is not automated, then the score to the respective question should be low. In case of TAA if it is fully automated it should be even lower. It is evident that the more specific a question is, the more its answer will differ resulting in possible low scores.
-
-\subsubsection{How people perceive agility}
-Although the concept of agility is not new, people don’t seem to fully understand it. This is actually the reason for having so many tools in the field trying to measure how agile are the teams or the methodologies used by them. Teams implement agile methodologies differently and researchers create different measurement tools. There are numerous definitions about what agility is \cite{Kidd, NagelDove, Kara, Ramesh}, and each of the tools creator adopt or adapt one to their needs. Their only common basis is the agile manifesto \cite{beck2001agile} and its twelve principles \cite{agile_principles} which are (and should be considered as) a compass for the agile practitioners. Nevertheless, they are not enough resulting in the saturation of the field. Moreover, \citet{conboy_fitzgerald} state that the Agile Manifesto principles do not provide practical understanding of the concept of Agility. Consequently, all the aforementioned reasons for the survey results as stated above, are driven by the fact how people perceive agility. The word people refers to the tool creators and tool users.
-
-The questions in the surveys were all based on how their creators perceived the agile concept which as explained above it is vague. As the reader has seen in previous chapters PAM, TAA and OPS focus on some common areas/practices, such as  \textit{Smaller and Frequent Product Releases} and \textit{High-Bandwidth Communication} while many are different. None of the \citet{sventha_dissertation}, \citet{pam}, \citet{Leffingwell} claimed of course to have created the most complete measurement tool, but still this leads to the oxymore that tools created by specialists to measure the agility of software development tools, they actually do it differently.
-
-Considering that the researchers and specialists in the agile field perceive differently the concept of agility it would be naive to say that teams don’t do the same. The answers in surveys are subjective and people answer them depending on how they understand them. This is also corroborated, by the fact that although a team works at the same room and follows the same processes for weeks it is rather unlikely if its members will have the same understanding what it means for them a retrospection or a releasing planning meeting.
-
-\section{Threats to Validity}
-\subsection{Construct Validity}
-\subsection{Internal Validity}
-According to \citet{lucas_dissertation} internal validity is possibly the greatest threat when measuring agility. The creators of PAM, TAA and OPS have tried to mitigate this when creating their tools.
-\subsection{External Validity}
-\subsection{Reliability}
-
-
-
-%\begin{longtable}{| p{.10\textwidth} | p{.12\textwidth} | p{.09\textwidth} | p{.09\textwidth} | p{.09\textwidth} | p{.09\textwidth} | p{.09\textwidth} |}  \hline
-%	\textbf{Practice} & \textbf{Tools} & \textbf{Mean} & \textbf{Sd} & \textbf{Median} & \textbf{Min} & \textbf{Max} \\ \hline
-%	Adherence to Standards & \begin{tabular}{c} PAM \\ TAA \\ OPS \end{tabular} & 
-%	\begin{tabular}{c} 1.00 \\ 11.67 \\ 8.10	\end{tabular} & \begin{tabular}{c} 0 \\ 2.17 \\ 2.12 	\end{tabular} & \begin{tabular}{c} 1 \\ 12 \\ 8	\end{tabular} & \begin{tabular}{c} 1 \\ 7 \\ 6 \end{tabular} & \begin{tabular}{c} 1 \\ 14 \\ 12 \end{tabular} \\ \hline
-%\end{longtable}
-
-
+In Table~\ref{table:descriptive_statistics} one can see the descriptive statistics of the data gathered.
 
 	\begin{longtable}{| p{.13\textwidth} | p{.11\textwidth} | p{.06\textwidth} | p{.06\textwidth} | p{.06\textwidth} | p{.13\textwidth} | p{.11\textwidth} | p{.06\textwidth} | p{.06\textwidth} | p{.06\textwidth} |} \caption{Descriptive Statistics} \\ \hline 
 		\label{table:descriptive_statistics}
@@ -580,3 +498,98 @@ According to \citet{lucas_dissertation} internal validity is possibly the greate
 		\begin{tabular}{c} 5.93 \\ 1.01 \\ 6 \\ 4 \\ 7 \end{tabular} &
 		\begin{tabular}{c} 1.00 \\ 0.00 \\ 1 \\ 1 \\ 1 \end{tabular} \\ \hline
 \end{longtable}
+
+
+\section{Correlations Analysis}
+
+In \textit{Continuous Feedback} PAM and OPS have a moderate positive correlation of 0.459. Both tools focus on getting feedback from the customer, while OPS also checks whether the product is developed according to the customer's needs and expectations.
+
+In \textit{Client-Driven Iterations} PAM and OPS have a low positive correlation of 0.161. Both tools check for  the possibility of the requirements having been prioritized by the customer. %Add more
+
+\section{Discussion}
+
+\subsection{Introduction}
+As it was seen by the reader the correlation of only a few of the practices can be examined. In this section the reasons for this will be presented and discussed.
+
+\subsection{Reasons for results}
+
+
+\subsubsection{The tools measure a practice in the same way}
+Tools that claim to measure agility in the same way are expected to do so. Unfortunately this does not imply that their correlation can be calculated. The figure~\ref{fig:scm_plot} made it very clear why. All the answers from all the teams and for TAA and OPS were the same. Both tools had a unique question about using a version control management system, which stands true for company F for anything that has to do with code changes. The designed plots only had one spot which means the correlation among the tools is not possible to calculate due to lack of variation in the results. Such an occurrence shows that correlation techniques can be defective when checking tools which manage to measure the same thing to the same extent.
+
+\subsubsection{The tools have few or no questions for measuring a practice}
+Another reason for not being able to calculate the correlation of the tools is that they cover slightly or not even at all some of the practices. An example of this, is the \textit{Smaller and Frequent Product Releases} practice. OPS has four questions for it, while on the other hand PAM and TAA have a single one each. Furthermore, \textit{Appropriate Distribution of Expertise} is not covered at all by PAM while it is by the rest of the tools. In case the single question gets a low score this will affect the effectiveness of the tool. On the contrary, multiple questions can cover more completely the practice by examining more factors that affect it. Apart from measuring a practice more precisely this also has the benefit that even if a question gets a low score, the rest of them are candidates for getting a higher one. The issue is worse if a practice is not covered at all. Unfortunately this phenomenon does not allow to equally check all the tools giving a respected superiority to the ones that take the practice into consideration and even more to the ones that do that to an extended degree.
+
+\subsubsection{The tools measure the same practice differently}
+Something very interesting that came up during the data analysis was that the tools although they cover the same practices they do it in different ways, leading in different results. An example of this is the practice of \textit{Refactoring} ~\ref{fig:ref_plot}. PAM checks whether there are enough unit tests and automated system tests to allow the safe code refactoring. In case of course unit/system tests are not developed by a team, then the respondents will give low scores to the question, as the team members in company F did. Nevertheless, this does not mean that the team never refactors the software or it does it with bad results. All teams in company F choose to refactor when it adds value to the system, but the level of unit tests is very low and they exist only for specific teams. On the other hand, TAA and OPS check how often do the teams refactor among other factors which allows to better evaluate the practice of refactoring. Considering the above, PAM seems to fail to measure the \textit{Refactoring}.
+
+\subsubsection{The tools measure the same practice in opposite questions}
+The \textit{Continuous Integration} practice has a unique paradox among TAA, PAM and OPS. The first two tools have a question about the members of the team having synced to the latest code, while OPS checks for the exact opposite. According to \citet{sventha_dissertation} it is preferable for the teams not to share the same code in order to measure the practice. It is quite doubtful though how correct can this question be, since the \textit{Continuous Integration} requires for frequent submits from the developers and thus the rest of the team will also have a local version of the code.
+
+\subsubsection{Questions phrasing}
+Although the tools might cover the same areas for each practice, the results could differ because of how a question is structured. An example of this is the \textit{Test Driven Development} practice. Both TAA and PAM ask about automated code coverage, while OPS just asks about the existence of code coverage. Furthermore, TAA focuses on 100\% automation while PAM doesn’t. Thus, if a team has code coverage but it is not automated, then the score to the respective question should be low. In case of TAA if it is fully automated it should be even lower. It is evident that the more specific a question is, the more its answer will differ resulting in possible low scores.
+
+\subsubsection{How people perceive agility --- Maybe add this at the final discussion of the document?}
+Although the concept of agility is not new, people don’t seem to fully understand it. This is actually the reason for having so many tools in the field trying to measure how agile are the teams or the methodologies used by them. Teams implement agile methodologies differently and researchers create different measurement tools. There are numerous definitions about what agility is \cite{Kidd, NagelDove, Kara, Ramesh}, and each of the tools creator adopt or adapt one to their needs. Their only common basis is the agile manifesto \cite{beck2001agile} and its twelve principles \cite{agile_principles} which are (and should be considered as) a compass for the agile practitioners. Nevertheless, they are not enough resulting in the saturation of the field. Moreover, \citet{conboy_fitzgerald} state that the Agile Manifesto principles do not provide practical understanding of the concept of Agility. Consequently, all the aforementioned reasons for the survey results as stated above, are driven by the fact how people perceive agility. The word people refers to the tool creators and tool users.
+
+The questions in the surveys were all based on how their creators perceived the agile concept which as explained above it is vague. As the reader has seen in previous chapters PAM, TAA and OPS focus on some common areas/practices, such as  \textit{Smaller and Frequent Product Releases} and \textit{High-Bandwidth Communication} while many are different. None of the \citet{sventha_dissertation}, \citet{pam}, \citet{Leffingwell} claimed of course to have created the most complete measurement tool, but still this leads to the oxymore that tools created by specialists to measure the agility of software development tools, they actually do it differently without providing substantial solution to the problem. On the contrary, this leads to more confusion to agile practitioners who are at a loose ends.
+
+Considering that the researchers and specialists in the agile field perceive differently the concept of agility it would be naive to say that teams don’t do the same. The answers in surveys are subjective and people answer them depending on how they understand them. This is also corroborated, by the fact that although a team works at the same room and follows the same processes for weeks it is rather unlikely if its members will have the same understanding what it means for them a retrospection or a releasing planning meeting.
+
+\section{Threats to Validity}
+\subsection{Construct Validity}
+\subsection{Internal Validity}
+
+\subsection{External Validity}
+\subsection{Reliability}
+
+
+
+%\begin{longtable}{| p{.10\textwidth} | p{.12\textwidth} | p{.09\textwidth} | p{.09\textwidth} | p{.09\textwidth} | p{.09\textwidth} | p{.09\textwidth} |}  \hline
+%	\textbf{Practice} & \textbf{Tools} & \textbf{Mean} & \textbf{Sd} & \textbf{Median} & \textbf{Min} & \textbf{Max} \\ \hline
+%	Adherence to Standards & \begin{tabular}{c} PAM \\ TAA \\ OPS \end{tabular} & 
+%	\begin{tabular}{c} 1.00 \\ 11.67 \\ 8.10	\end{tabular} & \begin{tabular}{c} 0 \\ 2.17 \\ 2.12 	\end{tabular} & \begin{tabular}{c} 1 \\ 12 \\ 8	\end{tabular} & \begin{tabular}{c} 1 \\ 7 \\ 6 \end{tabular} & \begin{tabular}{c} 1 \\ 14 \\ 12 \end{tabular} \\ \hline
+%\end{longtable}
+
+
+
+
+%FIX VALUES FOR PAM
+%
+%In the Tables~\ref{table:pam_results} and~\ref{table:taa_results} one can see the average value of the team replies in every agile practice/area \footnote{The ones  marked with $^\ast$ are not included in the surveys}. All the answers were trimmed to two decimal points.
+%
+%\begin{table} [H]
+%\caption{Perceptive Agile Measurement Results}
+%\label{table:pam_results}
+%\begin{tabular}{| c | c | c | c | c |}
+%\hline
+%  & \multicolumn{4}{c|}{\textbf{Team}} \\ \hline
+%\textbf{Practice} & Mobile & Info & POS & Marketing \\ \hline
+%Iteration Planning & 3.86 & 5 & 4.08 & 3.66 \\ \hline
+%Iterative Development & 4.36 & 5.71 & 5.3 & 5.09 \\ \hline
+%Continuous Integration And Testing & 4.28 & 3.7 & 4.29 & 4.2 \\ \hline
+%Customer Access & 4.58 & 7 & 5.5 & 3.9 \\ \hline
+%Customer Acceptance Tests & 3.4 & 3.4 & 3.83 & 1.64 \\ \hline
+%Co-Location & 4.27 & 6.13 & 5.59 & 6.2 \\ \hline 
+%Stand-Up Meetings$^\ast$ & 1 & 1 & 1 & 1 \\ \hline
+%Retrospectives$^\ast$ & 1 & 1 & 1 & 1 \\ \hline
+%\textbf{Total} & 3.47 & 4.12 & 3.82 & 3.53 \\ \hline
+%\end{tabular}
+%\end{table}
+%
+%\begin{table} [H]
+%\caption{Team Agility Assessment Results}
+%\label{table:taa_results}
+%\begin{tabular}{| c | c | c | c | c |}
+%\hline
+%  & \multicolumn{4}{c|}{\textbf{Team}} \\ \hline
+%\textbf{Agile Area} & Mobile & Info & POS & Marketing \\ \hline
+%Release Planning and Tracking & 4.54 & 4.17 & 4.43 & 4.38 \\ \hline
+%Iteration Planning and Tracking & 3.98 & 3.58 & 4.04 & 3.7 \\ \hline
+%Team & 4.95 & 4.93 & 4.73 & 4.44 \\ \hline
+%Testing Practices & 3.86 & 2.56 & 3.3 & 3.77 \\ \hline
+%Development Practices/Infrastructure & 5.92 & 5.94 & 5.49 & 5.5 \\ \hline
+%Product Ownership$^\ast$ & 1 & 1 & 1 & 1 \\ \hline 
+%\textbf{Total} & 4.04 & 3.7 & 3.83 & 3.8 \\ \hline
+%\end{tabular}
+%\end{table}
