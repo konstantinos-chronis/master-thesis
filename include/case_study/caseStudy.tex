@@ -228,7 +228,8 @@ Finally, OPS focuses on the following strategies:
 	\item Adherence to standards
 
 \end{inparaenum}
-From the above practices, methodology F does not support \textit{Continuous feedback}, \textit{Constant velocity} and \textit{Retrospection}.%(also check the analysis in section ~\ref{subsec:adequacy_analysis}
+From the above practices, methodology F does not support \textit{Retrospection}. The company considers that meetings with the whole team does not the desired results but rather the opposite leading in more difficult communication and loss of time. In case a retrospection on the past events has to be held, this takes place in meeting of two or three people.
+%\textit{Continuous feedback}, \textit{Constant velocity} .%(also check the analysis in section ~\ref{subsec:adequacy_analysis}
 
 %About the questions of the agile practices/areas which were not included, they were all given a value of 1, the least possible value. 
 
@@ -242,17 +243,8 @@ The surveys for PAM TAA and OPS were on a Likert scale 1-7 (never-always). From 
 \subsubsection{Demographics} % Have to fix this. Better add a table
 The employees that were asked to answer to the surveys where all the members of the software development teams which consisted of software and quality assurance (QA) engineers. All of the participating employees have more than a year in the company, while most of them have more than five years of work experience in an agile environment. Employees which had been working for less than six months in the company were not asked since it was considered they were not fully aware of the company's procedures or they were not familiar enough with them. Although code review is practised, it was avoided to ask from the code reviewers to take the same survey for the same team from that perspective because it would not provide more value to the results and in addition it would tire them a lot.
 
-%\begin{table} [H]
-%	\caption{}
-%	\label{}
-%	\begin{tabular}{| c | c |}
-%		Working experience in agile environment &
-%		Working experience in company F &
-%	\end{tabular}
-%\end{table}
-
 \subsection{Collected Data}
-Each respondent replied to 176 questions in total. Initially, 34 surveys were expected to be filled in, but at end then 30 of them were since some employees preferred not to participate in the study.
+Each respondent replied to 176 questions in total. Initially, 34 surveys were expected to be filled in, but at then end 30 of them were filled in, since some employees preferred not to participate in the study.
 
 \subsection{Data Analysis}
 As it was mentioned earlier (if not, mention why and how) the data gathered from the survey were grouped by the practices covered by OPP and as a consequence OPS. From the 18 practices in total, four of them, \begin{inparaenum} [a\upshape)] \item Minimal or Just Enough Documentation \item Customer User Acceptance Testing \item Evolutionary Requirements \item Constant Velocity \end{inparaenum}, are covered only by one tool. The rest of the practices were covered by at least two of the tools.
@@ -500,19 +492,39 @@ In Table~\ref{table:descriptive_statistics} one can see the descriptive statisti
 \end{longtable}
 
 
-\section{Correlations Analysis}
+\section{Threats to Validity}
+\subsection{Construct Validity}
 
-In \textit{Continuous Feedback} PAM and OPS have a moderate positive correlation of 0.459. Both tools focus on getting feedback from the customer, while OPS also checks whether the product is developed according to the customer's needs and expectations.
+\subsection{Internal Validity}
+According to \citet{lucas_dissertation} internal validity is possibly the greatest threat when measuring agility. The creators of PAM, TAA and OPS though have already tried to mitigate this when creating their tools.
 
-In \textit{Client-Driven Iterations} PAM and OPS have a low positive correlation of 0.161. Both tools check for  the possibility of the requirements having been prioritized by the customer. %Add more
+\subsection{External Validity}
+Every software development team even in the same company applies agile methodologies in different ways. Nevertheless the correlations among the tools shouldn’t differ a lot due to the reasons explained in section~\ref{sec:analysis}. Yet, as it is known, conducting a case study is susceptible in generalizing its outcomes. In this case though we can consider that teams following the same agile practices shouldn’t have different results.
 
-\section{Discussion}
+
+\section{Analysis}
+\label{sec:analysis}
 
 \subsection{Introduction}
-As it was seen by the reader the correlation of only a few of the practices can be examined. In this section the reasons for this will be presented and discussed.
+As it was seen by the reader the correlation of only a few of the practices can be examined. In this section the reasons that did not allow the calculation of the correlation will be presented and discussed.
 
-\subsection{Reasons for results}
+\subsection{Correlations Analysis}
+\label{subsec:correlation_analysis}
 
+In \textit{Continuous Feedback} PAM and OPS have a moderate positive correlation of $\rho$ = 0.459. Both tools focus on getting feedback from the customer, while OPS also checks whether the product is developed according to the customer's needs and expectations.
+
+In \textit{Client-Driven Iterations} PAM and OPS have a low positive correlation of $\rho$ = 0.161. Both tools check for  the possibility of the requirements having been prioritized by the customer. Moreover OPS focuses on the customers' requests and needs.
+
+In \textit{Continuous Integration} PAM and OPS have a low positive correlation of $\rho$ = 0.249. The common areas are continuous builds, multiple submits and story acceptance. There is a small difference on whether the developers should sync to the latest available code, with PAM supporting it. 
+
+\textit{Iterative and Incremental Development} PAM and OPS have a low positive correlation of $\rho$ = 0.396. OPS focuses on the stories estimation and prioritization while PAM on the deadlines having to meet and on the software progress. 
+
+\textit{High Bandwidth Communication} PAM and TAA have a low positive correlation of $\rho$ = 0.322. Both of them check about the team co-location while TAA also checks about the communication with the customers. PAM and OPS have correlation of $\rho$ = -0.023 which means there is no correlation at all. They both focus on the communication, but OPS does that to huge extent, resulting in the so extremely low correlation. In addition, OPS checks about effectively using the time for meetings. TAA and OPS have a positive correlation of $\rho$ = 0.237. This is the only practice for which correlation exists for all the tools.
+
+\textit{Refactoring} PAM and TAA have a correlation of $\rho$ = 0.097, which means there is almost no correlation at all. TAA focuses on continuous refactoring while on the other hand PAM on unit testing.
+
+
+\subsection{Reasons}
 
 \subsubsection{The tools measure a practice in the same way}
 Tools that claim to measure agility in the same way are expected to do so. Unfortunately this does not imply that their correlation can be calculated. The figure~\ref{fig:scm_plot} made it very clear why. All the answers from all the teams and for TAA and OPS were the same. Both tools had a unique question about using a version control management system, which stands true for company F for anything that has to do with code changes. The designed plots only had one spot which means the correlation among the tools is not possible to calculate due to lack of variation in the results. Such an occurrence shows that correlation techniques can be defective when checking tools which manage to measure the same thing to the same extent.
@@ -536,12 +548,8 @@ The questions in the surveys were all based on how their creators perceived the 
 
 Considering that the researchers and specialists in the agile field perceive differently the concept of agility it would be naive to say that teams don’t do the same. The answers in surveys are subjective and people answer them depending on how they understand them. This is also corroborated, by the fact that although a team works at the same room and follows the same processes for weeks it is rather unlikely if its members will have the same understanding what it means for them a retrospection or a releasing planning meeting.
 
-\section{Threats to Validity}
-\subsection{Construct Validity}
-\subsection{Internal Validity}
-
-\subsection{External Validity}
-\subsection{Reliability}
+\section{Discussion}
+This chapter tried to check the correlations between \textit{Perceptive Agile Measurement}, \textit{Team Agility Assessment} and \textit{Objectives Practices and Strategies} tools. One would expect that their results would be similar, since their creators claim they can measure the agility of software development teams. Unfortunately, as it was seen in the analysis, the correlations among them were only few and most of them were very low (check subsection ~\ref{subsec:correlation_analysis}).
 
 
 
@@ -550,8 +558,6 @@ Considering that the researchers and specialists in the agile field perceive dif
 %	Adherence to Standards & \begin{tabular}{c} PAM \\ TAA \\ OPS \end{tabular} & 
 %	\begin{tabular}{c} 1.00 \\ 11.67 \\ 8.10	\end{tabular} & \begin{tabular}{c} 0 \\ 2.17 \\ 2.12 	\end{tabular} & \begin{tabular}{c} 1 \\ 12 \\ 8	\end{tabular} & \begin{tabular}{c} 1 \\ 7 \\ 6 \end{tabular} & \begin{tabular}{c} 1 \\ 14 \\ 12 \end{tabular} \\ \hline
 %\end{longtable}
-
-
 
 
 %FIX VALUES FOR PAM
