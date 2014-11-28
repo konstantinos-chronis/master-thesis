@@ -1,4 +1,5 @@
 \chapter{OPS, PAM, TAA}
+\label{ch:ops_pam_taa}
 
 \section{Capability}
 
@@ -152,10 +153,10 @@
 				\begin{itemize}
 					\item Is there a set of performance expectations that are agreed upon by the team and the management?
 				\end{itemize}
-			\addition Size
-				\begin{itemize}
-					\addition Is it expected the team be smaller than 15 people?
-				\end{itemize}
+%			\addition Size
+%				\begin{itemize}
+%					\addition Is it expected the team be smaller than 15 people?
+%				\end{itemize}
 			\addition Communication
 				\begin{itemize}
 					\addition Are the team members expected to have a common language?
@@ -319,7 +320,7 @@
 					\item To what extent does the management support the implementation of refactoring? 
 					\item To what extent do the teams implement refactoring? 
 					\addition To what extent are the teams permitted to refactor anywhere in the code base?			
-					\addition To what extent were there enough unit tests and automaated system test to allow developers to safely refactor?					
+					\addition To what extent were there enough unit tests and automated system test to allow developers to safely refactor?					
 				\end{itemize}
 		\end{itemize}
 %---------------------------------------------------------------------------
@@ -341,17 +342,23 @@
 				\begin{itemize}
 					\item To what extent do developers write tests first before writing code?
 					\item To what extent are the test plans created before the developers start coding?
-					\addition To what extent did the unit tests cover all critical parts of the production code?
+					\addition To what extent was the implemented code written to pass the test case?
 				\end{itemize}
 		\end{itemize}
 %---------------------------------------------------------------------------
 	\item Retrospection
 		\begin{itemize}
+			\item Retrospective meetings
+				\begin{itemize}
+					\item To what extent are the retrospectives applied?				
+				\end{itemize}
 			\item Process Outcomes for Retrospection
 				\begin{itemize}
 					\item To what extent were practices that worked well during the iteration or the release cycle and hence should be used in the future identified?
 					\item To what extent were practices that did not yield the expected results and hence should be discontinued identified?
 					\item To what extent were new practices that may better suit the team's needs identified?
+					\addition To what extent were the retrospectives helpful for seeing what worked well in the past iterations?
+					\addition To what extent were the retrospectives helpful for seeing what should be improved in the upcoming iterations?
 				\end{itemize}
 		\end{itemize}
 		\begin{itemize}
@@ -369,15 +376,14 @@
 					\addition To what extent does the team continuously improve the release plan?
 				\end{itemize}
 		\end{itemize}
-		\begin{itemize}
-			\addition Outcomes
-				\begin{itemize}
-					\addition To what extent were the retrospectives helpful for seeing what worked well in the past iterations?
-					\addition To what extent were the retrospectives helpful for seeing what should be improved in the upcoming iterations?
-					\addition To what extent did the points improve from the previous retrospectives?
-				\addition To what extent were important points for improvement assigned to responsible individuals?
-				\end{itemize}	 
-		\end{itemize}
+		%\begin{itemize}
+		%	\addition Outcomes
+				%\begin{itemize}
+					
+				%	\addition To what extent did the points improve from the previous retrospectives?
+				% \addition To what extent were important points for improvement assigned to responsible individuals?
+			%	\end{itemize}	 
+		%\end{itemize}
 %---------------------------------------------------------------------------
 	\item Distribution of expertise 
 		\begin{itemize}
@@ -420,16 +426,14 @@
 					\item To what extent are automated test suites developed?
 					\item To what extent are the code bases not shared?
 				\end{itemize}
+			\addition Process Support for Continuous Integration
 				\begin{itemize}
-					\addition Process Support for Continuous Integration
-						\begin{itemize}
 							\addition To what extent do the team members integrate their code per day?
-						\end{itemize}
 				\end{itemize}
 			\item Story Completeness
 				\begin{itemize}
 					\item To what extent has each story been coded? 
-					\item To what extent has each story been unit tested? 
+					%\item To what extent has each story been unit tested? 
 					\addition To what extent has each story been unit tested successfully?
 					\item To what extent has each story been refactored? 
 					\item To what extent has each story been checked into the code base? 
@@ -441,8 +445,8 @@
 			\item Daily/Frequent builds
 				\begin{itemize}
 					\item To what extent do automated builds run one or more times everyday?
-					\addition To what extend are the automated builds successful?
-					\addition To what extend test reports for automated unit tests were systematically used to capture the bugs?
+					\addition To what extent are the automated builds successful?
+					\addition To what extent test reports for automated were unit tests  systematically used to capture the bugs?
 				\end{itemize}
 		\end{itemize}
 
@@ -496,7 +500,7 @@
 %---------------------------------------------------------------------------		
 	\item High-bandwidth communication
 		\begin{itemize}
-			\addition On-site Customer
+			\addition Customer Access
 				\begin{itemize}
 					\addition To what extent were the responses from the customer in a timely manner?
 					\addition To what extent was the feedback from the customer clear and clarified the requirements or open issues to the developers?
@@ -576,6 +580,8 @@
 			\item Estimation
 				\begin{itemize}
 					\item To what extent are the estimates for the amount of work to be done during each iteration accurate?
+					\addition To what extent were the effort estimates for the iteration scope items modified by the team members?
+					\addition To what extent did the team discuss when effort estimates differed?  
 					\addition To what extent did the team reduce the scope than delaying the deadline?
 					\addition To what extent did team members take part in defining the amount of work to be done?
 					\addition To what extent did the concerns of the team members about reaching the iteration goals were taken into consideration?
@@ -602,6 +608,7 @@
 					\addition To what extent was the product shippable at the end of the iteration?
 					\addition To what extent was the working software the primary measure for project progress?
 					\addition To what extent did the delivered software meet the quality requirements of production code at the end of the iteration?
+					\addition To what extent is the progress tracked by feature acceptance?
 				\end{itemize}
 		\end{itemize}
 %---------------------------------------------------------------------------		
@@ -610,9 +617,11 @@
 			\item Requirements Management for Releases
 				\begin{itemize}
 					\item To what extent is a product backlog maintained?
-					\item To what extent are the features priorotized when they are added to the product backlog?
+					\item Backlog estimated at gross level
+					\item To what extent are the features prioritized when they are added to the product backlog?
 					\item To what extent are the features fully estimated before they are added to the product backlog?
 					\addition To what extent is a release backlog maintained?
+					\addition To what extent is release backlog estimated at plan level 
 					\addition To what extent are the features prioritized when they are added to the release backlog?
 				\end{itemize}
 			\item Timeboxing Releases
