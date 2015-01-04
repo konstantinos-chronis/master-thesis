@@ -1,30 +1,238 @@
 \chapter{Case Study}
 \label{ch:case_study}
 
-\newcommand{\mysubparagraph}[1]{\subparagraph{#1}\mbox{}\\}
+%\newcommand{\mysubparagraph}[1]{\subparagraph{#1}\mbox{}\\}
 
-%Add more in case of completness
-\lettrine[lines=4, loversize=-0.1, lraise=0.1]{T}{his} chapter aims to see the correlation among PAM, TAA and OPS by performing a case study.
+\lettrine[lines=4, loversize=-0.1, lraise=0.1]{T}{his} chapter consists of two parts. In the first part an effort is made to check how much complete are the tools in measuring agility compared to one another. In the second part, this study aims to check the correlation of the practices covered by PAM, TAA and OPS by performing a case study in company F.
 
-\section{Introduction}
+\section{Research Purpose}
+The purpose of this study is to analyse if three agility measurement tools correlate with each other and see if they assess agility in similar ways. In addition, it analyses how complete are one to another.
 
-\section{Problem}
-In this study
+\newcounter{tmpc} % set the counter to continue the RQs
 
-\subsection{Research Question}
-\begin{itemize}
+\subsection{Research Questions}
+\begin{enumerate}
+	\item How much complete are the tools in measuring agility?
 	\item In what ways do the tools correlate?
-\end{itemize}
+	\setcounter{tmpc}{\theenumi} % set the counter to continue the RQs
+\end{enumerate}
 
-\section{Method}
+
+
+\section{Tools Completeness}
+\label{sec:tools_completeness}
+
+\subsection[TAA Areas]{Team Agility Assessment Areas}
+Team Agility Assessment (TAA) does not claim that it covers specific agile practices, but rather areas important for a team. It focuses on product ownership for Scrum teams but also on the release and iteration planning and tracking. The team factor plays a great role, as well as the development practices and the working environment. Automated testing is important here as well. Finally, it is worth mentioning that it is the only tool focusing so much on the release planning. In Table~\ref{table:taa_practices} one can see TAA's areas.
+
+\begin{table}
+  \begin{tabular}{| p{5cm} p{5cm} |}
+    \hline
+    \multicolumn{2}{|c|}{\textbf{TAA Areas}}  \\ \hline
+     \begin{itemize} \item Product Ownership \item Release Planning and Tracking \item Iteration Planning and Tracking \end{itemize} &
+     \begin{itemize}  \item Team \item Testing Practices \item Development Practices / Infrastructure \end{itemize}  \\ \hline
+  \end{tabular}
+  \captionof{table}{Areas covered by TAA}
+  \label{table:taa_practices}
+\end{table}
+
+\subsection[PAM Practices]{Perceptive Agile Measurement Practices}
+The Perceptive Agile Measurement (PAM) tool focuses on the iterations during software development but also on the stand-up meetings among the team members, their collocation and the retrospectives they have. The customers access and their acceptance criteria have a high significance as well. Finally, the continuous integration and the automated unit testing are considered crucial in order to be agile. In Table~\ref{table:pam_practices} one can see PAM's practices.
+
+\begin{table} [H]
+  \begin{tabular}{| p{6cm} p{6cm} |}
+    \hline
+    \multicolumn{2}{|c|}{\textbf{PAM Practices}}  \\ \hline
+    	\begin{itemize} \item Iteration Planning \item Iterative Development \item Continuous Integration and Testing \item Co-Location \end{itemize} &
+     \begin{itemize} \item Stand-up Meetings \item Customer Access \item Customer Acceptance Tests \item Retrospectives \end{itemize}  \\ \hline
+  \end{tabular}
+  \captionof{table}{Agile practices covered by PAM}
+  \label{table:pam_practices}
+\end{table}
+
+\subsubsection[OPS Practices]{Objectives, Principles, Strategies Practices}
+Objectives, Principles, Strategies (OPS) Framework is the successor of the Objectives, Principles, Practices (OPP) Framework \cite{opp}. OPP identified 27 practices as implementations of the principles which later on were transformed into 17 strategies. In Table~\ref{table:opp_practices} one can see OPP's practices. 
+
+\begin{table}
+\begin{tabular}{| p{7.5cm}  p{7.5cm} |}
+	\hline
+	\multicolumn{2}{|c|}{\textbf{OPP Practices}}  \\ \hline
+     	\begin{itemize}
+     		\item Iterative and Incremental Development 
+     		\item Continuous Feedback 
+     		\item Evolutionary Requirements 
+     		\item Smaller and Frequent Product Releases 
+     		\item Customer/User Acceptance Testing 
+     		\item Frequent Face-to-Face Communication
+     		\item Refactoring 
+     		\item Automated Test Builds
+     		\item Software Configuration Management 
+     		\item Test Driven Development
+     		\item Iteration Progress Tracking and Reporting 
+     		\item Code Ownership 
+     		\item Retrospectives Meetings 
+     		\item Just-in-Time Refinement of Features /Stories/Tasks 
+     	\end{itemize} 
+     	& \begin{itemize}
+     	 	\item Appropriate Distribution of Expertise
+  			\item Self-Organizing Teams
+     		\item Client-Driven Iterations 
+     		\item Product Backlog 
+     		\item Agile Project Estimation 
+     		\item Adherence to Coding Standards 
+     		\item Physical Setup Reflecting Agile Philosophy
+     		\item Daily Progress Tracking Meetings 
+     		\item Minimal or Just Enough Documentation 
+     		\item Minimal Big Requirements Up Front and Big Design Up Front 
+     		\item Collocated Customers
+     		\item Constant Velocity 
+     		\item Pair Programming  
+ 		\end{itemize} 
+     \\ \hline
+\end{tabular}
+\captionof{table}{Agile practices covered by OPP}
+\label{table:opp_practices}
+\end{table}
+
+\subsubsection[Tool Practices]{Practices Covered Between The Tools}
+
+As it can be clearly seen in Tables~\ref{table:opp_practices}, \ref{table:pam_practices} and \ref{table:taa_practices}, the OPP, and as a consequence the OPS, covers more agile practices than the other tools. \\
+
+In the next pages a mapping between OPP and PAM (see Table~\ref{table:opp_pam_practices}) and OPP and TAA (see Table~\ref{table:opp_taa_practices}) follows. \\
+
+Some of the OPP practices though have abstracted to OPS strategies in order to avoid repetition of the questions' mapping and to better reflect the OPS Framework. The OPP practices 
+\begin{inparaenum} [a\upshape)]
+	\item \textit{Frequent Face-to-Face Communication},
+	\item \textit{Physical Setup Reflecting Agile Philosophy}, and
+	\item \textit{Collocated Customers}
+\end{inparaenum} have been abstracted to the OPS strategy \textit{High-Bandwidth Communication}  \cite[p. 57]{sventha_dissertation}. In the same way, the OPP \textit{Automated test builds} practice has been abstracted to the OPS strategy \textit{Continuous Integration} \cite[p. 57]{sventha_dissertation}. \\
+
+The connection between the practices and strategies is done based on the questions of each tool. The aforementioned connections are depicted with colours. When a practice has more than one colour, it is because it covers more practices from the other tool (The colours and symbols among Tables~\ref{table:opp_pam_practices}, ~\ref{table:opp_taa_practices} are randomly selected and do not imply any connection between the two tables). \\
+
+\begin{table}
+\begin{tabular}{| p{6.8cm} | p{8cm} |}
+	\hline
+	\textbf{PAM} & \textbf{OPP/OPS}  \\ \hline
+		 \begin{itemize}[leftmargin=*, label=]
+ 			\item {\color{RoyalBlue1}Iteration Planning} \FourStar
+ 			\item {\color{DarkMagenta}Iterative Development} \JackStarBold
+ 			\item {\color{DarkOrange1}Continuous Integration and Testing} \AsteriskRoundedEnds 
+ 			\item {\color{DeepPink1}Co-Location} \Asterisk 
+ 			\item {\color{green4}Stand-up Meetings} \EightStar
+ 			\item {\color{DarkBlue}Customer Access} \JackStar
+ 			\item {\color{red2}Customer Acceptance Tests} \AsteriskThin
+ 			\item {\color{DarkRed}Retrospectives} \CrossMaltese
+ 		\end{itemize}
+ 		&
+     	\begin{itemize}[leftmargin=*, label=]
+     		\item {\color{RoyalBlue1}Iteration Progress Tracking and Reporting} \FourStar
+     		\item {\color{RoyalBlue1}Iterative} {\color{DarkMagenta}and Incremental  Development} \FourStar ~\JackStarBold
+     		\item {\color{DarkOrange1}Continuous Integration} \AsteriskRoundedEnds
+     		\item {\color{DarkOrange1}Software Configuration Management} \AsteriskRoundedEnds
+     		\item {\color{DarkOrange1}Test Driven} {\color{red2}Development} \AsteriskRoundedEnds ~\AsteriskThin 
+     		\item {\color{DarkBlue}High-Bandwidth} {\color{DeepPink1}Communication} \JackStar ~\Asterisk 
+     		\item {\color{green4}Daily Progress Tracking Meetings} \EightStar
+     		\item {\color{DarkBlue}Client-Driven} {\color{RoyalBlue1}Iterations} \JackStar ~\FourStar
+     		\item {\color{red2}Evolutionary Requirements} \AsteriskThin
+     		\item {\color{red2}Customer/User Acceptance Testing} \AsteriskThin
+     		\item {\color{DarkRed}Retrospectives Meetings} \CrossMaltese
+     		\item {\color{RoyalBlue1}Self-Organizing Teams} \FourStar
+ 		\end{itemize} 
+     \\ \hline
+\end{tabular}
+\caption{Relation of OPP/OPS and PAM practices}
+\label{table:opp_pam_practices}
+\end{table}
+
+\begin{table}
+\begin{tabular}{| p{7cm} | p{7.8cm} |}
+	\hline
+	\textbf{TAA} & \textbf{OPP/OPS}  \\ \hline
+		\begin{itemize}[leftmargin=*, label=] 
+     		\item {\color{DeepPink1}Product Ownership} \Asterisk 
+     		\item {\color{green4}Release Planning and Tracking} \EightStar
+     		\item {\color{RoyalBlue1}Iteration Planning and Tracking} \FourStar
+     		\item {\color{DarkRed}Team} \CrossMaltese
+     		\item {\color{DarkOrange1}Testing Practices} \AsteriskRoundedEnds
+     		\item {\color{DarkMagenta}Development Practices/Infrastructure} \JackStar	
+ 		\end{itemize} 
+		&	
+     	\begin{itemize}[leftmargin=*, label=]
+     		\item {\color{DeepPink1} Iterative and Incremental Development} \Asterisk 
+     	    \item {\color{DeepPink1}Product Backlog} \Asterisk 
+     		\item {\color{green4}Smaller and Frequent Product Releases} \EightStar
+     		\item {\color{RoyalBlue1}Customer/User {\color{green4}Acceptance Testing}} \FourStar ~\EightStar
+     		\item {\color{RoyalBlue1}Constant Velocity} \FourStar	
+     		\item {\color{RoyalBlue1}Iteration Progress Tracking and Reporting} \FourStar
+     		\item {\color{DarkRed}Self-} {\color{green4}Orga}{\color{RoyalBlue1}nizing} {\color{DarkMagenta}Teams} \CrossMaltese ~\EightStar ~\FourStar ~\JackStar 
+     		\item {\color{DarkRed}Appropriate Distribution of Expertise} \CrossMaltese
+     		\item {\color{DarkRed}High-Bandwidth Communication} \CrossMaltese 
+     		\item {\color{DarkRed}Daily Progress Tracking Meetings} \CrossMaltese
+     		\item {\color{DarkRed}Retro}{\color{RoyalBlue1}spectives} {\color{green4}Meetings}  \CrossMaltese ~\FourStar ~\EightStar 
+     		\item {\color{DarkOrange1}Test Driven Development} \AsteriskRoundedEnds
+     		\item {\color{DarkMagenta}Refactoring} \JackStar
+     		\item {\color{DarkMagenta}Software Configuration Management} \JackStar
+     		\item {\color{DarkMagenta}Adherence to Coding Standards} \JackStar
+     		\item {\color{DarkMagenta}Pair Programming} \JackStar
+     		\item {\color{DarkMagenta}Continuous} {\color{DarkOrange1}Integration} \JackStar ~\AsteriskRoundedEnds
+     	\end{itemize} 
+     \\ \hline
+\end{tabular}
+\caption{Relation of OPP/OPS and TAA practices/areas}
+\label{table:opp_taa_practices}
+\end{table}
+
+
+\subsubsection[PAM and TAA Mapping]{Mapping of questions from the PAM and TAA tools}
+\label{mapping}
+
+PAM has divided its questions based on agile practices, while on the other hand, the TAA has divided them based on areas considered important. In the next pages, there is a mapping between the questions used from the PAM and TAA tools with the practices from OPP and the strategies from OPS. As one can see from the tables above, while all practices/areas from PAM and TAA are mapped to OPP and OPS, not all of their questions are under OPP practices or OPS strategies. This can be explained due to the different perception/angle, of the creators of the tools, of what is important for an organization to be agile.
+
+The questions among the tools will be matched based on whether they are covered directly, relevantly, or not at all. Direct match will be considered the one where a question from a tool is the same or almost similar with one from OPS. Relevant match will be considered the one where a question of a tool does not exist in OPS, but its practice does exist in OPS. Non-relevant match will be considered the one where a question cannot be matched at all in OPS. 
+
+The detailed mapping of the tools can be viewed in Appendix~\ref{ch:mapping}.
+
+\subsection{Tools Completeness Analysis}
+\label{subsec:tools_completeness_analysis}
+As far as RQ \#1 is concerned, by viewing Tables~\ref{table:opp_pam_practices} ~\ref{table:opp_taa_practices} and Appendix~\ref{ch:mapping}, one can clearly distinguish that OPP and consequently OPS is more complete than the others in measuring agility, covering all the areas of the PAM and TAA tools. Furthermore, as it can be seen in Table~\ref{table:questions_coverage}, the OPS covers a high percent of questions from both tools directly and relevantly. The TAA has a respective percent of non-relevant matches mostly due to \textit{Product Ownership} perspectives, which is not covered to such an extent from OPS. This can be explained by the fact that OPS covers basic  methodologies for developing software such as XP, FDD, Crystal, Lean \cite[p. 44]{sventha_dissertation}, whereas \textit{Product Ownership} refers explicitly to Scrum which is a method for managing product development \cite{koch2005agile}.
+
+\begin{table} [H]
+	\begin{tabular}{{| p{4cm} | p{4cm} | p{4cm} |}}
+		\hline
+		\multicolumn{3}{|c|}{\textbf{Questions Coverage}}  \\ \hline
+		\textbf{Match}  & \textbf{PAM} & \textbf{TAA}  \\ \hline		
+		Direct Match & 17/48 (35.4\%) & 25/68 (36.7\%) \\ \hline
+		Relevant Match & 31/48 (64.5\%) & 33/68 (48.5\%) \\ \hline
+		Non Relevant & 0/48 (0\%) & 10/68 (14.7\%) \\ \hline
+	\end{tabular}
+\caption{Questions Coverage from OPS}
+\label{table:questions_coverage}
+\end{table} 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+\subsection{Company F Description}
 %need to change the intro
 In order to see OPS, PAM and TAA correlate when measuring the agility of software development teams, four teams in company F were used as a sample.
 
-\subsection{Company F}
-Company F \footnote{F is the first letter of the company's name} is a United States company which activates in the POS \footnote{Point Of Sales} area. With the development of some new products, the company had a 400\% increase in the size of the development and QA departments, which resulted in the need for better organizing the development and release processes. In addition, the increasing requests of new features in the company's systems require a more efficient way in delivering them to the customers and also maintaining the quality of the products.
+\subsubsection{Company F}
+Company F is a United States company which activates in the POS \footnote{Point Of Sales} area. With the development of some new products, the company had a 400\% increase in the size of the development and QA departments, which resulted in the need for better organizing the development and release processes. In addition, the increasing requests of new features in the company's systems require a more efficient way in delivering them to the customers and also maintaining the quality of the products.
 
 
-\subsection{Methodology F}
+\subsubsection{Methodology F}
 In general, company F does not follow a specific agile methodology, but rather a tailored mix of the most famous ones which suits the needs of each team. Methodology F, as we can name it, embraces the practices displayed in Table~\ref{table:methodologyF_practices} from the various agile methodologies, some of the them to larger and some of them to a smaller extent. The analysis made by \citet{koch2005agile} was used for identifying these methodologies. The results were verified by the agile coach.
 
 \begin{table} [H]
@@ -43,7 +251,7 @@ In general, company F does not follow a specific agile methodology, but rather a
 \label{table:methodologyF_practices}
 \end{table}
 
-\subsection{Products}
+\subsubsection{Products}
 Company F has developed a few products which belong in the following four areas 
 \begin{inparaenum} [a\upshape)]
 \item desktop
@@ -61,7 +269,7 @@ The names given correspond to the names of the teams that develop them.
 
 \end{itemize}
 
-\subsection{Teams}
+\subsubsection{Teams}
 There are four development teams, each for a product of the company. Some of the teams have mixed members of developers and testers. In the Tables~\ref{table:teamA}, \ref{table:teamB}, \ref{table:teamC}, \ref{table:teamD}, one can see the structure of the teams. \\
 
 \begin{table} [H]
@@ -171,14 +379,17 @@ There are four development teams, each for a product of the company. Some of the
 %\label{fig:companyF_strategies}
 %\end{figure}
 %
-%%Analyze more the adequacy
+
 %Reflecting on the above analysis, we see that methodology F lacks four strategies which are important for its improvement. Without retrospection the team members do not always identify and discuss their mistakes, while without a well defined process for continuous feedback any issues that might arise may go unnoticed for quite some time. In total, methodology F is missing four strategies out of seventeen which is a lot.
+
+\section{Method}
+\label{sec:method}
 
 \subsection{Data Collection}
 
 %maybe provide numbers for the demographics
 
-\subsubsection{Surveys}
+%\subsubsection{Surveys}
 In order to collect the data, an online survey was considered to be the best option, since it could be easily answered by each subject. In addition, this would ensure no data loss. Google Drive \texttrademark \cite{google_drive} was selected to be the platform for collecting and preserving the data.
 
 For each of the tools, four surveys were created for each team respectively. The collection lasted about one month, the surveys for each tool were conducted every ten days. First PAM was sent, then TAA and at last it was OPS.
@@ -241,19 +452,19 @@ As it was stated earlier, in subsection~\ref{subsec:ops}, OPS agility measuremen
 
 For a more clear view on the questions contained in the surveys, one can take a look at Appendices~\ref{ch:effectiveness_hierarchy},~\ref{ch:pam} and~\ref{ch:team_agility_assessment}.
 
-\subsubsection{Likert Scales}
+%\subsubsection{Likert Scales}
 The surveys for PAM TAA and OPS were on a Likert scale 1-7 (never-always). From PAM, only the \textit{Co-location} practice had its Likert scale 1-5 (different time zones-same room), since its creators preferred it in this way. For the transformation of the results for this practice, the formula~\eqref{eq:likert_transformation} \cite{likert_transformation} was used.  \begin{equation} \label{eq:likert_transformation} x_2 = (1.5 * x_1) - 0.5 \end{equation} 
 
-\subsubsection{Demographics} % Have to fix this. Better add a table
+%\subsubsection{Demographics} % Have to fix this. Better add a table
 The employees that were asked to answer to the surveys where all members of the software development teams which consisted of software and quality assurance (QA) engineers. All of the participating employees have been in the company for over a year while most of them have more than five years of work experience in an agile environment. Employees who had been working for less than six months in the company were not asked to participate, since it was considered they were not fully aware of the company's procedures or that they were not familiar enough with them. Although code review is practiced, it was avoided asking the code reviewers to take the same survey for the same team because it would not provide more value to the results and in addition, it would tire them a lot.
 
-\subsection{Collected Data}
-Each participant replied to 176 questions in total. Initially, 34 surveys were expected to be filled in, but in the end 30 of them were filled in, since some employees preferred not to participate in the study.
+%\subsection{Collected Data}
+Each participant replied to 176 questions in total. Initially, 34 surveys were expected to be filled in, but in the end 30 of them were filled in, since some employees preferred not to participate in the study for their own reasons.
 
 \subsection{Data Analysis}
-As it was mentioned earlier (if not, mention why and how), the data gathered from the survey were grouped on the basis of the practices covered by the OPP, and as a consequence, the OPS. From the 18 practices in total, four of them, \begin{inparaenum} [a\upshape)] \item Minimal or Just Enough Documentation \item Customer User Acceptance Testing \item Evolutionary Requirements \item Constant Velocity \end{inparaenum}, are covered only by one tool(metion them). The rest of the practices were covered by at least two of the tools.
+The data gathered from the survey were grouped on the basis of the practices covered by the OPP, and as a consequence, the OPS, since as one can see in Table~\ref{table:questions_coverage}, OPS coves both PAM and TAA. From the 18 practices in total, four of them, \begin{inparaenum} [a\upshape)] \item Minimal or Just Enough Documentation \item Customer User Acceptance Testing \item Evolutionary Requirements \item Constant Velocity \end{inparaenum}, are covered only by one tool. The rest of the practices were covered by at least two of the tools.
 
-Initially, there was a thought to analyze the data for each team separately, but this would create an extensive overhead. In addition, the team A has such a small number of members that the results would be inadequate to work with. As a result, it was preferred to form the data sets for each practice based on the answers from all the teams. In Table~\ref{table:data_structure}, one can see the structure of the collected data.
+Initially, there was a thought to analyse the data for each team separately, but this would create an extensive overhead. In addition, the team A has such a small number of members that the results would be inadequate to work with. As a result, it was preferred to form the data sets for each practice based on the answers from all the teams. In Table~\ref{table:data_structure}, one can see the structure of the collected data.
 
 \begin{table} [H]
 	\caption{Collected Data Structure}
@@ -266,7 +477,7 @@ Initially, there was a thought to analyze the data for each team separately, but
 	\end{tabular}
 \end{table}
 
-Based on the analysis performed in chapter~\ref{ch:tools_completness}, it is clear that OPS covers more agile practices/areas. As a result, it was decided to use these practices in order to check the correlation of the tools. In Appendix~\ref{ch:mapping}, one can see how the questions are grouped based on the OPS practices. The data sets consist of the answers which were sorted by team as stated previously and have the same order in all practices (i.e. the nth answer in every practice is given by the same person).
+Based on the analysis performed in Section~\ref{sec:tools_completeness}, it is clear that OPS covers more agile practices/areas. As a result, it was decided to use these practices in order to check the correlation of the tools. In Appendix~\ref{ch:mapping}, one can see how the questions are grouped based on the OPS practices. The data sets consist of the answers which were sorted by team as stated previously and have the same order in all practices (i.e. the nth answer in every practice is given by the same person).
 
 For the mathematical calculations the RStudio \texttrademark \cite{rstudio} was selected since it has a wide support from its community. 
 
@@ -296,23 +507,135 @@ In order to use Spearman’s rank correlation coefficient, two prerequisites mus
 \item There needs to be a monotonic relationship between the two variables
 \end{enumerate}
 
-The first prerequisite has already been covered. In order to check for the monotonicity, plots were drawn between the results of each tool for all 14 practices. The plots surprisingly showed that only 8 out of 42 were monotonic, which does not allow the use of Spearman’s correlation for the rest. The table~\ref{table:practices_spearman} summarizes the practices and the relationships in which Spearman's correlation can be used.
+The first prerequisite has already been covered. In order to check for the monotonicity, plots were drawn between the results of each tool for all 14 practices. The plots surprisingly showed that only 8 out of 42 were monotonic, which does not allow the use of Spearman’s correlation for the rest. The Table~\ref{table:monotonic_relationships} summarizes the practices and the relationships which are monotonic and Spearman's correlation can be used. The monotonic relationships are marked in green while the non-monotonic in red.
 
-\begin{table} [H]
-\caption{Pairs of tools for which Spearman's correlation can be used}
-\label{table:practices_spearman}
-\begin{tabular}{| c | c |}
-\hline
-\textbf{Practice} & \textbf{Tools Correlation} \\ \hline
-Continuous Feedback & PAM - OPS \\ \hline
-High Bandwidth Communication & \begin{tabular}{c} PAM - TAA \\ PAM - OPS \\ TAA - OPS \\ \end{tabular} \\ \hline
-Client Driven Iterations &  PAM - OPS \\ \hline
-Continuous Integration & PAM - TAA \\ \hline
-Iterative and Incremental Development & PAM - OPS \\ \hline
-Refactoring & PAM - TAA \\ \hline
-\end{tabular}
+%\begin{table} [H]
+%\caption{Pairs of tools for which Spearman's correlation can be used}
+%\label{table:practices_spearman}
+%\begin{tabular}{| c | c |}
+%\hline
+%\textbf{Practice} & \textbf{Tools Correlation} \\ \hline
+%Continuous Feedback & PAM - OPS \\ \hline
+%High Bandwidth Communication & \begin{tabular}{c} PAM - TAA \\ PAM - OPS \\ TAA - OPS \\ \end{tabular} \\ \hline
+%Client Driven Iterations &  PAM - OPS \\ \hline
+%Continuous Integration & PAM - TAA \\ \hline
+%Iterative and Incremental Development & PAM - OPS \\ \hline
+%Refactoring & PAM - TAA \\ \hline
+%\end{tabular}
+%\end{table}
+
+\begin{table}
+	{\renewcommand{\arraystretch}{0.2}%
+	\begin{tabular}{ | p{4cm} | p{4cm} | p{4cm} |} \hline
+		\begin{tabular} { p{4cm} } 
+			Adherence to Standards \\
+			\begin{itemize}  \item \colorbox{red}{PAM-TAA} \item \colorbox{red}{PAM-OPS} \item \colorbox{red}{TAA-OPS} \end{itemize} 
+		\end{tabular} &
+		\begin{tabular} { p{4cm} }
+			Appropriate Distribution of Expertise \\
+			\begin{itemize}  \item \colorbox{red}{PAM-TAA} \item \colorbox{red}{PAM-OPS} \item \colorbox{red}{TAA-OPS} \end{itemize}
+		\end{tabular} &
+		\begin{tabular} { p{4cm} }
+			Client Driven Iterations \\
+			\begin{itemize}  \item \colorbox{red}{PAM-TAA} \item \colorbox{green}{PAM-OPS} \item \colorbox{red}{TAA-OPS} \end{itemize}
+		\end{tabular} \\ \hline
+		
+		\begin{tabular} { p{4cm} } 
+			Continuous Feedback \\
+			\begin{itemize}  \item \colorbox{red}{PAM-TAA} \item \colorbox{green}{PAM-OPS} \item \colorbox{red}{TAA-OPS} \end{itemize}
+		\end{tabular} &
+		\begin{tabular} { p{4cm} }
+			Continuous Integration \\
+			\begin{itemize}  \item \colorbox{green}{PAM-TAA} \item \colorbox{red}{PAM-OPS} \item \colorbox{red}{TAA-OPS} \end{itemize}
+		\end{tabular} &
+		\begin{tabular} { p{4cm} }
+			High Bandwidth Communication \\
+			\begin{itemize}  \item \colorbox{green}{PAM-TAA} \item \colorbox{green}{PAM-OPS} \item \colorbox{green}{TAA-OPS} \end{itemize}
+		\end{tabular} \\ \hline
+		
+		\begin{tabular} { p{4cm} } 
+			Iteration Progress Tracking \\
+			\begin{itemize}  \item \colorbox{red}{PAM-TAA} \item \colorbox{red}{PAM-OPS} \item \colorbox{red}{TAA-OPS} \end{itemize}
+		\end{tabular} &
+		\begin{tabular} { p{4cm} }
+			Iterative and Incremental Development \\
+			\begin{itemize}  \item \colorbox{red}{PAM-TAA} \item \colorbox{green}{PAM-OPS} \item \colorbox{red}{TAA-OPS} \end{itemize}
+		\end{tabular} &
+		\begin{tabular} { p{4cm} }
+			Product Backlog \\
+			\begin{itemize}  \item \colorbox{red}{PAM-TAA} \item \colorbox{red}{PAM-OPS} \item \colorbox{red}{TAA-OPS} \end{itemize}
+		\end{tabular} \\ \hline
+		
+		\begin{tabular} { p{4cm} } 
+			Refactoring \\
+			\begin{itemize}  \item \colorbox{green}{PAM-TAA} \item \colorbox{red}{PAM-OPS} \item \colorbox{red}{TAA-OPS} \end{itemize}
+		\end{tabular} &
+		\begin{tabular} { p{4cm} }
+			Self Organizing Teams \\
+			\begin{itemize}  \item \colorbox{red}{PAM-TAA} \item \colorbox{red}{PAM-OPS} \item \colorbox{red}{TAA-OPS} \end{itemize}
+		\end{tabular} &
+		\begin{tabular} { p{4cm} }
+			Smaller and Frequent Releases \\
+			\begin{itemize}  \item \colorbox{red}{PAM-TAA} \item \colorbox{red}{PAM-OPS} \item \colorbox{red}{TAA-OPS} \end{itemize}
+		\end{tabular} \\ \hline
+		
+		\begin{tabular} { p{4cm} } 
+			Software Configuration Management \\
+			\begin{itemize}  \item \colorbox{red}{PAM-TAA} \item \colorbox{red}{PAM-OPS} \item \colorbox{red}{TAA-OPS} \end{itemize}
+		\end{tabular} &
+		\begin{tabular} { p{4cm} }
+			Test Drive Development \\
+			\begin{itemize}  \item \colorbox{red}{PAM-TAA} \item \colorbox{red}{PAM-OPS} \item \colorbox{red}{TAA-OPS} \end{itemize}
+		\end{tabular} & 
+		\begin{tabular} { p{4cm} } 
+			Constant Velocity \\
+			\begin{itemize}  \item \colorbox{red}{PAM-TAA} \item \colorbox{red}{PAM-OPS} \item \colorbox{red}{TAA-OPS} \end{itemize}
+		\end{tabular} \\ \hline
+		
+		\begin{tabular} { p{4cm} } 
+			Minimal or Just Enough Documentation \\
+			\begin{itemize}  \item \colorbox{red}{PAM-TAA} \item \colorbox{red}{PAM-OPS} \item \colorbox{red}{TAA-OPS} \end{itemize}
+		\end{tabular} &
+		\begin{tabular} { p{4cm} }
+			Customer User Acceptance Testing \\
+			\begin{itemize}  \item \colorbox{red}{PAM-TAA} \item \colorbox{red}{PAM-OPS} \item \colorbox{red}{TAA-OPS} \end{itemize}
+		\end{tabular} &
+		\begin{tabular} { p{4cm} }
+			Evolutionary Requirements \\
+			\begin{itemize}  \item \colorbox{red}{PAM-TAA} \item \colorbox{red}{PAM-OPS} \item \colorbox{red}{TAA-OPS} \end{itemize}
+		\end{tabular} \\ \hline
+	\end{tabular}}
+	\caption{Monotonic Relationships}
+	\label{table:monotonic_relationships}	
 \end{table}
 
+
+
+\section{Threats to Validity}
+\textbf{Note to Lucas}
+I will continue for the rest of the study, but this should be a separate chapter. Or should I have one after each thematic subject? (i.e. tools completeness, case study, OPS enhancement)
+
+\bigskip
+
+Validity threats exist in every case study and this one could not be an exception.
+
+\subsection{Construct Validity}
+Construct validity mainly deals with obtaining the right method for the concept under study \cite{Wohlin}.
+
+Structural?
+Convergent validity?
+
+\subsection{Internal Validity}
+Internal validity deals with the issues that may affect the casual relationship between treatment and results \cite{Wohlin}. The creators of PAM, TAA and OPS have already tried to mitigate this when creating their tools. Yet, there are still some aspects of internal validity, such as selection bias and maturation. As far as maturation is concerned, this comes to boredom on the responses given by the teams. Although the surveys were small in size and did not require more than 15-20 minutes each, still the possibly repetitive questions on the topic could cause boredom to the subjects. The mitigation for this threat was to separate the surveys in three different weeks. In addition, the respondents could stop the survey at any point and continue whenever they wanted. Finally, selection could not be mitigated as a threat since the case study focused on a specific company.
+
+\subsection{Conclusion Validity}
+Conclusion validity concerns the possibility of reaching a wrong conclusion \cite{Wohlin}. Although the questions of the surveys have been carefully created, still there may be uncertainty about them. In order to mitigate this, for each survey a pilot one was conducted to spot any misunderstandings. In addition, the participants could ask the author of this thesis for any questions they had concerning the survey questions.
+
+\subsection{External Validity}
+External validity deals with the ability to generalize the outcomes of the case study \cite{Wohlin}. Every software development team, even in the same company, applies agile methodologies in different ways. Nevertheless, the correlations among the tools are not context-specific and should not differ a lot due to the reasons explained in section~\ref{sec:findings}. Yet, as it is known, conducting a case study is susceptible to generalizing its outcomes. In this case though, we can consider that teams following the same agile practices should not have different results.
+
+
+\section{Correlation Results}
 The cells for which a correlation exists are coloured in green in order to distinguish them from the rest. In Table~\ref{table:correlations_frequency} one can see that half of the correlations are between PAM and OPS. This corroborates that OPS has full coverage of PAM as seen in Table ~\ref{table:questions_coverage}. %maybe add in the Analysis - chapter 4
 
 \begin{table} [H]
@@ -374,7 +697,7 @@ The cells for which a correlation exists are coloured in green in order to disti
  %
 \end{table}
 
-\begin{table}
+\begin{table} [H]
  \RawFloats %allows to have captions in all of the tables
  \begin{minipage}{.45\textwidth}
   \caption{Continuous Integration Correlations}
@@ -421,6 +744,7 @@ In Table~\ref{table:descriptive_statistics} one can see the descriptive statisti
 		\label{table:descriptive_statistics}
 		\textbf{Practice} & \textbf{Statistics} & \textbf{PAM} & \textbf{TAA} & \textbf{OPS} &
 		\textbf{Practice} & \textbf{Statistics} & \textbf{PAM} & \textbf{TAA} & \textbf{OPS} \\ \hline
+		\endhead %repeats the header to the next page
 		Adherence to Standards & \begin{tabular}{c} Mean \\ Sd \\ Median \\ Min \\ Max \end{tabular} & 
 		\begin{tabular}{c} 1.00 \\ 0.00 \\ 1 \\ 1 \\ 1 \end{tabular} & 
 		\begin{tabular}{c} 11.67 \\ 2.17 \\ 12 \\ 7 \\ 14 \end{tabular} & 
@@ -496,32 +820,14 @@ In Table~\ref{table:descriptive_statistics} one can see the descriptive statisti
 \end{longtable}
 
 
-\section{Threats to Validity}
-Validity threats exist in every case study and this one could not be an exception.
+%\section{Analysis}
+%\label{sec:analysis}
+%
+%\subsection{Introduction}
+%As it has already been presented, the correlation of only a few of the practices can be examined. In this section the reasons that did not allow the calculation of the correlation will be presented and discussed.
 
-\subsection{Construct Validity}
-Construct validity mainly deals with obtaining the right method for the concept under study \cite{Wohlin}.
-
-Structural?
-Convergent validity?
-
-\subsection{Internal Validity}
-Internal validity deals with the issues that may affect the casual relationship between treatment and results \cite{Wohlin}. The creators of PAM, TAA and OPS have already tried to mitigate this when creating their tools. Yet, there are still some aspects of internal validity, such as selection bias and maturation. As far as maturation is concerned, this comes to boredom on the responses given by the teams. Although the surveys were small in size and did not require more than 15-20 minutes each, still the possibly repetitive questions on the topic could cause boredom to the subjects. The mitigation for this threat was to separate the surveys in three different weeks. In addition, the respondents could stop the survey at any point and continue whenever they wanted. Finally, selection could not be mitigated as a threat since the case study focused on a specific company.
-
-\subsection{Conclusion Validity}
-Conclusion validity concerns the possibility of reaching a wrong conclusion \cite{Wohlin}. Although the questions of the surveys have been carefully created, still there may be uncertainty about them. In order to mitigate this, for each survey a pilot one was conducted to spot any misunderstandings. In addition, the participants could ask the author of this thesis for any questions they had concerning the survey questions.
-
-\subsection{External Validity}
-External validity deals with the ability to generalize the outcomes of the case study \cite{Wohlin}. Every software development team, even in the same company, applies agile methodologies in different ways. Nevertheless, the correlations among the tools are not context-specific and should not differ a lot due to the reasons explained in section~\ref{sec:analysis}. Yet, as it is known, conducting a case study is susceptible to generalizing its outcomes. In this case though, we can consider that teams following the same agile practices should not have different results.
-
-\section{Analysis}
-\label{sec:analysis}
-
-\subsection{Introduction}
-As it has already been presented, the correlation of only a few of the practices can be examined. In this section the reasons that did not allow the calculation of the correlation will be presented and discussed.
-
-\subsection{Correlations Analysis}
-\label{subsec:correlation_analysis}
+%\section{Correlations Analysis}
+%\label{subsec:correlation_analysis}
 
 In \textit{Continuous Feedback} PAM and OPS have a moderate positive correlation of $\rho$ = 0.459. Both tools focus on getting feedback from the customer, while OPS also checks whether the product is developed according to the customer's needs and expectations.
 
@@ -536,34 +842,46 @@ In \textit{Continuous Integration} PAM and OPS have a low positive correlation o
 \textit{Refactoring} PAM and TAA have a correlation of $\rho$ = 0.097, which means there is almost no correlation at all. TAA focuses on continuous refactoring, while on the other hand PAM on unit testing.
 
 
-\subsection{Reasons}
+\section{Findings}
+\label{sec:findings}
 
-\subsubsection{The tools measure a practice in the same way}
+The plots showed a quite interesting result. Not only don’t the tools have a correlation, but they do not have a monotonic relationship either between one another for the agile practices covered (see Table~\ref{table:monotonic_relationships}). The absence of monotonicity shows that the questions used by the tools in order to cover an agile practice, do it differently and that PAM, TAA and OPS measure the agility of software development teams in their own unique way. Each of the tools was constructed and validated by its creators having the agile concept in mind, but apparently following a different path in order to accomplish it. This is quite clear by looking on the different ways that each practice is covered (see Appendix~\ref{ch:mapping}) where many of the questions have a different perspective on measuring a practice although they focus on the same one. The reasons for this unexpected phenomenon are explained in the next paragraphs.
+
+\subsection{The tools measure a practice in the same way}
 Tools that claim to measure agility in the same way are expected to do so. Unfortunately, this does not imply that their correlation can be calculated. The figure~\ref{fig:scm_plot} made it very clear why. All the answers from all the teams and for TAA and OPS were the same. Both tools had a unique question about using a version control management system, which holds for the company F over anything that has to do with code changes. The designed plots only had one spot which means that the correlation among the tools is not possible to calculate due to the lack of variation in the results. Such an occurrence shows that correlation techniques can be defective when checking tools which manage to measure the same thing to the same extent.
 
-\subsubsection{The tools have few or no questions for measuring a practice}
-Another reason for not being able to calculate the correlation of the tools is that they cover slightly or even not at all some of the practices. An example of this is the \textit{Smaller and Frequent Product Releases} practice. OPS has four questions for it, while on the other hand, PAM and TAA have a single one each. Furthermore, \textit{Appropriate Distribution of Expertise} is not covered at all by PAM while it is by the rest of the tools. In case the single question gets a low score, this will affect the effectiveness of the tool. On the contrary, multiple questions can cover the practice more completely by examining more factors that affect it. Apart from measuring a practice more precisely, this also has the benefit that even if one question gets a low score, the rest of them are candidates for getting a higher one. The issue is worse if a practice is not covered at all. Unfortunately, this phenomenon does not allow to equally check all the tools, since is giving a superiority to the ones that take the practice into consideration and even more to the ones that do that to an extensive degree.
+\subsection{The tools have few or no questions for measuring a practice}
+Another reason for not being able to calculate the correlation of the tools is that they cover slightly or even not at all some of the practices. An example of this is the \textit{Smaller and Frequent Product Releases} practice. OPS has four questions for it, while on the other hand, PAM and TAA have a single one each. Furthermore, \textit{Appropriate Distribution of Expertise} is not covered at all by PAM while it is by the rest of the tools. In case the single question gets a low score, this will affect the effectiveness of the tool. On the contrary, multiple questions can cover the practice more completely by examining more factors that affect it. Apart from measuring a practice more precisely, this also has the benefit that even if one question gets a low score, the rest of them are candidates for getting a higher one. The issue is worse if a practice is not covered at all. Unfortunately, this phenomenon does not allow to equally check all the tools, since it is giving a superiority to the ones that take the practice into consideration and even more to the ones that do that to an extensive degree.
 
-\subsubsection{The tools measure the same practice differently}
+\subsection{The tools measure the same practice differently}
 Something very interesting that came up during the data analysis was that although the tools cover the same practices, they do it in different ways, leading to different results. An example of this is the practice of \textit{Refactoring} ~\ref{fig:ref_plot}. PAM checks whether there are enough unit tests and automated system tests to allow the safe code refactoring. In case that the course unit/system tests are not developed by a team, the respondents will give low scores to the question, as the team members in company F did. Nevertheless, this does not mean that the team never refactors the software or it does it with bad results. All teams in company F choose to refactor when it adds value to the system, but the level of unit tests is very low and they exist only for specific teams. On the other hand, TAA and OPS check how often the teams refactor among other factors, which allows to better evaluate the practice of refactoring. Considering the above, PAM seems to fail measuring the \textit{Refactoring}.
 
-\subsubsection{The tools measure the same practice in opposite questions}
+\subsection{The tools measure the same practice in opposite questions}
+\label{subsec:opposite_questions}
 The \textit{Continuous Integration} practice has a unique paradox among TAA, PAM and OPS. The first two tools have a question about the members of the team having synced to the latest code, while OPS checks for the exact opposite. According to \citet{sventha_dissertation}, it is preferable for the teams not to share the same code in order to measure the practice. It is quite doubtful though how correct this question can be, since the \textit{Continuous Integration} requires frequent submits from the developers and thus the rest of the team will also have a local version of the code.
 
-\subsubsection{Questions phrasing}
+\subsection{Questions phrasing}
 Although the tools might cover the same areas for each practice, the results could differ because of how a question is structured. An example of this is the \textit{Test Driven Development} practice. Both TAA and PAM ask about automated code coverage, while OPS just asks about the existence of code coverage. Furthermore, TAA focuses on 100\% automation while PAM doesn’t. Thus, if a team has code coverage but it is not automated, then the score of the respective question should be low. In case of TAA, if it is fully automated, it should be even lower. It is evident that the more specific a question is, the more its answer will differ, resulting in possible low scores.
 
-\subsubsection{How people perceive agility --- Maybe add this at the final discussion of the document?}
+\subsection{How people perceive agility --- Maybe add this at the final discussion of the document?}
 Although the concept of agility is not new, people do not seem to fully understand it. This is actually the reason for having so many tools in the field trying to measure how agile the teams are or the methodologies used. Teams implement agile methodologies differently and researchers create different measurement tools. There are numerous definitions about what agility is \cite{Kidd, NagelDove, Kara, Ramesh}, and each of the tools creator adopt or adapt the tools to match their needs. Their only common basis is the agile manifesto \cite{beck2001agile} and its twelve principles \cite{agile_principles}, which are (and should be considered as) a compass for the agile practitioners. Nevertheless, they are not enough and this resulted in the saturation of the field. Moreover, \citet{conboy_fitzgerald} state that the Agile Manifesto principles do not provide practical understanding of the concept of Agility. Consequently, all the reasons behind the current survey results are driven by the way in which people perceive agility. The word ``people" refers to the tool creators and tool users.
 
 The questions in the surveys were all based on how their creators perceived the agile concept which is quite vague. As the reader has seen in previous chapters, PAM, TAA and OPS focus on some common areas/practices, such as  \textit{Smaller and Frequent Product Releases} and \textit{High-Bandwidth Communication}, while many are different. None of the \citet{sventha_dissertation}, \citet{pam}, \citet{Leffingwell} claimed of course to have created the most complete measurement tool, but still this leads to the oxymoron that the tools created by specialists to measure the agility of software development tools, actually do it differently without providing substantial solution to the problem. On the contrary, this leads to more confusion for the agile practitioners who are at a loose ends.
 
 Considering that the researchers and specialists in the agile field perceive the concept of agility differently, it would be naive to say that the teams do not do the same. The answers in surveys are subjective and people answer them depending on how they understand them. This is also corroborated by the fact that although a team works at the same room and follows the same processes for weeks, it is rather unlikely if its members to have the same understanding of what a retrospection or a releasing planning meeting means for them.
 
-\section{Discussion}
-This chapter tried to check the correlations between \textit{Perceptive Agile Measurement}, \textit{Team Agility Assessment} and \textit{Objectives Practices and Strategies} tools. One would expect that their results would be similar, since their creators claim they can measure the agility of software development teams. Unfortunately, as it was seen in the analysis, the correlations among them were only few and most of them were very low (check subsection ~\ref{subsec:correlation_analysis}).
+\section{Agile Practices Correlations}
+Regarding RQ \#2, \textit{``In what ways do the tools correlate"}, it was seen that the agile practices correlations almost do not exist at all between PAM, TAA and OPS. Only 8 our 42 relationships have a correlation and they are mostly positive but low.
 
-
+\section{Chapter Summary}
+In this chapter was presented how much complete were the tools among them. OPS covers both PAM and TAA to a bug extent. In the second part the case study took place which showed that only 8 out of 42 relationships between the agile practices do correlate. The rest lack monotonicity due to
+\begin{inparaenum} [a\upshape)]
+	\item measuring a practice in the same way,
+	\item having few or no questions for measuring a practice,
+	\item measuring the same practice differently,
+	\item measuring the same practice in opposite questions,
+	\item questions phrasing
+\end{inparaenum}
 
 %\begin{longtable}{| p{.10\textwidth} | p{.12\textwidth} | p{.09\textwidth} | p{.09\textwidth} | p{.09\textwidth} | p{.09\textwidth} | p{.09\textwidth} |}  \hline
 %	\textbf{Practice} & \textbf{Tools} & \textbf{Mean} & \textbf{Sd} & \textbf{Median} & \textbf{Min} & \textbf{Max} \\ \hline
