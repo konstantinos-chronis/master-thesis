@@ -2,17 +2,16 @@
 
 %take part of the introduction and add it here.
 
-\section{Introduction}
-\lettrine[lines=4, loversize=-0.1, lraise=0.1]{A}{ccording} to \citet{yauch}, it is very difficult to measure agility, although it has been widely spread. \citet{tsourveloudis} agree on this mainly because of the vagueness of agility's concept. Nevertheless, various tools have been developed in the last decade in order to measure the agility in software development teams. Below is a short description of some that have been used as references in the majority of papers in this field. The tools are separated into two categories, 
+\lettrine[lines=4, loversize=-0.1, lraise=0.1]{A}{ccording} to \citet{yauch}, it is very difficult to measure agility, although it has been widely spread. \citet{tsourveloudis} agree on this mainly because of the vagueness of agility's concept. Nevertheless, various tools have been developed in the last decade in order to measure the agility in software development teams. Below is a short description of some that have been used as references in many papers in this field. The tools are separated into two categories, 
 \begin{inparaenum} [a\upshape)]
-\item those which measure the agility of the methodologies and
-\item those which measure the agility of organisations/teams.
+\item those which measure how agile really are the agile methodologies
+\item those which measure the agility of software development teams.
 \end{inparaenum}
 
-\section{Agility of Methodologies}
+\section{How agile are the agile methodologies}
 
 \subsection{Balancing Discipline and Agility}
-\citet{1231450} did not come up with a tool to measure agility but rather to balance between agility and discipline. According to them \cite{1317503}, discipline is the foundation for any successful endeavour and creates experience, history and well-organized memories. On the other hand, agility is described as a counterpart of discipline. Agility uses the memory and history in order to adjust to the context in which it is applied and takes advantage of the unexpected opportunities that might come up. The combination of the two can bring success to an organisation. In their research, \citet{1231450}, came up with five ``critical decision factors" which can determine if an agile or plan-driven method is suitable for a software development project.
+\citet{1231450} did not come up with a tool to measure agility but rather to balance between agility and discipline. According to them, discipline is the foundation for any successful endeavour and creates experience, history and well-organized memories. On the other hand, agility is described as a counterpart of discipline. Agility uses the memory and history in order to adjust to the context in which it is applied and takes advantage of the unexpected opportunities that might come up. The combination of the two can bring success to an organisation. In their research, \citet{1231450}, came up with five ``critical decision factors" which can determine if an agile or plan-driven method is suitable for a software development project.
 
 Figure~\ref{fig:boehm_turner_5axes} depicts these factors:
 \begin{inparaenum} [a\upshape)]
@@ -29,27 +28,6 @@ Figure~\ref{fig:boehm_turner_5axes} depicts these factors:
 {\caption{Dimensions affecting method selection} 
 \label{fig:boehm_turner_5axes}}
 \end{figure}
-
-%\begin{table} [H]
-% \begin{tabular}{ | c | p{13cm} |}
-%	\hline
-%	\textbf{Level} & \textbf{Characteristics} \\ \hline
-% 3  & Able to revise a method (break its rules) to fit an unprecedented new situation \\ \hline
-% 2  & Able to tailor a method to fit a precedented new situation \\ \hline
-% 1A  & With training, able to perform discretionary method steps (e.g., sizing stories to fit increments, composing patterns, compound refactoring, complex COTS integration). With experience can become Level 2. \\ \hline
-% 1B  & With training, able to perform procedural method steps (e.g. coding a simple method, simple refactoring, following coding standards and CM procedures, running tests). With experience can master some Level 1A skills. \\ \hline
-% -1 & May have technical skills, but unable or unwilling to collaborate or follow shared methods. \\ \hline
-%\end{tabular}
-%  \caption{Levels of software method understanding and use (after Cockburn)}
-%\end{table}
-
-
-
-%\begin{table}
-%\label{fig:boehm_turner_levels}
-%\includegraphics[scale=1]{include/relatedwork/fig/boehm_turner_levels.pdf}
-%\end{table}
-
 
 If the ratings of the five factors are close to the center, then the team is to an agile territory, in other words, the team is considered agile, otherwise it follows a discipline approach.
 
@@ -96,7 +74,7 @@ Each of these groups has a number of questions which are either answered with a 
 \citet{qumer2006measuring} created the 4-Dimensional Analytical Tool (4-DAT) for analysing and comparing agile methods which is a part of the of the Agile Adoption and Improvement Model (AAIM) \cite{qumerAAIM}. The objective of the tool is to provide a mechanism for assessing the degree of agility and adaptability of any agile methodology. The measurements are taken at a specific level in a process and use specific practices.
 
 \paragraph{Dimension 1 - Method Scope Characterization}
-The first dimension describes the key scope items which are considered essential for supporting the method used by a team or organization. These have been derived from the literature review of the creators based on \citet{Beck:2004:EPE:1076267}, \citet{koch2005agile}, \citet{Palmer:2001:PGF:600044}, \citet{Highsmith:2000:ASD:323922} and provides a method comparison at a high level.
+The first dimension describes the key scope items which are considered essential for supporting the method used by a team or organisation. These have been derived from the literature review of the creators based on \citet{Beck:2004:EPE:1076267}, \citet{koch2005agile}, \citet{Palmer:2001:PGF:600044}, \citet{Highsmith:2000:ASD:323922} and provides a method comparison at a high level.
 
 
 %These items are:
@@ -131,7 +109,7 @@ The measurement of the degree of agility at this level is done based on five var
 %\item Responsiveness
 %\end{inparaenum}
 
-These variables are used to check the existence of a method's objective at a specific level or phase. If the variable exists for a phase, then the value 1 is assigned to it, otherwise 0. \citet{qumer2006measuring} define the degree of agility (DA) as ``the fraction of the five agility variables that are encompassed and supported".\\ %maybe provide an example as the authors do
+These variables are used to check the existence of a method's objective at a specific level or phase. If the variable exists for a phase, then the value 1 is assigned to it, otherwise 0. \citet{qumer2006measuring} define the degree of agility (DA) as ``the fraction of the five agility variables that are encompassed and supported". They define as ``Object"  an object at some level or lifecycle phase or as a result of the practices used. ``m" is the number of phases or  practices.``Phase" is any of the design, planning phase or requirements engineering phase. ``Practice" is the practices of the agile methodology. \\ %maybe provide an example as the authors do
 
 Formula \eqref{eq:dat_formula} how DA is calculated\\
 \begin{equation} \label{eq:dat_formula} DA (Object) = (1/m) \sum m DA(Object, Phase Or Practices) \end{equation}
@@ -143,7 +121,8 @@ Formula \eqref{eq:dat_formula} how DA is calculated\\
 %\end{table}
 
 \paragraph{3 - Agile Values Characterization}
-The third dimension consists of six agile values. Four of them are derived directly from the Agile Manifesto \cite{beck2001agile}, while the fifth comes from \citet{koch2005agile}. The last value is suggested by \citet{qumer2006measuring}, after having studied several agile methods. %Table~\ref{fig:dimension4} shows the agile values.
+The third dimension consists of six agile values. Four of them are derived directly from the Agile Manifesto \cite{beck2001agile}, while the fifth comes from \citet{koch2005agile}. The last value is suggested by \citet{qumer2006measuring}, after having studied several agile methods. The values can be seen in Table~\ref{table:4dat_dimensions}.
+%Table~\ref{fig:dimension4} shows the agile values.
 
 %\begin{table}[H]
 %\caption{4-DAT Dimension 3}
@@ -156,6 +135,7 @@ The fourth dimension examines the practices that support four processes as these
 
 \begin{table} [H]
 \caption{4-DAT Dimensions}
+\label{table:4dat_dimensions}
 \begin{tabular}{ | p{3cm} | p{11cm} |} \hline
 	D1 - Scope & \begin{inparaenum} [a\upshape)]
 		\item Project Size
@@ -199,31 +179,32 @@ The fourth dimension examines the practices that support four processes as these
 %\end{table}
 
 \subsection{XP Evaluation Framework} % Framework ---- Not sure for the section
-\citet{williams2004toward} proposed a framework named the ``XP Evaluation Framework" (XP-EF) for assessing the XP practices which have been adopted by an organization. The framework consists of three parts
+\citet{williams2004toward} proposed a framework named the ``XP Evaluation Framework" (XP-EF) for assessing the XP practices which have been adopted by an organisation. The framework consists of three parts
 \begin{itemize}
-\item XP Context Factors (XP-CF) - Record a important contextual information. The factors can be team size, project size, staff experience
-\item XP Adherence Metrics (XP-AM) - Express in a precise way the practices utilized by a team
-\item XP Outcome Measures (XP-OM) - A Means to assess the outcomes of a project using full or partial XP practices
+	\item XP Context Factors (XP-CF) - Record important contextual information. The factors can be team size, project size, staff experience
+	\item XP Adherence Metrics (XP-AM) - Express in a precise way the practices utilized by a team
+	\item XP Outcome Measures (XP-OM) - A Means to assess the outcomes of a project using full or partial XP practices
 \end{itemize}
 
-\section{Agility of Organisations}
+\section{Agility of Software Development Teams}
 
 \subsection{Team Agility Assessment} %write more %Measures current level of agility
 %Mention it is Scrum oriented
-\citet{Leffingwell} created a model for assessing the team's agility by taking into account six aspects: 
+\citet{Leffingwell} created a model for assessing a team's agility by
+ taking six aspects into account:
 \begin{inparaenum} [a\upshape)]
 \item Product Ownership
 \item Release Planning and Tracking
 \item Iteration Planning and Tracking
 \item Team
 \item Testing Practices
-\item Development Practices/Infrastructure
+\item Development Practices/Infrastructure.
 \end{inparaenum}
 
 Each of these aspects is followed by a number of questions rated on a six-point Likert scale and the results are represented in a radar chart.
 
 \subsection{Comparative Agility} %Current level of agility
-\citet{comparative_agility} created the Comparative Agility (CA) assessment tool which does not assess the agility of an organization by providing an absolute value, but it rather provides a value in comparison to other organizations/companies \cite{comparative_agility_web}.(corr)  The idea behind CA is that the organizations try to be more agile than their competitors because they believe that this will have more benefits for them. Until 2010, more than 1200 respondents supported that idea by answering the tool's online survey. The CA assessment tool consists of the following seven dimensions
+\citet{comparative_agility} created the Comparative Agility (CA) assessment tool which does not assess the agility of an organisation by providing an absolute value, but it rather provides a value in comparison to other organisations/companies \cite{comparative_agility_web}. The idea behind CA is that the organisations try to be more agile than their competitors because they believe that this will have more benefits for them. Until 2010, more than 1200 respondents supported that idea by answering the tool's online survey. The CA assessment tool consists of the following seven dimensions
 \begin{inparaenum} [a\upshape)]
 	\item Teamwork
 	\item Requirements
@@ -245,7 +226,7 @@ which are made up of three to six characteristics. Each characteristic has four 
 \item Agile Workspace Coverage
 \end{itemize}
 
-For collecting the data on the measurements, they used surveys based on the tools of each stage, while in the last one they use their custom survey. The data are then depicted in a four axis radar chart in order to provide a view of the company's agility. In Figure~\ref{escobar_model}, one can see the model with a short description about which tool should be used at each level for each stage.
+For collecting the data on the measurements, they used surveys based on the tools of each stage, while in the last one they use their own survey. The data are then depicted in a four axis radar chart in order to provide a view of the company's agility. In Figure~\ref{escobar_model}, one can see the model with a short description about which tool should be used at each level for each stage.
 
 \begin{figure} [H]
 \centerline{\includegraphics[scale=0.75]{include/relatedwork/fig/escobar_model.pdf}}
@@ -253,13 +234,13 @@ For collecting the data on the measurements, they used surveys based on the tool
 \label{escobar_model}
 \end{figure}
 
-\subsection{Shawky and Ali - Entropy Analysis}
+\subsection{Entropy Analysis}
 \citet{entropy} measure the agility based on the rate of entropy change over the time of a system's development. If the rate is high, then the process is of high agility as well. Each feature is considered to be an entity and the change logs of the entities are analyzed. They define as $P_i(t)$  the probability of an entity \textit{i} to be associated with the change logs at a time \textit{t}. Then, by using formula~\eqref{eq:entropy_analysis_formula}, they make the calculation for the agility measure \textit{AM(t)} for that specific time.
 
 \begin{equation} \label{eq:entropy_analysis_formula} AM(t) = - \sum_{i=1}^{n} P_i'(t) (log_2 P_i(t) + 1.44) \end{equation} 
 
 \subsection{Validation Model to Measure the Agility}
-\citet{validation_model} measure agility by creating a validation model, since according to them, only validation can confirm the quality of a product. In this model any candidate item for validation enters an ``identified planning state" at planning time. Afterwards, these items change to the ``unvalidated inventory state" when the items start to be generated. Finally, validation of the deliverable items changes the state to the ``validated product state" (see Figure~\ref{validation_model}). Then, based on the formula~\eqref{eq:validation_model_formula}, one can get the result. \textit{A} is the agility of a project/organization, \textit{V'} is the number of software items in the ``validated product state" and \textit{U'} is the average number of software items in which intermediate deliverables are in the ``unvalidated inventory state".
+\citet{validation_model} measure agility by creating a validation model, since according to them, only validation can confirm the quality of a product. In this model any candidate item for validation enters an ``identified planning state" at planning time. Afterwards, these items change to the ``unvalidated inventory state" when the items start to be generated. Finally, validation of the deliverable items changes the state to the ``validated product state" (see Figure~\ref{validation_model}). Then, based on the formula~\eqref{eq:validation_model_formula}, one can get the result. \textit{A} is the agility of a project/organisation, \textit{V'} is the number of software items in the ``validated product state" and \textit{U'} is the average number of software items in which intermediate deliverables are in the ``unvalidated inventory state".
 
 \begin{equation} \label{eq:validation_model_formula}  A = V'/U' \end{equation}
 
@@ -284,7 +265,7 @@ For collecting the data on the measurements, they used surveys based on the tool
 \end{figure}
 
 \subsection{AHP - ANFIS Framework} %Framework
-\citet{poonacha} created a tool for measuring agility by identifying 17 parameters grouped in four parameter groups, as it can be seen in Table~\ref{anfis_framework}. While the last group is an indicator of performance, the first three groups mitigate the risks of supply, operation and demand uncertainties respectively. Each parameter is given as a question and the answers were fed in the Adaptive Network based on Fuzzy Inference Systems (ANFIS). Due to the complexity of the ANFIS model, an Analytical Hierarchical Process (AHP) is mandatory to minimize it.
+\citet{poonacha} created a tool for measuring agility by identifying 17 parameters grouped in four parameter groups, as can be seen in Table~\ref{anfis_framework}. While the last group is an indicator of performance, the first three groups mitigate the risks of supply, operation and demand uncertainties respectively. Each parameter is given as a question and the answers are fed in the Adaptive Network based on Fuzzy Inference Systems (ANFIS). Due to the complexity of the ANFIS model, an Analytical Hierarchical Process (AHP) is mandatory to minimize it.
 
 \begin{table} [H]
 \begin{tabular}{| p{3cm} | p{12cm}|}
@@ -309,7 +290,7 @@ Thoughtworks \cite{thoughtworks} is a worldwide consulting company. They have de
 	\item Project Management
 	\item Governance.
 \end{inparaenum}
-People can answer to the survey online and they will get a report evaluating at which level their team or company is. The survey gained a lot of fame due to Martin Fowler \cite{martin_fowler}, one of the creators of the agile manifesto working at the company.
+People can answer to the survey online and they will get a report evaluating at which level their team or company is. The survey gained a lot of fame due to Martin Fowler, one of the creators of the agile manifesto working at the company.
 
 \subsection{42-Point Test}
 \citet{42points} created a simple 42-question survey based on a similar one from Nokia \cite{nokia}, in order to allow to Scrum/XP teams to easily see to what extent they follow various agile practices.
@@ -321,7 +302,7 @@ People can answer to the survey online and they will get a report evaluating at 
 In order to achieve this, the framework examines the methodology based on 3 aspects:
 \begin{itemize}
 \item Adequacy - Sufficiency of the method with respect to meeting its stated objectives.
-\item Capability - Ability of an organization to provide an environment supporting the implementation of its adopted method. Such ability is reflected in the characteristics of an organization's people, process
+\item Capability - Ability of an organisation to provide an environment supporting the implementation of its adopted method. Such ability is reflected in the characteristics of an organisation's people, process
 and project.
 \item Effectiveness - Producing the intended or expected results. The existence of necessary process, artifacts and product characteristics indicate levels of effectiveness.
 \end{itemize}
@@ -335,7 +316,7 @@ The \ac{OPS} framework identifies
 \item strategies that implement the principles
 \item linkages that relate objectives to
 principles, and principles to strategies
-\item indicators for assessing the extent to which an organization supports the implementation and effectiveness of those strategies
+\item indicators for assessing the extent to which an organisation supports the implementation and effectiveness of those strategies.
 \end{inparaenum}
 
 %The \ac{OPS} Framework identifies 
@@ -349,10 +330,10 @@ principles, and principles to strategies
 %\item the principles and the strategies. 
 %\end{inparaenum} 
 %The linkages show the path in order to asses the adequacy, capability and effectiveness of the method used.
-%\item Indicators for assessing the extent to which an organization supports the implementation and effectiveness of those strategies - In order to measure the capability and the effectiveness the strategies use properties which contain a number of questions. These properties differ for the capability and the effectiveness. Indicator is named the combination of a strategy with a property. They are directly measurable and are tailored to assess the strategies
+%\item Indicators for assessing the extent to which an organisation supports the implementation and effectiveness of those strategies - In order to measure the capability and the effectiveness the strategies use properties which contain a number of questions. These properties differ for the capability and the effectiveness. Indicator is named the combination of a strategy with a property. They are directly measurable and are tailored to assess the strategies
 %\end{itemize}
 
-In total 5 objectives, 9 principles, 17 strategies, 54 linkages and 80 indicators are identified. Also check Figure~\ref{objectives_principles_strategies}.
+In total 5 objectives, 9 principles, 17 strategies, 54 linkages and 80 indicators are identified. For more information, one can view  Figure~\ref{objectives_principles_strategies}.
 
 \begin{figure} [H]
 \centerline{\includegraphics[scale=0.75]{include/relatedwork/fig/ops.pdf}}
@@ -369,7 +350,7 @@ In total 5 objectives, 9 principles, 17 strategies, 54 linkages and 80 indicator
 %\end{figure} 
 
 \subsection{Sidky Agile Measurement Index} %maybe add the actual matrix from the SAMI paper
-\citet{sidky_dissertation} created the Sidky Agile Measurement Index (SAMI) in order to measure agility as a part of the ``Agile Adoption Framework". SAMI is a scale used by an agile coach to identify the potential of a project or organization \cite{sidky}, which consists of five agile levels and five agile principles. It derives from the agile manifesto \cite{beck2001agile}and forms a 5x5 matrix. Agile practices have been assigned to most of the cells of this matrix. The assessment of agility takes place at each level by measuring the practices adopted by a team. Before moving to the next level, the team needs to fulfill all the practices of the current one.
+\citet{sidky_dissertation} created the Sidky Agile Measurement Index (SAMI) in order to measure agility as a part of the ``Agile Adoption Framework". SAMI is a scale used by an agile coach to identify the potential of a project or organisation \cite{sidky}, which consists of five agile levels and five agile principles. It derives from the agile manifesto \cite{beck2001agile} and forms a 5x5 matrix. Agile practices have been assigned to most of the cells of this matrix. The assessment of agility takes place at each level by measuring the practices adopted by a team. Before moving to the next level, the team needs to fulfill all the practices of the current one.
 
 \begin{minipage}[t]{0.35\linewidth}
     \textbf{Agile Levels}
@@ -393,7 +374,7 @@ In total 5 objectives, 9 principles, 17 strategies, 54 linkages and 80 indicator
 \end{minipage}
 
 \section{Selecting tools}
-The tools selected for the case study that follows in the next chapter are \ac{PAM}, \ac{TAA} and \ac{OPS}. All three of them originate from either industry (\ac{TAA}) or academia(\ac{OPS}) or both(\ac{PAM}). \ac{PAM} has been used in a case study in the past with a large sample. The tool was created with participations from development teams from all over the world. \ac{TAA} is used by companies and has gained a lot of acclaim during the last years by practitioners but also from the members of the research community. \ac{OPS} Framework is a fairly new tool which is very promising since it covers many agile practices but also because it is an evolution of the ``Agile Adoption Framework" \cite{sidky} which has not been used widely.
+The tools selected for the case study that follows in the next chapter are Perceptive Agile Measurement (PAM), Team Agility Assessment (TAA) and Objectives Principles Strategies (OPS). All three of them originate from either industry (\ac{TAA}) or academia (\ac{OPS}) or both (\ac{PAM}). \ac{PAM} has been used in a case study in the past with a large sample. The tool was created with participations from development teams from all over the world. \ac{TAA} is used by companies and has gained a lot of acclaim during the last years by practitioners but also from the members of the research community. \ac{OPS} Framework is a fairly new tool which is very promising since it covers many agile practices but also because it is an evolution of the ``Agile Adoption Framework" \cite{sidky} which has not been used widely.
 
 
 \section{Chapter Summary}
