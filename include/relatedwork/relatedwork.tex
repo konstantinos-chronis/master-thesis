@@ -109,7 +109,7 @@ The measurement of the degree of agility at this level is done based on five var
 %\item Responsiveness
 %\end{inparaenum}
 
-These variables are used to check the existence of a method's objective at a specific level or phase. If the variable exists for a phase, then the value 1 is assigned to it, otherwise 0. \citet{qumer2006measuring} define the degree of agility (DA) as ``the fraction of the five agility variables that are encompassed and supported". They define as ``Object"  an object at some level or lifecycle phase or as a result of the practices used. ``m" is the number of phases or  practices.``Phase" is any of the design, planning phase or requirements engineering phase. ``Practice" is the practices of the agile methodology. \\ %maybe provide an example as the authors do
+These variables are used to check the existence of a method's objective at a specific level or phase. If the variable exists for a phase, then the value 1 is assigned to it, otherwise 0. \citet{qumer2006measuring} define the degree of agility (DA) as ``the fraction of the five agility variables that are encompassed and supported". They define as \textit{Object} an object at some level or lifecycle phase or as a result of the practices used. \textit{m} is the number of phases or  practices. \textit{Phase} is any of the design, planning phase or requirements engineering phase. \textit{Practice} is the practices of the agile methodology. \\ %maybe provide an example as the authors do
 
 Formula \eqref{eq:dat_formula} how DA is calculated\\
 \begin{equation} \label{eq:dat_formula} DA (Object) = (1/m) \sum m DA(Object, Phase Or Practices) \end{equation}
@@ -265,7 +265,7 @@ For collecting the data on the measurements, they used surveys based on the tool
 \end{figure}
 
 \subsection{AHP - ANFIS Framework} %Framework
-\citet{poonacha} created a tool for measuring agility by identifying 17 parameters grouped in four parameter groups, as can be seen in Table~\ref{anfis_framework}. While the last group is an indicator of performance, the first three groups mitigate the risks of supply, operation and demand uncertainties respectively. Each parameter is given as a question and the answers are fed in the Adaptive Network based on Fuzzy Inference Systems (ANFIS). Due to the complexity of the ANFIS model, an Analytical Hierarchical Process (AHP) is mandatory to minimize it.
+\citet{poonacha} created a tool for measuring agility by identifying 17 parameters grouped in four parameter groups, as can be seen in Table~\ref{anfis_framework}. While the last group is an indicator of performance, the first three groups mitigate the risks of supply, operation and demand uncertainties respectively. Each parameter is given as a question and the answers are fed in the Adaptive Network based on Fuzzy Inference Systems (ANFIS). Due to the complexity of the ANFIS model, an Analytical Hierarchical Process (AHP) is mandatory to be applied at the parameter level in order to compute the values for the parameter groups and then employee ANFIS at the parameter group level.
 
 \begin{table} [H]
 \begin{tabular}{| p{3cm} | p{12cm}|}
@@ -281,6 +281,33 @@ For collecting the data on the measurements, they used surveys based on the tool
 \label{anfis_framework}
 \end{table}
 
+\subsection{42-Point Test}
+\citet{42points} created a simple 42-question survey based on a similar one from Nokia \cite{nokia}, in order to allow to Scrum/XP teams to easily see to what extent they follow various agile practices.
+
+\subsection{Sidky Agile Measurement Index} %maybe add the actual matrix from the SAMI paper
+\citet{sidky_dissertation} created the Sidky Agile Measurement Index (SAMI) in order to measure agility as a part of the ``Agile Adoption Framework". SAMI is a scale used by an agile coach to identify the potential of a project or organisation \cite{sidky}, which consists of five agile levels and five agile principles. It derives from the agile manifesto \cite{beck2001agile} and forms a 5x5 matrix. Agile practices have been assigned to most of the cells of this matrix. The assessment of agility takes place at each level by measuring the practices adopted by a team. Before moving to the next level, the team needs to fulfill all the practices of the current one.
+
+\begin{minipage}[t]{0.35\linewidth}
+    \textbf{Agile Levels}
+    \begin{itemize}
+    \item{Level 1 - Collaborative}
+    \item{Level 2 - Evolutionary}
+    \item{Level 3 - Effective}
+    \item{Level 4 - Adaptive}
+    \item{Level 5 - Ambient}
+    \end{itemize}
+    \end{minipage}
+    \begin{minipage}[t]{0.6\linewidth}
+    \textbf{Agile Principles}
+    \begin{itemize}
+    \item{Embrace Change to Deliver Customer Value}
+    \item{Plan and Deliver Software Frequently}
+    \item{Human Centric}
+    \item{Technical Excellence}
+    \item{Customer Collaboration}
+    \end{itemize}
+\end{minipage}
+
 \subsection{Thoughtworks} %Measures current level of agility
 Thoughtworks \cite{thoughtworks} is a worldwide consulting company. They have developed an online survey for assessing agility based on 20 multiple choice questions. The questions cover the areas of 
 \begin{inparaenum} [a\upshape)]
@@ -291,9 +318,6 @@ Thoughtworks \cite{thoughtworks} is a worldwide consulting company. They have de
 	\item Governance.
 \end{inparaenum}
 People can answer to the survey online and they will get a report evaluating at which level their team or company is. The survey gained a lot of fame due to Martin Fowler, one of the creators of the agile manifesto working at the company.
-
-\subsection{42-Point Test}
-\citet{42points} created a simple 42-question survey based on a similar one from Nokia \cite{nokia}, in order to allow to Scrum/XP teams to easily see to what extent they follow various agile practices.
 
 \subsection{Objectives Principles Strategies Framework}
 \label{subsec:ops}
@@ -349,32 +373,10 @@ In total 5 objectives, 9 principles, 17 strategies, 54 linkages and 80 indicator
 %\label{ops_core}
 %\end{figure} 
 
-\subsection{Sidky Agile Measurement Index} %maybe add the actual matrix from the SAMI paper
-\citet{sidky_dissertation} created the Sidky Agile Measurement Index (SAMI) in order to measure agility as a part of the ``Agile Adoption Framework". SAMI is a scale used by an agile coach to identify the potential of a project or organisation \cite{sidky}, which consists of five agile levels and five agile principles. It derives from the agile manifesto \cite{beck2001agile} and forms a 5x5 matrix. Agile practices have been assigned to most of the cells of this matrix. The assessment of agility takes place at each level by measuring the practices adopted by a team. Before moving to the next level, the team needs to fulfill all the practices of the current one.
 
-\begin{minipage}[t]{0.35\linewidth}
-    \textbf{Agile Levels}
-    \begin{itemize}
-    \item{Level 1 - Collaborative}
-    \item{Level 2 - Evolutionary}
-    \item{Level 3 - Effective}
-    \item{Level 4 - Adaptive}
-    \item{Level 5 - Ambient}
-    \end{itemize}
-    \end{minipage}
-    \begin{minipage}[t]{0.6\linewidth}
-    \textbf{Agile Principles}
-    \begin{itemize}
-    \item{Embrace Change to Deliver Customer Value}
-    \item{Plan and Deliver Software Frequently}
-    \item{Human Centric}
-    \item{Technical Excellence}
-    \item{Customer Collaboration}
-    \end{itemize}
-\end{minipage}
 
 \section{Selecting tools}
-The tools selected for the case study that follows in the next chapter are Perceptive Agile Measurement (PAM), Team Agility Assessment (TAA) and Objectives Principles Strategies (OPS). All three of them originate from either industry (\ac{TAA}) or academia (\ac{OPS}) or both (\ac{PAM}). \ac{PAM} has been used in a case study in the past with a large sample. The tool was created with participations from development teams from all over the world. \ac{TAA} is used by companies and has gained a lot of acclaim during the last years by practitioners but also from the members of the research community. \ac{OPS} Framework is a fairly new tool which is very promising since it covers many agile practices but also because it is an evolution of the ``Agile Adoption Framework" \cite{sidky} which has not been used widely.
+The tools selected for the case study that follows in the next chapter are Perceptive Agile Measurement (PAM), Team Agility Assessment (TAA) and Objectives Principles Strategies (OPS). All three of them originate from either industry (\ac{TAA}) or academia (\ac{OPS}) or both (\ac{PAM}). \ac{PAM} has been used in a case study in the past with a large sample. The tool was created with participations from development teams from all over the world. \ac{TAA} is used by companies and has gained a lot of acclaim during the last years by practitioners. \ac{OPS} Framework is a fairly new and promising since it covers more agile practices than any other tool.
 
 
 \section{Chapter Summary}
