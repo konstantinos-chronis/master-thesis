@@ -1,9 +1,129 @@
-\chapter{Case Study}
-\label{ch:case_study}
+\chapter{Company A}
+
+\lettrine[lines=4, loversize=-0.1, lraise=0.1]{I}{n order}
+In order to examine how \ac{OPS}, \ac{PAM} and \ac{TAA} correlate when measuring the agility of software development teams, four teams in company A were used as a sample. In the next pages is presented information on its teams, products and the agile practices used.
+
+\section{Description}
+Company A is a United States company which activates in the Point Of Sales (POS) area. With the development of some new products, the company had a 400\% increase in the size of the development and QA departments, which resulted in the need for better organizing the development and release processes. In addition, the increasing requests of new features in the company's systems require a more efficient way in delivering them to the customers and also maintaining the quality of the products.
+
+
+\section{Methodology A}
+In general, company A does not follow a specific agile methodology, but rather a tailored mix of the most famous ones which suits the needs of each team. Methodology A, as we can name it, embraces the practices displayed in Table~\ref{table:methodologyA_practices} from the various agile methodologies, some of the them to larger and some of them to a smaller extent. The analysis made by \citet{koch2005agile} was used for identifying these methodologies. The identification of these practices was done by observing and understanding how the teams work. The results were verified by the agile coach.
+
+\begin{table} [H]
+\caption{Practices embraced by methodology A}
+\begin{tabular}{| p{2cm} | p{13cm}|}
+    \hline
+     \textbf{Method} & \textbf{Practice} \\ \hline
+     \textbf{XP}  & \begin{inparaenum} [a\upshape)]
+     				\item Small Releases \item Simple design \item Refactoring \item Collective ownership \item Continuous integration \item 40-hour week \item Coding standards
+					\end{inparaenum}      \\ \hline
+     \textbf{FDD}  & \begin{inparaenum} [a\upshape)]  \item Developing by feature \item Feature teams \item Regular build schedule \item Inspections \item Configuration management
+     				  \end{inparaenum}\\ \hline
+     \textbf{Lean} & \begin{inparaenum} [a\upshape)] \item Empower the team \item Build Integrity In \item Amplify learning \item Eliminate waste
+     				 \end{inparaenum} \\ \hline
+\end{tabular}
+\label{table:methodologyA_practices}
+\end{table}
+
+\section{Products}
+Company A has developed a few products which belong in the following four areas 
+\begin{inparaenum} [a\upshape)]
+\item desktop
+\item mobile
+\item cloud
+\item platforms.
+\end{inparaenum}
+The names given correspond to the names of the teams that develop them.
+
+\begin{itemize}
+\item Product A - A series of three mobile applications which offer services to stores or customers of stores.
+\item Product B - A cloud application which offers services to product A and product D.
+\item Product C - A platform used only by the company's employees. It supports services which are necessary for product D.
+\item Product D - It is the main product of the company which is mostly used. The rest of the products were developed in order to support it and expand its functionalities.
+
+\end{itemize}
+
+\section{Teams}
+There are four development teams, each for a product of the company. Some of the teams have mixed members of developers and testers. In the Tables~\ref{table:teamA}, \ref{table:teamB}, \ref{table:teamC}, \ref{table:teamD}, one can see the structure of the teams. \\
+
+\begin{table} [H]
+  \RawFloats
+ \begin{minipage}[b]{0.5\textwidth}
+  \centering
+    \caption{Team A - Profile} %Mobile
+  \begin{tabular}{| p{3.3cm} | p{3cm}|}
+    \hline
+     \textbf{Team Size} & 7 \\ \hline
+     \textbf{Roles}  & \begin{tabular}{@{}l@{}}Team Leader (1) \\ Developers (3) \\ Testers (3) \end{tabular} \\ \hline
+  %   \textbf{Development Process}  & Method A \\ \hline
+     \textbf{Area} & Mobile \\ \hline
+     \textbf{Tools Used}  & \begin{tabular}{@{}l@{}}Perforce \\ Titanium \end{tabular}  \\ \hline
+     \textbf{Iteration Length}  & 2-3 weeks \\ \hline
+  \end{tabular}
+  \label{table:teamA}
+ \end{minipage} %
+%
+ \begin{minipage}[b]{.5\textwidth}
+  \centering
+    \caption{Team B - Profile} %Marketing
+  \begin{tabular}{| p{3.3cm} | p{3cm}|}
+    \hline
+     \textbf{Team Size} & 6 \\ \hline
+     \textbf{Roles}  & \begin{tabular}{@{}l@{}}Team Leader (1) \\ Developers (5) \\ Testers (1) \end{tabular} \\ \hline
+    % \textbf{Development Process}  & Method B \\ \hline
+     \textbf{Area} & Java \\ \hline
+     \textbf{Tools Used}  & \begin{tabular}{@{}l@{}}Perforce \\ Eclipse IDE \end{tabular} \\ \hline
+     \textbf{Iteration Length}  & 2-3 weeks \\ \hline
+  \end{tabular}
+  \label{table:teamB}
+  \end{minipage} %
+  
+  \vspace{10 mm}
+%
+ \begin{minipage}[b]{.5\textwidth}
+  \centering
+    \caption{Team C - Profile} %Info
+  \begin{tabular}{| p{3.3cm} | p{3cm}|}
+    \hline
+     \textbf{Team Size} & 4 \\ \hline
+     \textbf{Roles}  & \begin{tabular}{@{}l@{}}Team Leader (1) \\ Developers (2) \\ Testers (1) \end{tabular} \\ \hline
+ %    \textbf{Development Process}  & Method C \\ \hline
+     \textbf{Area} & Java \\ \hline
+     \textbf{Tools Used}  & \begin{tabular}{@{}l@{}}Perforce \\ Eclipse IDE \end{tabular}  \\ \hline
+     \textbf{Iteration Length}  & 3-4 weeks \\ \hline
+  \end{tabular}
+  \label{table:teamC}
+\end{minipage}%
+%
+ \begin{minipage}[b]{.5\textwidth}
+  \centering
+    \caption{Team D - Profile} %POS
+  \begin{tabular}{| p{3.3cm} | p{3cm}|}
+    \hline
+     \textbf{Team Size} & 19 \\ \hline
+     \textbf{Roles}  & \begin{tabular}{@{}l@{}}Team Leader (1) \\ Developers (10) \\ Testers (8) \end{tabular} \\ \hline
+  %   \textbf{Development Process}  & Method D \\ \hline
+     \textbf{Area} & Java \\ \hline
+     \textbf{Tools Used}  & \begin{tabular}{@{}l@{}}Perforce \\ Eclipse IDE \end{tabular} \\ \hline
+     \textbf{Iteration Length}  & 2-4 weeks \\ \hline
+  \end{tabular}
+  \label{table:teamD}
+  \end{minipage}
+\end{table}
+
+
+
+
+
+
+
+\chapter{Research Methodology}
+\label{ch:research_methodology}
 
 %\newcommand{\mysubparagraph}[1]{\subparagraph{#1}\mbox{}\\}
 
-\lettrine[lines=4, loversize=-0.1, lraise=0.1]{T}{his} chapter consists of two parts. In the first part an effort is made to check how complete are the tools in measuring agility compared to one another. In the second part, this study aims to check the correlation of the practices covered by \ac{PAM}, \ac{TAA} and \ac{OPS} in order to see how they relate when measuring agility by performing a case study in company F.
+\lettrine[lines=4, loversize=-0.1, lraise=0.1]{T}{his} chapter consists of two parts. In the first part an effort is made to check how complete are the tools in measuring agility compared to one another. In the second part, this study aims to check the correlation of the practices covered by \ac{PAM}, \ac{TAA} and \ac{OPS} in order to see how they relate when measuring agility by performing a case study in company A.
 
 \section{Research Purpose}
 The purpose of this study is to analyse if three agility measurement tools correlate with each other and see if they assess agility in similar ways. In addition, it analyses how complete are one to another.
@@ -94,7 +214,7 @@ Objectives, Principles, Strategies (\ac{OPS}) Framework is the successor of the 
 \label{table:opp_practices}
 \end{table}
 
-\subsubsection[Tool Practices]{Practices Covered Between The Tools}
+\subsubsection[Tool Practices]{Practices Covered Among The Tools}
 
 As can be clearly seen in Tables~\ref{table:opp_practices}, \ref{table:pam_practices} and \ref{table:taa_practices}, the \ac{OPP}, and as a consequence the \ac{OPS}, covers more agile practices than the other tools. In the next pages a mapping between \ac{OPP} and \ac{PAM} (see Table~\ref{table:opp_pam_practices}) and \ac{OPP} and \ac{TAA} (see Table~\ref{table:opp_taa_practices}) follows. \\
 
@@ -186,9 +306,7 @@ The connection between the practices and strategies is done based on the questio
 
 \ac{PAM} has its questions been divided based on agile practices, while on the other hand, the \ac{TAA} has divided them based on areas considered important. In the following pages is presented, a mapping between the questions used from the \ac{PAM} and \ac{TAA} tools with the practices from \ac{OPP} and the strategies from \ac{OPS}. As one can see from the tables above, while all practices/areas from \ac{PAM} and \ac{TAA} are mapped to \ac{OPP} and \ac{OPS}, not all of their questions are under \ac{OPP} practices or \ac{OPS} strategies. This can be explained due to the different perception/angle, of the creators of the tools, of what is important for an organization to be agile.
 
-The questions among the tools will be matched based on whether they are covered directly, relevantly, or not at all. Direct match will be considered the one where a question from a tool is the same or almost similar with one from \ac{OPS}. Relevant match will be considered the one where a question of a tool does not exist in \ac{OPS}, but its practice does exist in \ac{OPS}. Non-relevant match will be considered the one where a question cannot be matched at all in \ac{OPS}. 
-
-The detailed mapping of the tools can be viewed in Appendix~\ref{ch:mapping}.
+The questions among the tools will be matched based on whether they are covered directly, relevantly, or not at all. Direct match will be considered the one where a question from a tool is the same or almost similar with one from \ac{OPS}. Relevant match will be considered the one where a question of a tool does not exist in \ac{OPS}, but its practice does exist in \ac{OPS}. Non-relevant match will be considered the one where a question cannot be matched at all in \ac{OPS}. The detailed mapping of the tools can be viewed in Appendix~\ref{ch:mapping}.
 
 \subsection{Tools Completeness Analysis}
 \label{subsec:tools_completeness_analysis}
@@ -219,120 +337,7 @@ As far as research question ``How complete are the tools in measuring agility" i
 
 
 
-\section{Company F}
 
-\subsection{Company F Description}
-%need to change the intro
-In order to see \ac{OPS}, \ac{PAM} and \ac{TAA} correlate when measuring the agility of software development teams, four teams in company F were used as a sample.
-
-\subsubsection{Company F}
-Company F is a United States company which activates in the Point Of Sales (POS) area. With the development of some new products, the company had a 400\% increase in the size of the development and QA departments, which resulted in the need for better organizing the development and release processes. In addition, the increasing requests of new features in the company's systems require a more efficient way in delivering them to the customers and also maintaining the quality of the products.
-
-
-\subsubsection{Methodology F}
-In general, company F does not follow a specific agile methodology, but rather a tailored mix of the most famous ones which suits the needs of each team. Methodology F, as we can name it, embraces the practices displayed in Table~\ref{table:methodologyF_practices} from the various agile methodologies, some of the them to larger and some of them to a smaller extent. The analysis made by \citet{koch2005agile} was used for identifying these methodologies. The identification of these practices was done by observing and understanding how the teams work. The results were verified by the agile coach.
-
-\begin{table} [H]
-\caption{Practices embraced by methodology F}
-\begin{tabular}{| p{2cm} | p{13cm}|}
-    \hline
-     \textbf{Method} & \textbf{Practice} \\ \hline
-     \textbf{XP}  & \begin{inparaenum} [a\upshape)]
-     				\item Small Releases \item Simple design \item Refactoring \item Collective ownership \item Continuous integration \item 40-hour week \item Coding standards
-					\end{inparaenum}      \\ \hline
-     \textbf{FDD}  & \begin{inparaenum} [a\upshape)]  \item Developing by feature \item Feature teams \item Regular build schedule \item Inspections \item Configuration management
-     				  \end{inparaenum}\\ \hline
-     \textbf{Lean} & \begin{inparaenum} [a\upshape)] \item Empower the team \item Build Integrity In \item Amplify learning \item Eliminate waste
-     				 \end{inparaenum} \\ \hline
-\end{tabular}
-\label{table:methodologyF_practices}
-\end{table}
-
-\subsubsection{Products}
-Company F has developed a few products which belong in the following four areas 
-\begin{inparaenum} [a\upshape)]
-\item desktop
-\item mobile
-\item cloud
-\item platforms.
-\end{inparaenum}
-The names given correspond to the names of the teams that develop them.
-
-\begin{itemize}
-\item Product A - A series of three mobile applications which offer services to stores or customers of stores.
-\item Product B - A cloud application which offers services to product A and product D.
-\item Product C - A platform used only by the company's employees. It supports services which are necessary for product D.
-\item Product D - It is the main product of the company which is mostly used. The rest of the products were developed in order to support it and expand its functionalities.
-
-\end{itemize}
-
-\subsubsection{Teams}
-There are four development teams, each for a product of the company. Some of the teams have mixed members of developers and testers. In the Tables~\ref{table:teamA}, \ref{table:teamB}, \ref{table:teamC}, \ref{table:teamD}, one can see the structure of the teams. \\
-
-\begin{table} [H]
-  \RawFloats
- \begin{minipage}[b]{0.5\textwidth}
-  \centering
-    \caption{Team A - Profile} %Mobile
-  \begin{tabular}{| p{3.3cm} | p{3cm}|}
-    \hline
-     \textbf{Team Size} & 7 \\ \hline
-     \textbf{Roles}  & \begin{tabular}{@{}l@{}}Team Leader (1) \\ Developers (3) \\ Testers (3) \end{tabular} \\ \hline
-  %   \textbf{Development Process}  & Method A \\ \hline
-     \textbf{Area} & Mobile \\ \hline
-     \textbf{Tools Used}  & \begin{tabular}{@{}l@{}}Perforce \\ Titanium \end{tabular}  \\ \hline
-     \textbf{Iteration Length}  & 2-3 weeks \\ \hline
-  \end{tabular}
-  \label{table:teamA}
- \end{minipage} %
-%
- \begin{minipage}[b]{.5\textwidth}
-  \centering
-    \caption{Team B - Profile} %Marketing
-  \begin{tabular}{| p{3.3cm} | p{3cm}|}
-    \hline
-     \textbf{Team Size} & 6 \\ \hline
-     \textbf{Roles}  & \begin{tabular}{@{}l@{}}Team Leader (1) \\ Developers (5) \\ Testers (1) \end{tabular} \\ \hline
-    % \textbf{Development Process}  & Method B \\ \hline
-     \textbf{Area} & Java \\ \hline
-     \textbf{Tools Used}  & \begin{tabular}{@{}l@{}}Perforce \\ Eclipse IDE \end{tabular} \\ \hline
-     \textbf{Iteration Length}  & 2-3 weeks \\ \hline
-  \end{tabular}
-  \label{table:teamB}
-  \end{minipage} %
-  
-  \vspace{10 mm}
-%
- \begin{minipage}[b]{.5\textwidth}
-  \centering
-    \caption{Team C - Profile} %Info
-  \begin{tabular}{| p{3.3cm} | p{3cm}|}
-    \hline
-     \textbf{Team Size} & 4 \\ \hline
-     \textbf{Roles}  & \begin{tabular}{@{}l@{}}Team Leader (1) \\ Developers (2) \\ Testers (1) \end{tabular} \\ \hline
- %    \textbf{Development Process}  & Method C \\ \hline
-     \textbf{Area} & Java \\ \hline
-     \textbf{Tools Used}  & \begin{tabular}{@{}l@{}}Perforce \\ Eclipse IDE \end{tabular}  \\ \hline
-     \textbf{Iteration Length}  & 3-4 weeks \\ \hline
-  \end{tabular}
-  \label{table:teamC}
-\end{minipage}%
-%
- \begin{minipage}[b]{.5\textwidth}
-  \centering
-    \caption{Team D - Profile} %POS
-  \begin{tabular}{| p{3.3cm} | p{3cm}|}
-    \hline
-     \textbf{Team Size} & 19 \\ \hline
-     \textbf{Roles}  & \begin{tabular}{@{}l@{}}Team Leader (1) \\ Developers (10) \\ Testers (8) \end{tabular} \\ \hline
-  %   \textbf{Development Process}  & Method D \\ \hline
-     \textbf{Area} & Java \\ \hline
-     \textbf{Tools Used}  & \begin{tabular}{@{}l@{}}Perforce \\ Eclipse IDE \end{tabular} \\ \hline
-     \textbf{Iteration Length}  & 2-4 weeks \\ \hline
-  \end{tabular}
-  \label{table:teamD}
-  \end{minipage}
-\end{table}
 
 %\section{\ac{OPS}}
 %
@@ -379,8 +384,8 @@ There are four development teams, each for a product of the company. Some of the
 
 %Reflecting on the above analysis, we see that methodology F lacks four strategies which are important for its improvement. Without retrospection the team members do not always identify and discuss their mistakes, while without a well defined process for continuous feedback any issues that might arise may go unnoticed for quite some time. In total, methodology F is missing four strategies out of seventeen which is a lot.
 
-\section{Method}
-\label{sec:method}
+\section{Case Study Research}
+\label{sec:case_study_research}
 
 \subsection{Data Collection}
 
@@ -417,7 +422,7 @@ From the aforementioned practices, methodology F does not support \textit{Stand-
 	\item Testing Practices
 	\item Development Practices/Infrastructure.
 \end{inparaenum}
-From the above practices, methodology F does not support \textit{Product Ownership}, since it implies that company F should implement Scrum, which it does not. Moreover, Scrum-oriented questions from the rest of the practices/areas were removed as well. 
+From the above practices, methodology F does not support \textit{Product Ownership}, since it implies that company A should implement Scrum, which it does not. Moreover, Scrum-oriented questions from the rest of the practices/areas were removed as well. 
 
 Finally, \ac{OPS} focuses on the following strategies:
 \begin{inparaenum} [a\upshape)]
@@ -490,7 +495,7 @@ In order to use ``Spearman’s rank correlation coefficient", two prerequisites 
 \item There needs to be a monotonic relationship between the two variables
 \end{enumerate}
 
-The first prerequisite was covered thanks to the Likert scale. In order to check for the monotonicity, plots were drawn between the results of each tool for all 14 practices. The plots surprisingly showed that only 8 out of 42 were monotonic, which does not allow the use of `Spearman’s rank correlation coefficient" for the rest. The Table~\ref{table:monotonic_relationships} summarizes the practices and the relationships which are monotonic and `Spearman’s rank correlation coefficient" can be used. The monotonic relationships are marked in green while the non-monotonic in red.
+The first prerequisite was covered thanks to the Likert scale. In order to check for the monotonicity, plots were drawn between the results of each tool for all 14 practices. The plots surprisingly showed that only 8 out of 42 were monotonic, which does not allow the use of `Spearman’s rank correlation coefficient" for the rest. Table~\ref{table:monotonic_relationships} summarizes the practices and the relationships which are monotonic and `Spearman’s rank correlation coefficient" can be used. The monotonic relationships are marked in green while the non-monotonic in red.
 
 %\begin{table} [H]
 %\caption{Pairs of tools for which Spearman's correlation can be used}
@@ -608,20 +613,20 @@ Construct validity mainly deals with obtaining the right method for the concept 
 Structural?
 Convergent validity?
 
-Here, mono-method bias was considered as a potential risk, and we tried
-to minimize by conducting pilot survey and interviews. The tools used to deploy our questionnaire guarantees subjects anonymity, thus helped us to avoid evaluation apprehension
-
-To assure a common understanding of the concepts used in data collection instruments, each study participant went through a printed survey form together with the researchers, where the latter explained every section in detail and the former was able to ask clarifying questions
-
-To alleviate the survey’s potential instrumentation flaws it was designed with the results of previous studies by Sekitoleko et al. [62] and Borjesson [9] and feedback of trial participants as an input.
-
-The evaluation apprehension threat [77], stemming from people being afraid of eval-
-uation by their nature, was mitigated by guaranteeing anonymity to every study partic-
-ipant within the company and in any publications of the study.
-
-Hypothesis Guessing
-
-http://www.socialresearchmethods.net/kb/constval.php
+%Here, mono-method bias was considered as a potential risk, and we tried
+%to minimize by conducting pilot survey and interviews. The tools used to deploy our questionnaire guarantees subjects anonymity, thus helped us to avoid evaluation apprehension
+%
+%To assure a common understanding of the concepts used in data collection instruments, each study participant went through a printed survey form together with the researchers, where the latter explained every section in detail and the former was able to ask clarifying questions
+%
+%To alleviate the survey’s potential instrumentation flaws it was designed with the results of previous studies by Sekitoleko et al. [62] and Borjesson [9] and feedback of trial participants as an input.
+%
+%The evaluation apprehension threat [77], stemming from people being afraid of eval-
+%uation by their nature, was mitigated by guaranteeing anonymity to every study partic-
+%ipant within the company and in any publications of the study.
+%
+%Hypothesis Guessing
+%
+%http://www.socialresearchmethods.net/kb/constval.php
 
 
 \subsection{Internal Validity}
@@ -633,12 +638,17 @@ Conclusion validity concerns the possibility of reaching a wrong conclusion \cit
 \subsection{External Validity}
 External validity deals with the ability to generalize the outcomes of the case study \cite{Wohlin}. Every software development team, even in the same company, applies agile methodologies in different ways. Nevertheless, the correlations among the tools are not context-specific and should not differ a lot due to the reasons explained in section~\ref{sec:findings}. Yet, as it is known, conducting a case study is susceptible to generalizing its outcomes. In this case though, we can consider that teams following the same agile practices should not have different results.
 
-\subsection{Reliability}
-Reliability validity concerns on the dependence of the data and the analysis on the specific researchers \cite{Wohlin}. To provide the ability to other researchers to conduct a similar study, the steps followed have been described and the reasons for the decisions made have been explained. All the data exist in digital format which can be provided to anyone who wants to review them. The presentation of the findings could be probably threatened by the author's experience. In order to mitigate this the findings were discussed with a company F employee who did not participate in the case study.
+%\subsection{Reliability}
+%Reliability validity concerns on the dependence of the data and the analysis on the specific researchers \cite{Wohlin}. To provide the ability to other researchers to conduct a similar study, the steps followed have been described and the reasons for the decisions made have been explained. All the data exist in digital format which can be provided to anyone who wants to review them. The presentation of the findings could be probably threatened by the author's experience. In order to mitigate this the findings were discussed with a company A employee who did not participate in the case study.
 
+
+\chapter{Results}
+\label{ch:results}
+
+This chapter presents the results of the surveys and analyses the reasons behind them.
 
 \section{Correlation Results}
-The cells for which a correlation exists are coloured in green in order to distinguish them from the rest. In Table~\ref{table:correlations_frequency} one can see that half of the correlations are between \ac{PAM} and \ac{OPS}. This corroborates that \ac{OPS} has full coverage of \ac{PAM} as seen in Table ~\ref{table:questions_coverage}. %maybe add in the Analysis - chapter 4
+As it was seen in the previous chapter only 8 out of 42 plots were monotonic. The cells for which a correlation exists are coloured in green in order to distinguish them from the rest. In Table~\ref{table:correlations_frequency} one can see that half of the correlations are between \ac{PAM} and \ac{OPS}. %This corroborates that \ac{OPS} has full coverage of \ac{PAM} as seen in Table ~\ref{table:questions_coverage}. %maybe add in the Analysis - chapter 4
 
 \begin{table} [H]
  \RawFloats %allows to have captions in all of the tables
@@ -844,8 +854,8 @@ In \textit{Continuous Integration} \ac{PAM} and \ac{OPS} have a low positive cor
 \textit{Refactoring} \ac{PAM} and \ac{TAA} have a correlation of $\rho$ = 0.097, which means there is almost no correlation at all. \ac{TAA} focuses on continuous refactoring, while on the other hand \ac{PAM} on unit testing.
 
 
-\section{Findings}
-\label{sec:findings}
+\section{Reasons for correlations}
+\label{sec:reasons_for_correlations}
 
 The plots showed an unexpected and very interesting result. Not only do not the tools have a correlation, but they do not have a monotonic relationship either between one another for the agile practices covered (see Table~\ref{table:monotonic_relationships}). This could indicate two things. The first one is that the results are random and the second one, is that all three of the tools measure agility differently. 
 
@@ -854,13 +864,13 @@ As far as the aspect of the correlation results being random is concerned, there
 On the other hand, the absence of monotonicity shows that the questions used by the tools in order to cover an agile practice, do it differently and that \ac{PAM}, \ac{TAA} and \ac{OPS} measure the agility of software development teams in their own unique way. Each of the tools was constructed and validated by its creators having the agile concept in mind, but apparently following a different path in order to accomplish it. This is quite clear by looking on the different ways that each practice is covered (see Appendix~\ref{ch:mapping}) where many of the questions have a different perspective on measuring a practice although they focus on the same one. The reasons for this unexpected phenomenon are explained in the next paragraphs.
 
 \subsection{Practices are measured in the same way}
-Tools that claim to measure agility in the same way are expected to do so. Unfortunately, this does not imply that their correlation can be calculated. The figure~\ref{fig:scm_plot} made it very clear why. All the answers from all the teams and for \ac{TAA} and \ac{OPS} were the same. Both tools had a unique question about using a version control management system, which holds true for the company F over everything that has to do with code changes. The designed plots only had one spot which means that the correlation among the tools is not possible to calculate due to the lack of variation in the results. Such an occurrence shows that correlation techniques can be defective when checking tools which manage to measure the same thing to the same extent.
+Tools that claim to measure agility in the same way are expected to do so. Unfortunately, this does not imply that their correlation can be calculated. The figure~\ref{fig:scm_plot} made it very clear why. All the answers from all the teams and for \ac{TAA} and \ac{OPS} were the same. Both tools had a unique question about using a version control management system, which holds true for the company A over everything that has to do with code changes. The designed plots only had one spot which means that the correlation among the tools is not possible to calculate due to the lack of variation in the results. Such an occurrence shows that correlation techniques can be defective when checking tools which manage to measure the same thing to the same extent.
 
 \subsection{Few or no questions for measuring a practice}
 Another reason for not being able to calculate the correlation of the tools is that they cover slightly or even not at all some of the practices. An example of this is the \textit{Smaller and Frequent Product Releases} practice. \ac{OPS} has four questions for it, while on the other hand, \ac{PAM} and \ac{TAA} have a single one each. Furthermore, \textit{Appropriate Distribution of Expertise} is not covered at all by \ac{PAM} while it is by the rest of the tools. In case the single question gets a low score, this will affect the effectiveness of the tool. On the contrary, multiple questions can cover the practice more completely by examining more factors that affect it. Apart from measuring a practice more precisely, this also has the benefit that even if one question gets a low score, the rest of them are candidates for getting a higher one. The issue is worse if a practice is not covered at all. Unfortunately, this phenomenon does not allow to equally check all the tools, since it is giving a superiority to the ones that take the practice into consideration and even more to the ones that do that to an extensive degree.
 
 \subsection{The same practice is measured differently}
-Something very interesting that came up during the data analysis was that although the tools cover the same practices, they do it in different ways, leading to different results. An example of this is the practice of \textit{Refactoring} (check figure ~\ref{fig:ref_plot}). \ac{PAM} checks whether there are enough unit tests and automated system tests to allow the safe code refactoring. In case the course unit/system tests are not developed by a team, the respondents will give low scores to the question, as the team members in company F did. Nevertheless, this does not mean that the team never refactors the software or it does it with bad results. All teams in company F choose to refactor when it adds value to the system, but the level of unit tests is very low and they exist only for specific teams. On the other hand, \ac{TAA} and \ac{OPS} check how often the teams refactor among other factors, which allows to better evaluate the practice of refactoring. Considering the above, \ac{PAM} seems to fail measuring the \textit{Refactoring} practice.
+Something very interesting that came up during the data analysis was that although the tools cover the same practices, they do it in different ways, leading to different results. An example of this is the practice of \textit{Refactoring} (check figure ~\ref{fig:ref_plot}). \ac{PAM} checks whether there are enough unit tests and automated system tests to allow the safe code refactoring. In case the course unit/system tests are not developed by a team, the respondents will give low scores to the question, as the team members in company A did. Nevertheless, this does not mean that the team never refactors the software or it does it with bad results. All teams in company A choose to refactor when it adds value to the system, but the level of unit tests is very low and they exist only for specific teams. On the other hand, \ac{TAA} and \ac{OPS} check how often the teams refactor among other factors, which allows to better evaluate the practice of refactoring. Considering the above, \ac{PAM} seems to fail measuring the \textit{Refactoring} practice.
 
 \subsection{The same practice is measured in opposite questions}
 \label{subsec:opposite_questions}
@@ -876,7 +886,7 @@ The questions in the surveys were all based on how their creators perceived the 
 
 Considering that the researchers and specialists in the agile field perceive the concept of agility differently, it would be naive to say that the teams do not do the same. The answers in surveys are subjective and people answer them depending on how they understand them. This is also corroborated by the fact that although a team works at the same room and follows the same processes for weeks, it is rather unlikely if its members will have the same understanding of what a retrospection or a releasing planning meeting means for them.
 
-\section{Agile Practices Correlations}
+\section{Research Question recap}
 Regarding RQ \#2, \textit{``In what ways do the tools correlate"}, it was seen that the agile practices correlations almost do not exist at all between \ac{PAM}, \ac{TAA} and \ac{OPS}. Only 8 our 42 relationships have a correlation and they are mostly positive but low.
 
 \section{Chapter Summary}
