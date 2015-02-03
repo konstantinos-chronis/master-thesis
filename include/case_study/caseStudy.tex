@@ -1,13 +1,38 @@
-\chapter{Company A}
 
-\lettrine[lines=4, loversize=-0.1, lraise=0.1]{I}{n order} 
-to examine how \ac{OPS}, \ac{PAM} and \ac{TAA} correlate when measuring the agility of software development teams, four teams in company A were used as a sample. In the next pages is presented information on its teams, products and the agile practices used.
 
-\section{Description}
+
+
+
+
+
+\chapter{Research Methodology}
+\label{ch:research_methodology}
+
+%\newcommand{\mysubparagraph}[1]{\subparagraph{#1}\mbox{}\\}
+
+\lettrine[lines=4, loversize=-0.1, lraise=0.1]{T}{his} chapter consists of two parts. In the first part an effort is made to check how complete are the tools in measuring agility compared to one another. In the second part, this study aims to check the correlation of the practices covered by \ac{PAM}, \ac{TAA} and \ac{OPS} in order to see how they relate when measuring agility by performing a case study in company A.
+
+\section{Research Purpose}
+The purpose of this study is to analyse if three agility measurement tools correlate with each other and see if they assess agility in similar ways. In addition, it analyses how complete are one to another.
+
+\newcounter{tmpc} % set the counter to continue the RQs
+
+\subsection{Research Questions}
+\begin{enumerate}
+	\item How complete are the tools in measuring agility?
+	\item In what ways do the tools correlate?
+	\setcounter{tmpc}{\theenumi} % set the counter to continue the RQs
+\end{enumerate}
+
+
+\section{Subject Selection} %maybe rephrase
+In order to examine how \ac{OPS}, \ac{PAM} and \ac{TAA} correlate when measuring the agility of software development teams, four teams in company A were used as a sample. In the next pages is presented information on its teams, products and the agile practices used.
+
+\subsection{Description}
 Company A is a United States company which activates in the Point Of Sales (POS) area. With the development of some new products, the company had a 400\% increase in the size of the development and QA departments, which resulted in the need for better organizing the development and release processes. In addition, the increasing requests of new features in the company's systems require a more efficient way in delivering them to the customers and also maintaining the quality of the products.
 
 
-\section{Methodology A}
+\subsection{Methodology A}
 In general, company A does not follow a specific agile methodology, but rather a tailored mix of the most famous ones which suits the needs of each team. Methodology A, as we can name it, embraces the practices displayed in Table~\ref{table:methodologyA_practices} from the various agile methodologies, some of the them to larger and some of them to a smaller extent. The analysis made by \citet{koch2005agile} was used for identifying these methodologies. The identification of these practices was done by observing and understanding how the teams work. The results were verified by the agile coach.
 
 \begin{table} [H]
@@ -26,7 +51,7 @@ In general, company A does not follow a specific agile methodology, but rather a
 \label{table:methodologyA_practices}
 \end{table}
 
-\section{Products}
+\subsection{Products}
 Company A has developed a few products which belong in the following four areas 
 \begin{inparaenum} [a\upshape)]
 \item desktop
@@ -44,7 +69,7 @@ The names given correspond to the names of the teams that develop them.
 
 \end{itemize}
 
-\section{Teams}
+\subsection{Teams}
 There are four development teams, each for a product of the company. Some of the teams have mixed members of developers and testers. In the Tables~\ref{table:teamA}, \ref{table:teamB}, \ref{table:teamC}, \ref{table:teamD}, one can see the structure of the teams. \\
 
 \begin{table} [H]
@@ -114,31 +139,6 @@ There are four development teams, each for a product of the company. Some of the
 
 
 
-
-
-
-
-\chapter{Research Methodology}
-\label{ch:research_methodology}
-
-%\newcommand{\mysubparagraph}[1]{\subparagraph{#1}\mbox{}\\}
-
-\lettrine[lines=4, loversize=-0.1, lraise=0.1]{T}{his} chapter consists of two parts. In the first part an effort is made to check how complete are the tools in measuring agility compared to one another. In the second part, this study aims to check the correlation of the practices covered by \ac{PAM}, \ac{TAA} and \ac{OPS} in order to see how they relate when measuring agility by performing a case study in company A.
-
-\section{Research Purpose}
-The purpose of this study is to analyse if three agility measurement tools correlate with each other and see if they assess agility in similar ways. In addition, it analyses how complete are one to another.
-
-\newcounter{tmpc} % set the counter to continue the RQs
-
-\subsection{Research Questions}
-\begin{enumerate}
-	\item How complete are the tools in measuring agility?
-	\item In what ways do the tools correlate?
-	\setcounter{tmpc}{\theenumi} % set the counter to continue the RQs
-\end{enumerate}
-
-
-
 \section{Tools Completeness}
 \label{sec:tools_completeness}
 
@@ -170,7 +170,7 @@ The Perceptive Agile Measurement (\ac{PAM}) tool focuses on the iterations durin
   \label{table:pam_practices}
 \end{table}
 
-\subsubsection[\ac{OPS} Practices]{Objectives, Principles, Strategies - Practices}
+\subsubsection[\ac{OPS} Practices]{Objectives, Principles, Strategies (OPS) - Practices}
 Objectives, Principles, Strategies (\ac{OPS}) Framework is the successor of the Objectives, Principles, Practices (\ac{OPP}) Framework \cite{opp}. \ac{OPP} identified 27 practices as implementations of the principles which later on were transformed into 17 strategies. In Table~\ref{table:opp_practices} one can see \ac{OPP}'s practices. 
 
 \begin{table}
@@ -631,7 +631,7 @@ Convergent validity?
 Internal validity deals with the issues that may affect the casual relationship between treatment and results \cite{Wohlin}. The creators of \ac{PAM}, \ac{TAA} and \ac{OPS} have already tried to mitigate this when creating their tools. Yet, there are still some aspects of internal validity, such as selection bias and maturation. As far as maturation is concerned, this comes to boredom on the responses given by the teams. Although the surveys were small in size and did not require more than 15-20 minutes each, still the possibly repetitive questions on the topic could cause boredom to the subjects. The mitigation for this threat was to separate the surveys in three different weeks. In addition, the respondents could stop the survey at any point and continue whenever they wanted. Finally, selection could not be mitigated as a threat since the case study focused on a specific company.
 
 \subsection{Conclusion Validity}
-Conclusion validity concerns the possibility of reaching a wrong conclusion \cite{Wohlin}. Although the questions of the surveys have been carefully created, still there may be uncertainty about them. In order to mitigate this, for each survey a pilot one was conducted to spot any questions which would be difficult to understand. In addition, the participants could ask the author of this Master Thesis for any questions they had concerning the survey questions.
+Conclusion validity concerns the possibility of reaching a wrong conclusion \cite{Wohlin}. Although the questions of the surveys have been carefully created, still there may be uncertainty about them. In order to mitigate this, for each survey a pilot one was conducted to spot any questions which would be difficult to understand. In addition, the participants could ask the author of this Master's Thesis for any questions they had concerning the survey questions.
 
 \subsection{External Validity}
 External validity deals with the ability to generalize the outcomes of the case study \cite{Wohlin}. Every software development team, even in the same company, applies agile methodologies in different ways. Nevertheless, the correlations among the tools are not context-specific and should not differ a lot due to the reasons explained in section~\ref{sec:findings}. Yet, as it is known, conducting a case study is susceptible to generalizing its outcomes. In this case though, we can consider that teams following the same agile practices should not have different results.
@@ -656,9 +656,9 @@ As it was seen in the previous chapter only 8 out of 42 plots were monotonic. Th
    \begin{tabular}{| c | c | c | c |} \hline
    \multicolumn{4}{|c|}{\textbf{Continuous Feedback}}  \\ \hline
    & \ac{PAM} & \ac{TAA} & \ac{OPS} \\ \hline
-   \ac{PAM} & 1.000 & NA & \cellcolor{green}0.459 \\ \hline
+   \ac{PAM} & 1.000 & NA & 0.459 \\ \hline
    \ac{TAA} & NA & 1.000 & NA \\ \hline
-   \ac{OPS} & \cellcolor{green}0.459 & NA & 1.000 \\ \hline
+   \ac{OPS} & 0.459 & NA & 1.000 \\ \hline
   \end{tabular}
  \end{minipage}%
 %
@@ -669,9 +669,9 @@ As it was seen in the previous chapter only 8 out of 42 plots were monotonic. Th
   \begin{tabular}{| c | c | c | c |} \hline
   \multicolumn{4}{|c|}{\textbf{Client Driven Iterations}}  \\ \hline
    & \ac{PAM} & \ac{TAA} & \ac{OPS} \\ \hline
-  \ac{PAM} & 1.000 & NA & \cellcolor{green}0.161 \\ \hline
+  \ac{PAM} & 1.000 & NA & 0.161 \\ \hline
   \ac{TAA} & NA & 1.000 & NA \\ \hline
-  \ac{OPS} & \cellcolor{green}0.161 & NA & 1.000 \\ \hline
+  \ac{OPS} & 0.161 & NA & 1.000 \\ \hline
  \end{tabular}
  \end{minipage}%
  %
@@ -686,9 +686,9 @@ As it was seen in the previous chapter only 8 out of 42 plots were monotonic. Th
   \begin{tabular}{| c | c | c | c |} \hline
   \multicolumn{4}{|c|}{\textbf{High Bandwidth Communication}}  \\ \hline
   & \ac{PAM} & \ac{TAA} & \ac{OPS} \\ \hline
-  \ac{PAM} & 1.000 & \cellcolor{green}0.322 & \cellcolor{green}-0.023 \\ \hline
-  \ac{TAA} & \cellcolor{green}0.322 & 1.000 & \cellcolor{green}0.237 \\ \hline
-  \ac{OPS} & \cellcolor{green}-0.023 & \cellcolor{green}0.237 & 1.000 \\ \hline
+  \ac{PAM} & 1.000 & 0.322 & -0.023 \\ \hline
+  \ac{TAA} & 0.322 & 1.000 & 0.237 \\ \hline
+  \ac{OPS} & -0.023 & 0.237 & 1.000 \\ \hline
  \end{tabular}
  \end{minipage}%
 %
@@ -699,8 +699,8 @@ As it was seen in the previous chapter only 8 out of 42 plots were monotonic. Th
   \begin{tabular}{| c | c | c | c |} \hline
   \multicolumn{4}{|c|}{\textbf{Refactoring}}  \\ \hline
    & \ac{PAM} & \ac{TAA} & \ac{OPS} \\ \hline
-   \ac{PAM} & 1.000 & \cellcolor{green}0.097 & -0.050 \\ \hline
-   \ac{TAA} & \cellcolor{green}0.097 & 1.000 & 0.181 \\ \hline
+   \ac{PAM} & 1.000 & 0.097 & -0.050 \\ \hline
+   \ac{TAA} & 0.097 & 1.000 & 0.181 \\ \hline
    \ac{OPS} & -0.050 & 0.181 & 1.000 \\ \hline
   \end{tabular}  
  \end{minipage}%
@@ -715,9 +715,9 @@ As it was seen in the previous chapter only 8 out of 42 plots were monotonic. Th
   \begin{tabular}{| c | c | c | c | } \hline
   \multicolumn{4}{|c|}{\textbf{Continuous Integration}}  \\ \hline
    & \ac{PAM} & \ac{TAA} & \ac{OPS} \\ \hline
-  \ac{PAM} & 1.000 & 0.398 & \cellcolor{green}0.249 \\ \hline
+  \ac{PAM} & 1.000 & 0.398 & 0.249 \\ \hline
   \ac{TAA} & 0.398 & 1.000 & 0.115 \\ \hline
-  \ac{OPS} & \cellcolor{green}0.249 & 0.115 & 1.000 \\ \hline
+  \ac{OPS} & 0.249 & 0.115 & 1.000 \\ \hline
  \end{tabular}
  \end{minipage}%
 %
@@ -728,9 +728,9 @@ As it was seen in the previous chapter only 8 out of 42 plots were monotonic. Th
   \begin{tabular}{| c | c | c | c |} \hline
   \multicolumn{4}{|c|}{\textbf{Iterative and Incremental Development}}  \\ \hline
   & \ac{PAM} & \ac{TAA} & \ac{OPS} \\ \hline
-  \ac{PAM} & 1.000 & 0.204 & \cellcolor{green}0.396 \\ \hline
+  \ac{PAM} & 1.000 & 0.204 & 0.396 \\ \hline
   \ac{TAA} & 0.204 & 1.000 & -0.228 \\ \hline
-  \ac{OPS} & \cellcolor{green}0.396 & -0.228 & 1.000 \\ \hline
+  \ac{OPS} & 0.396 & -0.228 & 1.000 \\ \hline
  \end{tabular}
  \end{minipage}%
  %
@@ -860,9 +860,6 @@ The plots showed an unexpected and very interesting result. Not only do not the 
 As far as the aspect of the correlation results being random is concerned, there is a possibility of being true. Maybe another approach on forming the data samples could provide different results, but the approach followed was evaluated as the most suitable at the beginning of the study.
 
 On the other hand, the absence of monotonicity shows that the questions used by the tools in order to cover an agile practice, do it differently and that \ac{PAM}, \ac{TAA} and \ac{OPS} measure the agility of software development teams in their own unique way. Each of the tools was constructed and validated by its creators having the agile concept in mind, but apparently following a different path in order to accomplish it. This is quite clear by looking on the different ways that each practice is covered (see Appendix~\ref{ch:mapping}) where many of the questions have a different perspective on measuring a practice although they focus on the same one. The reasons for this unexpected phenomenon are explained in the next paragraphs.
-
-\subsection{Practices are measured in the same way}
-Tools that claim to measure agility in the same way are expected to do so. Unfortunately, this does not imply that their correlation can be calculated. The figure~\ref{fig:scm_plot} made it very clear why. All the answers from all the teams and for \ac{TAA} and \ac{OPS} were the same. Both tools had a unique question about using a version control management system, which holds true for the company A over everything that has to do with code changes. The designed plots only had one spot which means that the correlation among the tools is not possible to calculate due to the lack of variation in the results. Such an occurrence shows that correlation techniques can be defective when checking tools which manage to measure the same thing to the same extent.
 
 \subsection{Few or no questions for measuring a practice}
 Another reason for not being able to calculate the correlation of the tools is that they cover slightly or even not at all some of the practices. An example of this is the \textit{Smaller and Frequent Product Releases} practice. \ac{OPS} has four questions for it, while on the other hand, \ac{PAM} and \ac{TAA} have a single one each. Furthermore, \textit{Appropriate Distribution of Expertise} is not covered at all by \ac{PAM} while it is by the rest of the tools. In case the single question gets a low score, this will affect the effectively the tool will measure an agile practice. On the contrary, multiple questions can cover the practice more completely by examining more factors that affect it. Apart from measuring a practice more precisely, this also has the benefit that even if one question gets a low score, the rest of them are candidates for getting a higher one. The issue is worse if a practice is not covered at all. Unfortunately, this phenomenon does not allow to equally check all the tools, since it is giving a superiority to the ones that take the practice into consideration and even more to the ones that do that to an extensive degree.
