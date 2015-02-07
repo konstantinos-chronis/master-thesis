@@ -13,24 +13,27 @@
 \lettrine[lines=4, loversize=-0.1, lraise=0.1]{T}{his} chapter consists of two parts. In the first part an effort is made to check how complete are the tools in measuring agility compared to one another. In the second part, this study aims to check the correlation of the practices covered by \ac{PAM}, \ac{TAA} and \ac{OPS} in order to see how they relate when measuring agility by performing a case study in company A.
 
 \section{Research Purpose}
-The purpose of this study is to analyse if three agility measurement tools correlate with each other and see if they assess agility in similar ways. In addition, it analyses how complete are one to another.
+All three \ac{PAM}, \ac{TAA} and \ac{OPS} state that they measure agility. Their existence though implies that each one is more appropriate than the others in doing so. The purpose of this study is to validate if these tools can actually measure agility. 
 
 \newcounter{tmpc} % set the counter to continue the RQs
 
 \subsection{Research Questions}
-\begin{enumerate}
-	\item How complete are the tools in measuring agility?
-	\item In what ways do the tools correlate?
-	\setcounter{tmpc}{\theenumi} % set the counter to continue the RQs
-\end{enumerate}
+Do \ac{PAM}, \ac{TAA} and \ac{OPS} measure agility in the same way?
+
+%by changing into "Roman" you will get capital letters
+\begin{enumerate}[label={\roman*)},align=left]
+  \item In what ways do the tools correlate?
+  \item Questions that are exactly the same among the tools, will they give the same results?
+  \item Can the tools be combined in a way in order to provided a better approach in measuring agility?
+  %\setcounter{tmpc}{\theenumi} % set the counter to continue the RQs
+\end{enumerate}	
 
 
-\section{Subject Selection} %maybe rephrase
-In order to examine how \ac{OPS}, \ac{PAM} and \ac{TAA} correlate when measuring the agility of software development teams, four teams in company A were used as a sample. In the next pages is presented information on its teams, products and the agile practices used.
+\section{Subject Selection}
+For the needs of this study, four teams in company A were used as a sample. In the next pages is presented information on the company's teams, products and the agile practices used.
 
-\subsection{Description}
+\subsection{Company Description}
 Company A is a United States company which activates in the Point Of Sales (POS) area. With the development of some new products, the company had a 400\% increase in the size of the development and QA departments, which resulted in the need for better organizing the development and release processes. In addition, the increasing requests of new features in the company's systems require a more efficient way in delivering them to the customers and also maintaining the quality of the products.
-
 
 \subsection{Methodology A}
 In general, company A does not follow a specific agile methodology, but rather a tailored mix of the most famous ones which suits the needs of each team. Methodology A, as we can name it, embraces the practices displayed in Table~\ref{table:methodologyA_practices} from the various agile methodologies, some of the them to larger and some of them to a smaller extent. The analysis made by \citet{koch2005agile} was used for identifying these methodologies. The identification of these practices was done by observing and understanding how the teams work. The results were verified by the agile coach.
@@ -139,10 +142,86 @@ There are four development teams, each for a product of the company. Some of the
 
 
 
-\section{Tools Completeness}
-\label{sec:tools_completeness}
 
-\subsection[\ac{TAA} Areas]{Team Agility Assessment - Areas}
+\section{Case Study Research}
+\label{sec:case_study_research}
+
+\subsection{Data Collection}
+In order to collect the data, an online survey was considered to be the best option, since it could be easily answered by each subject. In addition, this would ensure no data loss. Google Drive\texttrademark \cite{google_drive} was selected to be the platform for collecting the data.
+
+For each of the tools, four surveys were created for each team respectively. The collection lasted about one month, the surveys for each tool were conducted every ten days. First \ac{PAM} was sent, then \ac{TAA} and at last it was \ac{OPS}.
+
+Two subjects were requested to answer to the surveys first, in order to detect if there were any questions which could cause confusion, but also to see how much time is needed to complete a survey. Once the issues pointed out by the two subjects were fixed, the surveys were sent to the rest of the company's employees.
+
+The links to the surveys were sent to the subjects early in the morning via email, but they were asked to reply after lunch. The reasoning for this is that at the beginning of the day the employees need to perform tasks which are usually important and time consuming, while they must have a clear mind and attend meetings. On the contrary, after lunch most of the employees try to relax by enjoying their coffee and discussing with each other. That time of the day was considered to be the best in order to ask them to spend 15-20 minutes and reply to the survey. The employees that belonged to more than one team were asked a couple of days later to take the other survey in order to verify that their answers match in both surveys. Every question of the surveys was mandatory.
+
+As was mentioned in Chapter~\ref{ch:related_work}, \ac{PAM} focuses on the following agile practices:
+\begin{inparaenum} [a\upshape)]
+	\item Iteration Planning
+	\item Iterative Development
+	\item Continuous Integration And Testing
+	\item Stand-Up Meetings
+	\item Customer Access
+	\item Customer Acceptance Tests
+	\item Retrospectives
+	\item Collocation.
+\end{inparaenum}
+From the aforementioned practices, methodology F does not support \textit{Stand-Up Meetings} and \textit{Retrospectives} and as a result, they were excluded from the surveys.
+
+\ac{TAA} focuses on the following agile practices/areas:
+\begin{inparaenum} [a\upshape)]
+	\item Product Ownership
+	\item Release Planning and Tracking
+	\item Iteration Planning and Tracking
+	\item Team
+	\item Testing Practices
+	\item Development Practices/Infrastructure.
+\end{inparaenum}
+From the above practices, methodology F does not support \textit{Product Ownership}, since it implies that company A should implement Scrum, which it does not. Moreover, Scrum-oriented questions from the rest of the practices/areas were removed as well. 
+
+Finally, \ac{OPS} focuses on the following strategies:
+\begin{inparaenum} [a\upshape)]
+	\item Iterative progression
+	\item Incremental development
+	\item Short delivery cycles
+	\item Evolutionary requirements
+	\item Continuous feedback
+	\item Refactoring
+	\item Test-first development
+	\item Self-managing teams
+	\item Continuous integration
+	\item Constant velocity
+	\item Minimal documentation
+	\item High bandwidth communication
+	\item Retrospection
+	\item Client-driven iterations
+	\item Distribution of expertise
+	\item Configuration management
+	\item Adherence to standards.
+\end{inparaenum}
+
+From the above practices, methodology F does not support \textit{Retrospection}. The company's policy for retrospective meetings is for them to be held only by two or three people, depending on how many persons were involved. According to the director of the Greek office it is considered that meetings with the whole team do not have the desired results but rather the opposite, leading in more difficult communication and loss of time.
+%\textit{Continuous feedback}, \textit{Constant velocity} .%(also check the analysis in section ~\ref{subsec:adequacy_analysis}
+
+%About the questions of the agile practices/areas which were not included, they were all given a value of 1, the least possible value. 
+
+As it was stated earlier, in subsection~\ref{subsec:ops}, \ac{OPS} agility measurements are based on three aspects: Adequacy, Capability and Effectiveness. Effectiveness measurement focuses on how well a team implements agile methodologies. Since the rest of the tools focus on the same thing, it was decided only to use the survey from Effectiveness and not to take into account the Adequacy and Capability.
+
+For a clearer view on the questions contained in the surveys, one can take a look at Appendices~\ref{ch:effectiveness_hierarchy},~\ref{ch:pam} and~\ref{ch:team_agility_assessment}.
+
+The surveys for \ac{PAM}, \ac{TAA} and \ac{OPS} were on a Likert scale 1-7 (never having done what is asked by the question to always doing what is asked by the question). From \ac{PAM}, only the \textit{Collocation} practice had its Likert scale 1-5 (team mebers are in different time zones to being in the same room), since its creators preferred it in this way. For the transformation of the results to a Likert scale 1-7 for the \textit{Collocation} practice, the formula~\eqref{eq:likert_transformation} \cite{likert_transformation} was used.  \begin{equation} \label{eq:likert_transformation} x_2 = (1.5 * x_1) - 0.5 \end{equation} 
+
+%\subsubsection{Demographics} % Have to fix this. Better add a table
+The employees that were asked to answer to the surveys where all members of the software development teams which consisted of software and quality assurance (QA) engineers. All of the participating employees have been in the company for over a year and most of them have more than five years of work experience in an agile environment. Employees who had been working for less than six months in the company were not asked to participate, since it was considered they were not fully aware of the company's procedures or that they were not familiar enough with them. Although code review is practised, it was avoided asking the code reviewers to take the same survey for the same team because it would not provide more value to the results and in addition, it might result in losing their interest on answering the surveys. 
+
+%\subsection{Collected Data}
+Each participant replied to 176 questions in total. Initially, 34 surveys were expected to be filled in, but in the end 30 of them were filled in, since some employees chose not to participate.
+
+\subsection{Data Preparation}
+\label{subsec:data_preparation}
+For the analysis of the data a preparation for them was needed. All three of the tools have different amount of questions and cover different practices. For this reason, we preferred to do a grouping of the questions based on the practices/areas in which they belong. \todo{maybe add something here}
+
+\subsubsection[\ac{TAA} Areas]{Team Agility Assessment - Areas}
 Team Agility Assessment (\ac{TAA}) does not claim that it covers specific agile practices, but rather areas important for a team. It focuses on product ownership for Scrum teams but also on the release, and iteration planning and tracking. The team factor plays a great role, as well as the development practices and the working environment. Automated testing is important here as well. Finally, it is worth mentioning that it is the only tool focusing to such an extent on the release planning. In Table~\ref{table:taa_practices} one can see \ac{TAA}'s areas.
 
 \begin{table}
@@ -156,7 +235,7 @@ Team Agility Assessment (\ac{TAA}) does not claim that it covers specific agile 
   \label{table:taa_practices}
 \end{table}
 
-\subsection[\ac{PAM} Practices]{Perceptive Agile Measurement - Practices}
+\subsubsection[\ac{PAM} Practices]{Perceptive Agile Measurement - Practices}
 The Perceptive Agile Measurement (\ac{PAM}) tool focuses on the iterations during software development but also on the stand-up meetings for the team members, their collocation and the retrospectives they have. The customers access and their acceptance criteria have a high importance as well. Finally, the continuous integration and the automated unit testing are considered crucial in order to be agile. In Table~\ref{table:pam_practices} one can see \ac{PAM}'s practices.
 
 \begin{table} [H]
@@ -218,12 +297,12 @@ Objectives, Principles, Strategies (\ac{OPS}) Framework is the successor of the 
 
 As can be clearly seen in Tables~\ref{table:opp_practices}, \ref{table:pam_practices} and \ref{table:taa_practices}, the \ac{OPP}, and as a consequence the \ac{OPS}, covers more agile practices than the other tools. In the next pages a mapping between \ac{OPP} and \ac{PAM} (see Table~\ref{table:opp_pam_practices}) and \ac{OPP} and \ac{TAA} (see Table~\ref{table:opp_taa_practices}) follows. \\
 
-Some of the \ac{OPP} practices though have abstracted to \ac{OPS} strategies in order to avoid repetition of the questions' mapping and to better reflect the \ac{OPS} Framework. The \ac{OPP} practices 
+We have abstracted some of the \ac{OPP} practices to \ac{OPS} strategies in order to avoid repetition of the questions' mapping. These \ac{OPP} practices are 
 \begin{inparaenum} [a\upshape)]
 	\item \textit{Frequent Face-to-Face Communication},
 	\item \textit{Physical Setup Reflecting Agile Philosophy}, and
 	\item \textit{Collocated Customers}
-\end{inparaenum} have been abstracted to the \ac{OPS} strategy \textit{High-Bandwidth Communication}  \cite[p. 57]{sventha_dissertation}. In the same way, the \ac{OPP} \textit{Automated test builds} practice has been abstracted to the \ac{OPS} strategy \textit{Continuous Integration} \cite[p. 57]{sventha_dissertation}. \\
+\end{inparaenum} and we have abstracted them to the \ac{OPS} strategy \textit{High-Bandwidth Communication}  \cite[p. 57]{sventha_dissertation}. In the same way, we have abstracted the \ac{OPP} \textit{Automated test builds} practice to the \ac{OPS} strategy \textit{Continuous Integration} \cite[p. 57]{sventha_dissertation}. \\
 
 The connection between the practices and strategies is done based on the questions of each tool. The aforementioned connections are depicted with symbols. When a practice has more than one symbol, it is because it covers more practices from the other tool. \\
 
@@ -300,15 +379,15 @@ The connection between the practices and strategies is done based on the questio
 \label{table:opp_taa_practices}
 \end{table}
 
-
+\todo{Have to rewrite this part again. It still mentions about completeness}
 \subsubsection[\ac{PAM} and \ac{TAA} Mapping]{Mapping of questions from the \ac{PAM} and \ac{TAA} tools}
 \label{mapping}
 
-\ac{PAM} has its questions been divided based on agile practices, while on the other hand, the \ac{TAA} has divided them based on areas considered important. In the following pages is presented, a mapping between the questions used from the \ac{PAM} and \ac{TAA} tools with the practices from \ac{OPP} and the strategies from \ac{OPS}. As one can see from the tables above, while all practices/areas from \ac{PAM} and \ac{TAA} are mapped to \ac{OPP} and \ac{OPS}, not all of their questions are under \ac{OPP} practices or \ac{OPS} strategies. This can be explained due to the different perception/angle, of the creators of the tools, of what is important for an organization to be agile.
+\ac{PAM} has its questions been divided based on agile practices, while on the other hand, the \ac{TAA} has divided them based on areas considered important. In the following pages we present, a mapping between the questions used from the \ac{PAM} and \ac{TAA} tools with the practices from \ac{OPP} and the strategies from \ac{OPS}. As one can see from the tables above, while all practices/areas from \ac{PAM} and \ac{TAA} are mapped to \ac{OPP} and \ac{OPS}, not all of their questions are under \ac{OPP} practices or \ac{OPS} strategies. This can be explained due to the different perception/angle, of the creators of the tools, of what is important for an organization/team to be agile.
 
 The questions among the tools will be matched based on whether they are covered directly, relevantly, or not at all. Direct match will be considered the one where a question from a tool is the same or almost similar with one from \ac{OPS}. Relevant match will be considered the one where a question of a tool does not exist in \ac{OPS}, but its practice does exist in \ac{OPS}. Non-relevant match will be considered the one where a question cannot be matched at all in \ac{OPS}. The detailed mapping of the tools can be viewed in Appendix~\ref{ch:mapping}.
 
-\subsection{Tools Completeness Analysis}
+\subsubsection{Tools Completeness Analysis}
 \label{subsec:tools_completeness_analysis}
 As far as research question ``How complete are the tools in measuring agility" is concerned, by viewing Tables~\ref{table:opp_pam_practices},~\ref{table:opp_taa_practices} and Appendix~\ref{ch:mapping}, one can clearly distinguish that \ac{OPP} and consequently \ac{OPS} is more complete than the others in measuring agility, covering all the areas of the \ac{PAM} and \ac{TAA} tools. Furthermore, as it can be seen in Table~\ref{table:questions_coverage}, the \ac{OPS} covers a high percent of questions from both tools directly and relevantly. The \ac{TAA} has a respective percent of non-relevant matches mostly due to \textit{Product Ownership} perspectives, which is not covered to such an extent from \ac{OPS}. This can be explained by the fact that \ac{OPS} covers basic  methodologies for developing software such as XP, FDD, Crystal, Lean \cite[p. 44]{sventha_dissertation}, whereas \textit{Product Ownership} refers explicitly to Scrum which is a method for managing product development \cite{koch2005agile}.
 
@@ -325,148 +404,11 @@ As far as research question ``How complete are the tools in measuring agility" i
 \label{table:questions_coverage}
 \end{table} 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-%\section{\ac{OPS}}
-%
-%\subsection{Introduction}
-%In order to measure the adequacy, the capability and the effectiveness of methodology F, the described method by \citet{sventha_dissertation} was followed.
-%
-%\subsection{Adequacy Assessment}
-%\label{subsec:adequacy_analysis}
-%
-%In order to assess the adequacy of methodology F a top-down traversal was used as it can be seen in Figure~\ref{\ac{OPS}_core}. For the analysis of each objective, principle and strategy the analysis of agile methodologies was followed based on \citet{koch2005agile}.
-%
-%Initially the objectives fulfilled by methodology F were identified. As one can see in Figure~\ref{fig:companyF_objectives} all five objectives instructed by the \ac{OPS} Framework are followed.
-%
-%\begin{figure}[H]
-%\centerline{\includegraphics[scale=0.9]{include/case_study/fig/companyF_objectives.pdf}}
-%\caption{Objectives identified in methodology F} 
-%\label{fig:companyF_objectives}
-%\end{figure}
-%
-%Based on the objectives and following the linkages from them, the principles were identified. As one can see in Figure~\ref{fig:companyF_objectives} methodology F does not follow the ``Frequent Reflection and Improvement" principle because the organization rarely does it re-examine the development process in order to improve it. %maybe justify why!
-%It is worth mentioning that the ``Empowering teams of Motivated Individuals" principle is not entirely followed either, but it differs among the teams. Every team is built with motivated individuals, some to a more and some to a lesser extent. 
-%
-%\begin{figure}[H]
-%\centerline{\includegraphics[scale=0.9]{include/case_study/fig/companyF_principles.pdf}}
-%\caption{Principles identified in methodology F} 
-%\label{fig:companyF_principles}
-%\end{figure}
-%
-%Following the linkages from the principles the strategies for implementing them were identified. As it can be seen in Figure~\ref{fig:companyF_strategies} methodology F does not support 
-%
-%\begin{itemize}
-%\item \textbf{Continuous feedback} - The organization does not have a defined process for getting a feedback from the customers of the company. From time to time the managers of the various departments of the company have personal conversations with the customers. If any issue arises, then they inform the development and QA departments in order to identify the problem and fix it.
-%\item \textbf{Test-first development} - None of the team members writes tests before starting coding.
-%\item \textbf{Constant velocity} - The organization does not measure the velocity of the teams. In general the pace of development and integration and deployment is based on the needs of the customers and the capability of the developer. No one has to finish a specific amount of work in each iteration. What is only wanted, is the functionality to be delivered when it is scheduled.
-%\item \textbf{Retrospection} - Although there is a tendency to change this, the teams do not have a process for retrospection. The team members unconsciously consider that they are doing fine, unless a team leader or the manager of the department tells them the opposite.
-%\end{itemize}
-%
-%\begin{figure}[H]
-%\centerline{\includegraphics[scale=0.9]{include/case_study/fig/companyF_strategies.pdf}}
-%\caption{Strategies identified in methodology F} 
-%\label{fig:companyF_strategies}
-%\end{figure}
-%
-
-%Reflecting on the above analysis, we see that methodology F lacks four strategies which are important for its improvement. Without retrospection the team members do not always identify and discuss their mistakes, while without a well defined process for continuous feedback any issues that might arise may go unnoticed for quite some time. In total, methodology F is missing four strategies out of seventeen which is a lot.
-
-\section{Case Study Research}
-\label{sec:case_study_research}
-
-\subsection{Data Collection}
-
-%maybe provide numbers for the demographics
-
-%\subsubsection{Surveys}
-In order to collect the data, an online survey was considered to be the best option, since it could be easily answered by each subject. In addition, this would ensure no data loss. Google Drive\texttrademark \cite{google_drive} was selected to be the platform for collecting the data.
-
-For each of the tools, four surveys were created for each team respectively. The collection lasted about one month, the surveys for each tool were conducted every ten days. First \ac{PAM} was sent, then \ac{TAA} and at last it was \ac{OPS}.
-
-Two subjects were requested to answer to the surveys first, in order to detect if there were any questions which could cause confusion, but also to see how much time is needed to complete a survey. Once the issues pointed out by the two subjects were fixed, the surveys were sent to the rest of the company's employees.
-
-The links to the surveys were sent to the subjects early in the morning via email, but they were asked to reply after lunch. The reasoning for this is that at the beginning of the day the employees need to perform tasks which are usually important and time consuming, while they must have a clear mind and attend meetings. On the contrary, after lunch most of the employees try to relax by enjoying their coffee and discussing with each other. That time of the day was considered to be the best in order to ask them to spend 15-20 minutes and reply to the survey. The employees that belonged to more than one team were asked a couple of days later to take the other survey in order to verify that their answers match in both surveys. Every question of the surveys was mandatory.
-
-As was mentioned in chapter~\ref{ch:related_work}, \ac{PAM} focuses on the following agile practices:
-\begin{inparaenum} [a\upshape)]
-	\item Iteration Planning
-	\item Iterative Development
-	\item Continuous Integration And Testing
-	\item Stand-Up Meetings
-	\item Customer Access
-	\item Customer Acceptance Tests
-	\item Retrospectives
-	\item Collocation.
-\end{inparaenum}
-From the aforementioned practices, methodology F does not support \textit{Stand-Up Meetings} and \textit{Retrospectives} and as a result, they were excluded from the surveys.
-
-\ac{TAA} focuses on the following agile practices/areas:
-\begin{inparaenum} [a\upshape)]
-	\item Product Ownership
-	\item Release Planning and Tracking
-	\item Iteration Planning and Tracking
-	\item Team
-	\item Testing Practices
-	\item Development Practices/Infrastructure.
-\end{inparaenum}
-From the above practices, methodology F does not support \textit{Product Ownership}, since it implies that company A should implement Scrum, which it does not. Moreover, Scrum-oriented questions from the rest of the practices/areas were removed as well. 
-
-Finally, \ac{OPS} focuses on the following strategies:
-\begin{inparaenum} [a\upshape)]
-	\item Iterative progression
-	\item Incremental development
-	\item Short delivery cycles
-	\item Evolutionary requirements
-	\item Continuous feedback
-	\item Refactoring
-	\item Test-first development
-	\item Self-managing teams
-	\item Continuous integration
-	\item Constant velocity
-	\item Minimal documentation
-	\item High bandwidth communication
-	\item Retrospection
-	\item Client-driven iterations
-	\item Distribution of expertise
-	\item Configuration management
-	\item Adherence to standards.
-\end{inparaenum}
-
-From the above practices, methodology F does not support \textit{Retrospection}. The company's policy for retrospective meetings is for them to be held only by two or three people, depending on how many persons were involved. According to the director of the Greek office it is considered that meetings with the whole team do not have the desired results but rather the opposite, leading in more difficult communication and loss of time.
-%\textit{Continuous feedback}, \textit{Constant velocity} .%(also check the analysis in section ~\ref{subsec:adequacy_analysis}
-
-%About the questions of the agile practices/areas which were not included, they were all given a value of 1, the least possible value. 
-
-As it was stated earlier, in subsection~\ref{subsec:ops}, \ac{OPS} agility measurements are based on three aspects: Adequacy, Capability and Effectiveness. Effectiveness measurement focuses on how well a team implements agile methodologies. Since the rest of the tools focus on the same thing, it was decided only to use the survey from Effectiveness and not to take into account the Adequacy and Capability.
-
-For a clearer view on the questions contained in the surveys, one can take a look at Appendices~\ref{ch:effectiveness_hierarchy},~\ref{ch:pam} and~\ref{ch:team_agility_assessment}.
-
-%\subsubsection{Likert Scales}
-The surveys for \ac{PAM}, \ac{TAA} and \ac{OPS} were on a Likert scale 1-7 (never having done what is asked by the question to always doing what is asked by the question). From \ac{PAM}, only the \textit{Collocation} practice had its Likert scale 1-5 (team mebers are in different time zones to being in the same room), since its creators preferred it in this way. For the transformation of the results for this practice, the formula~\eqref{eq:likert_transformation} \cite{likert_transformation} was used.  \begin{equation} \label{eq:likert_transformation} x_2 = (1.5 * x_1) - 0.5 \end{equation} 
-
-%\subsubsection{Demographics} % Have to fix this. Better add a table
-The employees that were asked to answer to the surveys where all members of the software development teams which consisted of software and quality assurance (QA) engineers. All of the participating employees have been in the company for over a year and most of them have more than five years of work experience in an agile environment. Employees who had been working for less than six months in the company were not asked to participate, since it was considered they were not fully aware of the company's procedures or that they were not familiar enough with them. Although code review is practised, it was avoided asking the code reviewers to take the same survey for the same team because it would not provide more value to the results and in addition, it might result in losing their interest on answering the surveys. 
-
-%\subsection{Collected Data}
-Each participant replied to 176 questions in total. Initially, 34 surveys were expected to be filled in, but in the end 30 of them were filled in, since some employees chose not to participate.
-
+\todo{Have to add the analysis for the exact questions}
 \subsection{Data Analysis}
-The data gathered from the survey were grouped on the basis of the practices covered by the \ac{OPP}, and as a consequence, the \ac{OPS}, since as one can see in Table~\ref{table:questions_coverage}, \ac{OPS} covers both \ac{PAM} and \ac{TAA}. From the 18 practices in total, four of them, \begin{inparaenum} [a\upshape)] \item Minimal or Just Enough Documentation \item Customer User Acceptance Testing \item Evolutionary Requirements \item Constant Velocity \end{inparaenum}, are covered only by one tool. The rest of the practices were covered by at least two of the tools.
+The data gathered from the survey were grouped on the basis of the practices covered by the \ac{OPP}, and as a consequence, the \ac{OPS}, since as one can see in Table~\ref{table:questions_coverage}, \ac{OPS} covers both \ac{PAM} and \ac{TAA}. From the 18 practices in total, four of them, \begin{inparaenum} [a\upshape)] \item Minimal or Just Enough Documentation \item Customer User Acceptance Testing \item Evolutionary Requirements \item Constant Velocity, \end{inparaenum} are covered only by one tool. The rest of the practices were covered by at least two of the tools.
 
-Initially, there was a thought to analyse the data for each team separately, but this would create an extensive overhead. In addition, the team A has such a small number of members that the results would be inadequate to work with. As a result, it was preferred to form the data sets for each practice based on the answers from all the teams. In Table~\ref{table:data_structure}, one can see the structure of the collected data.
+The initial thought was to analyse the data for each team separately, but team A has such a small number of members that the results would be inadequate to work with. As a result, it was preferred to form the data sets for each practice based on the answers from all the teams. In Table~\ref{table:data_structure}, one can see the structure of the collected data.
 
 \begin{table} [H]
 	\caption{Collected Data Structure}
@@ -479,7 +421,7 @@ Initially, there was a thought to analyse the data for each team separately, but
 	\end{tabular}
 \end{table}
 
-Based on the analysis performed in Section~\ref{sec:tools_completeness}, it is clear that \ac{OPS} covers more agile practices/areas. As a result, it was decided to use these practices in order to check the correlation of the tools. In Appendix~\ref{ch:mapping}, one can see how the questions are grouped based on the \ac{OPS} practices. The data sets consist of the answers which were sorted by team as stated previously and have the same order in all practices (i.e. the nth answer in every practice is given by the same person).
+Based on the analysis for \ac{PAM}, \ac{TAA} and \ac{OPS} which was  performed in Subsection~\ref{subsec:data_preparation}, it is clear that \ac{OPS} covers more agile practices/areas. As a result, it was decided to use these practices in order to check the correlation of the tools. In Appendix~\ref{ch:mapping}, one can see how the questions are grouped based on the \ac{OPS} practices. The data sets consist of the answers which were sorted by team as stated previously and have the same order in all practices (i.e. the nth answer in every practice is given by the same person).
 
 For the mathematical calculations the RStudio\texttrademark \cite{rstudio} was selected since it has a wide support from its community. 
 
@@ -512,85 +454,94 @@ The first prerequisite was covered thanks to the Likert scale. In order to check
 %\end{tabular}
 %\end{table}
 
+%New environment to save space in the monotonic's table
+\newenvironment{mntnc_itemize} 
+{ 
+	\begin{itemize}
+    \setlength{\itemsep}{0pt}  
+    \setlength{\parskip}{0pt}  
+}
+{ \end{itemize}  }
+
 \begin{table}
 	{\renewcommand{\arraystretch}{0.2}%
 	\begin{tabular}{ | p{4cm} | p{4cm} | p{4cm} |} \hline
 		\begin{tabular} { p{4cm} } 
 			Adherence to Standards \\
-			\begin{itemize}  \item \colorbox{red}{\ac{PAM}-\ac{TAA}} \item \colorbox{red}{\ac{PAM}-\ac{OPS}} \item \colorbox{red}{\ac{TAA}-\ac{OPS}} \end{itemize} 
+			\begin{mntnc_itemize}  \item \colorbox{red}{\ac{PAM}-\ac{TAA}} \item \colorbox{red}{\ac{PAM}-\ac{OPS}} \item \colorbox{red}{\ac{TAA}-\ac{OPS}} \end{mntnc_itemize} 
 		\end{tabular} &
 		\begin{tabular} { p{4cm} }
 			Appropriate Distribution of Expertise \\
-			\begin{itemize}  \item \colorbox{red}{\ac{PAM}-\ac{TAA}} \item \colorbox{red}{\ac{PAM}-\ac{OPS}} \item \colorbox{red}{\ac{TAA}-\ac{OPS}} \end{itemize}
+			\begin{mntnc_itemize}  \item \colorbox{red}{\ac{PAM}-\ac{TAA}} \item \colorbox{red}{\ac{PAM}-\ac{OPS}} \item \colorbox{red}{\ac{TAA}-\ac{OPS}} \end{mntnc_itemize}
 		\end{tabular} &
 		\begin{tabular} { p{4cm} }
 			Client Driven Iterations \\
-			\begin{itemize}  \item \colorbox{red}{\ac{PAM}-\ac{TAA}} \item \colorbox{green}{\ac{PAM}-\ac{OPS}} \item \colorbox{red}{\ac{TAA}-\ac{OPS}} \end{itemize}
+			\begin{mntnc_itemize}  \item \colorbox{red}{\ac{PAM}-\ac{TAA}} \item \colorbox{green}{\ac{PAM}-\ac{OPS}} \item \colorbox{red}{\ac{TAA}-\ac{OPS}} \end{mntnc_itemize}
 		\end{tabular} \\ \hline
 		
 		\begin{tabular} { p{4cm} } 
 			Continuous Feedback \\
-			\begin{itemize}  \item \colorbox{red}{\ac{PAM}-\ac{TAA}} \item \colorbox{green}{\ac{PAM}-\ac{OPS}} \item \colorbox{red}{\ac{TAA}-\ac{OPS}} \end{itemize}
+			\begin{mntnc_itemize}  \item \colorbox{red}{\ac{PAM}-\ac{TAA}} \item \colorbox{green}{\ac{PAM}-\ac{OPS}} \item \colorbox{red}{\ac{TAA}-\ac{OPS}} \end{mntnc_itemize}
 		\end{tabular} &
 		\begin{tabular} { p{4cm} }
 			Continuous Integration \\
-			\begin{itemize}  \item \colorbox{green}{\ac{PAM}-\ac{TAA}} \item \colorbox{red}{\ac{PAM}-\ac{OPS}} \item \colorbox{red}{\ac{TAA}-\ac{OPS}} \end{itemize}
+			\begin{mntnc_itemize}  \item \colorbox{green}{\ac{PAM}-\ac{TAA}} \item \colorbox{red}{\ac{PAM}-\ac{OPS}} \item \colorbox{red}{\ac{TAA}-\ac{OPS}} \end{mntnc_itemize}
 		\end{tabular} &
 		\begin{tabular} { p{4cm} }
 			High Bandwidth Communication \\
-			\begin{itemize}  \item \colorbox{green}{\ac{PAM}-\ac{TAA}} \item \colorbox{green}{\ac{PAM}-\ac{OPS}} \item \colorbox{green}{\ac{TAA}-\ac{OPS}} \end{itemize}
+			\begin{mntnc_itemize}  \item \colorbox{green}{\ac{PAM}-\ac{TAA}} \item \colorbox{green}{\ac{PAM}-\ac{OPS}} \item \colorbox{green}{\ac{TAA}-\ac{OPS}} \end{mntnc_itemize}
 		\end{tabular} \\ \hline
 		
 		\begin{tabular} { p{4cm} } 
 			Iteration Progress Tracking \\
-			\begin{itemize}  \item \colorbox{red}{\ac{PAM}-\ac{TAA}} \item \colorbox{red}{\ac{PAM}-\ac{OPS}} \item \colorbox{red}{\ac{TAA}-\ac{OPS}} \end{itemize}
+			\begin{mntnc_itemize}  \item \colorbox{red}{\ac{PAM}-\ac{TAA}} \item \colorbox{red}{\ac{PAM}-\ac{OPS}} \item \colorbox{red}{\ac{TAA}-\ac{OPS}} \end{mntnc_itemize}
 		\end{tabular} &
 		\begin{tabular} { p{4cm} }
 			Iterative and Incremental Development \\
-			\begin{itemize}  \item \colorbox{red}{\ac{PAM}-\ac{TAA}} \item \colorbox{green}{\ac{PAM}-\ac{OPS}} \item \colorbox{red}{\ac{TAA}-\ac{OPS}} \end{itemize}
+			\begin{mntnc_itemize}  \item \colorbox{red}{\ac{PAM}-\ac{TAA}} \item \colorbox{green}{\ac{PAM}-\ac{OPS}} \item \colorbox{red}{\ac{TAA}-\ac{OPS}} \end{mntnc_itemize}
 		\end{tabular} &
 		\begin{tabular} { p{4cm} }
 			Product Backlog \\
-			\begin{itemize}  \item \colorbox{red}{\ac{PAM}-\ac{TAA}} \item \colorbox{red}{\ac{PAM}-\ac{OPS}} \item \colorbox{red}{\ac{TAA}-\ac{OPS}} \end{itemize}
+			\begin{mntnc_itemize}  \item \colorbox{red}{\ac{PAM}-\ac{TAA}} \item \colorbox{red}{\ac{PAM}-\ac{OPS}} \item \colorbox{red}{\ac{TAA}-\ac{OPS}} \end{mntnc_itemize}
 		\end{tabular} \\ \hline
 		
 		\begin{tabular} { p{4cm} } 
 			Refactoring \\
-			\begin{itemize}  \item \colorbox{green}{\ac{PAM}-\ac{TAA}} \item \colorbox{red}{\ac{PAM}-\ac{OPS}} \item \colorbox{red}{\ac{TAA}-\ac{OPS}} \end{itemize}
+			\begin{mntnc_itemize}  \item \colorbox{green}{\ac{PAM}-\ac{TAA}} \item \colorbox{red}{\ac{PAM}-\ac{OPS}} \item \colorbox{red}{\ac{TAA}-\ac{OPS}} \end{mntnc_itemize}
 		\end{tabular} &
 		\begin{tabular} { p{4cm} }
 			Self Organizing Teams \\
-			\begin{itemize}  \item \colorbox{red}{\ac{PAM}-\ac{TAA}} \item \colorbox{red}{\ac{PAM}-\ac{OPS}} \item \colorbox{red}{\ac{TAA}-\ac{OPS}} \end{itemize}
+			\begin{mntnc_itemize}  \item \colorbox{red}{\ac{PAM}-\ac{TAA}} \item \colorbox{red}{\ac{PAM}-\ac{OPS}} \item \colorbox{red}{\ac{TAA}-\ac{OPS}} \end{mntnc_itemize}
 		\end{tabular} &
 		\begin{tabular} { p{4cm} }
 			Smaller and Frequent Releases \\
-			\begin{itemize}  \item \colorbox{red}{\ac{PAM}-\ac{TAA}} \item \colorbox{red}{\ac{PAM}-\ac{OPS}} \item \colorbox{red}{\ac{TAA}-\ac{OPS}} \end{itemize}
+			\begin{mntnc_itemize}  \item \colorbox{red}{\ac{PAM}-\ac{TAA}} \item \colorbox{red}{\ac{PAM}-\ac{OPS}} \item \colorbox{red}{\ac{TAA}-\ac{OPS}} \end{mntnc_itemize}
 		\end{tabular} \\ \hline
 		
 		\begin{tabular} { p{4cm} } 
 			Software Configuration Management \\
-			\begin{itemize}  \item \colorbox{red}{\ac{PAM}-\ac{TAA}} \item \colorbox{red}{\ac{PAM}-\ac{OPS}} \item \colorbox{red}{\ac{TAA}-\ac{OPS}} \end{itemize}
+			\begin{mntnc_itemize}  \item \colorbox{red}{\ac{PAM}-\ac{TAA}} \item \colorbox{red}{\ac{PAM}-\ac{OPS}} \item \colorbox{red}{\ac{TAA}-\ac{OPS}} \end{mntnc_itemize}
 		\end{tabular} &
 		\begin{tabular} { p{4cm} }
 			Test Drive Development \\
-			\begin{itemize}  \item \colorbox{red}{\ac{PAM}-\ac{TAA}} \item \colorbox{red}{\ac{PAM}-\ac{OPS}} \item \colorbox{red}{\ac{TAA}-\ac{OPS}} \end{itemize}
+			\begin{mntnc_itemize}  \item \colorbox{red}{\ac{PAM}-\ac{TAA}} \item \colorbox{red}{\ac{PAM}-\ac{OPS}} \item \colorbox{red}{\ac{TAA}-\ac{OPS}} \end{mntnc_itemize}
 		\end{tabular} & 
 		\begin{tabular} { p{4cm} } 
 			Constant Velocity \\
-			\begin{itemize}  \item \colorbox{red}{\ac{PAM}-\ac{TAA}} \item \colorbox{red}{\ac{PAM}-\ac{OPS}} \item \colorbox{red}{\ac{TAA}-\ac{OPS}} \end{itemize}
+			\begin{mntnc_itemize}  \item \colorbox{red}{\ac{PAM}-\ac{TAA}} \item \colorbox{red}{\ac{PAM}-\ac{OPS}} \item \colorbox{red}{\ac{TAA}-\ac{OPS}} \end{mntnc_itemize}
 		\end{tabular} \\ \hline
 		
 		\begin{tabular} { p{4cm} } 
 			Minimal or Just Enough Documentation \\
-			\begin{itemize}  \item \colorbox{red}{\ac{PAM}-\ac{TAA}} \item \colorbox{red}{\ac{PAM}-\ac{OPS}} \item \colorbox{red}{\ac{TAA}-\ac{OPS}} \end{itemize}
+			\begin{mntnc_itemize}  \item \colorbox{red}{\ac{PAM}-\ac{TAA}} \item \colorbox{red}{\ac{PAM}-\ac{OPS}} \item \colorbox{red}{\ac{TAA}-\ac{OPS}} \end{mntnc_itemize}
 		\end{tabular} &
 		\begin{tabular} { p{4cm} }
 			Customer User Acceptance Testing \\
-			\begin{itemize}  \item \colorbox{red}{\ac{PAM}-\ac{TAA}} \item \colorbox{red}{\ac{PAM}-\ac{OPS}} \item \colorbox{red}{\ac{TAA}-\ac{OPS}} \end{itemize}
+			\begin{mntnc_itemize}  \item \colorbox{red}{\ac{PAM}-\ac{TAA}} \item \colorbox{red}{\ac{PAM}-\ac{OPS}} \item \colorbox{red}{\ac{TAA}-\ac{OPS}} \end{mntnc_itemize}
 		\end{tabular} &
 		\begin{tabular} { p{4cm} }
 			Evolutionary Requirements \\
-			\begin{itemize}  \item \colorbox{red}{\ac{PAM}-\ac{TAA}} \item \colorbox{red}{\ac{PAM}-\ac{OPS}} \item \colorbox{red}{\ac{TAA}-\ac{OPS}} \end{itemize}
+			\begin{mntnc_itemize}  \item \colorbox{red}{\ac{PAM}-\ac{TAA}} \item \colorbox{red}{\ac{PAM}-\ac{OPS}} \item \colorbox{red}{\ac{TAA}-\ac{OPS}} \end{mntnc_itemize}
 		\end{tabular} \\ \hline
 	\end{tabular}}
 	\caption{Monotonic Relationships}
@@ -817,7 +768,7 @@ The plots showed an unexpected and very interesting result. Not only do not the 
 
 As far as the aspect of the correlation results being random is concerned, there is a possibility of being true. Maybe another approach on forming the data samples could provide different results, but the approach followed was evaluated as the most suitable at the beginning of the study.
 
-On the other hand, the absence of monotonicity shows that the questions used by the tools in order to cover an agile practice, do it differently and that \ac{PAM}, \ac{TAA} and \ac{OPS} measure the agility of software development teams in their own unique way. Each of the tools was constructed and validated by its creators having the agile concept in mind, but apparently following a different path in order to accomplish it. This is quite clear by looking on the different ways that each practice is covered (see Appendix~\ref{ch:mapping}) where many of the questions have a different perspective on measuring a practice although they focus on the same one. The reasons for this unexpected phenomenon are explained in the next paragraphs.
+On the other hand, the absence of monotonicity shows that the questions used by the tools in order to cover an agile practice, do it differently and that \ac{PAM}, \ac{TAA} and \ac{OPS} measure the agility of software development teams in their own unique way. Each of the tools was constructed and statistically validated by its creators having the agile concept in mind, but apparently following a different path in order to accomplish it. This is quite clear by looking on the different ways that each practice is covered (see Appendix~\ref{ch:mapping}) where many of the questions have a different perspective on measuring a practice although they focus on the same one. The reasons for this unexpected phenomenon are explained in the next paragraphs.
 
 \subsection{Few or no questions for measuring a practice}
 Another reason for not being able to calculate the correlation of the tools is that they cover slightly or even not at all some of the practices. An example of this is the \textit{Smaller and Frequent Product Releases} practice. \ac{OPS} has four questions for it, while on the other hand, \ac{PAM} and \ac{TAA} have a single one each. Furthermore, \textit{Appropriate Distribution of Expertise} is not covered at all by \ac{PAM} while it is by the rest of the tools. In case the single question gets a low score, this will affect the effectively the tool will measure an agile practice. On the contrary, multiple questions can cover the practice more completely by examining more factors that affect it. Apart from measuring a practice more precisely, this also has the benefit that even if one question gets a low score, the rest of them are candidates for getting a higher one. The issue is worse if a practice is not covered at all. Unfortunately, this phenomenon does not allow to equally check all the tools, since it is giving a superiority to the ones that take the practice into consideration and even more to the ones that do that to an extensive degree.
@@ -851,50 +802,3 @@ In this chapter was presented how complete were the tools among them. \ac{OPS} c
 	\item measuring the same practice in opposite questions,
 	\item questions phrasing.
 \end{inparaenum}
-
-%\begin{longtable}{| p{.10\textwidth} | p{.12\textwidth} | p{.09\textwidth} | p{.09\textwidth} | p{.09\textwidth} | p{.09\textwidth} | p{.09\textwidth} |}  \hline
-%	\textbf{Practice} & \textbf{Tools} & \textbf{Mean} & \textbf{Sd} & \textbf{Median} & \textbf{Min} & \textbf{Max} \\ \hline
-%	Adherence to Standards & \begin{tabular}{c} \ac{PAM} \\ \ac{TAA} \\ \ac{OPS} \end{tabular} & 
-%	\begin{tabular}{c} 1.00 \\ 11.67 \\ 8.10	\end{tabular} & \begin{tabular}{c} 0 \\ 2.17 \\ 2.12 	\end{tabular} & \begin{tabular}{c} 1 \\ 12 \\ 8	\end{tabular} & \begin{tabular}{c} 1 \\ 7 \\ 6 \end{tabular} & \begin{tabular}{c} 1 \\ 14 \\ 12 \end{tabular} \\ \hline
-%\end{longtable}
-
-
-%FIX VALUES FOR \ac{PAM}
-%
-%In the Tables~\ref{table:pam_results} and~\ref{table:taa_results} one can see the average value of the team replies in every agile practice/area \footnote{The ones  marked with $^\ast$ are not included in the surveys}. All the answers were trimmed to two decimal points.
-%
-%\begin{table} [H]
-%\caption{Perceptive Agile Measurement Results}
-%\label{table:pam_results}
-%\begin{tabular}{| c | c | c | c | c |}
-%\hline
-%  & \multicolumn{4}{c|}{\textbf{Team}} \\ \hline
-%\textbf{Practice} & Mobile & Info & POS & Marketing \\ \hline
-%Iteration Planning & 3.86 & 5 & 4.08 & 3.66 \\ \hline
-%Iterative Development & 4.36 & 5.71 & 5.3 & 5.09 \\ \hline
-%Continuous Integration And Testing & 4.28 & 3.7 & 4.29 & 4.2 \\ \hline
-%Customer Access & 4.58 & 7 & 5.5 & 3.9 \\ \hline
-%Customer Acceptance Tests & 3.4 & 3.4 & 3.83 & 1.64 \\ \hline
-%Collocation & 4.27 & 6.13 & 5.59 & 6.2 \\ \hline 
-%Stand-Up Meetings$^\ast$ & 1 & 1 & 1 & 1 \\ \hline
-%Retrospectives$^\ast$ & 1 & 1 & 1 & 1 \\ \hline
-%\textbf{Total} & 3.47 & 4.12 & 3.82 & 3.53 \\ \hline
-%\end{tabular}
-%\end{table}
-%
-%\begin{table} [H]
-%\caption{Team Agility Assessment Results}
-%\label{table:taa_results}
-%\begin{tabular}{| c | c | c | c | c |}
-%\hline
-%  & \multicolumn{4}{c|}{\textbf{Team}} \\ \hline
-%\textbf{Agile Area} & Mobile & Info & POS & Marketing \\ \hline
-%Release Planning and Tracking & 4.54 & 4.17 & 4.43 & 4.38 \\ \hline
-%Iteration Planning and Tracking & 3.98 & 3.58 & 4.04 & 3.7 \\ \hline
-%Team & 4.95 & 4.93 & 4.73 & 4.44 \\ \hline
-%Testing Practices & 3.86 & 2.56 & 3.3 & 3.77 \\ \hline
-%Development Practices/Infrastructure & 5.92 & 5.94 & 5.49 & 5.5 \\ \hline
-%Product Ownership$^\ast$ & 1 & 1 & 1 & 1 \\ \hline 
-%\textbf{Total} & 4.04 & 3.7 & 3.83 & 3.8 \\ \hline
-%\end{tabular}
-%\end{table}
