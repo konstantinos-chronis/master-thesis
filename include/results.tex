@@ -1,0 +1,253 @@
+\chapter{Results}
+\label{ch:results}
+
+This chapter presents the results of the surveys and analyses the reasons behind them.
+
+\section{Correlation Results}
+As it was seen in the previous chapter only 8 out of 42 plots were monotonic. The cells for which a correlation exists are coloured in green in order to distinguish them from the rest. In Table~\ref{table:correlations_frequency} one can see that half of the correlations are between \ac{PAM} and \ac{OPS}. %This corroborates that \ac{OPS} has full coverage of \ac{PAM} as seen in Table ~\ref{table:questions_coverage}. %maybe add in the Analysis - chapter 4
+
+\begin{table} [H]
+ \RawFloats %allows to have captions in all of the tables
+ \begin{minipage}{.45\textwidth}
+  \caption{Continuous Feedback Correlations}
+  \label{table:cf_correlations}
+   \begin{tabular}{| c | c | c | c |} \hline
+   \multicolumn{4}{|c|}{\textbf{Continuous Feedback}}  \\ \hline
+   & \ac{PAM} & \ac{TAA} & \ac{OPS} \\ \hline
+   \ac{PAM} & 1.000 & NA & 0.459 \\ \hline
+   \ac{TAA} & NA & 1.000 & NA \\ \hline
+   \ac{OPS} & 0.459 & NA & 1.000 \\ \hline
+  \end{tabular}
+ \end{minipage}%
+%
+ \begin{minipage}{.45\textwidth}
+  \centering
+  \caption{Client Driven Iterations Correlations}
+  \label{table:cdi_correlations}
+  \begin{tabular}{| c | c | c | c |} \hline
+  \multicolumn{4}{|c|}{\textbf{Client Driven Iterations}}  \\ \hline
+   & \ac{PAM} & \ac{TAA} & \ac{OPS} \\ \hline
+  \ac{PAM} & 1.000 & NA & 0.161 \\ \hline
+  \ac{TAA} & NA & 1.000 & NA \\ \hline
+  \ac{OPS} & 0.161 & NA & 1.000 \\ \hline
+ \end{tabular}
+ \end{minipage}%
+ %
+\end{table}
+
+
+\begin{table} [H]
+ \RawFloats %allows to have captions in all of the tables
+ \begin{minipage}{.45\textwidth}
+  \caption{High Bandwidth Communication Correlations}
+  \label{table:hbc_correlations}
+  \begin{tabular}{| c | c | c | c |} \hline
+  \multicolumn{4}{|c|}{\textbf{High Bandwidth Communication}}  \\ \hline
+  & \ac{PAM} & \ac{TAA} & \ac{OPS} \\ \hline
+  \ac{PAM} & 1.000 & 0.322 & -0.023 \\ \hline
+  \ac{TAA} & 0.322 & 1.000 & 0.237 \\ \hline
+  \ac{OPS} & -0.023 & 0.237 & 1.000 \\ \hline
+ \end{tabular}
+ \end{minipage}%
+%
+ \begin{minipage}{.45\textwidth}
+  \centering
+  \caption{Refactoring Correlations}
+  \label{table:ref_correlations}
+  \begin{tabular}{| c | c | c | c |} \hline
+  \multicolumn{4}{|c|}{\textbf{Refactoring}}  \\ \hline
+   & \ac{PAM} & \ac{TAA} & \ac{OPS} \\ \hline
+   \ac{PAM} & 1.000 & 0.097 & -0.050 \\ \hline
+   \ac{TAA} & 0.097 & 1.000 & 0.181 \\ \hline
+   \ac{OPS} & -0.050 & 0.181 & 1.000 \\ \hline
+  \end{tabular}  
+ \end{minipage}%
+ %
+\end{table}
+
+\begin{table} [H]
+ \RawFloats %allows to have captions in all of the tables
+ \begin{minipage}{.45\textwidth}
+  \caption{Continuous Integration Correlations}
+  \label{table:ci_correlations}
+  \begin{tabular}{| c | c | c | c | } \hline
+  \multicolumn{4}{|c|}{\textbf{Continuous Integration}}  \\ \hline
+   & \ac{PAM} & \ac{TAA} & \ac{OPS} \\ \hline
+  \ac{PAM} & 1.000 & 0.398 & 0.249 \\ \hline
+  \ac{TAA} & 0.398 & 1.000 & 0.115 \\ \hline
+  \ac{OPS} & 0.249 & 0.115 & 1.000 \\ \hline
+ \end{tabular}
+ \end{minipage}%
+%
+ \begin{minipage}{.45\textwidth}
+  \centering
+   \caption{Iterative and Incremental Development Correlations}
+  \label{table:iid_correlations}
+  \begin{tabular}{| c | c | c | c |} \hline
+  \multicolumn{4}{|c|}{\textbf{Iterative and Incremental Development}}  \\ \hline
+  & \ac{PAM} & \ac{TAA} & \ac{OPS} \\ \hline
+  \ac{PAM} & 1.000 & 0.204 & 0.396 \\ \hline
+  \ac{TAA} & 0.204 & 1.000 & -0.228 \\ \hline
+  \ac{OPS} & 0.396 & -0.228 & 1.000 \\ \hline
+ \end{tabular}
+ \end{minipage}%
+ %
+\end{table}
+
+\begin{table} [H]
+	\caption{Frequency of correlation between tools}
+	\label{table:correlations_frequency}
+	\begin{tabular}{| c | c |} \hline
+		\multicolumn{2}{|c|}{\textbf{Frequency}}  \\ \hline
+		\ac{PAM}-\ac{OPS} & 4 \\ \hline
+		\ac{PAM}-\ac{TAA} & 3 \\ \hline
+		\ac{TAA}-\ac{OPS} & 1 \\ \hline
+	\end{tabular}
+\end{table}
+
+
+In Table~\ref{table:descriptive_statistics} one can see the descriptive statistics of the data gathered.
+
+	\begin{longtable}{| p{.13\textwidth} | p{.11\textwidth} | p{.06\textwidth} | p{.06\textwidth} | p{.06\textwidth} | p{.13\textwidth} | p{.11\textwidth} | p{.06\textwidth} | p{.06\textwidth} | p{.06\textwidth} |} \caption{Descriptive Statistics} \\ \hline 
+		\label{table:descriptive_statistics}
+		\textbf{Practice} & \textbf{Statistics} & \textbf{\ac{PAM}} & \textbf{\ac{TAA}} & \textbf{\ac{OPS}} &
+		\textbf{Practice} & \textbf{Statistics} & \textbf{\ac{PAM}} & \textbf{\ac{TAA}} & \textbf{\ac{OPS}} \\ \hline
+		\endhead %repeats the header to the next page
+		Adherence to Standards & \begin{tabular}{c} Mean \\ Sd \\ Median \\ Min \\ Max \end{tabular} & 
+		\begin{tabular}{c} 1.00 \\ 0.00 \\ 1 \\ 1 \\ 1 \end{tabular} & 
+		\begin{tabular}{c} 11.67 \\ 2.17 \\ 12 \\ 7 \\ 14 \end{tabular} & 
+		\begin{tabular}{c} 8.10 \\ 2.12 \\ 8 \\ 6 \\ 12 \end{tabular} &	
+		Appropriate Distribution of Expertise & \begin{tabular}{c} Mean \\ Sd \\ Median \\ Min \\ Max \end{tabular} &
+		\begin{tabular}{c} 1.00 \\ 0.00 \\ 1.0 \\ 1 \\ 1 \end{tabular} & 
+		\begin{tabular}{c} 11.13 \\ 2.10 \\ 11.5 \\ 6 \\ 14 \end{tabular} & 
+		\begin{tabular}{c} 27.20 \\ 3.51 \\ 27.0 \\ 21 \\ 35 \end{tabular} \\ \hline		
+		Client-Driven Iterations & \begin{tabular}{c} Mean \\ Sd \\ Median \\ Min \\ Max \end{tabular} &
+		\begin{tabular}{c} 8.63 \\ 3.20 \\ 8.5 \\ 3 \\ 14 \end{tabular} & 
+		\begin{tabular}{c} 1.00 \\ 0.00 \\ 1.0 \\ 1 \\ 1 \end{tabular} & 
+		\begin{tabular}{c} 13.87 \\ 2.78 \\ 14.0 \\ 9 \\ 21 \end{tabular} &	
+		Continuous Feedback & \begin{tabular}{c} Mean \\ Sd \\ Median \\ Min \\ Max \end{tabular} &
+		\begin{tabular}{c} 4.87 \\ 1.25 \\ 5.0 \\ 2 \\ 7 \end{tabular} & 
+		\begin{tabular}{c} 1.00 \\ 0.00 \\ 1.0 \\ 1 \\ 1 \end{tabular} & 
+		\begin{tabular}{c} 9.20 \\ 1.88 \\ 9.5 \\ 5 \\ 14 \end{tabular} \\ \hline		
+		Continuous Integration & \begin{tabular}{c} Mean \\ Sd \\ Median \\ Min \\ Max \end{tabular} &
+		\begin{tabular}{c} 21.97 \\ 4.40 \\ 21.0 \\ 11 \\ 31 \end{tabular} & 
+		\begin{tabular}{c} 24.13 \\ 3.82 \\ 24.5 \\ 16 \\ 31 \end{tabular} & 
+		\begin{tabular}{c} 48.10 \\ 4.23 \\ 48.5 \\ 40 \\ 56 \end{tabular} &	
+		High-Bandwidth Communication & \begin{tabular}{c} Mean \\ Sd \\ Median \\ Min \\ Max \end{tabular} &
+		\begin{tabular}{c} 36.73 \\ 4.11 \\ 38 \\ 29 \\ 42 \end{tabular} & 
+		\begin{tabular}{c} 22.87 \\ 3.25 \\ 23 \\ 13 \\ 28 \end{tabular} & 
+		\begin{tabular}{c} 60.30 \\ 5.69 \\ 60 \\ 51 \\ 75 \end{tabular} \\ \hline		
+		Iteration Progress Tracking and Reporting & \begin{tabular}{c} Mean \\ Sd \\ Median \\ Min \\ Max \end{tabular} &
+		\begin{tabular}{c} 21.67 \\ 6.42 \\ 22.5 \\ 8 \\ 35 \end{tabular} & 
+		\begin{tabular}{c} 71.73 \\ 15.62 \\ 72.5 \\ 40 \\ 100 \end{tabular} & 
+		\begin{tabular}{c} 31.73 \\ 1.55 \\ 32.0 \\ 27 \\ 35 \end{tabular} &	
+		Iterative and Incremental Development & \begin{tabular}{c} Mean \\ Sd \\ Median \\ Min \\ Max \end{tabular} &
+		\begin{tabular}{c} 27.10 \\ 2.71 \\ 27.0 \\ 22 \\ 34 \end{tabular} &
+		\begin{tabular}{c} 8.43 \\ 2.11 \\ 8.5 \\ 4 \\ 13 \end{tabular} &
+		\begin{tabular}{c} 14.47 \\ 2.13 \\ 15.0 \\ 11 \\ 18 \end{tabular} \\ \hline		
+		Product Backlog & \begin{tabular}{c} Mean \\ Sd \\ Median \\ Min \\ Max \end{tabular} &
+		\begin{tabular}{c} 1.00 \\ 0.00 \\ 1.0 \\ 1 \\ 1 \end{tabular} &
+		\begin{tabular}{c} 4.97 \\ 0.85 \\ 5.0 \\ 3 \\ 6 \end{tabular} &
+		\begin{tabular}{c} 15.80 \\ 2.14 \\ 15.5 \\ 12 \\ 19 \end{tabular}  &
+		Refactoring & \begin{tabular}{c} Mean \\ Sd \\ Median \\ Min \\ Max \end{tabular} &
+		\begin{tabular}{c} 2.03 \\ 0.85 \\ 2.0 \\ 1 \\ 4 \end{tabular} &
+		\begin{tabular}{c} 10.80 \\ 2.27 \\ 11.0 \\ 6 \\ 14 \end{tabular} &
+		\begin{tabular}{c} 20.67 \\ 3.66 \\ 20.5 \\ 14 \\ 28 \end{tabular}  \\ \hline
+		Self-Organizing Teams & \begin{tabular}{c} Mean \\ Sd \\ Median \\ Min \\ Max \end{tabular} &
+		\begin{tabular}{c} 3.6 \\ 1.19 \\ 3.5 \\ 2 \\ 6 \end{tabular} &
+		\begin{tabular}{c} 62.9 \\ 6.57 \\ 63.0 \\ 48 \\ 75 \end{tabular} &
+		\begin{tabular}{c} 36.5 \\ 5.20 \\ 37.0 \\ 26 \\ 45 \end{tabular}  &
+		Smaller and Frequent Product Releases & \begin{tabular}{c} Mean \\ Sd \\ Median \\ Min \\ Max \end{tabular} &
+		\begin{tabular}{c} 5.6 \\ 1.19 \\ 6 \\ 2 \\ 7 \end{tabular} &
+		\begin{tabular}{c} 5.8 \\ 0.81 \\ 6 \\ 4 \\ 7 \end{tabular} &
+		\begin{tabular}{c} 24.8 \\ 1.24 \\ 25 \\ 22 \\ 28 \end{tabular} \\ \hline		
+		Software Configuration Management & \begin{tabular}{c} Mean \\ Sd \\ Median \\ Min \\ Max \end{tabular} &
+		\begin{tabular}{c} 1 \\ 0 \\ 1 \\ 1 \\ 1 \end{tabular} &
+		\begin{tabular}{c} 7 \\ 0 \\ 7 \\ 7 \\ 7 \end{tabular} &
+		\begin{tabular}{c} 7 \\ 0 \\ 7 \\ 7 \\ 7 \end{tabular} &
+		Test Driven Development & \begin{tabular}{c} Mean \\ Sd \\ Median \\ Min \\ Max \end{tabular} &
+		\begin{tabular}{c} 10.90 \\ 2.90 \\ 10.5 \\ 6 \\ 17 \end{tabular} &
+		\begin{tabular}{c} 6.57 \\ 3.28 \\ 6.0 \\ 3 \\ 15 \end{tabular} &
+		\begin{tabular}{c} 9.10 \\ 1.97 \\ 9.0 \\ 6 \\ 13 \end{tabular} \\ \hline
+		Minimal or Just Enough Documentation & \begin{tabular}{c} Mean \\ Sd \\ Median \\ Min \\ Max \end{tabular} &
+		\begin{tabular}{c} 1.0 \\ 0.00 \\ 1 \\ 1 \\ 1 \end{tabular} &
+		\begin{tabular}{c} 1.0 \\ 0.00 \\ 1 \\ 1 \\ 1 \end{tabular} &
+		\begin{tabular}{c} 17.8 \\ 3.16 \\ 18 \\ 10 \\ 23 \end{tabular} &	
+		Customer User Acceptance Testing & \begin{tabular}{c} Mean \\ Sd \\ Median \\ Min \\ Max \end{tabular} &
+		\begin{tabular}{c} 17.37 \\ 7.04 \\ 17.5 \\ 5 \\ 33 \end{tabular} &
+		\begin{tabular}{c} 1.00 \\ 0.00 \\ 1.0 \\ 1 \\ 1 \end{tabular} &
+		\begin{tabular}{c} 1.00 \\ 0.00 \\ 1.0 \\ 1 \\ 1 \end{tabular} \\ \hline
+		Evolutionary Requirements & \begin{tabular}{c} Mean \\ Sd \\ Median \\ Min \\ Max \end{tabular} &
+		\begin{tabular}{c} 1.00 \\ 0.00 \\ 1 \\ 1 \\ 1 \end{tabular} &
+		\begin{tabular}{c} 1.00 \\ 0.00 \\ 1 \\ 1 \\ 1 \end{tabular} &
+		\begin{tabular}{c} 20.13 \\ 2.21 \\ 20 \\ 17 \\ 25 \end{tabular} &
+		Constant Velocity & \begin{tabular}{c} Mean \\ Sd \\ Median \\ Min \\ Max \end{tabular} &
+		\begin{tabular}{c} 1.00 \\ 0.00 \\ 1 \\ 1 \\ 1 \end{tabular} &
+		\begin{tabular}{c} 5.93 \\ 1.01 \\ 6 \\ 4 \\ 7 \end{tabular} &
+		\begin{tabular}{c} 1.00 \\ 0.00 \\ 1 \\ 1 \\ 1 \end{tabular} \\ \hline
+\end{longtable}
+
+
+%\section{Analysis}
+%\label{sec:analysis}
+%
+%\subsection{Introduction}
+%As it has already been presented, the correlation of only a few of the practices can be examined. In this section the reasons that did not allow the calculation of the correlation will be presented and discussed.
+
+%\section{Correlations Analysis}
+%\label{subsec:correlation_analysis}
+
+In \textit{Continuous Feedback} \ac{PAM} and \ac{OPS} have a moderate positive correlation of $\rho$ = 0.459. Both tools focus on getting feedback from the customer, while \ac{OPS} also checks whether the product is developed according to the customer's needs and expectations.
+
+In \textit{Client-Driven Iterations} \ac{PAM} and \ac{OPS} have a low positive correlation of $\rho$ = 0.161. Both tools check for the possibility of the requirements having been prioritized by the customer. Moreover, the \ac{OPS} focuses on the customers' requests and needs.
+
+In \textit{Continuous Integration} \ac{PAM} and \ac{OPS} have a low positive correlation of $\rho$ = 0.249. The common areas are continuous builds, multiple submits and story acceptance. There is a small difference regarding whether the developers should sync to the latest available code that is supported by the \ac{PAM}.
+
+In \textit{Iterative and Incremental Development} \ac{PAM} and \ac{OPS} have a low positive correlation of $\rho$ = 0.396. The \ac{OPS} focuses on the stories estimation and prioritization, while \ac{PAM} on the deadlines that have to be meet and on the software progress. 
+
+In \textit{High Bandwidth Communication} \ac{PAM} and \ac{TAA} have a low positive correlation of $\rho$ = 0.322. Both of them check for the team collocation, while \ac{TAA} also checks for the communication with the customers. \ac{PAM} and \ac{OPS} have correlation of $\rho$ = -0.023 which means there is almost no correlation at all. They both focus on the communication, but \ac{OPS} does that to a huge extent, resulting in such an extremely low correlation. In addition, \ac{OPS} checks for effectively using the time for meetings. \ac{TAA} and \ac{OPS} have a positive correlation of $\rho$ = 0.237. It is worth mentioning that this is the only practice for which correlation exists for all the tools.
+
+In \textit{Refactoring} \ac{PAM} and \ac{TAA} have a correlation of $\rho$ = 0.097, which means there is almost no correlation at all. \ac{TAA} focuses on continuous refactoring, while on the other hand \ac{PAM} on unit testing.
+
+
+\section{Reasons behind correlation results}
+\label{sec:reasons_for_correlations}
+
+The plots showed an unexpected and very interesting result. Not only do not the tools have a correlation, but they do not have a monotonic relationship either between one another for the agile practices covered (see Table~\ref{table:monotonic_relationships}). This could indicate two things. The first one is that the results are random and the second one, is that all three of the tools measure agility differently. 
+
+As far as the aspect of the correlation results being random is concerned, there is a possibility of being true. Maybe another approach on forming the data samples could provide different results, but the approach followed was evaluated as the most suitable at the beginning of the study.
+
+On the other hand, the absence of monotonicity shows that the questions used by the tools in order to cover an agile practice, do it differently and that \ac{PAM}, \ac{TAA} and \ac{OPS} measure the agility of software development teams in their own unique way. Each of the tools was constructed and statistically validated by its creators having the agile concept in mind, but apparently following a different path in order to accomplish it. This is quite clear by looking on the different ways that each practice is covered (see Appendix~\ref{ch:mapping}) where many of the questions have a different perspective on measuring a practice although they focus on the same one. The reasons for this unexpected phenomenon are explained in the next paragraphs.
+
+\subsection{Few or no questions for measuring a practice}
+Another reason for not being able to calculate the correlation of the tools is that they cover slightly or even not at all some of the practices. An example of this is the \textit{Smaller and Frequent Product Releases} practice. \ac{OPS} has four questions for it, while on the other hand, \ac{PAM} and \ac{TAA} have a single one each. Furthermore, \textit{Appropriate Distribution of Expertise} is not covered at all by \ac{PAM} while it is by the rest of the tools. In case the single question gets a low score, this will affect the effectively the tool will measure an agile practice. On the contrary, multiple questions can cover the practice more completely by examining more factors that affect it. Apart from measuring a practice more precisely, this also has the benefit that even if one question gets a low score, the rest of them are candidates for getting a higher one. The issue is worse if a practice is not covered at all. Unfortunately, this phenomenon does not allow to equally check all the tools, since it is giving a superiority to the ones that take the practice into consideration and even more to the ones that do that to an extensive degree.
+
+\subsection{The same practice is measured differently}
+Something very interesting that came up during the data analysis was that although the tools cover the same practices, they do it in different ways, leading to different results. An example of this is the practice of \textit{Refactoring} (check figure ~\ref{fig:ref_plot}). \ac{PAM} checks whether there are enough unit tests and automated system tests to allow the safe code refactoring. In case the course unit/system tests are not developed by a team, the respondents will give low scores to the question, as the team members in company A did. Nevertheless, this does not mean that the team never refactors the software or it does it with bad results. All teams in company A choose to refactor when it adds value to the system, but the level of unit tests is very low and they exist only for specific teams. On the other hand, \ac{TAA} and \ac{OPS} check how often the teams refactor among other factors, which allows to better evaluate the practice of refactoring..
+
+\subsection{The same practice is measured in opposite questions}
+\label{subsec:opposite_questions}
+The \textit{Continuous Integration} practice has a unique paradox among \ac{TAA}, \ac{PAM} and \ac{OPS}. The first two tools have a question about the members of the team having synced to the latest code, while \ac{OPS} checks for the exact opposite. According to \citet{sventha_dissertation}, it is preferable for the teams not to share the same code in order to measure the practice. It is quite doubtful though how correct this question can be, since the \textit{Continuous Integration} requires frequent submits from the developers and thus the rest of the team will also have a local version of the code.
+
+\subsection{Questions phrasing}
+Although the tools might cover the same areas for each practice, the results could differ because of how a question is structured. An example of this is the \textit{Test Driven Development} practice. Both \ac{TAA} and \ac{PAM} ask about automated code coverage, while \ac{OPS} just asks about the existence of code coverage. Furthermore, \ac{TAA} focuses on 100\% automation while \ac{PAM} doesn’t. Thus, if a team has code coverage but it is not automated, then the score of the respective question should be low. In case of \ac{TAA}, if it is fully automated, it should be even lower. It is evident that the more specific a question is, the more its answer will differ, resulting in possible low scores.
+
+\subsection{How people perceive agility --- Maybe add this at the final discussion of the document?}
+Although the concept of agility is not new, people do not seem to fully understand it as \citet{Wang_Conboy} also mention. This is actually the reason for having so many tools in the field trying to measure how agile the teams are or the methodologies used. Teams implement agile methodologies differently and researchers create different measurement tools. There are numerous definitions about what agility is \cite{Kidd, NagelDove, Kara, Ramesh}, and each of the tools creator adopt or adapt the tools to match their needs. Their only common basis is the agile manifesto \cite{beck2001agile} and its twelve principles \cite{agile_principles}, which are (and should be considered as) a compass for the agile practitioners. Nevertheless, they are not enough and this resulted in the saturation of the field. Moreover, \citet{conboy_fitzgerald} state that the Agile Manifesto principles do not provide practical understanding of the concept of Agility. Consequently, all the reasons behind the current survey results are driven by the way in which tool creators and tool users perceive agility.
+
+The questions in the surveys were all based on how their creators perceived the agile concept which is quite vague. As the reader has seen in previous chapters, \ac{PAM}, \ac{TAA} and \ac{OPS} focus on some common areas/practices, such as  \textit{Smaller and Frequent Product Releases} and \textit{High-Bandwidth Communication}, while many are different. None of the \citet{sventha_dissertation}, \citet{pam}, \citet{Leffingwell} claimed of course to have created the most complete measurement tool, but still this leads to the oxymoron that the tools created by specialists to measure the agility of software development tools, actually do it differently without providing substantial solution to the problem. On the contrary, this leads to more confusion for the agile practitioners who are at a loose ends.
+
+Considering that the researchers and specialists in the agile field perceive the concept of agility differently, it would be naive to say that the teams do not do the same. The answers in surveys are subjective and people answer them depending on how they understand them. This is also corroborated by the fact that although a team works at the same room and follows the same processes for weeks, it is rather unlikely if its members will have the same understanding of what a retrospection or a releasing planning meeting means for them.
+
+\section{Research Question recap}
+Regarding RQ \#2, \textit{``In what ways do the tools correlate"}, it was seen that the agile practices correlations almost do not exist at all between \ac{PAM}, \ac{TAA} and \ac{OPS}. Only 8 our 42 relationships have a correlation and they are mostly positive but low.
+
+\section{Chapter Summary}
+In this chapter was presented how complete were the tools among them. \ac{OPS} covers both \ac{PAM} and \ac{TAA} to a large extent. In the second part the case study took place which showed that only 8 out of 42 relationships between the agile practices do correlate. The rest lack monotonicity due to
+\begin{inparaenum} [a\upshape)]
+	\item measuring a practice in the same way,
+	\item having few or no questions for measuring a practice,
+	\item measuring the same practice differently,
+	\item measuring the same practice in opposite questions,
+	\item questions phrasing.
+\end{inparaenum}
