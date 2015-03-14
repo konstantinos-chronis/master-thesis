@@ -75,62 +75,21 @@ Each of these groups has a number of questions which are either answered with a 
 \paragraph{Dimension 1 - Method Scope Characterization}
 The first dimension describes the key scope items which are considered essential for supporting the method used by a team or organisation. These have been derived from the literature review of the creators based on \citet{Beck:2004:EPE:1076267}, \citet{koch2005agile}, \citet{Palmer:2001:PGF:600044}, \citet{Highsmith:2000:ASD:323922} and provides a method comparison at a high level.
 
-
-%These items are:
-%\begin{inparaenum} [a\upshape)]
-%\item Project Size
-%\item Team Size
-%\item Development Style
-%\item Code Style
-%\item Technology Environment
-%\item Physical Environment
-%\item Business Culture
-%\item Abstraction Mechanism
-%\end{inparaenum}
-
-%The aforementioned elements are considered essential for supporting the method used by a team or organisation. Table~\ref{fig:dimension1} provides a description for the items.
-%
-%\begin{table}[H]
-%\caption{4-DAT Dimension 1}
-%\label{fig:dimension1}
-%\centerline{\includegraphics[scale=0.8]{include/relatedwork/fig/qumer_dimension1.pdf}}
-%\end{table}
-
 \paragraph{Dimension 2 - Agility Characterization}
 The second dimension is the only quantitative dimension among the four.  It evaluates the agile methods at a process level and at a method practices level in order to check for the existence of agility.
 
-The measurement of the degree of agility at this level is done based on five variables. %Table~\ref{fig:dimension2} provides a description for them.
-%\begin{inparaenum} [a\upshape)]
-%\item Flexibility
-%\item Speed
-%\item Leanness
-%\item Learning
-%\item Responsiveness
-%\end{inparaenum}
+The measurement of the degree of agility at this level is done based on five variables.
 
 These variables are used to check the existence of a method's objective at a specific level or phase. If the variable exists for a phase, then the value 1 is assigned to it, otherwise 0. \citet{qumer2006measuring} define the degree of agility (DA) as ``the fraction of the five agility variables that are encompassed and supported". They define as \textit{Object} an object at some level or lifecycle phase or as a result of the practices used. \textit{m} is the number of phases or  practices. \textit{Phase} is any of the design, planning phase or requirements engineering phase. \textit{Practice} is the practices of the agile methodology. \\ %maybe provide an example as the authors do
 
 Formula \eqref{eq:dat_formula} how DA is calculated\\
 \begin{equation} \label{eq:dat_formula} DA (Object) = (1/m) \sum m DA(Object, Phase Or Practices) \end{equation}
 
-%\begin{table}[H]
-%\caption{4-DAT Dimension 2}
-%\label{fig:dimension2}
-%\centerline{\includegraphics[scale=0.8]{include/relatedwork/fig/qumer_dimension2.pdf}}
-%\end{table}
-
 \paragraph{3 - Agile Values Characterization}
 The third dimension consists of six agile values. Four of them are derived directly from the Agile Manifesto \cite{beck2001agile}, while the fifth comes from \citet{koch2005agile}. The last value is suggested by \citet{qumer2006measuring}, after having studied several agile methods. The values can be seen in Table~\ref{table:4dat_dimensions}.
-%Table~\ref{fig:dimension4} shows the agile values.
-
-%\begin{table}[H]
-%\caption{4-DAT Dimension 3}
-%\label{fig:dimension3}
-%\centerline{\includegraphics[scale=0.8]{include/relatedwork/fig/qumer_dimension3.pdf}}
-%\end{table}
 
 \paragraph{Dimension 4 - Software Process Characterization}
-The fourth dimension examines the practices that support four processes as these are presented by \citet{qumer2006measuring}. %Table~\ref{fig:dimension4} lists these processess.
+The fourth dimension examines the practices that support four processes as these are presented by \citet{qumer2006measuring}. 
 
 \begin{table} [H]
 \caption{4-DAT Dimensions}
@@ -171,12 +130,6 @@ The fourth dimension examines the practices that support four processes as these
 \end{tabular}
 \end{table}
 
-%\begin{table}[H]
-%\caption{4-DAT Dimension 4}
-%\label{fig:dimension4}
-%\centerline{\includegraphics[scale=0.8]{include/relatedwork/fig/qumer_dimension4.pdf}}
-%\end{table}
-
 \subsection{XP Evaluation Framework} % Framework ---- Not sure for the section
 \citet{williams2004toward} proposed a framework named the ``XP Evaluation Framework" (XP-EF) for assessing the XP practices which have been adopted by an organisation. The framework consists of three parts
 \begin{itemize}
@@ -184,6 +137,9 @@ The fourth dimension examines the practices that support four processes as these
 	\item XP Adherence Metrics (XP-AM) - Express in a precise way the practices utilized by a team
 	\item XP Outcome Measures (XP-OM) - A Means to assess the outcomes of a project using full or partial XP practices
 \end{itemize}
+
+\subsection{Summary}
+In this section we presented various tools which measure the agility level of agile methodologies. We have identified 2 groups to classify them. The first one includes the tools which measure based on factors (Bohem and Turner, Philip Taylor, XP Evaluation Framework). The second group is includes the tools which measure based on questionnaires (CEFAM, 4-DAT, Datta).
 
 
 
@@ -344,30 +300,19 @@ principles, and principles to strategies
 \item indicators for assessing the extent to which an organisation supports the implementation and effectiveness of those strategies.
 \end{inparaenum}
 
-%The \ac{OPS} Framework identifies 
-%\begin{itemize}
-%\item Objectives of the agile philosophy - ``something aimed at or striven for" as defined by \citet{2604}
-%\item Principles - what rules a process in order to achieve an objective according to \citet{2604}
-%\item Strategies - the implementations of the principles (i.e. they are the means for achieving the principles)
-%\item Linkages - the connectors between 
-%\begin{inparaenum} [a\upshape)]
-%\item the objectives and principles, 
-%\item the principles and the strategies. 
-%\end{inparaenum} 
-%The linkages show the path in order to asses the adequacy, capability and effectiveness of the method used.
-%\item Indicators for assessing the extent to which an organisation supports the implementation and effectiveness of those strategies - In order to measure the capability and the effectiveness the strategies use properties which contain a number of questions. These properties differ for the capability and the effectiveness. Indicator is named the combination of a strategy with a property. They are directly measurable and are tailored to assess the strategies
-%\end{itemize}
-
 In total 5 objectives, 9 principles, 17 strategies, 54 linkages and 80 indicators are identified. For more information, one can view  Figure~\ref{objectives_principles_strategies}.
 
 \begin{figure} [H]
 \centerline{\includegraphics[scale=0.75]{include/relatedwork/fig/ops.pdf}}
 \caption{Objectives, Principles, and Strategies identified by the \ac{OPS} Framework} 
 \label{objectives_principles_strategies}
-\end{figure} 
+\end{figure}
+
+\subsection{Summary}
+In this section we presented various tools which measure the agility level of agile software development teams. We have identified 3 groups to classify them. The first one is about the tools which use questionnaires (\ac{TAA}, \ac{OPS}, \ac{PAM}, Comparative Agility, Thoughtworks, 42-point test). The second group is about those which use a mix of approaches, either this is a questionnaire and a model or a network (AHP-ANFIS Framework, Escobar-Vasquez). Last, the third group includes the rest of the tools which do not belong in the other two groups (Entropy Analysis, SAMI, Validation Model).
 
 \section{Selecting tools}
-The tools selected for the case study that follows in the next chapter are Perceptive Agile Measurement (PAM), Team Agility Assessment (TAA) and Objectives Principles Strategies (OPS). All three of them originate from either industry (\ac{TAA}) or academia (\ac{OPS}) or both (\ac{PAM}). \ac{PAM} has been used in a case study in the past with a large sample. The tool was created with participations from development teams from all over the world and is considered a valid one for measuring agility of teams. \ac{TAA} is part of Scaled Agile Framework (SAFe) \cite{scaled_agile_framework} which is used by a lot of companies. \ac{OPS} Framework is a tool which covers more agile practices than any other tool of our knowledge.
+For this Master's Thesis we chose to validate tools which measure the agility level of software development teams. Those based on questionnaires were considered ideal since they can be easily answered by subjects. The tools selected for the case study presented in the next chapter are Perceptive Agile Measurement (PAM), Team Agility Assessment (TAA) and Objectives Principles Strategies (OPS). All three of them originate from either industry (\ac{TAA}) or academia (\ac{OPS}) or both (\ac{PAM}). \ac{PAM} has been used in a case study in the past with a large sample. The tool was created with participations from development teams from all over the world and is considered a valid one for measuring agility of teams. \ac{TAA} is part of Scaled Agile Framework (SAFe) \cite{scaled_agile_framework} which is used by a lot of companies. \ac{OPS} Framework is a tool which covers more agile practices than any other tool of our knowledge.
 
 \section{Chapter Summary}
 In this chapter we presented the most common tools found in literature for measuring agility. The tools were separated in two categories. Those which measure how agile are the agile methodologies and to those which measure how agile are the software development teams. Finally, in the end of this chapter we presented the reasons for selecting the tools used in this Master's Thesis. 
