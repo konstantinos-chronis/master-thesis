@@ -6,7 +6,7 @@
 This chapter presents the results of the surveys and analyses the reasons behind them.
 
 \section{Correlation Results}
-As it was seen in the previous chapter only 8 out of 42 plots were monotonic. The cells for which a correlation exists are coloured in green in order to distinguish them from the rest. In Table~\ref{table:correlations_frequency} one can see that half of the correlations are between \ac{PAM} and \ac{OPS}. %This corroborates that \ac{OPS} has full coverage of \ac{PAM} as seen in Table ~\ref{table:questions_coverage}. %maybe add in the Analysis - chapter 4
+As it was seen in the previous chapter only 8 out of 42 plots were monotonic.  In Table~\ref{table:correlations_frequency} one can see that half of the correlations are between \ac{PAM} and \ac{OPS}. In addition, from the 8 monotonic plots we can clearly see in Table~\ref{table:hbc_correlations} we have a negative correlation which is surprising since it should not exist.  %This corroborates that \ac{OPS} has full coverage of \ac{PAM} as seen in Table ~\ref{table:questions_coverage}. %maybe add in the Analysis - chapter 4
 
 \begin{table} [H]
  \RawFloats %allows to have captions in all of the tables
@@ -189,52 +189,43 @@ In Table~\ref{table:descriptive_statistics} one can see the descriptive statisti
 		\begin{tabular}{c} 1.00 \\ 0.00 \\ 1 \\ 1 \\ 1 \end{tabular} \\ \hline
 \end{longtable}
 
-
-%\section{Analysis}
-%\label{sec:analysis}
-%
-%\subsection{Introduction}
-%As it has already been presented, the correlation of only a few of the practices can be examined. In this section the reasons that did not allow the calculation of the correlation will be presented and discussed.
-
-%\section{Correlations Analysis}
-%\label{subsec:correlation_analysis}
-
 In \textit{Continuous Feedback} \ac{PAM} and \ac{OPS} have a moderate positive correlation of $\rho$ = 0.459. Both tools focus on getting feedback from the customer, while \ac{OPS} also checks whether the product is developed according to the customer's needs and expectations.
 
-In \textit{Client-Driven Iterations} \ac{PAM} and \ac{OPS} have a low positive correlation of $\rho$ = 0.161. Both tools check for the possibility of the requirements having been prioritized by the customer. Moreover, the \ac{OPS} focuses on the customers' requests and needs.
+In \textit{Client-Driven Iterations} \ac{PAM} and \ac{OPS} have a low positive correlation of $\rho$ = 0.161. Both tools check for the possibility of the requirements having been prioritized by the customer, while \ac{OPS} additionally focuses on the customers' requests and needs.
 
 In \textit{Continuous Integration} \ac{PAM} and \ac{OPS} have a low positive correlation of $\rho$ = 0.249. The common areas are continuous builds, multiple submits and story acceptance. There is a small difference regarding whether the developers should sync to the latest available code that is supported by the \ac{PAM}.
 
 In \textit{Iterative and Incremental Development} \ac{PAM} and \ac{OPS} have a low positive correlation of $\rho$ = 0.396. The \ac{OPS} focuses on the stories estimation and prioritization, while \ac{PAM} on the deadlines that have to be meet and on the software progress. 
 
-In \textit{High Bandwidth Communication} \ac{PAM} and \ac{TAA} have a low positive correlation of $\rho$ = 0.322. Both of them check for the team collocation, while \ac{TAA} also checks for the communication with the customers. \ac{PAM} and \ac{OPS} have correlation of $\rho$ = -0.023 which means there is almost no correlation at all. They both focus on the communication, but \ac{OPS} does that to a huge extent, resulting in such an extremely low correlation. In addition, \ac{OPS} checks for effectively using the time for meetings. \ac{TAA} and \ac{OPS} have a positive correlation of $\rho$ = 0.237. It is worth mentioning that this is the only practice for which correlation exists for all the tools.
+In \textit{High Bandwidth Communication} \ac{PAM} and \ac{TAA} have a low positive correlation of $\rho$ = 0.322. Both of them check for the team collocation, while \ac{TAA} also checks for the communication with the customers. \ac{PAM} and \ac{OPS} surprisingly have a correlation of $\rho$ = -0.023 which means there is no correlation at all. They both focus on the communication, but \ac{OPS} does that to a huge extent, leading to this result. In addition, \ac{OPS} checks for effectively using the time for meetings. \ac{TAA} and \ac{OPS} have a positive correlation of $\rho$ = 0.237. It is worth mentioning that this is the only practice for which correlation can be calculated for all the tools.
 
-In \textit{Refactoring} \ac{PAM} and \ac{TAA} have a correlation of $\rho$ = 0.097, which means there is almost no correlation at all. \ac{TAA} focuses on continuous refactoring, while on the other hand \ac{PAM} on unit testing.
+In \textit{Refactoring} \ac{PAM} and \ac{TAA} have a correlation of $\rho$ = 0.097, which means there is almost no correlation at all. \ac{TAA} focuses on continuous refactoring, while on the other hand \ac{PAM} focuses on the unit testing of unit testing for refactoring.
 
 
-\section{Reasons behind correlation results}
-\label{sec:reasons_for_correlations}
+\subsection{Reasons behind correlation results}
+\label{subsec:reasons_for_correlations}
 
 The plots showed an unexpected and very interesting result. Not only do not the tools have a correlation, but they do not have a monotonic relationship either between one another for the agile practices covered (see Table~\ref{table:monotonic_relationships}). This could indicate two things. The first one is that the results are random and the second one, is that all three of the tools measure agility differently. 
 
 As far as the aspect of the correlation results being random is concerned, there is a possibility of being true. Maybe another approach on forming the data samples could provide different results, but the approach followed was evaluated as the most suitable at the beginning of the study.
 
-On the other hand, the absence of monotonicity shows that the questions used by the tools in order to cover an agile practice, do it differently and that \ac{PAM}, \ac{TAA} and \ac{OPS} measure the agility of software development teams in their own unique way. Each of the tools was constructed and statistically validated by its creators having the agile concept in mind, but apparently following a different path in order to accomplish it. This is quite clear by looking on the different ways that each practice is covered (see Appendix~\ref{ch:mapping}) where many of the questions have a different perspective on measuring a practice although they focus on the same one. The reasons for this unexpected phenomenon are explained in the next paragraphs.
+On the other hand, the absence of monotonicity and the negative or extremely low correlations show that the questions used by the tools in order to cover an agile practice, do it differently and that \ac{PAM}, \ac{TAA} and \ac{OPS} measure the agility of software development teams in their own unique way. Each of the tools was constructed and statistically validated during its development by its creators having the agile concept in mind, but apparently following a different path in order to accomplish it. This is quite clear by looking on the different ways that each practice is covered (see Appendix~\ref{ch:mapping}) where many of the questions have a different perspective on measuring a practice although they focus on the same one. The reasons for this unexpected phenomenon are explained in the next paragraphs.
 
-\subsection{Few or no questions for measuring a practice}
-Another reason for not being able to calculate the correlation of the tools is that they cover slightly or even not at all some of the practices. An example of this is the \textit{Smaller and Frequent Product Releases} practice. \ac{OPS} has four questions for it, while on the other hand, \ac{PAM} and \ac{TAA} have a single one each. Furthermore, \textit{Appropriate Distribution of Expertise} is not covered at all by \ac{PAM} while it is by the rest of the tools. In case the single question gets a low score, this will affect the effectively the tool will measure an agile practice. On the contrary, multiple questions can cover the practice more completely by examining more factors that affect it. Apart from measuring a practice more precisely, this also has the benefit that even if one question gets a low score, the rest of them are candidates for getting a higher one. The issue is worse if a practice is not covered at all. Unfortunately, this phenomenon does not allow to equally check all the tools, since it is giving a superiority to the ones that take the practice into consideration and even more to the ones that do that to an extensive degree.
+\subsubsection{Few or no questions for measuring a practice}
+Another reason for not being able to calculate the correlation of the tools is that they cover slightly or even not at all some of the practices. An example of this is the \textit{Smaller and Frequent Product Releases} practice. \ac{OPS} has four questions for it, while on the other hand, \ac{PAM} and \ac{TAA} have a single one each. Furthermore, \textit{Appropriate Distribution of Expertise} is not covered at all by \ac{PAM} while it is by the rest of the tools. In case the single question gets a low score, this will affect how effectively the tool will measure an agile practice. On the contrary, multiple questions can better cover the practice by examining more factors that affect it. Apart from measuring a practice more precisely, this also has the benefit that even if one question gets a low score, the rest of them are candidates for getting a higher one.
 
-\subsection{The same practice is measured differently}
-Something very interesting that came up during the data analysis was that although the tools cover the same practices, they do it in different ways, leading to different results. An example of this is the practice of \textit{Refactoring} (check figure ~\ref{fig:ref_plot}). \ac{PAM} checks whether there are enough unit tests and automated system tests to allow the safe code refactoring. In case the course unit/system tests are not developed by a team, the respondents will give low scores to the question, as the team members in company A did. Nevertheless, this does not mean that the team never refactors the software or it does it with bad results. All teams in company A choose to refactor when it adds value to the system, but the level of unit tests is very low and they exist only for specific teams. On the other hand, \ac{TAA} and \ac{OPS} check how often the teams refactor among other factors, which allows to better evaluate the practice of refactoring..
+\subsubsection{The same practice is measured differently}
+Something very interesting that came up during the data analysis was that although the tools cover the same practices, they do it in different ways, leading to different results. An example of this is the practice of \textit{Refactoring} (check figure ~\ref{fig:ref_plot}). \ac{PAM} checks whether there are enough unit tests and automated system tests to allow the safe code refactoring. In case the course unit/system tests are not developed by a team, the respondents will give low scores to the question, as the team members in company A did. Nevertheless, this does not mean that the team never refactors the software or it does it with bad results. All teams in company A choose to refactor when it adds value to the system, but the level of unit tests is very low and they exist only for specific teams. On the other hand, \ac{TAA} and \ac{OPS} check how often the teams refactor among other factors.
 
-\subsection{The same practice is measured in opposite questions}
+\subsubsection{The same practice is measured in opposite questions}
 \label{subsec:opposite_questions}
 The \textit{Continuous Integration} practice has a unique paradox among \ac{TAA}, \ac{PAM} and \ac{OPS}. The first two tools have a question about the members of the team having synced to the latest code, while \ac{OPS} checks for the exact opposite. According to \citet{sventha_dissertation}, it is preferable for the teams not to share the same code in order to measure the practice. It is quite doubtful though how correct this question can be, since the \textit{Continuous Integration} requires frequent submits from the developers and thus the rest of the team will also have a local version of the code.
 
-\subsection{Questions phrasing}
+\subsubsection{Questions phrasing}
 Although the tools might cover the same areas for each practice, the results could differ because of how a question is structured. An example of this is the \textit{Test Driven Development} practice. Both \ac{TAA} and \ac{PAM} ask about automated code coverage, while \ac{OPS} just asks about the existence of code coverage. Furthermore, \ac{TAA} focuses on 100\% automation while \ac{PAM} doesn’t. Thus, if a team has code coverage but it is not automated, then the score of the respective question should be low. In case of \ac{TAA}, if it is fully automated, it should be even lower. It is evident that the more specific a question is, the more its answer will differ, resulting in possible low scores.
+\todo{so a problem with measuring agility is the right abstraction level. So we don't know how, or at what level, agility should be measured. Interesting. This means we have issues even for simple aspects as if they use TDD.}
 
-\subsection{How people perceive agility --- Maybe add this at the final discussion of the document?}
+\subsubsection{How people perceive agility --- Maybe add this at the final discussion of the document?}
 Although the concept of agility is not new, people do not seem to fully understand it as \citet{Wang_Conboy} also mention. This is actually the reason for having so many tools in the field trying to measure how agile the teams are or the methodologies used. Teams implement agile methodologies differently and researchers create different measurement tools. There are numerous definitions about what agility is \cite{Kidd, NagelDove, Kara, Ramesh}, and each of the tools creator adopt or adapt the tools to match their needs. Their only common basis is the agile manifesto \cite{beck2001agile} and its twelve principles \cite{agile_principles}, which are (and should be considered as) a compass for the agile practitioners. Nevertheless, they are not enough and this resulted in the saturation of the field. Moreover, \citet{conboy_fitzgerald} state that the Agile Manifesto principles do not provide practical understanding of the concept of Agility. Consequently, all the reasons behind the current survey results are driven by the way in which tool creators and tool users perceive agility.
 
 The questions in the surveys were all based on how their creators perceived the agile concept which is quite vague. As the reader has seen in previous chapters, \ac{PAM}, \ac{TAA} and \ac{OPS} focus on some common areas/practices, such as  \textit{Smaller and Frequent Product Releases} and \textit{High-Bandwidth Communication}, while many are different. None of the \citet{sventha_dissertation}, \citet{pam}, \citet{Leffingwell} claimed of course to have created the most complete measurement tool, but still this leads to the oxymoron that the tools created by specialists to measure the agility of software development tools, actually do it differently without providing substantial solution to the problem. On the contrary, this leads to more confusion for the agile practitioners who are at a loose ends.
@@ -281,9 +272,9 @@ On the other hand, according to \citet{Lacy} survey respondents tend to give dif
 
 Validity threats?
 %http://fluidsurveys.com/university/tips-for-avoiding-respondent-bias/
-%http://fluidsurveys.com/university/avoiding-survey-bias/
+%http://fluidsurveys.com/university/tips-for-overcoming-researcher-bias/
 
-The only group of questions in which all the respondents gave the exact same answer was about the existence of \textit{Software Control Management}. Company A uses version control management software for every line of code written.
+The only group of questions in which all the respondents gave the exact same answer was about the existence of \textit{Software Control Management}. Company A uses version control management software for every project.
 
 \section{Research Question recap}
 Regarding RQ \#2, \textit{``In what ways do the tools correlate"}, it was seen that the agile practices correlations almost do not exist at all between \ac{PAM}, \ac{TAA} and \ac{OPS}. Only 8 our 42 relationships have a correlation and they are mostly positive but low.
