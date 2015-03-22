@@ -3,13 +3,11 @@
 
 %\newcommand{\mysubparagraph}[1]{\subparagraph{#1}\mbox{}\\}
 
-\lettrine[lines=4, loversize=-0.1, lraise=0.1]{T}{his} chapter presents the research questions and the methodology followed while conducting this Master's Thesis. 
+\lettrine[lines=4, loversize=-0.1, lraise=0.1]{T}{his} chapter presents the research questions and research methodology followed for conducting this Master's Thesis.
 %In the first part an effort is made to check how complete are the tools in measuring agility compared to one another. In the second part, this study aims to check the correlation of the practices covered by \ac{PAM}, \ac{TAA} and \ac{OPS} in order to see how they relate when measuring agility by performing a case study in company A.
 
 \section{Research Purpose}
-The creators of \ac{PAM}, \ac{TAA} and \ac{OPS} state that their tool measures agility. Their existence though implies that each one is more appropriate than the others in doing so. The purpose of this study is to validate whether these tools actually do measure agility or not. 
-
-\newcounter{tmpc} % set the counter to continue the RQs
+The creators of \ac{PAM}, \ac{TAA} and \ac{OPS} state that their tool measures agility. The existence though of not only the three of them, but also of the rest of the tools presented in Chapter~\ref{ch:related_work} implies that each one is considered by its creators as more appropriate than the others in measuring agility. The purpose of this study is to validate whether these three tools actually succeed in measuring agility or not. 
 
 \subsection{Research Questions}
 Do \ac{PAM}, \ac{TAA} and \ac{OPS} measure agility in the same way?
@@ -19,18 +17,19 @@ Do \ac{PAM}, \ac{TAA} and \ac{OPS} measure agility in the same way?
   \item In what ways do the tools correlate?
   \item Questions that are exactly the same among the tools, will they give the same results?
   \item Can the tools be combined in a way, in order to provide a better approach in measuring agility?
-  %\setcounter{tmpc}{\theenumi} % set the counter to continue the RQs
 \end{enumerate}	
 
+\subsection{Case Study}
+Any effort for seeing if the selected agility measurement tools are valid in what they do, would require to apply them in real software developments teams. According to \citet{Runeson_Host} a case study is ``a suitable research methodology for software engineering research since it studies contemporary phenomena in their natural context". As a result, a case study was the selected as the most suitable means for conducting the Master's Thesis.  
 
 \section{Subject Selection}
-For the needs of this study, four teams in company A were used as a sample. In the next pages we present information on the company's teams, products and the agile practices used.
+Since all three agility measurement tools would be applied we wanted to find a company that would be willing and committed to spend time for as much time needed. For this reason company A was selected, because the author of this Master's Thesis is a member of the company's employees. In the next pages we present information on the company's teams, products and the agile practices used.
 
 \subsection{Company Description}
-Company A is a United States company which activates in the Point Of Sales (POS) area. With the development of some new products, the company had a 400\% increase in the size of the development and QA departments, which resulted in the need for better organizing the development and release processes. In addition, the increasing requests of new features in the company's systems require a more efficient way in delivering them to the customers and also maintaining the quality of the products.
+Company A is a United States company which activates in the Point Of Sales (POS) area. With the development of some new products, the company had a 400\% increase in the size of the development and quality assurance (QA) departments, which resulted in the need for better organizing the development and release processes. In addition, the increasing requests of new features in the company's systems require a more efficient way in delivering them to the customers and also maintaining the quality of the products.
 
 \subsection{Methodology A}
-In general, company A does not follow a specific agile methodology, but rather a tailored mix of the most famous ones which suits the needs of each team. Methodology A, as we can name it, embraces the practices displayed in Table~\ref{table:methodologyA_practices} from the various agile methodologies, some of the them to larger and some of them to a smaller extent. The analysis made by \citet{koch2005agile} was used for identifying these methodologies. The identification of these practices was done by observing and understanding how the teams work. The results were verified by the agile coach.
+In general, company A does not follow a specific agile methodology, but rather a tailored mix of the most famous ones which suits the needs of each team. Methodology A, as we can name it, embraces the practices displayed in Table~\ref{table:methodologyA_practices} from the various agile methodologies, some of the them to larger and some of them to a smaller extent. The analysis made by \citet{koch2005agile} was used for identifying these methodologies. The identification of these practices was done by observing and understanding how the teams work. The results were verified by the agile coach of the teams.
 
 \begin{table} [H]
 \caption{Practices embraced by methodology A}
@@ -69,7 +68,7 @@ The names given correspond to the names of the teams that develop them.
 \subsection{Teams}
 There are four development teams, each for a product of the company. Some of the teams have mixed members of developers and testers. In the Tables~\ref{table:teamA}, \ref{table:teamB}, \ref{table:teamC}, \ref{table:teamD}, one can see the structure of the teams. \\
 
-\begin{table} [H]
+\begin{table}
   \RawFloats
  \begin{minipage}[b]{0.5\textwidth}
   \centering
