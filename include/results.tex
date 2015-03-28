@@ -222,11 +222,14 @@ Something very interesting that came up during the data analysis was that althou
 The \textit{Continuous Integration} practice has a unique paradox among \ac{TAA}, \ac{PAM} and \ac{OPS}. The first two tools have a question about the members of the team having synced to the latest code, while \ac{OPS} checks for the exact opposite. According to \citet{sventha_dissertation}, it is preferable for the teams not to share the same code in order to measure the practice. It is quite doubtful though how correct this question can be, since the \textit{Continuous Integration} requires frequent submits from the developers and thus the rest of the team will also have a local version of the code.
 
 \subsubsection{Questions phrasing}
-Although the tools might cover the same areas for each practice, the results could differ because of how a question is structured. An example of this is the \textit{Test Driven Development} practice. Both \ac{TAA} and \ac{PAM} ask about automated code coverage, while \ac{OPS} just asks about the existence of code coverage. Furthermore, \ac{TAA} focuses on 100\% automation while \ac{PAM} doesn’t. Thus, if a team has code coverage but it is not automated, then the score of the respective question should be low. In case of \ac{TAA}, if it is fully automated, it should be even lower. It is evident that the more specific a question is, the more its answer will differ, resulting in possible low scores.
+Although the tools might cover the same areas for each practice, the results could differ because of how a question is structured. An example of this is the \textit{Test Driven Development} practice. Both \ac{TAA} and \ac{PAM} ask about automated code coverage, while \ac{OPS} just asks about the existence of code coverage. Furthermore, \ac{TAA} focuses on 100\% automation while \ac{PAM} doesn’t. Thus, if a team has code coverage but it is not automated, then the score of the respective question should be low. In case of \ac{TAA}, if it is not fully automated, it should be even lower. It is evident that the abstraction level of a question has a great impact. The more specific it is, the more its answer will differ, resulting in possible low scores.
 \todo{so a problem with measuring agility is the right abstraction level. So we don't know how, or at what level, agility should be measured. Interesting. This means we have issues even for simple aspects as if they use TDD.}
 
+\subsubsection{Survey answering}
+According to \citet{Wagner_Zeglovits} survey responses are affected mainly by two factors. One of them is the comprehension of a question and the other one is the judgement of a question. Although all respondents were free to ask questions for anything they did not understand, there is always the possibility that for their own reasons they preferred not to do it, maybe resulting in misunderstanding of a question's meaning. Moreover, the judgement of a person is extremely subjective which can lead to different approaches in giving an answer. Furthermore, \citet{Floyd_Fowler} argues that respondents can also answer to a question in a way that they will look good to the person reading the answers. 
+
 \subsubsection{How people perceive agility --- Maybe add this at the final discussion of the document?}
-Although the concept of agility is not new, people do not seem to fully understand it as \citet{Wang_Conboy} also mention. This is actually the reason for having so many tools in the field trying to measure how agile the teams are or the methodologies used. Teams implement agile methodologies differently and researchers create different measurement tools. There are numerous definitions about what agility is \cite{Kidd, NagelDove, Kara, Ramesh}, and each of the tools creator adopt or adapt the tools to match their needs. Their only common basis is the agile manifesto \cite{beck2001agile} and its twelve principles \cite{agile_principles}, which are (and should be considered as) a compass for the agile practitioners. Nevertheless, they are not enough and this resulted in the saturation of the field. Moreover, \citet{conboy_fitzgerald} state that the Agile Manifesto principles do not provide practical understanding of the concept of Agility. Consequently, all the reasons behind the current survey results are driven by the way in which tool creators and tool users perceive agility.
+Although the concept of agility is not new, people do not seem to fully understand it as \citet{Wang_Conboy} also mention. This is actually the reason for having so many tools in the field trying to measure how agile the teams are or the methodologies used. Teams implement agile methodologies differently and researchers create different measurement tools. There are numerous definitions about what agility is \cite{Kidd, Kara, Ramesh, agile_manufacturing}, and each of the tools creator adopt or adapt the tools to match their needs. Their only common basis is the agile manifesto \cite{beck2001agile} and its twelve principles \cite{agile_principles}, which are (and should be considered as) a compass for the agile practitioners. Nevertheless, they are not enough and this resulted in the saturation of the field. Moreover, \citet{conboy_fitzgerald} state that the Agile Manifesto principles do not provide practical understanding of the concept of Agility. Consequently, all the reasons behind the current survey results are driven by the way in which tool creators and tool users perceive agility.
 
 The questions in the surveys were all based on how their creators perceived the agile concept which is quite vague as \citet{tsourveloudis} have pointed out. As the reader has seen in previous chapters, \ac{PAM}, \ac{TAA} and \ac{OPS} focus on some common areas/practices, such as  \textit{Smaller and Frequent Product Releases} and \textit{High-Bandwidth Communication}, while many are different. None of the \citet{sventha_dissertation}, \citet{pam}, \citet{Leffingwell} claimed of course to have created the most complete measurement tool, but still this leads to the oxymoron that the tools created by specialists to measure the agility of software development tools, actually do it differently without providing substantial solution to the problem. On the contrary, this leads to more confusion for the agile practitioners who are at a loose ends.
 
@@ -235,7 +238,7 @@ Considering that the researchers and specialists in the agile field perceive the
 \section{Direct Match Questions Results}
 \label{sec:direct_match_results}
 
-The groups of direct match questions showed some unexpectedly amazing results. One would expect that questions which are considered the same would yield the same results. On the contrary, this did not happen for any of the groups, apart from the questions concerning the \textit{Software Control Management} group. The heatmaps which were generated by the answers made it very clear that the respondents gave different scores. 
+The groups of direct match questions showed some unexpectedly amazing results. One would expect that questions which are considered to be the same would yield the same results. On the contrary, this did not happen for any of the groups of questions, apart from group \hyperref[G13]{G13}. The heatmaps (see Appendix~\ref{ch:heatmaps}) which were generated by the answers made it crystal clear that the respondents gave different scores. 
 
 \begin{table} [H]
 	\begin{tabular}{| p{1cm} | p{2cm} | p{1cm} | p{2cm} | p{1cm} | p{2cm} |} \hline
@@ -251,31 +254,30 @@ The groups of direct match questions showed some unexpectedly amazing results. O
 	\label{table:answers_frequency}
 \end{table}
 
-
-Explain which had most common questions and which didn't
-
-
-The only group of questions in which all the respondents gave the exact same answer was about the existence of \textit{Software Control Management}. Company A uses version control management software for every line of code written.
+Table~\ref{table:answers_frequency} displays the group of questions and the frequency of the same answers given by the respondents. As it can be seen, \hyperref[G13]{G13} is the only group of questions in which all the respondents gave the exact same answer. \hyperref[G13]{G13} is about the existence of software control management and Company A uses version control management software for every single line of code written. On the other hand, \hyperref[G17]{G17} which is about backlog prioritization had the lowest score with only 6 respondents giving the same answer. The maximum difference in answers was up to 2 likert-scale points.
 
 For a better view in the results, one can see the heatmaps in Appendix~\ref{ch:heatmaps}.
 
 \section{Reasons Behind Matches Results}
 
-As it was explained in section~\ref{sec:direct_match_results} almost all groups had different responses for the same questions. This could be due to two reasons. The first one, is that the groups of direct match questions were not correctly formed and and the second one, is that people have the tendency to judge differently a question. 
-As far as the aspect of the groups of direct match questions not being correctly formed in concerned, it is considered to have a low possibility since they were verified by employees whose opinion was asked as it was mentioned in . \todo{add this in methodology and add the reference}.
-On the other hand, according to \citet{Lacy} survey respondents tend to give different answers to the same questions even weeks apart, something which is a common issue in surveys.
-
-%http://en.wikipedia.org/wiki/Social_desirability_bias
-%http://en.wikibooks.org/wiki/Social_Research_Methods/Surveys
-%http://www.uk.sagepub.com/upm-data/23854_Chapter2.pdf
-%http://ecpr.eu/Filestore/PaperProposal/b0647350-d971-4a09-aefd-373c8ad1c4be.pdf
+As it was explained in section~\ref{sec:direct_match_results} almost all groups had different responses for the same questions. This could be due to two reasons. The first one, is that the groups of direct match questions were not correctly formed and and the second one, is that people have the tendency to judge differently a question. As far as the aspect of the groups of direct match questions not being correctly formed in concerned, it is considered to have a low possibility since they were verified by employees whose opinion was asked as it was mentioned in subsection~\ref{subsubsec:direct_match_analysis}. On the other hand, according to \citet{Lacy} survey respondents tend to give different answers to the same questions even weeks apart, something which is a common issue in surveys.
 
 
-Validity threats?
+%Validity threats?
 %http://fluidsurveys.com/university/tips-for-avoiding-respondent-bias/
 %http://fluidsurveys.com/university/tips-for-overcoming-researcher-bias/
 
-The only group of questions in which all the respondents gave the exact same answer was about the existence of \textit{Software Control Management}. Company A uses version control management software for every project.
+
+
+
+
+
+%Reasons
+%different perception on things
+%better understanding of concepts through questions (learning effect)
+%Direct matches were not correctly found
+
+%http://en.wikipedia.org/wiki/Social_desirability_bias
 
 \section{Research Question recap}
 Regarding RQ \#2, \textit{``In what ways do the tools correlate"}, it was seen that the agile practices correlations almost do not exist at all between \ac{PAM}, \ac{TAA} and \ac{OPS}. Only 8 our 42 relationships have a correlation and they are mostly positive but low.
