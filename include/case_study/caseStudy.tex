@@ -3,21 +3,23 @@
 
 %\newcommand{\mysubparagraph}[1]{\subparagraph{#1}\mbox{}\\}
 
-\lettrine[lines=4, loversize=-0.1, lraise=0.1]{T}{his} chapter presents the research questions and research methodology followed for conducting this Master's Thesis.
+\lettrine[lines=4, loversize=-0.1, lraise=0.1]{T}{his} chapter aims to check whether the tools claiming to measure agility, actually do. It presents the case study performed in company A, along with the research questions and research methodology followed.
 
 \section{Research Purpose}
 The creators of \ac{PAM}, \ac{TAA} and \ac{OPS} state that their tool measures agility. The existence though of not only the three of them, but also of the rest of the tools presented in Chapter~\ref{ch:related_work} implies that each one is considered by its creators as more appropriate than the others in measuring agility. The purpose of this study is to validate whether these three tools actually succeed in measuring agility or not. 
 
 \subsection{Research Questions}
-Do \ac{PAM}, \ac{TAA} and \ac{OPS} measure agility in the same way?
+\begin{enumerate}
+	\item Do \ac{PAM}, \ac{TAA} and \ac{OPS} measure agility in the same way?
+	%by changing into "Roman" you will get capital letters
+	\begin{enumerate}[label={\roman*)},align=left]
+  		\item Does convergent validity exist among the tools?
+  		\item Questions that are exactly the same among the tools, will they give the same results?
+	\end{enumerate}	
 
-%by changing into "Roman" you will get capital letters
-\begin{enumerate}[label={\roman*)},align=left]
-  \item Does convergent validity exist among the tools?
-  \item Questions that are exactly the same among the tools, will they give the same results?
-  \item What is the coverage of agile practices among tools?
-  \item Can the tools be combined in a way, in order to provide a better approach in measuring agility?
-\end{enumerate}	
+	\item What is the coverage of agile practices among tools?
+  	\item Can the tools be combined in a way, in order to provide a better approach in measuring agility?
+\end{enumerate}
 
 \subsection{Case Study}
 Any effort for seeing if the selected agility measurement tools are valid in what they do, would require to apply them in real software developments teams. According to \citet{Runeson_Host} a case study is ``a suitable research methodology for software engineering research since it studies contemporary phenomena in their natural context". As a result, a case study was the selected as the most suitable means for conducting the Master's Thesis.  
@@ -411,7 +413,7 @@ Since all the tools state of measuring agility, if convergent validity exists am
 	\end{tabular}
 \end{table}
 
-In similar studies \cite{jalali_angelis,  Delestras2013} the correlation analysis was selected as the best way to do it and this was followed here as well. Based on the analysis for \ac{PAM}, \ac{TAA} and \ac{OPS} which was  performed in Subsection~\ref{subsec:data_preparation}, it is clear that \ac{OPS} covers more agile practices/areas. As a result, it was decided to use the practices covered by each tool and see if they correlate with the same practices from the other two tools. In Appendix~\ref{ch:mapping}, one can see how the questions are grouped based on the \ac{OPS} practices. The data sets consist of the answers which were sorted by team as stated previously and have the same order in all practices (i.e. the nth answer in every practice is given by the same person).
+In similar studies \cite{jalali_angelis,  Delestras2013} the correlation analysis was selected as the best way to do it and this was followed here as well. Based on the analysis for \ac{PAM}, \ac{TAA} and \ac{OPS} which was  performed in Subsection~\ref{subsec:data_preparation}, it is clear that \ac{OPS} covers more agile practices/areas. As a result, it was decided to use the practices covered by each tool and see if they correlate with the same practices from the other two tools. The idea is based on the \textit{multitrait-multimethod matrix} presented by \citet{campbell1959}. The matrix is the most commonly used way for providing construct validity. Since the data are organised by practices and are gathered by different methodologies we focus on examining the monotrait-heteromethod correlations only. In Appendix~\ref{ch:mapping}, one can see how the questions are grouped based on the \ac{OPS} practices. The data sets consist of the answers which were sorted by team as stated previously and have the same order in all practices (i.e. the nth answer in every practice is given by the same person).
 
 For the mathematical calculations the RStudio\texttrademark \cite{rstudio} was selected since it has a wide support from its community. 
 
@@ -539,6 +541,5 @@ In Table~\ref{table:direct_match_results} one can see the number of direct match
 \label{table:direct_match_results}
 \end{table} 
 
-\subsubsection{Tools' Agile Practices Coverage Analysis}
-\label{subsubsec:coverage_analysis}
-For analysing the coverage of agile practices among the tools we used the analysis made in Appendix~\ref{ch:mapping}. In there, all questions were separated based on the agile practice in which they belonged.
+
+%The questions among the tools will be matched based on whether they are covered directly, relevantly, or not at all. Direct match will be considered the one when a question from a tool has the same meaning with a question from another tool. %Relevant match will be considered the one where a question of a tool does not exist in \ac{OPS}, but its practice does exist in \ac{OPS}. Non-relevant match will be considered the one where a question cannot be matched at all in \ac{OPS}.
