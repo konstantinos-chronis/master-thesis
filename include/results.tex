@@ -225,48 +225,8 @@ Table~\ref{table:answers_frequency} displays the group of questions and the freq
 
 For a better view in the results, one can see the heatmaps in Appendix~\ref{ch:heatmaps}.
 
-\section{Reasons behind results}
-\label{subsec:reasons_for_correlations}
-
-The plots in Appendix~\ref{ch:correlation_plots} showed an unexpected and very interesting result. Not only do not the tools have a correlation, but they do not have a monotonic relationship either between one another for the agile practices covered (see Table~\ref{table:monotonic_relationships}). This could indicate two things. The first one is that the results are random and the second one, is that all three of the tools measure agility differently. 
-
-As far as the aspect of the correlation results being random is concerned, there is a possibility of being true. Maybe another approach on forming the data samples could provide different results, but the approach followed was evaluated as the most suitable at the beginning of the study.
-
-On the other hand, the absence of monotonicity and the negative or extremely low correlations show that the questions used by the tools in order to cover an agile practice, do it differently and that \ac{PAM}, \ac{TAA} and \ac{OPS} measure the agility of software development teams in their own unique way. Each of the tools was constructed and statistically validated during its development by its creators having the agile concept in mind, but apparently following a different path in order to accomplish it. This is quite clear by looking on the different ways that each practice is covered (see Appendix~\ref{ch:mapping}) where many of the questions have a different perspective on measuring a practice although they focus on the same one. 
-
-As it was explained in section~\ref{sec:direct_match_results} almost all groups had different responses for the same questions. This could be due to two reasons. The first one, is that the groups of direct match questions were not correctly formed and and the second one, is that people have the tendency to judge differently a question. As far as the aspect of the groups of direct match questions not being correctly formed in concerned, it is considered to have a low possibility since they were verified by employees whose opinion was asked as it was mentioned in subsection~\ref{subsubsec:direct_match_analysis}. On the other hand, according to \citet{Lacy} survey respondents tend to give different answers to the same questions even weeks apart, something which is a common issue in surveys.
-
-The reasons for these unexpected phenomena are explained in the next paragraphs.
-
-\subsubsection{Few or no questions for measuring a practice}
-Another reason for not being able to calculate the correlation of the tools is that they cover slightly or even not at all some of the practices. An example of this is the \textit{Smaller and Frequent Product Releases} practice. \ac{OPS} has four questions for it, while on the other hand, \ac{PAM} and \ac{TAA} have a single one each. Furthermore, \textit{Appropriate Distribution of Expertise} is not covered at all by \ac{PAM} while it is by the rest of the tools. In case the single question gets a low score, this will affect how effectively the tool will measure an agile practice. On the contrary, multiple questions can better cover the practice by examining more factors that affect it. Apart from measuring a practice more precisely, this also has the benefit that even if one question gets a low score, the rest of them are candidates for getting a higher one.
-
-\subsubsection{The same practice is measured differently}
-Something very interesting that came up during the data analysis was that although the tools cover the same practices, they do it in different ways, leading to different results. An example of this is the practice of \textit{Refactoring} (check figure ~\ref{fig:ref_plot}). \ac{PAM} checks whether there are enough unit tests and automated system tests to allow the safe code refactoring. In case the course unit/system tests are not developed by a team, the respondents will give low scores to the question, as the team members in company A did. Nevertheless, this does not mean that the team never refactors the software or it does it with bad results. All teams in company A choose to refactor when it adds value to the system, but the level of unit tests is very low and they exist only for specific teams. On the other hand, \ac{TAA} and \ac{OPS} check how often the teams refactor among other factors.
-
-\subsubsection{The same practice is measured in opposite questions}
-\label{subsec:opposite_questions}
-The \textit{Continuous Integration} practice has a unique paradox among \ac{TAA}, \ac{PAM} and \ac{OPS}. The first two tools have a question about the members of the team having synced to the latest code, while \ac{OPS} checks for the exact opposite. According to \citet{sventha_dissertation}, it is preferable for the teams not to share the same code in order to measure the practice. It is quite doubtful though how correct this question can be, since the \textit{Continuous Integration} requires frequent submits from the developers and thus the rest of the team will also have a local version of the code.
-
-\subsubsection{Questions phrasing}
-Although the tools might cover the same areas for each practice, the results could differ because of how a question is structured. An example of this is the \textit{Test Driven Development} practice. Both \ac{TAA} and \ac{PAM} ask about automated code coverage, while \ac{OPS} just asks about the existence of code coverage. Furthermore, \ac{TAA} focuses on 100\% automation while \ac{PAM} doesn’t. Thus, if a team has code coverage but it is not automated, then the score of the respective question should be low. In case of \ac{TAA}, if it is not fully automated, it should be even lower. It is evident that the abstraction level of a question has a great impact. The more specific it is, the more its answer will differ, resulting in possible low scores.
-\todo{so a problem with measuring agility is the right abstraction level. So we don't know how, or at what level, agility should be measured. Interesting. This means we have issues even for simple aspects as if they use TDD.}
-
-\subsubsection{Survey answering}
-According to \citet{Wagner_Zeglovits} survey responses are affected mainly by two factors. One of them is the comprehension of a question and the other one is the judgement of a question. Although all respondents were free to ask questions for anything they did not understand, there is always the possibility that for their own reasons they preferred not to do it, maybe resulting in misunderstanding of a question's meaning. Moreover, the judgement of a person is extremely subjective which can lead to different approaches in giving an answer. Furthermore, \citet{Floyd_Fowler} argues that respondents can also answer to a question in a way that they will look good to the person reading the answers. 
-
-\subsubsection{Better understanding of agile concepts}
-In pre-post studies there is a possibility of the subjects becoming more aware of a problem in the second test due to the first test \cite{Campbell_Stanley}. Although the \textit{testing} threat as it is called does not directly apply here, the similar surveys on consecutive weeks could have enabled the respondents to take a deeper look in the agile concepts, resulting in better understanding of them and consequently providing different answers in the surveys' questions. 
-
-\subsubsection{How people perceive agility --- Maybe add this at the final discussion of the document?}
-Although the concept of agility is not new, people do not seem to fully understand it as \citet{Wang_Conboy} also mention. This is actually the reason for having so many tools in the field trying to measure how agile the teams are or the methodologies used. Teams implement agile methodologies differently and researchers create different measurement tools. There are numerous definitions about what agility is \cite{Kidd, Kara, Ramesh, agile_manufacturing}, and each of the tools creator adopt or adapt the tools to match their needs. Their only common basis is the agile manifesto \cite{beck2001agile} and its twelve principles \cite{agile_principles}, which are (and should be considered as) a compass for the agile practitioners. Nevertheless, they are not enough and this resulted in the saturation of the field. Moreover, \citet{conboy_fitzgerald} state that the Agile Manifesto principles do not provide practical understanding of the concept of Agility. Consequently, all the reasons behind the current survey results are driven by the way in which tool creators and tool users perceive agility.
-
-The questions in the surveys were all based on how their creators perceived the agile concept which is quite vague as \citet{tsourveloudis} have pointed out. As the reader has seen in previous chapters, \ac{PAM}, \ac{TAA} and \ac{OPS} focus on some common areas/practices, such as  \textit{Smaller and Frequent Product Releases} and \textit{High-Bandwidth Communication}, while many are different. None of the \citet{sventha_dissertation}, \citet{pam}, \citet{Leffingwell} claimed of course to have created the most complete measurement tool, but still this leads to the oxymoron that the tools created by specialists to measure the agility of software development tools, actually do it differently without providing substantial solution to the problem. On the contrary, this leads to more confusion for the agile practitioners who are at a loose ends.
-
-Considering that the researchers and specialists in the agile field perceive the concept of agility differently, it would be naive to say that the teams do not do the same. The answers in surveys are subjective and people answer them depending on how they understand them. \citet{ambler} had commented the following ``I suspect that developers and management have different criteria for what it means to be Agile", which shows that people don't see eye to eye. This is also corroborated by the fact that although a team works at the same room and follows the same processes for weeks, it is rather unlikely if its members will have the same understanding of what a retrospection or a releasing planning meeting means for them. The last statement is also supported by \citet{Williams_Microsoft}.
-
-\subsubsection{Tool's Agile Practices Coverage Results}
-\label{subsubsec:coverage_results}
+\section{Tool's Agile Practices Coverage Results}
+\label{sec:coverage_results}
 One can see in Table~\ref{table:agile_practices_coverage} how many questions from each tool belong to each agile practice. \ac{TAA} has 8 questions which don't belong to any agile practice since those refer to product ownership. \ac{OPS} covers 18 agile practices, while \ac{TAA} 15 and \ac{PAM} 13. The ones which were found applicable in the case studies \cite{Williams_Microsoft, laurie_williams} were marked with the sign \CrossMaltese in the same table.
 
 When it comes to the number of practices covered by the tools, \ac{OPS} comes first, second is \ac{TAA} and \ac{PAM} comes third. On the other hand, when it comes to the number of questions that exist for top agile practices from the case studies \cite{Williams_Microsoft, laurie_williams}, then \ac{TAA} comes first with 52 questions, second \ac{OPS} with 49 questions and thirds is \ac{PAM} with 26 questions. Table~\ref{table:agile_practices_coverage_summary} summarizes the results.
@@ -315,21 +275,7 @@ When it comes to the number of practices covered by the tools, \ac{OPS} comes fi
 %http://fluidsurveys.com/university/tips-for-avoiding-respondent-bias/
 %http://fluidsurveys.com/university/tips-for-overcoming-researcher-bias/
 
-
-%Reasons
-%mix the reasons for results together and explain which applies where.
-
 %http://en.wikipedia.org/wiki/Social_desirability_bias
 
-\section{Research Question recap}
-Regarding RQ \#2, \textit{``In what ways do the tools correlate"}, it was seen that the agile practices correlations almost do not exist at all between \ac{PAM}, \ac{TAA} and \ac{OPS}. Only 8 our 42 relationships have a correlation and they are mostly positive but low.
-
 \section{Chapter Summary}
-In this chapter was presented how complete were the tools among them. \ac{OPS} covers both \ac{PAM} and \ac{TAA} to a large extent. In the second part the case study took place which showed that only 8 out of 42 relationships between the agile practices do correlate. The rest lack monotonicity due to
-\begin{inparaenum} [a\upshape)]
-	\item measuring a practice in the same way,
-	\item having few or no questions for measuring a practice,
-	\item measuring the same practice differently,
-	\item measuring the same practice in opposite questions,
-	\item questions phrasing.
-\end{inparaenum}
+In this chapter we presented the results of the surveys answered by company A employees. As it was seen, there are very few and very low correlations among the agile practices indicating that convergent validity cannot be established. In addition, questions which we identified to be the same from the three tools did not always have the same answer from the respondents. Finally, we presented that \ac{OPS} covers more agile practices, while \ac{TAA} has more questions for the agile practices that it covers than the rest.
