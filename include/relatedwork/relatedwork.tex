@@ -1,6 +1,6 @@
 \chapter{Related Work}\label{ch:related_work}
 
-\lettrine[lines=4, loversize=-0.1, lraise=0.1]{A}{ccording} to \citet{yauch}, it is very difficult to measure agility, although it has been widely spread. \citet{tsourveloudis} agree on this mainly (due to the vagueness of the concept of agility). Nevertheless, various tools have been developed in the last decade in order to measure the agility in software development teams. Below is a short description of some (tools) that have been used as (a  reference point) in many papers in this field. The tools are separated into two categories, 
+\lettrine[lines=4, loversize=-0.1, lraise=0.1]{A}{ccording} to \citet{yauch}, it is very difficult to measure agility, although it has been widely spread. \citet{tsourveloudis} agree on this mainly due to the vagueness of the concept of agility. Nevertheless, various tools have been developed in the last decade in order to measure the agility in software development teams. Below is a short description of some tools that have been used as a  reference point in many papers in this field. The tools are separated into two categories, 
 \begin{inparaenum} [a\upshape)]
 \item those which measure how agile the agile methodologies really are
 \item those which measure the agility of software development teams.
@@ -76,11 +76,7 @@ Each of these groups has a number of questions which are either answered with a 
 The first dimension describes the key scope items which are considered essential for supporting the method used by a team or organisation. These have been derived from the literature review of the creators based on \citet{Beck:2004:EPE:1076267}, \citet{koch2005agile}, \citet{Palmer:2001:PGF:600044}, \citet{Highsmith:2000:ASD:323922} and provides a method comparison at a high level.
 
 \paragraph{Dimension 2 - Agility Characterization}
-The second dimension is the only quantitative dimension among the four. It evaluates the agile methods at a process level and at a method practices level in order to check for the existence of agility.
-
-The measurement of the degree of agility at this level is done based on five variables.
-
-These variables are used to check the existence of a method's objective at a specific level or phase. If the variable exists for a phase, then the value 1 is assigned to it, otherwise 0. \citet{qumer2006measuring} define the degree of agility (DA) as ``the fraction of the five agility variables that are encompassed and supported". They define as \textit{Object} an object at some level or lifecycle phase or as a result of the practices used. \textit{m} is the number of phases or  practices. \textit{Phase} is any of the design, planning phase or requirements engineering phase. \textit{Practice} is the practices of the agile methodology. \\ %maybe provide an example as the authors do
+The second dimension is the only quantitative dimension among the four. It evaluates the agile methods at a process level and at a method practices level in order to check for the existence of agility. The measurement of the degree of agility at this level is done based on five variables. These variables are used to check the existence of a method's objective at a specific level or phase. If the variable exists for a phase, then the value 1 is assigned to it, otherwise 0. \citet{qumer2006measuring} define the degree of agility (DA) as ``the fraction of the five agility variables that are encompassed and supported". They define as \textit{Object} an object at some level or lifecycle phase or as a result of the practices used. \textit{m} is the number of phases or  practices. \textit{Phase} is any of the design, planning phase or requirements engineering phase. \textit{Practice} is the practices of the agile methodology. \\ %maybe provide an example as the authors do
 
 Formula \eqref{eq:dat_formula} how DA is calculated\\
 \begin{equation} \label{eq:dat_formula} DA (Object) = (1/m) \sum m DA(Object, Phase Or Practices) \end{equation}
@@ -158,7 +154,7 @@ In this section we presented various tools which measure the agility level of ag
 \item Development Practices/Infrastructure.
 \end{inparaenum}
 
-Each of these aspects is followed by a number of questions rated on a six-point Likert scale and the results are represented in a radar chart.
+Each of these aspects is followed by a number of questions rated on a seven-point Likert scale and the results are represented in a radar chart.
 
 \subsection{Comparative Agility} %Current level of agility
 \citet{comparative_agility} created the Comparative Agility (CA) assessment tool which does not assess the agility of an organisation by providing an absolute value, but it rather provides a value in comparison to other organisations/companies \cite{comparative_agility_web}. The idea behind CA is that the organisations try to be more agile than their competitors because they believe that this will have more benefits for them. Until 2010, more than 1200 respondents supported that idea by answering the tool's online survey. The CA assessment tool consists of the following seven dimensions
@@ -311,6 +307,7 @@ In total, 5 objectives, 9 principles, 17 strategies, 54 linkages and 80 indicato
 \subsection{Summary}
 In this section, we presented various tools which measure the agility level of agile software development teams. We have identified 3 groups to classify them. The first group concerns the tools which use questionnaires (\ac{TAA}, \ac{OPS}, \ac{PAM}, Comparative Agility, Thoughtworks, 42-point test). The second group includes tools which use a mix of approaches, either this is a questionnaire and a model or a network (AHP-ANFIS Framework, Escobar-Vasquez). Finally, the third group includes the rest of the tools which do not belong to any of the other two groups (Entropy Analysis, SAMI, Validation Model).
 
+%Explain that other papers focused on some tools while others are incomprehensible
 \section{Selecting tools}
 In this Master's Thesis, we check if tools which measure the agility level of software development teams yield the same results. For this reason, we selected those tools which are based on questionnaires, because they were considered ideal since they can be easily answered by subjects. The tools selected for the case study presented in the next chapter are Perceptive Agile Measurement (PAM), Team Agility Assessment (TAA) and Objectives Principles Strategies (OPS). All three of them originate from either industry (\ac{TAA}) or academia (\ac{OPS}) or both (\ac{PAM}). \ac{PAM} has been used in a case study in the past with a large sample. The tool was created with participations from development teams from all over the world and is considered a valid one for measuring the agility of teams. \ac{TAA} is part of Scaled Agile Framework (SAFe) \cite{scaled_agile_framework}, which is used by a lot of companies. \ac{OPS} Framework is a tool which covers more agile practices than any other tool, to our knowledge.
 
