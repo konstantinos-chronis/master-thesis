@@ -537,6 +537,29 @@ In Table~\ref{table:direct_match_results}, one can see the number of direct matc
 \label{table:direct_match_results}
 \end{table} 
 
+In order to see if the results from the matches are correct, we decided to use a statistical method. For the mathematical calculations the RStudio\texttrademark \cite{rstudio} was used again. In order to decide statistical which method to choose, the data were checked in order to establish whether they had normal distribution or not. For this, the Shapiro-Wilk test was used. The chosen alpha level was 0.05.
+
+Out of the 35 normality checks (two for each group and three for one group) only 2 concluded that the data are normally distributed. Since the samples are also independent (they do not affect one another) there is a strong indication that the ``Mann–Whitney U test" is the appropriate one.
+
+In order to use ``Mann–Whitney U test", three prerequisites must be satisfied
+
+\begin{enumerate}
+	\item Independent groups
+	\item Non-normal distribution of the data
+	\item Homoscedasticity 
+\end{enumerate} 
+
+Since the first two prerequisites were already satisfied we checked that the samples are indeed homogenous.
+
+For the group \hyperref[G3]{G3} (``Smaller And Frequent Product Releases") we used the ``Kruskal–Wallis one-way analysis of variance" method which is the respective statistical method for more than two groups.
+
+The hypothesis in both cases was:
+\begin{itemize}[label={}]
+	\item $H_0$: \textit{There is no difference between the groups of the same questions}
+	\item $H_1$: \textit{There is a difference between the groups of the same questions}
+\end{itemize}
+
+
 
 \subsubsection{Tools' Agile Practices Coverage Analysis}
 \label{subsubsec:coverage_analysis}
